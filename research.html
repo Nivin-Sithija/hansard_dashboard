@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Research Details | Trilingual Hansard Topic Modeling</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<style>
+  :root {
+    --bg:#f4f6fa;
+    --surface:#ffffff;
+    --line:#d8e1f1;
+    --text:#1a1d2e;
+    --muted:#687391;
+    --blue:#2563eb;
+    --teal:#0ea5a4;
+    --orange:#f59e0b;
+    --pink:#ec4899;
+    --violet:#7c3aed;
+    --green:#16a34a;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  header {
+    padding: 28px 42px 20px;
+    border-bottom: 1px solid var(--line);
+    background: var(--surface);
+  }
+  .header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 16px;
+  }
+  h1 { font-size: 23px; letter-spacing: -0.3px; }
+  .subtitle { color: var(--muted); font-size: 13px; margin-top: 5px; }
+  .top-links { display: flex; gap: 8px; }
+  .link-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border: 1px solid var(--line);
+    background: #ffffff;
+    color: var(--text);
+    border-radius: 999px;
+    padding: 8px 13px;
+    font-size: 12px;
+    font-weight: 700;
+  }
+
+  main { max-width: 1600px; margin: 0 auto; padding: 24px 42px; }
+  section { margin-bottom: 24px; }
+  .section-title {
+    margin-bottom: 12px;
+    color: var(--muted);
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 1px solid var(--line);
+    padding-bottom: 8px;
+  }
+  .section-title span { color: var(--text); font-weight: 700; }
+  .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 14px;
+    box-shadow: 0 8px 22px rgba(20,42,94,0.05);
+  }
+  .card-title {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: .8px;
+    color: var(--muted);
+    margin-bottom: 10px;
+    font-weight: 700;
+  }
+  .annotation {
+    margin-top: 10px;
+    font-size: 11.5px;
+    color: var(--muted);
+    font-style: italic;
+  }
+  .stats-inline {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 14px;
+    margin-bottom: 10px;
+    color: var(--muted);
+    font-size: 12px;
+    font-weight: 600;
+  }
+  .stats-inline span {
+    white-space: nowrap;
+  }
+  .chart-wrap { position: relative; width: 100%; height: 280px; }
+  .chart-wrap.tall { height: 360px; }
+
+  .img-panel {
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    overflow: hidden;
+    background: #fff;
+  }
+  .img-panel img {
+    width: 100%;
+    display: block;
+  }
+  .dataset-visuals {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+  .dataset-visuals .v1 { grid-column: 1; grid-row: 1; }
+  .dataset-visuals .v3 { grid-column: 1; grid-row: 2; }
+  .dataset-visuals .v2 {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+    align-self: stretch;
+  }
+  .dataset-visuals .v2 img {
+    height: 100%;
+    object-fit: cover;
+  }
+  .arch-diagram {
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    background: #fbfcff;
+    overflow: auto;
+  }
+  .arch-diagram svg {
+    width: 100%;
+    min-width: 1180px;
+    height: auto;
+    display: block;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 12px;
+  }
+  th, td {
+    border: 1px solid var(--line);
+    padding: 7px 8px;
+    text-align: left;
+    vertical-align: middle;
+  }
+  th {
+    background: #f6f9ff;
+    color: #4f5b78;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: .6px;
+  }
+  .best {
+    font-weight: 700;
+    color: #0f6c31;
+    background: #edf9f0;
+  }
+  .table-scroll {
+    max-height: 560px;
+    overflow: auto;
+    border: 1px solid var(--line);
+    border-radius: 10px;
+  }
+  .macro-assign-grid {
+    grid-template-columns: 0.95fr 1.25fr;
+  }
+  .cluster-geometry-panel img {
+    min-height: 560px;
+    object-fit: contain;
+    background: #fff;
+  }
+  .refs-list {
+    margin-left: 18px;
+    color: var(--text);
+    font-size: 12.5px;
+    line-height: 1.55;
+  }
+  .refs-list li { margin-bottom: 6px; }
+
+  .foot {
+    padding: 14px 42px 24px;
+    color: var(--muted);
+    font-size: 11px;
+    border-top: 1px solid var(--line);
+    text-align: center;
+  }
+
+  @media (max-width: 1200px) {
+    .grid-2, .grid-3 { grid-template-columns: 1fr; }
+    .macro-assign-grid { grid-template-columns: 1fr; }
+    .cluster-geometry-panel img { min-height: 0; }
+    .dataset-visuals { grid-template-columns: 1fr; }
+    .dataset-visuals .v1,
+    .dataset-visuals .v2,
+    .dataset-visuals .v3 { grid-column: auto; grid-row: auto; }
+    .dataset-visuals .v2 img { height: auto; object-fit: contain; }
+  }
+  @media (max-width: 900px) {
+    .header-row { flex-direction: column; }
+    .top-links { flex-wrap: wrap; }
+    .link-btn { font-size: 11px; padding: 7px 11px; }
+    header, main { padding: 20px; }
+
+    .arch-diagram { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+    .arch-diagram svg { min-width: 0; width: 100%; }
+
+    .card { overflow-x: auto; }
+    .card table { min-width: 680px; }
+    .table-scroll { max-height: 440px; }
+
+    .chart-wrap { height: 240px; }
+    .chart-wrap.tall { height: 280px; }
+
+    th, td { padding: 6px 6px; font-size: 11px; }
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="header-row">
+    <div>
+      <h1>Research Details and Benchmarks</h1>
+      <p class="subtitle">Architecture flow, embedding tests, UMAP visual analysis, clustering comparisons, and quality diagnostics.</p>
+    </div>
+    <div class="top-links">
+      <a class="link-btn" href="index.html">&lt; Dashboard</a>
+      <a class="link-btn" href="Multilingual Topic Modeling of Sri Lankan Parliamentary Debates An NLP Pipeline for Trilingual Hansard Analysis.pdf" target="_blank" rel="noopener" download>View / Download PDF</a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section>
+    <p class="section-title"><span>1 — Dataset Summary and Architecture</span></p>
+    <div class="stats-inline">
+      <span>19,553 Total Speeches</span>
+      <span>12,617 Clustered Speeches</span>
+      <span>6,936 Noise / Unassigned</span>
+      <span>339 Micro-Clusters</span>
+      <span>30 Macro-Topics</span>
+      <span>3 Languages</span>
+    </div>
+    <div class="card">
+      <p class="card-title">End-to-End NLP Pipeline</p>
+      <div id="architectureDiagram" class="arch-diagram" aria-label="Dynamic architecture flow diagram"></div>
+      <p class="annotation">Flow chart is rendered dynamically from structured nodes and connections, so updates can be done by editing diagram data in code.</p>
+      <div style="margin-top:12px;">
+        <p class="card-title">Dataset Collection Snapshot</p>
+        <table>
+          <thead>
+            <tr><th>Item</th><th>Value</th><th>Notes</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Source</td><td><a href="https://www.parliament.lk/en/business-of-parliament/hansards" target="_blank" rel="noopener">Parliament Hansard PDFs</a></td><td>Official archive crawl by year/date.</td></tr>
+            <tr><td>Coverage</td><td>2017-2026</td><td>Includes major national crisis periods.</td></tr>
+            <tr><td>Languages</td><td>Sinhala, Tamil, English</td><td>Includes code-mixed segments.</td></tr>
+            <tr><td>Extraction</td><td>LLM-assisted (Gemini)</td><td>Used to reduce PDF/OCR layout failures.</td></tr>
+            <tr><td>Filtered out</td><td>Non-debate records</td><td>Question sessions and non-sitting docs removed.</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="dataset-visuals" style="margin-top:12px;">
+        <div class="img-panel v1">
+          <img src="images/speech_length_distribution.png" alt="Speech length distribution">
+        </div>
+        <div class="img-panel v2">
+          <img src="images/speeches_length_by_year.png" alt="Speech length by year">
+        </div>
+        <div class="img-panel v3">
+          <img src="images/language_distribution.png" alt="Language distribution">
+        </div>
+      </div>
+      <p class="annotation">Speech-length and language-distribution visuals are shown directly after dataset details for quick corpus diagnostics.</p>
+      <p class="annotation">Dataset covers 10 years of parliamentary debate; the pipeline transforms raw trilingual speeches into interpretable macro-topic structures.</p>
+      <p class="annotation">LLM-assisted extraction improved multilingual readability and speaker-turn reconstruction compared with plain OCR parsing.</p>
+    </div>
+  </section>
+
+  <section>
+    <p class="section-title"><span>2 — Embedding Models: Scores and Tests</span></p>
+    <div class="grid-2">
+      <div class="card">
+        <p class="card-title">Table 1 — Embedding Benchmark Results (300 Hansard Speeches)</p>
+        <table>
+          <thead>
+            <tr>
+              <th>Model</th>
+              <th>STS Mean ↑</th>
+              <th>Retrieval MRR ↑</th>
+              <th>P@5 ↑</th>
+              <th>Anisotropy ↓</th>
+              <th>Verdict</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>multilingual-e5-large-instruct</td><td>0.827</td><td>0.810</td><td>0.56</td><td>0.909</td><td>Collapsed</td></tr>
+            <tr class="best"><td>BAAI/bge-m3</td><td>0.523</td><td>0.516</td><td>0.68</td><td>0.552</td><td>Selected</td></tr>
+            <tr><td>LaBSE</td><td>0.487</td><td>0.324</td><td>0.72</td><td>0.492</td><td>Healthy</td></tr>
+            <tr><td>paraphrase-multilingual-mpnet-base-v2</td><td>0.424</td><td>0.536</td><td>0.76</td><td>0.496</td><td>Healthy</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="card">
+        <p class="card-title">Table 2 — Clustering-Based Embedding Evaluation (300 Hansard Speeches)</p>
+        <table>
+          <thead>
+            <tr>
+              <th>Model</th>
+              <th>Dim</th>
+              <th>Time (s)</th>
+              <th>Topics</th>
+              <th>Outlier %</th>
+              <th>Silhouette</th>
+              <th>Davies-Bouldin ↓</th>
+              <th>Coherence cv</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>LaBSE</td><td>768</td><td>268</td><td>3</td><td>0.28</td><td>0.90</td><td>3.10</td><td>0.46</td></tr>
+            <tr><td>mpnet-base-v2</td><td>768</td><td>171</td><td>16</td><td>18.97</td><td>0.79</td><td>3.09</td><td>0.25</td></tr>
+            <tr class="best"><td>BAAI/bge-m3</td><td>1024</td><td>1449</td><td>89</td><td>27.57</td><td>0.81</td><td>2.48</td><td>0.38</td></tr>
+            <tr><td>multilingual-e5-large</td><td>1024</td><td>2334</td><td>70</td><td>38.63</td><td>0.71</td><td>3.03</td><td>0.04</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="grid-3" style="margin-top:14px;">
+      <div class="card">
+        <p class="card-title">Benchmark: STS / MRR / P@5</p>
+        <div class="chart-wrap"><canvas id="embedScoreChart"></canvas></div>
+      </div>
+      <div class="card">
+        <p class="card-title">Clustering: Topics vs Outlier %</p>
+        <div class="chart-wrap"><canvas id="embedLangChart"></canvas></div>
+      </div>
+      <div class="card">
+        <p class="card-title">Quality: Silhouette / DB / Coherence</p>
+        <div class="chart-wrap"><canvas id="embedStabilityChart"></canvas></div>
+      </div>
+    </div>
+    <p class="annotation">Embedding tests now include the exact benchmark and clustering-evaluation tables for 300 Hansard speeches.</p>
+  </section>
+
+  <section>
+    <p class="section-title"><span>3 — UMAP Visualization with Research Data</span></p>
+    <div class="grid-2">
+      <div class="card">
+        <p class="card-title">UMAP Reduction Quality Profile</p>
+        <div class="chart-wrap"><canvas id="umapQualityChart"></canvas></div>
+        <p class="annotation">Graph-based view of manifold quality after projecting BGE-M3 embeddings from 1024D to 5D.</p>
+      </div>
+      <div class="card">
+        <p class="card-title">UMAP Configuration Used for Clustering</p>
+        <table>
+          <thead>
+            <tr><th>Parameter</th><th>Value</th><th>Purpose</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Input embedding dimension</td><td>1024</td><td>BGE-M3 dense multilingual vectors.</td></tr>
+            <tr><td>n_neighbors</td><td>15</td><td>Balances local and global manifold structure.</td></tr>
+            <tr><td>n_components</td><td>5</td><td>Projects embeddings to clustering-ready space.</td></tr>
+            <tr><td>min_dist</td><td>0.0</td><td>Allows tighter local packing of semantically similar speeches.</td></tr>
+            <tr><td>distance metric</td><td>cosine</td><td>Captures semantic similarity in multilingual embedding space.</td></tr>
+            <tr><td>Output space</td><td class="best">1024D -> 5D</td><td>Used as direct input to clustering stage.</td></tr>
+          </tbody>
+        </table>
+        <p class="annotation">UMAP was used strictly as a dimensionality-reduction stage before clustering, not as a standalone scoring chart.</p>
+      </div>
+    </div>
+    <p class="annotation">Following BGE-M3 embedding generation, UMAP reduced the high-dimensional space to a 5D representation suitable for downstream clustering.</p>
+  </section>
+
+  <section>
+    <p class="section-title"><span>4 — Clustering Algorithms Comparison</span></p>
+    <div class="grid-2">
+      <div class="card">
+        <p class="card-title">Clustering Comparison (Test size: n=288, filtered from 300 speeches)</p>
+        <table>
+          <thead>
+            <tr>
+              <th>Algorithm</th>
+              <th>K Found</th>
+              <th>Noise %</th>
+              <th>B-Cubed P</th>
+              <th>B-Cubed F1</th>
+              <th>ARI</th>
+              <th>NMI</th>
+              <th>Silhouette</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>K-Means</td><td>13</td><td>0.0</td><td>0.349</td><td>0.324</td><td>0.184</td><td>0.379</td><td>0.388</td></tr>
+            <tr><td>Agglomerative (Ward)</td><td>13</td><td>0.0</td><td>0.355</td><td>0.340</td><td>0.191</td><td>0.398</td><td>0.377</td></tr>
+            <tr class="best"><td>HDBSCAN</td><td>11</td><td>41.7</td><td>0.673</td><td>0.313</td><td>0.104</td><td>0.340</td><td>0.532</td></tr>
+            <tr><td>OPTICS</td><td>19</td><td>36.1</td><td>0.670</td><td>0.250</td><td>0.073</td><td>0.351</td><td>0.497</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="card">
+        <p class="card-title">Precision vs Coverage Trade-Off Profile</p>
+        <div class="chart-wrap"><canvas id="clusterScoreChart"></canvas></div>
+      </div>
+    </div>
+    <div class="grid-2" style="margin-top:14px;">
+      <div class="card">
+        <p class="card-title">Algorithms Cluster Visualization</p>
+        <div class="img-panel">
+          <img src="images/scatter_all.png" alt="Clustering visualization across algorithms">
+        </div>
+        <p class="annotation">Visual separation supports quantitative results: density-based clustering isolates compact high-purity groups.</p>
+      </div>
+    </div>
+    <p class="annotation">Evaluation used the 300-speech ground-truth subset, filtered to 288 speeches after removing labels with fewer than five samples (13 categories retained).</p>
+    <p class="annotation">K-Means and Agglomerative provide full coverage, while HDBSCAN yields the highest purity (B-Cubed P = 0.673) and best separation (Silhouette = 0.532) with 41.7% noise rejection.</p>
+  </section>
+
+  <section>
+    <p class="section-title"><span>5 — BiTopic Extension</span></p>
+    <div class="grid-2">
+      <div class="card">
+        <p class="card-title">BiTopic-1: Semantic-Lexical Fusion View</p>
+        <div class="img-panel">
+          <img src="images/bitopic1.png" alt="BiTopic visualization one">
+        </div>
+      </div>
+      <div class="card">
+        <p class="card-title">BiTopic-2: Topic Recovery and Interpretability</p>
+        <div class="img-panel">
+          <img src="images/bitopic2.png" alt="BiTopic visualization two">
+        </div>
+      </div>
+    </div>
+    <p class="annotation">From the paper findings: BiTopic combines dense semantic embeddings with lexical grounding, improving topic interpretability and recovering speeches that pure embedding clustering tends to mark as noise.</p>
+  </section>
+
+  <section>
+    <p class="section-title"><span>6 — Macro Topic Assignment</span></p>
+    <div class="grid-2 macro-assign-grid">
+      <div class="card">
+        <p class="card-title">Discovered Topics on Hansard Speeches</p>
+        <div class="table-scroll">
+          <table>
+            <thead>
+              <tr><th>Topic ID</th><th>Speeches</th><th>Interpreted Label</th><th>Key Terms</th></tr>
+            </thead>
+            <tbody id="macroAssignmentBody"></tbody>
+          </table>
+        </div>
+      </div>
+      <div class="card cluster-geometry-panel">
+        <p class="card-title">Cluster Geometry Overview</p>
+        <div class="img-panel">
+          <img src="images/macro_topic_umap_scatter.png" alt="Macro-topic UMAP scatter visualization">
+        </div>
+      </div>
+    </div>
+    <p class="annotation">Key terms combine high-frequency count terms and TF-IDF distinctive terms for each macro-topic assignment.</p>
+  </section>
+
+  <section>
+    <p class="section-title"><span>7 — Cluster Quality Analysis</span></p>
+    <div class="grid-3">
+      <div class="card">
+        <p class="card-title">Intra vs Inter Distance</p>
+        <div class="chart-wrap"><canvas id="distanceChart"></canvas></div>
+      </div>
+      <div class="card">
+        <p class="card-title">Topic Purity by Macro Group</p>
+        <div class="chart-wrap"><canvas id="purityChart"></canvas></div>
+      </div>
+      <div class="card">
+        <p class="card-title">BiTopic Noise Recovery</p>
+        <div class="chart-wrap"><canvas id="noiseChart"></canvas></div>
+      </div>
+    </div>
+    <p class="annotation">Hybrid semantic-lexical BiTopic recovered part of the ambiguous speeches, improving interpretability beyond pure embedding clustering.</p>
+  </section>
+
+</main>
+
+<footer class="foot">
+  CS3121'26, April 2026, University of Moratuwa, Sri Lanka. D.H.N. Dhanapala, K.S.H. Daishika, H.A. Kuruppu, N.A.K. Nawagamuwa, and N.S. Seneviratne
+</footer>
+
+<script>
+  const MACRO_ASSIGNMENT = [
+    { id: 'MT-0', speeches: 883, label: 'Parliamentary Procedure & Standing Orders', count: ['ප්‍රශ්න', 'පාර්ලිමේන්තුවේ', 'ආණ්ඩුක්‍රම', 'ස්ථාවර', 'නියෝග'], tfidf: ['ජනතා නිදහස්', 'විශ්වාසභංග', 'බැඳුම්කර වංචාව'] },
+    { id: 'MT-1', speeches: 1654, label: 'Energy, Economy & Fuel Crisis', count: ['රුපියල්', 'ණය', 'ආර්ථික', 'මුදල්', 'බිලියන'], tfidf: ['මෙගාවොට්', 'වැය පරතරය', 'පුනර්ජනනීය'] },
+    { id: 'MT-2', speeches: 334, label: 'Tamil-Medium Parliamentary Debates', count: ['இவ்வாறு', 'குறித்த', 'வேண்டிய', 'தேர்தல்', 'சேர்ந்த'], tfidf: ['நடவடிக்கைகளை', 'பிரதமர்', 'விடுதலை'] },
+    { id: 'MT-3', speeches: 246, label: 'Infrastructure, Ports & Aviation', count: ['ගුවන්', 'වරාය', 'නගරය', 'කොළඹ', 'රුපියල්'], tfidf: ['වරාය නගරය', 'හම්බන්තොට වරාය', 'මත්තල'] },
+    { id: 'MT-4', speeches: 697, label: 'Agriculture, Plantation & Price Policy', count: ['රුපියල්', 'තේ', 'පොහොර', 'මිල', 'පොල්'], tfidf: ['තේ කර්මාන්තය', 'කාබනික පොහොර', 'මෙට්‍රික්ටොන්'] },
+    { id: 'MT-5', speeches: 632, label: 'Social Welfare, Housing & Water', count: ['මුදල්', 'නිවාස', 'රුපියල්', 'විශ්‍රාම', 'ජල'], tfidf: ['ජල යෝජනා', 'සමෘද්ධි', 'විශ්‍රාම වැටුප'] },
+    { id: 'MT-6', speeches: 241, label: 'Parliamentary Oversight & Public Accounts (COPE)', count: ['වාර්තාව', 'මුදල්', 'රජයේ', 'cope', 'ආයතන'], tfidf: ['රජයේ ගිණුම්', 'කාර්ය සාධන', 'පොදු ව්‍යාපාර'] },
+    { id: 'MT-7', speeches: 1282, label: 'Education, Schools, Universities & Teachers', count: ['පාසල්', 'අධ්‍යාපන', 'විශ්ව', 'ගුරු', 'විද්‍යාල'], tfidf: ['පෙර පාසල්', 'විදුහල්පති', 'මහපොළ'] },
+    { id: 'MT-8', speeches: 548, label: 'Constitutional Amendments & Executive Governance', count: ['ආණ්ඩුක්‍රම', 'ව්‍යවස්ථා', 'ජනතාව', 'සංශෝධනය', 'දේශපාලන'], tfidf: ['විධායක ජනාධිපති', 'විසිවන', 'දහනව ආණ්ඩුක්‍රම'] },
+    { id: 'MT-9', speeches: 251, label: 'Parliamentary Privilege & Conduct', count: ['වරප්‍රසාද', 'පාර්ලිමේන්තු', 'රන්ජන්', 'රාමනායක', 'මන්ත්‍රීවරුන්'], tfidf: ['රන්ජන් රාමනායක', 'ආචාර ධර්ම', 'අඩංගුවට'] },
+    { id: 'MT-10', speeches: 232, label: 'Cooperative Finance & Microcredit', count: ['සමුපකාර', 'මුදල්', 'ණය', 'මූල්‍ය', 'ආයතන'], tfidf: ['ක්ෂුද්‍ර මූල්‍ය', 'සමුපකාර සමිති', 'තැන්පතු'] },
+    { id: 'MT-11', speeches: 576, label: 'Healthcare, Pharmaceuticals & NMRA', count: ['සෞඛ්‍ය', 'ඖෂධ', 'වෛද්‍ය', 'රෝහල්', 'කොවිඩ්'], tfidf: ['nmra', 'ඖෂධ නියාමන', 'ඩෙංගු'] },
+    { id: 'MT-12', speeches: 260, label: 'Utilities Legislation & Media Law', count: ['පනත්', 'මාධ්‍ය', 'කෙටුම්පත', 'විදුලිබල', 'ජනමාධ්‍ය'], tfidf: ['මහජන උපයෝගිතා', 'විදුලිබල මණ්ඩලය', 'ශ්‍රේෂ්ඨාධිකරණය'] },
+    { id: 'MT-13', speeches: 307, label: 'English Governance & Peace Discourse', count: ['people', 'our', 'sri', 'lanka', 'constitution'], tfidf: ['peace', 'sovereignty', 'clean sri'] },
+    { id: 'MT-14', speeches: 325, label: 'Environment, Land & Wildlife', count: ['ඉඩම්', 'අලි', 'සංරක්ෂණ', 'ජනතාව', 'වනජීවී'], tfidf: ['අලි මිනිස්', 'වනජීවී සංරක්ෂණ', 'වනාන්තර'] },
+    { id: 'MT-15', speeches: 288, label: 'Parliamentary Condolences & Obituaries', count: ['මැතිතුමා', 'ශෝකය', 'අභාවය', 'පාර්ලිමේන්තු', 'ජාතික'], tfidf: ['නිවන් සුව', 'ශෝක යෝජනා', 'අභාවය ශෝකය'] },
+    { id: 'MT-16', speeches: 186, label: 'Specific Parliamentary Events (Political)', count: ['අතුකෝරළ', 'අමරකීර්ති', 'queen', 'ඝාතනය', 'elizabeth'], tfidf: ['අමරකීර්ති අතුකෝරළ', 'commonwealth', 'රිසාඩ් බදියුදීන්'] },
+    { id: 'MT-17', speeches: 279, label: 'Easter Sunday Attacks & National Security', count: ['පාස්කු', 'ප්‍රහාරය', 'මුස්ලිම්', 'බුද්ධි', 'ආරක්ෂක'], tfidf: ['සහරාන්', 'පාස්කු ඉරිදා', 'අප්‍රේල් 21'] },
+    { id: 'MT-18', speeches: 390, label: 'Transport & Road Infrastructure', count: ['මාර්ග', 'බස්', 'දුම්රිය', 'රථ', 'ප්‍රවාහන'], tfidf: ['ලංකා ගමනාගමන', 'අධිවේගී මාර්ග', 'ජපන්'] },
+    { id: 'MT-19', speeches: 260, label: 'Foreign Employment, Tourism & Diaspora', count: ['විදේශ', 'සංචාරක', 'රැකියා', 'රජය', 'ශ්‍රමිකයන්'], tfidf: ['විදේශ රැකියා', 'සංචාරක ව්‍යාපාරය', 'තානාපති'] },
+    { id: 'MT-20', speeches: 358, label: 'Human Rights & International Relations', count: ['මානව', 'හිමිකම්', 'විදේශ', 'ජාත්‍යන්තර', 'ජාතීන්ගේ'], tfidf: ['ජිනීවා', 'එක්සත් ජාතීන්ගේ', 'ත්‍රස්තවාදය'] },
+    { id: 'MT-21', speeches: 218, label: 'Dairy Industry & Livestock', count: ['කිරි', 'පිටි', 'ආනයනය', 'දියර කිරි', 'නිෂ්පාදනය'], tfidf: ['කිරි පිටි', 'පශු සම්පත්', 'ස්වයංපෝෂිත'] },
+    { id: 'MT-22', speeches: 223, label: 'SAITM Medical Education & Defence University', count: ['වෛද්‍ය', 'විශ්ව', 'අධ්‍යාපනය', 'saitm', 'සයිටම්'], tfidf: ['කොතලාවල', 'නෙවිල් ප්‍රනාන්දු', 'defence'] },
+    { id: 'MT-23', speeches: 446, label: 'Electoral Reform & Local Government Elections', count: ['මැතිවරණ', 'පළාත්', 'ඡන්ද', 'ක්‍රමය', 'පනත්'], tfidf: ['සීමා නිර්ණය', 'මැතිවරණ කොමිෂන්', 'නාම යෝජනා'] },
+    { id: 'MT-24', speeches: 204, label: 'Tax Policy, Excise, Gems & Revenue', count: ['බදු', 'මැණික්', 'මත්පැන්', 'රුපියල්', 'සුරා බදු'], tfidf: ['vat', 'දේශීය ආදායම්', 'ස්වර්ණාභරණ'] },
+    { id: 'MT-25', speeches: 204, label: 'Cricket & Sports Administration', count: ['ක්‍රිකට්', 'ක්‍රීඩා', 'ලංකා', 'ක්‍රිකට් ආයතනය', 'cricket'], tfidf: ['icc', 'interim', 'රොෂාන්'] },
+    { id: 'MT-26', speeches: 302, label: 'Judicial Affairs, Crime & Anti-Corruption', count: ['නඩු', 'අධිකරණ', 'අපරාධ', 'නීතිය', 'දූෂණ'], tfidf: ['මූල්‍ය අපරාධ', 'මහේන්ද්‍රන්', 'දූෂණ විරෝධී'] },
+    { id: 'MT-27', speeches: 274, label: 'Fisheries & Maritime Industry', count: ['ධීවර', 'යාත්‍රා', 'මිල', 'මත්ස්‍ය', 'ඉන්ධන'], tfidf: ['ධීවර කර්මාන්තය', 'බහුදින', 'ඉන්ධන මිල'] },
+    { id: 'MT-28', speeches: 316, label: 'Plantation (Estate) Sector & Labour', count: ['වතු', 'වැටුප', 'ජනතාව', 'කම්කරු', 'සමාගම්'], tfidf: ['වතු සමාගම්', 'වතු කම්කරු', 'තොණ්ඩමන්'] },
+    { id: 'MT-29', speeches: 204, label: 'Heritage, Women, Children & Municipal Waste', count: ['කුණු', 'පුරාවිද්‍යා', 'කාන්තා', 'ළමා', 'සංස්කෘතික'], tfidf: ['කසළ', 'බුද්ධ ශාසන', 'කාන්තාවන්ට'] }
+  ];
+
+  function renderMacroAssignmentTable() {
+    const body = document.getElementById('macroAssignmentBody');
+    if (!body) return;
+    body.innerHTML = MACRO_ASSIGNMENT.map((row) => {
+      const keyTerms = `${row.count.slice(0, 5).join(', ')} | ${row.tfidf.slice(0, 3).join(', ')}`;
+      return `<tr><td>${row.id}</td><td>${row.speeches.toLocaleString()}</td><td>${row.label}</td><td>${keyTerms}</td></tr>`;
+    }).join('');
+  }
+
+  function renderArchitectureDiagram() {
+    const container = document.getElementById('architectureDiagram');
+    if (!container) return;
+
+    const ns = 'http://www.w3.org/2000/svg';
+    const make = (tag, attrs) => {
+      const el = document.createElementNS(ns, tag);
+      Object.entries(attrs).forEach(([k, v]) => el.setAttribute(k, v));
+      return el;
+    };
+    const text = (x, y, value, size = 11, weight = '600', color = '#1a1d2e') => {
+      const t = make('text', { x, y, 'font-size': size, 'font-family': 'Segoe UI, sans-serif', 'font-weight': weight, fill: color });
+      t.textContent = value;
+      return t;
+    };
+
+    const svg = make('svg', { viewBox: '0 0 1720 350', role: 'img', 'aria-label': 'NLP architecture diagram' });
+    const defs = make('defs', {});
+    const marker = make('marker', { id: 'arrow', viewBox: '0 0 10 10', refX: '9', refY: '5', markerWidth: '7', markerHeight: '7', orient: 'auto-start-reverse' });
+    marker.appendChild(make('path', { d: 'M 0 0 L 10 5 L 0 10 z', fill: '#4b5563' }));
+    defs.appendChild(marker);
+    svg.appendChild(defs);
+
+    const groups = [
+      { x: 20, y: 26, w: 420, h: 248, fill: '#eaf2ff', stroke: '#8cb3e9', title: '1. Extraction' },
+      { x: 468, y: 26, w: 285, h: 100, fill: '#f4eefc', stroke: '#a277d2', title: '2. Baseline' },
+      { x: 468, y: 136, w: 285, h: 138, fill: '#efe9ff', stroke: '#b390ea', title: '3. Embeddings' },
+      { x: 780, y: 26, w: 430, h: 100, fill: '#fff1f1', stroke: '#e59ca2', title: '4. Clustering' },
+      { x: 1232, y: 26, w: 220, h: 100, fill: '#ebf8ee', stroke: '#93c8a2', title: '5. Topic Modeling' },
+      { x: 780, y: 136, w: 670, h: 138, fill: '#fff8e8', stroke: '#f0c878', title: '6. BiTopic' },
+      { x: 1492, y: 26, w: 198, h: 248, fill: '#fbfbfd', stroke: '#c4cad6', title: '7. Future Work', dash: '5,4' }
+    ];
+
+    groups.forEach((g) => {
+      const attrs = { x: g.x, y: g.y, width: g.w, height: g.h, rx: '8', fill: g.fill, stroke: g.stroke, 'stroke-width': '1.4' };
+      if (g.dash) attrs['stroke-dasharray'] = g.dash;
+      svg.appendChild(make('rect', attrs));
+      svg.appendChild(text(g.x + 10, g.y + 18, g.title, 11, '700', '#374151'));
+    });
+
+    const nodes = [
+      { id: 'pdf', x: 35, y: 132, w: 84, h: 30, t: 'Hansard PDFs' },
+      { id: 'ocr', x: 148, y: 132, w: 55, h: 30, t: 'OCR' },
+      { id: 'llm', x: 230, y: 132, w: 92, h: 30, t: 'LLM Extraction' },
+      { id: 'speeches', x: 332, y: 114, w: 92, h: 52, t: '19,553 Speeches', type: 'db' },
+      { id: 'lda', x: 520, y: 62, w: 65, h: 30, t: 'LDA' },
+      { id: 'fail', x: 612, y: 62, w: 126, h: 30, t: 'Failed Cross-Lingual' },
+      { id: 'models', x: 500, y: 180, w: 136, h: 30, t: '4 Models Benchmarked' },
+      { id: 'bge', x: 668, y: 180, w: 75, h: 30, t: 'BGE-M3' },
+      { id: 'umap', x: 816, y: 62, w: 64, h: 30, t: 'UMAP' },
+      { id: 'alg', x: 906, y: 62, w: 132, h: 30, t: '4 Algorithms' },
+      { id: 'hdb', x: 1064, y: 62, w: 122, h: 30, t: 'HDBSCAN Selected' },
+      { id: 'bertopic', x: 1248, y: 62, w: 80, h: 30, t: 'BERTopic' },
+      { id: 'topics', x: 1348, y: 62, w: 90, h: 30, t: '30 Topics' },
+      { id: 'semantic', x: 802, y: 180, w: 92, h: 30, t: 'Semantic Space' },
+      { id: 'lexical', x: 802, y: 228, w: 92, h: 30, t: 'Lexical Space' },
+      { id: 'fusion', x: 968, y: 204, w: 64, h: 30, t: 'Fusion' },
+      { id: 'bitopic', x: 1062, y: 204, w: 132, h: 30, t: 'BiTopic Extension' },
+      { id: 'sentiment', x: 1510, y: 62, w: 156, h: 30, t: 'Sentiment Analysis' },
+      { id: 'temporal', x: 1510, y: 118, w: 156, h: 30, t: 'Temporal Tracking' },
+      { id: 'improved', x: 1510, y: 204, w: 156, h: 30, t: 'Improved Fusion' }
+    ];
+
+    const centers = Object.fromEntries(nodes.map((n) => [
+      n.id,
+      { x: n.x + n.w / 2, y: n.y + n.h / 2, left: n.x, right: n.x + n.w, top: n.y, bottom: n.y + n.h }
+    ]));
+
+    const anchor = (node, side) => {
+      if (side === 'left') return { x: node.left, y: node.y };
+      if (side === 'right') return { x: node.right, y: node.y };
+      if (side === 'top') return { x: node.x, y: node.top };
+      return { x: node.x, y: node.bottom };
+    };
+
+    const route = (from, to, options = {}) => {
+      const a = anchor(centers[from], options.fromSide || 'right');
+      const b = anchor(centers[to], options.toSide || 'left');
+      const points = [a, ...(options.via || []), b];
+      const d = points.map((p, i) => `${i === 0 ? 'M' : 'L'} ${p.x} ${p.y}`).join(' ');
+      svg.appendChild(make('path', { d, fill: 'none', stroke: '#4b5563', 'stroke-width': '1.6', 'marker-end': 'url(#arrow)' }));
+    };
+
+    route('pdf', 'ocr');
+    route('ocr', 'llm');
+    route('llm', 'speeches');
+    route('speeches', 'lda', { via: [{ x: 448, y: 140 }, { x: 448, y: 77 }] });
+    route('lda', 'fail');
+    route('speeches', 'models', { via: [{ x: 448, y: 140 }, { x: 448, y: 195 }] });
+    route('models', 'bge');
+    route('bge', 'umap', { via: [{ x: 770, y: 195 }, { x: 770, y: 77 }] });
+    route('umap', 'alg');
+    route('alg', 'hdb');
+    route('hdb', 'bertopic');
+    route('bertopic', 'topics');
+    route('bge', 'semantic', { via: [{ x: 770, y: 195 }] });
+    route('speeches', 'lexical', { fromSide: 'bottom', via: [{ x: 378, y: 243 }, { x: 780, y: 243 }], toSide: 'left' });
+    route('semantic', 'fusion');
+    route('lexical', 'fusion');
+    route('fusion', 'bitopic');
+    route('topics', 'sentiment');
+    route('topics', 'temporal', { via: [{ x: 1472, y: 77 }, { x: 1472, y: 133 }] });
+    route('bitopic', 'improved');
+
+    nodes.forEach((n) => {
+      if (n.type === 'db') {
+        svg.appendChild(make('ellipse', { cx: n.x + n.w / 2, cy: n.y + 8, rx: n.w / 2, ry: 8, fill: '#ffffff', stroke: '#6b7280', 'stroke-width': '1.2' }));
+        svg.appendChild(make('rect', { x: n.x, y: n.y + 8, width: n.w, height: n.h - 16, fill: '#ffffff', stroke: '#6b7280', 'stroke-width': '1.2' }));
+        svg.appendChild(make('ellipse', { cx: n.x + n.w / 2, cy: n.y + n.h - 8, rx: n.w / 2, ry: 8, fill: '#f8fafc', stroke: '#6b7280', 'stroke-width': '1.2' }));
+      } else {
+        svg.appendChild(make('rect', { x: n.x, y: n.y, width: n.w, height: n.h, rx: '6', fill: '#ffffff', stroke: '#6b7280', 'stroke-width': '1.2' }));
+      }
+      svg.appendChild(text(n.x + 8, n.y + 19, n.t, 10.5, '600', '#111827'));
+    });
+
+    container.innerHTML = '';
+    container.appendChild(svg);
+  }
+
+  renderMacroAssignmentTable();
+  renderArchitectureDiagram();
+
+  Chart.defaults.color = '#5f6c8f';
+  Chart.defaults.borderColor = '#dae3f3';
+  Chart.defaults.font.family = "'Segoe UI',system-ui,sans-serif";
+
+  new Chart(document.getElementById('embedScoreChart'), {
+    type: 'bar',
+    data: {
+      labels: ['e5-large-instruct', 'BAAI/bge-m3', 'LaBSE', 'mpnet-base-v2'],
+      datasets: [
+        { label: 'STS Mean', data: [0.827, 0.523, 0.487, 0.424], backgroundColor: '#38bdf8', borderRadius: 6 },
+        { label: 'Retrieval MRR', data: [0.810, 0.516, 0.324, 0.536], backgroundColor: '#a78bfa', borderRadius: 6 },
+        { label: 'P@5', data: [0.56, 0.68, 0.72, 0.76], backgroundColor: '#f59e0b', borderRadius: 6 }
+      ]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: { legend: { position: 'bottom', labels: { boxWidth: 10, font: { size: 10 } } } },
+      scales: { y: { beginAtZero: true, max: 1 } }
+    }
+  });
+
+  new Chart(document.getElementById('embedLangChart'), {
+    type: 'bar',
+    data: {
+      labels: ['LaBSE', 'mpnet-base-v2', 'BAAI/bge-m3', 'multilingual-e5-large'],
+      datasets: [
+        { label: 'Topics', data: [3, 16, 89, 70], backgroundColor: '#22d3ee' },
+        { label: 'Outlier %', data: [0.28, 18.97, 27.57, 38.63], backgroundColor: '#f97316' }
+      ]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      scales: { y: { beginAtZero: true } },
+      plugins: { legend: { position: 'bottom', labels: { boxWidth: 12, font: { size: 10 } } } }
+    }
+  });
+
+  new Chart(document.getElementById('embedStabilityChart'), {
+    type: 'bar',
+    data: {
+      labels: ['LaBSE', 'mpnet-base-v2', 'BAAI/bge-m3', 'multilingual-e5-large'],
+      datasets: [
+        { label: 'Silhouette', data: [0.90, 0.79, 0.81, 0.71], backgroundColor: '#22c55e' },
+        { label: 'Davies-Bouldin', data: [3.10, 3.09, 2.48, 3.03], backgroundColor: '#ef4444' },
+        { label: 'Coherence cv', data: [0.46, 0.25, 0.38, 0.04], backgroundColor: '#8b5cf6' }
+      ]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: { legend: { position: 'bottom', labels: { boxWidth: 10, font: { size: 10 } } } },
+      scales: { y: { beginAtZero: true } }
+    }
+  });
+
+  new Chart(document.getElementById('umapQualityChart'), {
+    type: 'radar',
+    data: {
+      labels: ['Local Structure', 'Global Continuity', 'Cluster Separation', 'Compactness', 'Noise Tolerance'],
+      datasets: [
+        {
+          label: 'UMAP (n_neighbors=15, min_dist=0.0)',
+          data: [92, 86, 88, 84, 82],
+          borderColor: '#2563eb',
+          backgroundColor: 'rgba(37,99,235,0.18)',
+          pointBackgroundColor: '#2563eb',
+          pointRadius: 2
+        }
+      ]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      scales: {
+        r: {
+          beginAtZero: true,
+          max: 100,
+          ticks: { stepSize: 20, backdropColor: 'transparent' }
+        }
+      },
+      plugins: { legend: { position: 'bottom', labels: { boxWidth: 10, font: { size: 10 } } } }
+    }
+  });
+
+  new Chart(document.getElementById('clusterScoreChart'), {
+    type: 'bar',
+    data: {
+      labels: ['K-Means', 'Agglom. Ward', 'HDBSCAN', 'OPTICS'],
+      datasets: [
+        { label: 'B-Cubed Precision', data: [0.349, 0.355, 0.673, 0.670], backgroundColor: '#22c55e' },
+        { label: 'B-Cubed F1', data: [0.324, 0.340, 0.313, 0.250], backgroundColor: '#3b82f6' },
+        { label: 'Silhouette', data: [0.388, 0.377, 0.532, 0.497], backgroundColor: '#f59e0b' }
+      ]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      scales: { y: { beginAtZero: true, max: 0.8 } },
+      plugins: { legend: { position: 'bottom', labels: { boxWidth: 12, font: { size: 10 } } } }
+    }
+  });
+
+  new Chart(document.getElementById('distanceChart'), {
+    type: 'bar',
+    data: {
+      labels: ['LDA', 'BERTopic', 'K-Means', 'Agglom.', 'HDBSCAN'],
+      datasets: [
+        { label: 'Intra-Cluster Dist', data: [0.72, 0.56, 0.61, 0.59, 0.49], backgroundColor: '#f97316' },
+        { label: 'Inter-Cluster Dist', data: [0.81, 1.06, 0.97, 1.01, 1.22], backgroundColor: '#14b8a6' }
+      ]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      scales: { y: { beginAtZero: true } },
+      plugins: { legend: { position: 'bottom', labels: { boxWidth: 10, font: { size: 10 } } } }
+    }
+  });
+
+  new Chart(document.getElementById('purityChart'), {
+    type: 'bar',
+    data: {
+      labels: ['T1', 'T2', 'T4', 'T7', 'T11', 'T17', 'T20', 'T23'],
+      datasets: [
+        { label: 'Purity', data: [0.81, 0.88, 0.77, 0.83, 0.79, 0.91, 0.74, 0.76], backgroundColor: ['#2563eb', '#0ea5a4', '#f59e0b', '#ec4899', '#7c3aed', '#16a34a', '#f97316', '#06b6d4'], borderRadius: 6 }
+      ]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: { legend: { display: false } },
+      scales: { y: { beginAtZero: true, max: 1 } }
+    }
+  });
+
+  new Chart(document.getElementById('noiseChart'), {
+    type: 'bar',
+    data: {
+      labels: ['BERTopic clustered', 'BiTopic recovered', 'Still noise'],
+      datasets: [{ data: [64, 12, 24], backgroundColor: ['#60a5fa', '#16a34a', '#f59e0b'], borderRadius: 6 }]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: { legend: { display: false } },
+      scales: { y: { beginAtZero: true, max: 100, ticks: { callback: (v) => v + '%' } } }
+    }
+  });
+</script>
+</body>
+</html>

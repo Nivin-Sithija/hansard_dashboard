@@ -16,8 +16,11 @@
   *{box-sizing:border-box;margin:0;padding:0;}
   body{background:var(--bg);color:var(--text);font-family:'Segoe UI',system-ui,sans-serif;font-size:14px;line-height:1.6;}
   header{padding:36px 48px 28px;border-bottom:1px solid var(--border);background:var(--surface);}
+  .header-top{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;}
   header h1{font-size:22px;font-weight:700;letter-spacing:-0.3px;}
   header p{color:var(--muted);font-size:13px;margin-top:6px;}
+  .banner-link{display:inline-flex;align-items:center;justify-content:center;white-space:nowrap;color:var(--accent);text-decoration:none;font-size:13px;font-weight:700;letter-spacing:.2px;transition:opacity .15s,transform .15s;}
+  .banner-link:hover{opacity:.82;transform:translateX(2px);}
   .header-meta{display:flex;gap:32px;margin-top:18px;flex-wrap:wrap;}
   .stat{display:flex;flex-direction:column;}
   .stat .val{font-size:26px;font-weight:700;color:var(--accent);line-height:1;}
@@ -60,6 +63,7 @@
   @media(max-width:900px){
     .grid-2{grid-template-columns:1fr;}
     .span-2{grid-column:span 1;}
+    .header-top{flex-direction:column;}
     .topics-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;}
     .topic-card{padding:12px;}
     #filterPanel{grid-template-columns:repeat(3,minmax(0,1fr));gap:6px 8px;padding:6px 0 10px;}
@@ -71,8 +75,13 @@
 </head>
 <body>
 <header>
-  <h1>Multilingual Topic Modeling of Sri Lankan Parliamentary Debates: An NLP Pipeline for Trilingual Hansard Analysis</h1>
-  <p>NLP cluster analysis of parliamentary speeches (2017–2026) · HDBSCAN + UMAP + 30 macro-topic aggregation from 339 micro-clusters</p>
+  <div class="header-top">
+    <div>
+      <h1>Multilingual Topic Modeling of Sri Lankan Parliamentary Debates: An NLP Pipeline for Trilingual Hansard Analysis</h1>
+      <p>NLP cluster analysis of parliamentary speeches (2017–2026) · HDBSCAN + UMAP + 30 macro-topic aggregation from 339 micro-clusters</p>
+    </div>
+    <a class="banner-link" href="research.html">Research Details &gt;</a>
+  </div>
   <div class="header-meta">
     <div class="stat"><span class="val">19,553</span><span class="lbl">Total Speeches</span></div>
     <div class="stat"><span class="val">30</span><span class="lbl">Macro-Topics</span></div>

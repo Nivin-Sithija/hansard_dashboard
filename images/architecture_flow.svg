@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="270" viewBox="0 0 1600 270" role="img" aria-label="NLP architecture flow for trilingual Hansard topic modeling">
+  <defs>
+    <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2563eb"/><stop offset="1" stop-color="#1d4ed8"/></linearGradient>
+    <linearGradient id="g2" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0ea5a4"/><stop offset="1" stop-color="#0f766e"/></linearGradient>
+    <linearGradient id="g3" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#7c3aed"/><stop offset="1" stop-color="#6d28d9"/></linearGradient>
+    <linearGradient id="g4" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f59e0b"/><stop offset="1" stop-color="#d97706"/></linearGradient>
+    <linearGradient id="g5" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ec4899"/><stop offset="1" stop-color="#db2777"/></linearGradient>
+    <linearGradient id="g6" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f97316"/><stop offset="1" stop-color="#ea580c"/></linearGradient>
+    <linearGradient id="g7" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#16a34a"/><stop offset="1" stop-color="#15803d"/></linearGradient>
+    <style>
+      .title{font-family:'Segoe UI',system-ui,sans-serif;font-size:14px;font-weight:700;fill:#fff}
+      .step{font-family:'Segoe UI',system-ui,sans-serif;font-size:12px;font-weight:600;fill:#dbeafe;letter-spacing:1px}
+      .meta{font-family:'Segoe UI',system-ui,sans-serif;font-size:11px;font-weight:500;fill:#f8fafc}
+      .arrow{font-family:'Segoe UI',system-ui,sans-serif;font-size:26px;font-weight:700;fill:#9aa8c5}
+    </style>
+  </defs>
+
+  <rect x="18" y="24" rx="14" ry="14" width="208" height="186" fill="url(#g1)"/>
+  <text x="34" y="52" class="step">STEP 1</text>
+  <text x="34" y="82" class="title">Corpus Intake</text>
+  <text x="34" y="112" class="meta">Hansard speeches (2017-2026),</text>
+  <text x="34" y="132" class="meta">trilingual parliamentary records.</text>
+
+  <text x="232" y="126" class="arrow">➜</text>
+
+  <rect x="242" y="24" rx="14" ry="14" width="208" height="186" fill="url(#g2)"/>
+  <text x="258" y="52" class="step">STEP 2</text>
+  <text x="258" y="82" class="title">Preprocessing</text>
+  <text x="258" y="112" class="meta">Unicode cleanup, tokenization,</text>
+  <text x="258" y="132" class="meta">and multilingual normalization.</text>
+
+  <text x="456" y="126" class="arrow">➜</text>
+
+  <rect x="466" y="24" rx="14" ry="14" width="208" height="186" fill="url(#g3)"/>
+  <text x="482" y="52" class="step">STEP 3</text>
+  <text x="482" y="82" class="title">Embeddings</text>
+  <text x="482" y="112" class="meta">Transformer semantic vectors</text>
+  <text x="482" y="132" class="meta">for each speech segment.</text>
+
+  <text x="680" y="126" class="arrow">➜</text>
+
+  <rect x="690" y="24" rx="14" ry="14" width="208" height="186" fill="url(#g4)"/>
+  <text x="706" y="52" class="step">STEP 4</text>
+  <text x="706" y="82" class="title">UMAP</text>
+  <text x="706" y="112" class="meta">Dimensionality reduction with</text>
+  <text x="706" y="132" class="meta">neighborhood structure retention.</text>
+
+  <text x="904" y="126" class="arrow">➜</text>
+
+  <rect x="914" y="24" rx="14" ry="14" width="208" height="186" fill="url(#g5)"/>
+  <text x="930" y="52" class="step">STEP 5</text>
+  <text x="930" y="82" class="title">Clustering</text>
+  <text x="930" y="112" class="meta">HDBSCAN plus algorithm tests</text>
+  <text x="930" y="132" class="meta">and noise-aware assignment.</text>
+
+  <text x="1128" y="126" class="arrow">➜</text>
+
+  <rect x="1138" y="24" rx="14" ry="14" width="208" height="186" fill="url(#g6)"/>
+  <text x="1154" y="52" class="step">STEP 6</text>
+  <text x="1154" y="82" class="title">Topic Labeling</text>
+  <text x="1154" y="112" class="meta">TF-IDF keywords and semantic</text>
+  <text x="1154" y="132" class="meta">descriptors for each cluster.</text>
+
+  <text x="1352" y="126" class="arrow">➜</text>
+
+  <rect x="1362" y="24" rx="14" ry="14" width="220" height="186" fill="url(#g7)"/>
+  <text x="1378" y="52" class="step">STEP 7</text>
+  <text x="1378" y="82" class="title">Macro Topics</text>
+  <text x="1378" y="112" class="meta">339 micro-clusters consolidated</text>
+  <text x="1378" y="132" class="meta">into 30 macro-topic groups.</text>
+</svg>
