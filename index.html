@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sri Lanka Parliamentary Debates — Topic Analysis Dashboard</title>
+<title>Multilingual Topic Modeling of Sri Lankan Parliamentary Debates: An NLP Pipeline for Trilingual Hansard Analysis</title>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation@3.0.1/dist/chartjs-plugin-annotation.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/wordcloud@1.2.2/src/wordcloud2.js"></script>
@@ -46,7 +46,6 @@
   .tab-btn.active{background:var(--accent);border-color:var(--accent);color:#fff;}
   .tab-content{display:none;}
   .tab-content.active{display:block;}
-  .filter-bar{display:flex;align-items:center;gap:6px;flex-wrap:wrap;margin-bottom:8px;}
   .filter-chip{background:transparent;border:none;padding:3px 4px;font-size:12px;color:var(--muted);cursor:pointer;display:inline-flex;align-items:center;gap:7px;white-space:nowrap;overflow:hidden;transition:opacity .15s;}
   .filter-chip:hover{color:var(--text);}
   .filter-chip.active{color:var(--text);}
@@ -55,21 +54,24 @@
   .filter-chip span.chip-label{overflow:hidden;text-overflow:ellipsis;}
   #filterPanel{display:grid;grid-template-columns:repeat(5,1fr);gap:4px 12px;padding:8px 0 14px;background:transparent;border:none;margin-bottom:0;}
   .filter-actions{display:flex;gap:6px;margin-bottom:8px;}
-  .metrics-table{width:100%;border-collapse:collapse;font-size:13px;margin-top:16px;}
-  .metrics-table th{background:var(--surface2);color:var(--muted);font-weight:600;font-size:11px;text-transform:uppercase;letter-spacing:.6px;padding:10px 16px;text-align:left;border-bottom:2px solid var(--border);}
-  .metrics-table td{padding:10px 16px;border-bottom:1px solid var(--border);}
-  .metrics-table tr:last-child td{border-bottom:none;}
-  .best{color:var(--green);font-weight:700;}
   .annotation{font-size:11.5px;color:var(--muted);margin-top:10px;font-style:italic;}
   .chart-wrap{position:relative;width:100%;}
-  .heatmap-scroll{overflow-x:auto;overflow-y:auto;max-height:920px;}
   .site-footer{padding:14px 48px 24px;color:var(--muted);font-size:11px;line-height:1.6;text-align:center;border-top:1px solid var(--border);}
-  @media(max-width:900px){.grid-2{grid-template-columns:1fr;}.span-2{grid-column:span 1;}main,header{padding:20px;}}
+  @media(max-width:900px){
+    .grid-2{grid-template-columns:1fr;}
+    .span-2{grid-column:span 1;}
+    .topics-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;}
+    .topic-card{padding:12px;}
+    #filterPanel{grid-template-columns:repeat(3,minmax(0,1fr));gap:6px 8px;padding:6px 0 10px;}
+    .filter-chip{width:100%;justify-content:flex-start;padding:4px 2px;font-size:11px;gap:5px;}
+    #tab-temporal .chart-wrap{height:300px !important;}
+    main,header{padding:20px;}
+  }
 </style>
 </head>
 <body>
 <header>
-  <h1>Sri Lanka Parliamentary Debates — Topic Analysis</h1>
+  <h1>Multilingual Topic Modeling of Sri Lankan Parliamentary Debates: An NLP Pipeline for Trilingual Hansard Analysis</h1>
   <p>NLP cluster analysis of parliamentary speeches (2017–2026) · HDBSCAN + UMAP + 30 macro-topic aggregation from 339 micro-clusters</p>
   <div class="header-meta">
     <div class="stat"><span class="val">19,553</span><span class="lbl">Total Speeches</span></div>
@@ -92,7 +94,7 @@
       <button class="tab-btn" onclick="switchTab(this,'tab-wc')">Year Word Cloud</button>
     </div>
     <div id="tab-temporal" class="tab-content active">
-      <div class="chart-wrap" style="height:700px;"><canvas id="temporalLineChart"></canvas></div>
+      <div class="chart-wrap" style="height:620px;"><canvas id="temporalLineChart"></canvas></div>
       <p class="annotation">Key events: Easter Sunday Attacks (Apr 2019), COVID-19 (2020–21), Economic Crisis &amp; Aragalaya (2022), Elections (2019, 2024).</p>
       <div class="filter-actions" style="margin-top:14px;">
         <button class="tab-btn" onclick="setAllTopics(true)">Show All</button>
@@ -148,7 +150,7 @@
 </section>
 
 <section>
-  <p class="section-title"><span>8 — Clustering Across All Topics</span></p>
+  <p class="section-title"><span>6 — Clustering Across All Topics</span></p>
   <div class="img-panel">
     <div class="img-title">All Topics Clustering Scatter Plot</div>
     <img src="images/scatter_all.png" alt="All topics clustering scatter plot">
@@ -157,7 +159,7 @@
 </section>
 
 <section>
-  <p class="section-title"><span>6 — Hierarchical Aggregation: Micro → Macro Topics</span></p>
+  <p class="section-title"><span>7 — Hierarchical Aggregation: Micro → Macro Topics</span></p>
   <div class="card">
     <p class="card-title">Micro-Topics Aggregated per Macro-Topic (average linkage, cosine distance)</p>
     <div class="chart-wrap" style="height:340px; overflow:hidden;"><canvas id="cohesionChart"></canvas></div>
@@ -172,7 +174,7 @@
 </section>
 
 <section>
-  <p class="section-title"><span>7 — Language Distribution per Macro-Topic</span></p>
+  <p class="section-title"><span>8 — Language Distribution per Macro-Topic</span></p>
   <div class="img-panel">
     <div class="img-title">Proportion of Sinhala / Tamil / English Speeches per Macro-Topic</div>
     <img src="images/language_per_macro_topic.png" alt="Language distribution">
@@ -376,13 +378,21 @@ const temporalChart=new Chart(document.getElementById('temporalLineChart'),{
       }}
     },
     scales:{
-      x:{afterFit(s){s.height+=42;},grid:{color:'#dde1ec'},ticks:{color:'#6b7494'}},
+      x:{
+        afterFit(s){
+          if(window.matchMedia('(max-width:900px)').matches){s.height+=10;}
+          else{s.height+=42;}
+        },
+        grid:{color:'#dde1ec'},
+        ticks:{color:'#6b7494',maxRotation:0,minRotation:0,autoSkip:true}
+      },
       y:{grid:{color:'#dde1ec'},ticks:{color:'#6b7494',callback:v=>v+'%'},title:{display:true,text:'% of Topic Speeches',color:'#6b7494',font:{size:11}}}
     }
   },
   plugins:[{
     id:'eventLabels',
     afterDraw(chart){
+      if(window.matchMedia('(max-width:900px)').matches)return;
       const {ctx,scales:{x},chartArea}=chart;
       const evs=[
         {yr:'2019',text:'Easter Attacks · Elections',row:0},
@@ -443,14 +453,6 @@ function setAllTopics(show){
   });
   temporalChart.update();
 }
-function filterTopicChips(){
-  const q=document.getElementById('topicSearch').value.toLowerCase();
-  TOPICS.forEach((t,i)=>{
-    const c=document.getElementById('chip-'+i);
-    c.style.display=(t.name.toLowerCase().includes(q)||String(t.id)===q)?'':'none';
-  });
-}
-
 // 3 — TOPIC KEYWORD CARDS
 const grid=document.getElementById('topicsGrid');
 TOPICS.forEach(t=>{
@@ -492,7 +494,6 @@ new Chart(document.getElementById('stackedAreaChart'),{
 });
 
 // 7 — YEAR WORD CLOUD
-let wcCurrentYear=null;
 function buildWordCloudList(yearIdx){
   const wordMap={};
   TOPICS.forEach(t=>{
