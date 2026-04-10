@@ -132,7 +132,7 @@
   <p class="section-title"><span>4 — Macro-Topic Word Clouds</span></p>
   <div class="img-panel">
     <div class="img-title">Top Keywords per Macro-Topic — Word Cloud Grid (TF-IDF weighted)</div>
-    <img src="../../notebooks/outputs/v14_clusters/macro_topic_wordclouds.png" alt="Topic word clouds">
+    <img src="images/macro_topic_wordclouds.png" alt="Topic word clouds">
   </div>
   <p class="annotation" style="margin-top:12px;">Each panel shows the most distinctive terms for one macro-topic, sized by TF-IDF weight. Sinhala, Tamil, and English rendered natively.</p>
 </section>
@@ -141,7 +141,7 @@
   <p class="section-title"><span>5 — Semantic Geometry: UMAP Projection</span></p>
   <div class="img-panel">
     <div class="img-title">UMAP 2D — 19,553 Speeches Coloured by Macro-Topic</div>
-    <img src="../../notebooks/outputs/v14_clusters/macro_topic_umap_scatter.png" alt="UMAP scatter">
+    <img src="images/macro_topic_umap_scatter.png" alt="UMAP scatter">
   </div>
   <p class="annotation" style="margin-top:12px;">19,553 speeches projected to 2D UMAP, coloured by macro-topic assignment. Tight clusters indicate semantically coherent topics; overlapping regions reflect thematic proximity.</p>
 </section>
@@ -156,7 +156,7 @@
   <div style="margin-top:20px;">
     <div class="img-panel">
       <div class="img-title">Full Dendrogram — 339 Micro-Topic Centroids (crimson dashed = cut for 30 macro-groups)</div>
-      <img src="../../notebooks/outputs/v14_clusters/dendrogram_macro_topics.png" alt="Dendrogram">
+      <img src="images/dendrogram_macro_topics.png" alt="Dendrogram">
     </div>
   </div>
 </section>
@@ -165,33 +165,18 @@
   <p class="section-title"><span>7 — Language Distribution per Macro-Topic</span></p>
   <div class="img-panel">
     <div class="img-title">Proportion of Sinhala / Tamil / English Speeches per Macro-Topic</div>
-    <img src="../../notebooks/outputs/v14_clusters/language_per_macro_topic.png" alt="Language distribution">
+    <img src="images/language_per_macro_topic.png" alt="Language distribution">
   </div>
   <p class="annotation" style="margin-top:12px;">T2 (Northern Province &amp; Tamil Discourse) is predominantly Tamil-medium. T13 (Governance &amp; Sovereignty) has the highest English proportion.</p>
 </section>
 
 <section>
-  <p class="section-title"><span>8 — Temporal Analysis: Spotlight &amp; Cluster Sizes</span></p>
-  <div class="grid-2">
-    <div class="img-panel">
-      <div class="img-title">Topic Temporal Spotlight — Relative Frequency Over Time</div>
-      <img src="../../notebooks/outputs/v14_clusters/temporal_topics_spotlight.png" alt="Temporal spotlight">
-    </div>
-    <div class="img-panel">
-      <div class="img-title">Temporal Spotlight — Annotated with Key Events</div>
-      <img src="../../notebooks/outputs/v14_clusters/temporal_spotlight_annotated.png" alt="Temporal spotlight annotated">
-    </div>
+  <p class="section-title"><span>8 — Clustering Across All Topics</span></p>
+  <div class="img-panel">
+    <div class="img-title">All Topics Clustering Scatter Plot</div>
+    <img src="images/scatter_all.png" alt="All topics clustering scatter plot">
   </div>
-  <div style="margin-top:20px;" class="grid-2">
-    <div class="img-panel">
-      <div class="img-title">Macro-Topic Bar Chart — Speech Volumes</div>
-      <img src="../../notebooks/outputs/v14_clusters/macro_topic_bar.png" alt="Macro topic bar">
-    </div>
-    <div class="img-panel">
-      <div class="img-title">Micro-Cluster Size Distribution (HDBSCAN)</div>
-      <img src="../../notebooks/outputs/v14_clusters/cluster_sizes.png" alt="Cluster sizes">
-    </div>
-  </div>
+  <p class="annotation" style="margin-top:12px;">Global clustering view across all topics, showing overall semantic spread and separation patterns.</p>
 </section>
 
 </main>
