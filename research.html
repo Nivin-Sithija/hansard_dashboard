@@ -27,6 +27,44 @@
     font-size: 14px;
     line-height: 1.5;
   }
+  body.page-disabled {
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #f6f8fc 0%, #eef2fb 100%);
+  }
+  body.page-disabled > header,
+  body.page-disabled > main,
+  body.page-disabled > .foot {
+    display: none;
+  }
+  .maintenance-wrap {
+    width: min(640px, calc(100vw - 40px));
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 28px 24px;
+    box-shadow: 0 16px 40px rgba(20,42,94,0.08);
+  }
+  .maintenance-wrap h1 {
+    font-size: 24px;
+    margin-bottom: 8px;
+  }
+  .maintenance-wrap p {
+    color: var(--muted);
+    margin-bottom: 8px;
+    font-size: 14px;
+  }
+  .maintenance-link {
+    display: inline-block;
+    margin-top: 8px;
+    color: var(--blue);
+    text-decoration: none;
+    font-weight: 600;
+  }
+  .maintenance-link:hover { text-decoration: underline; }
   header {
     padding: 28px 42px 20px;
     border-bottom: 1px solid var(--line);
@@ -251,7 +289,13 @@
   }
 </style>
 </head>
-<body>
+<body class="page-disabled">
+<div class="maintenance-wrap" role="status" aria-live="polite">
+  <h1>Research Page Temporarily Unavailable</h1>
+  <p>The research details page is currently offline and will be re-enabled soon.</p>
+  <p>Please use the dashboard in the meantime.</p>
+  <a class="maintenance-link" href="index.html">Back to Dashboard</a>
+</div>
 <header>
   <div class="header-row">
     <div>
