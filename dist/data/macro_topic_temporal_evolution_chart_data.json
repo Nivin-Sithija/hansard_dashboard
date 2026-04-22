@@ -1,0 +1,4127 @@
+{
+  "meta": {
+    "title": "Macro-Topic Temporal Evolution (2017-2026)",
+    "y_metric": "Number of Speeches",
+    "source_notebook": "notebooks/v14_macro_topics.ipynb",
+    "generated_by_cell": "Macro-topic temporal evolution JSON export"
+  },
+  "events": [
+    {
+      "year": 2019,
+      "label": "Easter Attacks · Elections"
+    },
+    {
+      "year": 2020,
+      "label": "COVID-19 · 20th Amendment"
+    },
+    {
+      "year": 2021,
+      "label": "Fertilizer Ban · Downturn"
+    },
+    {
+      "year": 2022,
+      "label": "Economic Crisis · Aragalaya"
+    },
+    {
+      "year": 2024,
+      "label": "Presidential · Parl. Elections"
+    }
+  ],
+  "years": [
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025,
+    2026
+  ],
+  "topic_labels": {
+    "0": "Legislative Mechanics & Standing Orders",
+    "1": "Energy Security & Macroeconomic Crisis",
+    "2": "National Security, Ethno-Religious Tensions & Law Enforcement",
+    "3": "Mega-Infrastructure, Ports & Aviation Development",
+    "4": "Agricultural Subsidies, Food Security & Price Controls",
+    "5": "Public Welfare, Housing & Water Sanitation",
+    "6": "State Enterprise Accountability & COPE Oversight",
+    "7": "Educational Administration & Human Capital Development",
+    "8": "Constitutional Reform & Executive Powers",
+    "9": "Parliamentary Privilege & Member Conduct",
+    "10": "Rural Debt Crisis, Microfinance & Cooperatives",
+    "11": "Public Healthcare System & Pharmaceutical Regulation",
+    "12": "Public Utilities & Media Broadcasting Regulation",
+    "13": "Foreign Policy, Peacebuilding & Transitional Justice",
+    "14": "Environmental Conservation & Land Rights Disputes",
+    "15": "State Tributes & Parliamentary Condolences",
+    "16": "Partisan Politics & Adjournment Resolutions",
+    "17": "Easter Sunday Attacks & State Intelligence",
+    "18": "Road Infrastructure & Public Transport Networks",
+    "19": "Migrant Labour, Tourism & Foreign Exchange",
+    "20": "International Relations & Human Rights Frameworks",
+    "21": "Livestock Development & Dairy Production",
+    "22": "Private Higher Education (SAITM) & University Protests",
+    "23": "Local Government Governance & Electoral Reforms",
+    "24": "State Revenue, Excise Policy & Gem Industry",
+    "25": "National Sports Administration & Cricket Board Crises",
+    "26": "Judicial System, Anti-Corruption & Criminal Law",
+    "27": "Maritime Boundaries & Fisheries Livelihoods",
+    "28": "Plantation Economy & Estate Worker Grievances",
+    "29": "Women & Child Affairs, Heritage & Local Governance"
+  },
+  "series": [
+    {
+      "mt_id": 0,
+      "label": "Legislative Mechanics & Standing Orders",
+      "full_legend_label": "MT-0: Legislative Mechanics & Standing Orders",
+      "points": [
+        {
+          "year": 2017,
+          "count": 37
+        },
+        {
+          "year": 2018,
+          "count": 158
+        },
+        {
+          "year": 2019,
+          "count": 27
+        },
+        {
+          "year": 2020,
+          "count": 24
+        },
+        {
+          "year": 2021,
+          "count": 59
+        },
+        {
+          "year": 2022,
+          "count": 39
+        },
+        {
+          "year": 2023,
+          "count": 61
+        },
+        {
+          "year": 2024,
+          "count": 51
+        },
+        {
+          "year": 2025,
+          "count": 32
+        },
+        {
+          "year": 2026,
+          "count": 6
+        }
+      ],
+      "styles": {
+        "standard_chart": {
+          "color_rgba": [
+            0.121569,
+            0.466667,
+            0.705882
+          ],
+          "line_style": "-",
+          "marker": "o",
+          "line_width": 2.0,
+          "alpha": 0.85,
+          "marker_size": 4
+        },
+        "ultrawide_chart": {
+          "color_rgba": [
+            0.23915,
+            0.20833,
+            0.54686,
+            1.0
+          ],
+          "line_style": "-",
+          "marker": "o",
+          "line_width": 2.5,
+          "alpha": 0.85,
+          "marker_size": 6
+        }
+      }
+    },
+    {
+      "mt_id": 1,
+      "label": "Energy Security & Macroeconomic Crisis",
+      "full_legend_label": "MT-1: Energy Security & Macroeconomic Crisis",
+      "points": [
+        {
+          "year": 2017,
+          "count": 168
+        },
+        {
+          "year": 2018,
+          "count": 77
+        },
+        {
+          "year": 2019,
+          "count": 70
+        },
+        {
+          "year": 2020,
+          "count": 55
+        },
+        {
+          "year": 2021,
+          "count": 304
+        },
+        {
+          "year": 2022,
+          "count": 313
+        },
+        {
+          "year": 2023,
+          "count": 261
+        },
+        {
+          "year": 2024,
+          "count": 59
+        },
+        {
+          "year": 2025,
+          "count": 94
+        },
+        {
+          "year": 2026,
+          "count": 8
+        }
+      ],
+      "styles": {
+        "standard_chart": {
+          "color_rgba": [
+            0.682353,
+            0.780392,
+            0.909804
+          ],
+          "line_style": "--",
+          "marker": "o",
+          "line_width": 2.0,
+          "alpha": 0.85,
+          "marker_size": 4
+        },
+        "ultrawide_chart": {
+          "color_rgba": [
+            0.26074,
+            0.29568,
+            0.71162,
+            1.0
+          ],
+          "line_style": "--",
+          "marker": "s",
+          "line_width": 2.5,
+          "alpha": 0.85,
+          "marker_size": 6
+        }
+      }
+    },
+    {
+      "mt_id": 2,
+      "label": "National Security, Ethno-Religious Tensions & Law Enforcement",
+      "full_legend_label": "MT-2: National Security, Ethno-Religious Tensions & Law Enforcement",
+      "points": [
+        {
+          "year": 2017,
+          "count": 50
+        },
+        {
+          "year": 2018,
+          "count": 62
+        },
+        {
+          "year": 2019,
+          "count": 77
+        },
+        {
+          "year": 2020,
+          "count": 31
+        },
+        {
+          "year": 2021,
+          "count": 120
+        },
+        {
+          "year": 2022,
+          "count": 115
+        },
+        {
+          "year": 2023,
+          "count": 75
+        },
+        {
+          "year": 2024,
+          "count": 47
+        },
+        {
+          "year": 2025,
+          "count": 126
+        },
+        {
+          "year": 2026,
+          "count": 23
+        }
+      ],
+      "styles": {
+        "standard_chart": {
+          "color_rgba": [
+            1.0,
+            0.498039,
+            0.054902
+          ],
+          "line_style": "-.",
+          "marker": "o",
+          "line_width": 2.0,
+          "alpha": 0.85,
+          "marker_size": 4
+        },
+        "ultrawide_chart": {
+          "color_rgba": [
+            0.27334,
+            0.38008,
+            0.84037,
+            1.0
+          ],
+          "line_style": "-.",
+          "marker": "^",
+          "line_width": 2.5,
+          "alpha": 0.85,
+          "marker_size": 6
+        }
+      }
+    },
+    {
+      "mt_id": 3,
+      "label": "Mega-Infrastructure, Ports & Aviation Development",
+      "full_legend_label": "MT-3: Mega-Infrastructure, Ports & Aviation Development",
+      "points": [
+        {
+          "year": 2017,
+          "count": 50
+        },
+        {
+          "year": 2018,
+          "count": 27
+        },
+        {
+          "year": 2019,
+          "count": 25
+        },
+        {
+          "year": 2020,
+          "count": 4
+        },
+        {
+          "year": 2021,
+          "count": 127
+        },
+        {
+          "year": 2022,
+          "count": 26
+        },
+        {
+          "year": 2023,
+          "count": 51
+        },
+        {
+          "year": 2024,
+          "count": 18
+        },
+        {
+          "year": 2025,
+          "count": 11
+        },
+        {
+          "year": 2026,
+          "count": 1
+        }
+      ],
+      "styles": {
+        "standard_chart": {
+          "color_rgba": [
+            1.0,
+            0.733333,
+            0.470588
+          ],
+          "line_style": ":",
+          "marker": "o",
+          "line_width": 2.0,
+          "alpha": 0.85,
+          "marker_size": 4
+        },
+        "ultrawide_chart": {
+          "color_rgba": [
+            0.27698,
+            0.46153,
+            0.93309,
+            1.0
+          ],
+          "line_style": ":",
+          "marker": "D",
+          "line_width": 2.5,
+          "alpha": 0.85,
+          "marker_size": 6
+        }
+      }
+    },
+    {
+      "mt_id": 4,
+      "label": "Agricultural Subsidies, Food Security & Price Controls",
+      "full_legend_label": "MT-4: Agricultural Subsidies, Food Security & Price Controls",
+      "points": [
+        {
+          "year": 2017,
+          "count": 45
+        },
+        {
+          "year": 2018,
+          "count": 59
+        },
+        {
+          "year": 2019,
+          "count": 38
+        },
+        {
+          "year": 2020,
+          "count": 14
+        },
+        {
+          "year": 2021,
+          "count": 281
+        },
+        {
+          "year": 2022,
+          "count": 87
+        },
+        {
+          "year": 2023,
+          "count": 86
+        },
+        {
+          "year": 2024,
+          "count": 47
+        },
+        {
+          "year": 2025,
+          "count": 64
+        },
+        {
+          "year": 2026,
+          "count": 6
+        }
+      ],
+      "styles": {
+        "standard_chart": {
+          "color_rgba": [
+            0.172549,
+            0.627451,
+            0.172549
+          ],
+          "line_style": "-",
+          "marker": "o",
+          "line_width": 2.0,
+          "alpha": 0.85,
+          "marker_size": 4
+        },
+        "ultrawide_chart": {
+          "color_rgba": [
+            0.27106,
+            0.54015,
+            0.9893,
+            1.0
+          ],
+          "line_style": "-",
+          "marker": "v",
+          "line_width": 2.5,
+          "alpha": 0.85,
+          "marker_size": 6
+        }
+      }
+    },
+    {
+      "mt_id": 5,
+      "label": "Public Welfare, Housing & Water Sanitation",
+      "full_legend_label": "MT-5: Public Welfare, Housing & Water Sanitation",
+      "points": [
+        {
+          "year": 2017,
+          "count": 154
+        },
+        {
+          "year": 2018,
+          "count": 77
+        },
+        {
+          "year": 2019,
+          "count": 67
+        },
+        {
+          "year": 2020,
+          "count": 36
+        },
+        {
+          "year": 2021,
+          "count": 139
+        },
+        {
+          "year": 2022,
+          "count": 59
+        },
+        {
+          "year": 2023,
+          "count": 112
+        },
+        {
+          "year": 2024,
+          "count": 49
+        },
+        {
+          "year": 2025,
+          "count": 120
+        },
+        {
+          "year": 2026,
+          "count": 39
+        }
+      ],
+      "styles": {
+        "standard_chart": {
+          "color_rgba": [
+            0.596078,
+            0.87451,
+            0.541176
+          ],
+          "line_style": "--",
+          "marker": "o",
+          "line_width": 2.0,
+          "alpha": 0.85,
+          "marker_size": 4
+        },
+        "ultrawide_chart": {
+          "color_rgba": [
+            0.23874,
+            0.61931,
+            0.99485,
+            1.0
+          ],
+          "line_style": "--",
+          "marker": "o",
+          "line_width": 2.5,
+          "alpha": 0.85,
+          "marker_size": 6
+        }
+      }
+    },
+    {
+      "mt_id": 6,
+      "label": "State Enterprise Accountability & COPE Oversight",
+      "full_legend_label": "MT-6: State Enterprise Accountability & COPE Oversight",
+      "points": [
+        {
+          "year": 2017,
+          "count": 77
+        },
+        {
+          "year": 2018,
+          "count": 79
+        },
+        {
+          "year": 2019,
+          "count": 22
+        },
+        {
+          "year": 2020,
+          "count": 32
+        },
+        {
+          "year": 2021,
+          "count": 30
+        },
+        {
+          "year": 2022,
+          "count": 40
+        },
+        {
+          "year": 2023,
+          "count": 80
+        },
+        {
+          "year": 2024,
+          "count": 52
+        },
+        {
+          "year": 2025,
+          "count": 8
+        },
+        {
+          "year": 2026,
+          "count": 4
+        }
+      ],
+      "styles": {
+        "standard_chart": {
+          "color_rgba": [
+            0.839216,
+            0.152941,
+            0.156863
+          ],
+          "line_style": "-.",
+          "marker": "o",
+          "line_width": 2.0,
+          "alpha": 0.85,
+          "marker_size": 4
+        },
+        "ultrawide_chart": {
+          "color_rgba": [
+            0.18625,
+            0.69775,
+            0.95498,
+            1.0
+          ],
+          "line_style": "-.",
+          "marker": "s",
+          "line_width": 2.5,
+          "alpha": 0.85,
+          "marker_size": 6
+        }
+      }
+    },
+    {
+      "mt_id": 7,
+      "label": "Educational Administration & Human Capital Development",
+      "full_legend_label": "MT-7: Educational Administration & Human Capital Development",
+      "points": [
+        {
+          "year": 2017,
+          "count": 39
+        },
+        {
+          "year": 2018,
+          "count": 48
+        },
+        {
+          "year": 2019,
+          "count": 53
+        },
+        {
+          "year": 2020,
+          "count": 36
+        },
+        {
+          "year": 2021,
+          "count": 145
+        },
+        {
+          "year": 2022,
+          "count": 104
+        },
+        {
+          "year": 2023,
+          "count": 136
+        },
+        {
+          "year": 2024,
+          "count": 74
+        },
+        {
+          "year": 2025,
+          "count": 65
+        },
+        {
+          "year": 2026,
+          "count": 24
+        }
+      ],
+      "styles": {
+        "standard_chart": {
+          "color_rgba": [
+            1.0,
+            0.596078,
+            0.588235
+          ],
+          "line_style": ":",
+          "marker": "o",
+          "line_width": 2.0,
+          "alpha": 0.85,
+          "marker_size": 4
+        },
+        "ultrawide_chart": {
+          "color_rgba": [
+            0.13278,
+            0.77165,
+            0.8858,
+            1.0
+          ],
+          "line_style": ":",
+          "marker": "^",
+          "line_width": 2.5,
+          "alpha": 0.85,
+          "marker_size": 6
+        }
+      }
+    },
+    {
+      "mt_id": 8,
+      "label": "Constitutional Reform & Executive Powers",
+      "full_legend_label": "MT-8: Constitutional Reform & Executive Powers",
+      "points": [
+        {
+          "year": 2017,
+          "count": 27
+        },
+        {
+          "year": 2018,
+          "count": 15
+        },
+        {
+          "year": 2019,
+          "count": 17
+        },
+        {
+          "year": 2020,
+          "count": 49
+        },
+        {
+          "year": 2021,
+          "count": 47
+        },
+        {
+          "year": 2022,
+          "count": 325
+        },
+        {
+          "year": 2023,
+          "count": 46
+        },
+        {
+          "year": 2024,
+          "count": 28
+        },
+        {
+          "year": 2025,
+          "count": 12
+        },
+        {
+          "year": 2026,
+          "count": 2
+        }
+      ],
+      "styles": {
+        "standard_chart": {
+          "color_rgba": [
+            0.580392,
+            0.403922,
+            0.741176
+          ],
+          "line_style": "-",
+          "marker": "o",
+          "line_width": 2.0,
+          "alpha": 0.85,
+          "marker_size": 4
+        },
+        "ultrawide_chart": {
+          "color_rgba": [
+            0.0975,
+            0.83714,
+            0.80342,
+            1.0
+          ],
+          "line_style": "-",
+          "marker": "D",
+          "line_width": 2.5,
+          "alpha": 0.85,
+          "marker_size": 6
+        }
+      }
+    },
+    {
+      "mt_id": 9,
+      "label": "Parliamentary Privilege & Member Conduct",
+      "full_legend_label": "MT-9: Parliamentary Privilege & Member Conduct",
+      "points": [
+        {
+          "year": 2017,
+          "count": 32
+        },
+        {
+          "year": 2018,
+          "count": 39
+        },
+        {
+          "year": 2019,
+          "count": 26
+        },
+        {
+          "year": 2020,
+          "count": 29
+        },
+        {
+          "year": 2021,
+          "count": 106
+        },
+        {
+          "year": 2022,
+          "count": 26
+        },
+        {
+          "year": 2023,
+          "count": 54
+        },
+        {
+          "year": 2024,
+          "count": 12
+        },
+        {
+          "year": 2025,
+          "count": 34
+        },
+        {
+          "year": 2026,
+          "count": 4
+        }
+      ],
+      "styles": {
+        "standard_chart": {
+          "color_rgba": [
+            0.772549,
+            0.690196,
+            0.835294
+          ],
+          "line_style": "--",
+          "marker": "o",
+          "line_width": 2.0,
+          "alpha": 0.85,
+          "marker_size": 4
+        },
+        "ultrawide_chart": {
+          "color_rgba": [
+            0.09958,
+            0.8904,
+            0.72393,
+            1.0
+          ],
+          "line_style": "--",
+          "marker": "v",
+          "line_width": 2.5,
+          "alpha": 0.85,
+          "marker_size": 6
+        }
+      }
+    },
+    {
+      "mt_id": 10,
+      "label": "Rural Debt Crisis, Microfinance & Cooperatives",
+      "full_legend_label": "MT-10: Rural Debt Crisis, Microfinance & Cooperatives",
+      "points": [
+        {
+          "year": 2017,
+          "count": 21
+        },
+        {
+          "year": 2018,
+          "count": 15
+        },
+        {
+          "year": 2019,
+          "count": 13
+        },
+        {
+          "year": 2020,
+          "count": 25
+        },
+        {
+          "year": 2021,
+          "count": 36
+        },
+        {
+          "year": 2022,
+          "count": 26
+        },
+        {
+          "year": 2023,
+          "count": 44
+        },
+        {
+          "year": 2024,
+          "count": 19
+        },
+        {
+          "year": 2025,
+          "count": 24
+        },
+        {
+          "year": 2026,
+          "count": 4
+        }
+      ],
+      "styles": {
+        "standard_chart": {
+          "color_rgba": [
+            0.54902,
+            0.337255,
+            0.294118
+          ],
+          "line_style": "-.",
+          "marker": "o",
+          "line_width": 2.0,
+          "alpha": 0.85,
+          "marker_size": 4
+        },
+        "ultrawide_chart": {
+          "color_rgba": [
+            0.15323,
+            0.93151,
+            0.64308,
+            1.0
+          ],
+          "line_style": "-.",
+          "marker": "o",
+          "line_width": 2.5,
+          "alpha": 0.85,
+          "marker_size": 6
+        }
+      }
+    },
+    {
+      "mt_id": 11,
+      "label": "Public Healthcare System & Pharmaceutical Regulation",
+      "full_legend_label": "MT-11: Public Healthcare System & Pharmaceutical Regulation",
+      "points": [
+        {
+          "year": 2017,
+          "count": 55
+        },
+        {
+          "year": 2018,
+          "count": 46
+        },
+        {
+          "year": 2019,
+          "count": 58
+        },
+        {
+          "year": 2020,
+          "count": 40
+        },
+        {
+          "year": 2021,
+          "count": 223
+        },
+        {
+          "year": 2022,
+          "count": 50
+        },
+        {
+          "year": 2023,
+          "count": 110
+        },
+        {
+          "year": 2024,
+          "count": 30
+        },
+        {
+          "year": 2025,
+          "count": 62
+        },
+        {
+          "year": 2026,
+          "count": 11
+        }
+      ],
+      "styles": {
+        "standard_chart": {
+          "color_rgba": [
+            0.768627,
+            0.611765,
+            0.580392
+          ],
+          "line_style": ":",
+          "marker": "o",
+          "line_width": 2.0,
+          "alpha": 0.85,
+          "marker_size": 4
+        },
+        "ultrawide_chart": {
+          "color_rgba": [
+            0.24797,
+            0.96423,
+            0.54303,
+            1.0
+          ],
+          "line_style": ":",
+          "marker": "s",
+          "line_width": 2.5,
+          "alpha": 0.85,
+          "marker_size": 6
+        }
+      }
+    },
+    {
+      "mt_id": 12,
+      "label": "Public Utilities & Media Broadcasting Regulation",
+      "full_legend_label": "MT-12: Public Utilities & Media Broadcasting Regulation",
+      "points": [
+        {
+          "year": 2017,
+          "count": 9
+        },
+        {
+          "year": 2018,
+          "count": 13
+        },
+        {
+          "year": 2019,
+          "count": 14
+        },
+        {
+          "year": 2020,
+          "count": 2
+        },
+        {
+          "year": 2021,
+          "count": 6
+        },
+        {
+          "year": 2022,
+          "count": 4
+        },
+        {
+          "year": 2023,
+          "count": 10
+        },
+        {
+          "year": 2024,
+          "count": 20
+        },
+        {
+          "year": 2025,
+          "count": 7
+        },
+        {
+          "year": 2026,
+          "count": 4
+        }
+      ],
+      "styles": {
+        "standard_chart": {
+          "color_rgba": [
+            0.890196,
+            0.466667,
+            0.760784
+          ],
+          "line_style": "-",
+          "marker": "o",
+          "line_width": 2.0,
+          "alpha": 0.85,
+          "marker_size": 4
+        },
+        "ultrawide_chart": {
+          "color_rgba": [
+            0.36581,
+            0.98702,
+            0.43688,
+            1.0
+          ],
+          "line_style": "-",
+          "marker": "^",
+          "line_width": 2.5,
+          "alpha": 0.85,
+          "marker_size": 6
+        }
+      }
+    },
+    {
+      "mt_id": 13,
+      "label": "Foreign Policy, Peacebuilding & Transitional Justice",
+      "full_legend_label": "MT-13: Foreign Policy, Peacebuilding & Transitional Justice",
+      "points": [
+        {
+          "year": 2017,
+          "count": 20
+        },
+        {
+          "year": 2018,
+          "count": 22
+        },
+        {
+          "year": 2019,
+          "count": 17
+        },
+        {
+          "year": 2020,
+          "count": 34
+        },
+        {
+          "year": 2021,
+          "count": 66
+        },
+        {
+          "year": 2022,
+          "count": 48
+        },
+        {
+          "year": 2023,
+          "count": 50
+        },
+        {
+          "year": 2024,
+          "count": 13
+        },
+        {
+          "year": 2025,
+          "count": 41
+        },
+        {
+          "year": 2026,
+          "count": 5
+        }
+      ],
+      "styles": {
+        "standard_chart": {
+          "color_rgba": [
+            0.968627,
+            0.713725,
+            0.823529
+          ],
+          "line_style": "--",
+          "marker": "o",
+          "line_width": 2.0,
+          "alpha": 0.85,
+          "marker_size": 4
+        },
+        "ultrawide_chart": {
+          "color_rgba": [
+            0.48879,
+            0.99828,
+            0.33816,
+            1.0
+          ],
+          "line_style": "--",
+          "marker": "D",
+          "line_width": 2.5,
+          "alpha": 0.85,
+          "marker_size": 6
+        }
+      }
+    },
+    {
+      "mt_id": 14,
+      "label": "Environmental Conservation & Land Rights Disputes",
+      "full_legend_label": "MT-14: Environmental Conservation & Land Rights Disputes",
+      "points": [
+        {
+          "year": 2017,
+          "count": 116
+        },
+        {
+          "year": 2018,
+          "count": 46
+        },
+        {
+          "year": 2019,
+          "count": 56
+        },
+        {
+          "year": 2020,
+          "count": 31
+        },
+        {
+          "year": 2021,
+          "count": 138
+        },
+        {
+          "year": 2022,
+          "count": 60
+        },
+        {
+          "year": 2023,
+          "count": 94
+        },
+        {
+          "year": 2024,
+          "count": 20
+        },
+        {
+          "year": 2025,
+          "count": 77
+        },
+        {
+          "year": 2026,
+          "count": 15
+        }
+      ],
+      "styles": {
+        "standard_chart": {
+          "color_rgba": [
+            0.498039,
+            0.498039,
+            0.498039
+          ],
+          "line_style": "-.",
+          "marker": "o",
+          "line_width": 2.0,
+          "alpha": 0.85,
+          "marker_size": 4
+        },
+        "ultrawide_chart": {
+          "color_rgba": [
+            0.59891,
+            0.99638,
+            0.26038,
+            1.0
+          ],
+          "line_style": "-.",
+          "marker": "v",
+          "line_width": 2.5,
+          "alpha": 0.85,
+          "marker_size": 6
+        }
+      }
+    },
+    {
+      "mt_id": 15,
+      "label": "State Tributes & Parliamentary Condolences",
+      "full_legend_label": "MT-15: State Tributes & Parliamentary Condolences",
+      "points": [
+        {
+          "year": 2017,
+          "count": 0
+        },
+        {
+          "year": 2018,
+          "count": 50
+        },
+        {
+          "year": 2019,
+          "count": 41
+        },
+        {
+          "year": 2020,
+          "count": 56
+        },
+        {
+          "year": 2021,
+          "count": 85
+        },
+        {
+          "year": 2022,
+          "count": 78
+        },
+        {
+          "year": 2023,
+          "count": 97
+        },
+        {
+          "year": 2024,
+          "count": 28
+        },
+        {
+          "year": 2025,
+          "count": 45
+        },
+        {
+          "year": 2026,
+          "count": 1
+        }
+      ],
+      "styles": {
+        "standard_chart": {
+          "color_rgba": [
+            0.780392,
+            0.780392,
+            0.780392
+          ],
+          "line_style": ":",
+          "marker": "o",
+          "line_width": 2.0,
+          "alpha": 0.85,
+          "marker_size": 4
+        },
+        "ultrawide_chart": {
+          "color_rgba": [
+            0.67462,
+            0.98246,
+            0.2196,
+            1.0
+          ],
+          "line_style": ":",
+          "marker": "o",
+          "line_width": 2.5,
+          "alpha": 0.85,
+          "marker_size": 6
+        }
+      }
+    },
+    {
+      "mt_id": 16,
+      "label": "Partisan Politics & Adjournment Resolutions",
+      "full_legend_label": "MT-16: Partisan Politics & Adjournment Resolutions",
+      "points": [
+        {
+          "year": 2017,
+          "count": 0
+        },
+        {
+          "year": 2018,
+          "count": 0
+        },
+        {
+          "year": 2019,
+          "count": 37
+        },
+        {
+          "year": 2020,
+          "count": 3
+        },
+        {
+          "year": 2021,
+          "count": 47
+        },
+        {
+          "year": 2022,
+          "count": 91
+        },
+        {
+          "year": 2023,
+          "count": 5
+        },
+        {
+          "year": 2024,
+          "count": 1
+        },
+        {
+          "year": 2025,
+          "count": 0
+        },
+        {
+          "year": 2026,
+          "count": 0
+        }
+      ],
+      "styles": {
+        "standard_chart": {
+          "color_rgba": [
+            0.737255,
+            0.741176,
+            0.133333
+          ],
+          "line_style": "-",
+          "marker": "o",
+          "line_width": 2.0,
+          "alpha": 0.85,
+          "marker_size": 4
+        },
+        "ultrawide_chart": {
+          "color_rgba": [
+            0.75617,
+            0.95121,
+            0.20343,
+            1.0
+          ],
+          "line_style": "-",
+          "marker": "s",
+          "line_width": 2.5,
+          "alpha": 0.85,
+          "marker_size": 6
+        }
+      }
+    },
+    {
+      "mt_id": 17,
+      "label": "Easter Sunday Attacks & State Intelligence",
+      "full_legend_label": "MT-17: Easter Sunday Attacks & State Intelligence",
+      "points": [
+        {
+          "year": 2017,
+          "count": 2
+        },
+        {
+          "year": 2018,
+          "count": 5
+        },
+        {
+          "year": 2019,
+          "count": 70
+        },
+        {
+          "year": 2020,
+          "count": 26
+        },
+        {
+          "year": 2021,
+          "count": 180
+        },
+        {
+          "year": 2022,
+          "count": 33
+        },
+        {
+          "year": 2023,
+          "count": 70
+        },
+        {
+          "year": 2024,
+          "count": 28
+        },
+        {
+          "year": 2025,
+          "count": 21
+        },
+        {
+          "year": 2026,
+          "count": 5
+        }
+      ],
+      "styles": {
+        "standard_chart": {
+          "color_rgba": [
+            0.858824,
+            0.858824,
+            0.552941
+          ],
+          "line_style": "--",
+          "marker": "o",
+          "line_width": 2.0,
+          "alpha": 0.85,
+          "marker_size": 4
+        },
+        "ultrawide_chart": {
+          "color_rgba": [
+            0.83241,
+            0.90627,
+            0.20788,
+            1.0
+          ],
+          "line_style": "--",
+          "marker": "^",
+          "line_width": 2.5,
+          "alpha": 0.85,
+          "marker_size": 6
+        }
+      }
+    },
+    {
+      "mt_id": 18,
+      "label": "Road Infrastructure & Public Transport Networks",
+      "full_legend_label": "MT-18: Road Infrastructure & Public Transport Networks",
+      "points": [
+        {
+          "year": 2017,
+          "count": 61
+        },
+        {
+          "year": 2018,
+          "count": 35
+        },
+        {
+          "year": 2019,
+          "count": 42
+        },
+        {
+          "year": 2020,
+          "count": 13
+        },
+        {
+          "year": 2021,
+          "count": 89
+        },
+        {
+          "year": 2022,
+          "count": 24
+        },
+        {
+          "year": 2023,
+          "count": 54
+        },
+        {
+          "year": 2024,
+          "count": 13
+        },
+        {
+          "year": 2025,
+          "count": 34
+        },
+        {
+          "year": 2026,
+          "count": 7
+        }
+      ],
+      "styles": {
+        "standard_chart": {
+          "color_rgba": [
+            0.090196,
+            0.745098,
+            0.811765
+          ],
+          "line_style": "-.",
+          "marker": "o",
+          "line_width": 2.0,
+          "alpha": 0.85,
+          "marker_size": 4
+        },
+        "ultrawide_chart": {
+          "color_rgba": [
+            0.8987,
+            0.85087,
+            0.22038,
+            1.0
+          ],
+          "line_style": "-.",
+          "marker": "D",
+          "line_width": 2.5,
+          "alpha": 0.85,
+          "marker_size": 6
+        }
+      }
+    },
+    {
+      "mt_id": 19,
+      "label": "Migrant Labour, Tourism & Foreign Exchange",
+      "full_legend_label": "MT-19: Migrant Labour, Tourism & Foreign Exchange",
+      "points": [
+        {
+          "year": 2017,
+          "count": 20
+        },
+        {
+          "year": 2018,
+          "count": 11
+        },
+        {
+          "year": 2019,
+          "count": 20
+        },
+        {
+          "year": 2020,
+          "count": 3
+        },
+        {
+          "year": 2021,
+          "count": 82
+        },
+        {
+          "year": 2022,
+          "count": 24
+        },
+        {
+          "year": 2023,
+          "count": 37
+        },
+        {
+          "year": 2024,
+          "count": 19
+        },
+        {
+          "year": 2025,
+          "count": 17
+        },
+        {
+          "year": 2026,
+          "count": 1
+        }
+      ],
+      "styles": {
+        "standard_chart": {
+          "color_rgba": [
+            0.619608,
+            0.854902,
+            0.898039
+          ],
+          "line_style": ":",
+          "marker": "o",
+          "line_width": 2.0,
+          "alpha": 0.85,
+          "marker_size": 4
+        },
+        "ultrawide_chart": {
+          "color_rgba": [
+            0.95039,
+            0.78823,
+            0.22831,
+            1.0
+          ],
+          "line_style": ":",
+          "marker": "v",
+          "line_width": 2.5,
+          "alpha": 0.85,
+          "marker_size": 6
+        }
+      }
+    },
+    {
+      "mt_id": 20,
+      "label": "International Relations & Human Rights Frameworks",
+      "full_legend_label": "MT-20: International Relations & Human Rights Frameworks",
+      "points": [
+        {
+          "year": 2017,
+          "count": 21
+        },
+        {
+          "year": 2018,
+          "count": 5
+        },
+        {
+          "year": 2019,
+          "count": 48
+        },
+        {
+          "year": 2020,
+          "count": 3
+        },
+        {
+          "year": 2021,
+          "count": 37
+        },
+        {
+          "year": 2022,
+          "count": 30
+        },
+        {
+          "year": 2023,
+          "count": 24
+        },
+        {
+          "year": 2024,
+          "count": 4
+        },
+        {
+          "year": 2025,
+          "count": 10
+        },
+        {
+          "year": 2026,
+          "count": 1
+        }
+      ],
+      "styles": {
+        "standard_chart": {
+          "color_rgba": [
+            0.223529,
+            0.231373,
+            0.47451
+          ],
+          "line_style": "-",
+          "marker": "o",
+          "line_width": 2.0,
+          "alpha": 0.85,
+          "marker_size": 4
+        },
+        "ultrawide_chart": {
+          "color_rgba": [
+            0.98289,
+            0.7214,
+            0.21918,
+            1.0
+          ],
+          "line_style": "-",
+          "marker": "o",
+          "line_width": 2.5,
+          "alpha": 0.85,
+          "marker_size": 6
+        }
+      }
+    },
+    {
+      "mt_id": 21,
+      "label": "Livestock Development & Dairy Production",
+      "full_legend_label": "MT-21: Livestock Development & Dairy Production",
+      "points": [
+        {
+          "year": 2017,
+          "count": 5
+        },
+        {
+          "year": 2018,
+          "count": 13
+        },
+        {
+          "year": 2019,
+          "count": 15
+        },
+        {
+          "year": 2020,
+          "count": 3
+        },
+        {
+          "year": 2021,
+          "count": 24
+        },
+        {
+          "year": 2022,
+          "count": 16
+        },
+        {
+          "year": 2023,
+          "count": 6
+        },
+        {
+          "year": 2024,
+          "count": 6
+        },
+        {
+          "year": 2025,
+          "count": 2
+        },
+        {
+          "year": 2026,
+          "count": 0
+        }
+      ],
+      "styles": {
+        "standard_chart": {
+          "color_rgba": [
+            0.321569,
+            0.329412,
+            0.639216
+          ],
+          "line_style": "--",
+          "marker": "o",
+          "line_width": 2.0,
+          "alpha": 0.85,
+          "marker_size": 4
+        },
+        "ultrawide_chart": {
+          "color_rgba": [
+            0.99607,
+            0.64277,
+            0.19165,
+            1.0
+          ],
+          "line_style": "--",
+          "marker": "s",
+          "line_width": 2.5,
+          "alpha": 0.85,
+          "marker_size": 6
+        }
+      }
+    },
+    {
+      "mt_id": 22,
+      "label": "Private Higher Education (SAITM) & University Protests",
+      "full_legend_label": "MT-22: Private Higher Education (SAITM) & University Protests",
+      "points": [
+        {
+          "year": 2017,
+          "count": 47
+        },
+        {
+          "year": 2018,
+          "count": 33
+        },
+        {
+          "year": 2019,
+          "count": 2
+        },
+        {
+          "year": 2020,
+          "count": 3
+        },
+        {
+          "year": 2021,
+          "count": 17
+        },
+        {
+          "year": 2022,
+          "count": 0
+        },
+        {
+          "year": 2023,
+          "count": 4
+        },
+        {
+          "year": 2024,
+          "count": 1
+        },
+        {
+          "year": 2025,
+          "count": 8
+        },
+        {
+          "year": 2026,
+          "count": 0
+        }
+      ],
+      "styles": {
+        "standard_chart": {
+          "color_rgba": [
+            0.419608,
+            0.431373,
+            0.811765
+          ],
+          "line_style": "-.",
+          "marker": "o",
+          "line_width": 2.0,
+          "alpha": 0.85,
+          "marker_size": 4
+        },
+        "ultrawide_chart": {
+          "color_rgba": [
+            0.99297,
+            0.55214,
+            0.15417,
+            1.0
+          ],
+          "line_style": "-.",
+          "marker": "^",
+          "line_width": 2.5,
+          "alpha": 0.85,
+          "marker_size": 6
+        }
+      }
+    },
+    {
+      "mt_id": 23,
+      "label": "Local Government Governance & Electoral Reforms",
+      "full_legend_label": "MT-23: Local Government Governance & Electoral Reforms",
+      "points": [
+        {
+          "year": 2017,
+          "count": 97
+        },
+        {
+          "year": 2018,
+          "count": 36
+        },
+        {
+          "year": 2019,
+          "count": 20
+        },
+        {
+          "year": 2020,
+          "count": 10
+        },
+        {
+          "year": 2021,
+          "count": 19
+        },
+        {
+          "year": 2022,
+          "count": 20
+        },
+        {
+          "year": 2023,
+          "count": 137
+        },
+        {
+          "year": 2024,
+          "count": 25
+        },
+        {
+          "year": 2025,
+          "count": 25
+        },
+        {
+          "year": 2026,
+          "count": 0
+        }
+      ],
+      "styles": {
+        "standard_chart": {
+          "color_rgba": [
+            0.611765,
+            0.619608,
+            0.870588
+          ],
+          "line_style": ":",
+          "marker": "o",
+          "line_width": 2.0,
+          "alpha": 0.85,
+          "marker_size": 4
+        },
+        "ultrawide_chart": {
+          "color_rgba": [
+            0.97545,
+            0.4574,
+            0.11305,
+            1.0
+          ],
+          "line_style": ":",
+          "marker": "D",
+          "line_width": 2.5,
+          "alpha": 0.85,
+          "marker_size": 6
+        }
+      }
+    },
+    {
+      "mt_id": 24,
+      "label": "State Revenue, Excise Policy & Gem Industry",
+      "full_legend_label": "MT-24: State Revenue, Excise Policy & Gem Industry",
+      "points": [
+        {
+          "year": 2017,
+          "count": 20
+        },
+        {
+          "year": 2018,
+          "count": 12
+        },
+        {
+          "year": 2019,
+          "count": 10
+        },
+        {
+          "year": 2020,
+          "count": 1
+        },
+        {
+          "year": 2021,
+          "count": 25
+        },
+        {
+          "year": 2022,
+          "count": 8
+        },
+        {
+          "year": 2023,
+          "count": 37
+        },
+        {
+          "year": 2024,
+          "count": 23
+        },
+        {
+          "year": 2025,
+          "count": 11
+        },
+        {
+          "year": 2026,
+          "count": 1
+        }
+      ],
+      "styles": {
+        "standard_chart": {
+          "color_rgba": [
+            0.388235,
+            0.47451,
+            0.223529
+          ],
+          "line_style": "-",
+          "marker": "o",
+          "line_width": 2.0,
+          "alpha": 0.85,
+          "marker_size": 4
+        },
+        "ultrawide_chart": {
+          "color_rgba": [
+            0.94538,
+            0.36638,
+            0.07461,
+            1.0
+          ],
+          "line_style": "-",
+          "marker": "v",
+          "line_width": 2.5,
+          "alpha": 0.85,
+          "marker_size": 6
+        }
+      }
+    },
+    {
+      "mt_id": 25,
+      "label": "National Sports Administration & Cricket Board Crises",
+      "full_legend_label": "MT-25: National Sports Administration & Cricket Board Crises",
+      "points": [
+        {
+          "year": 2017,
+          "count": 6
+        },
+        {
+          "year": 2018,
+          "count": 15
+        },
+        {
+          "year": 2019,
+          "count": 19
+        },
+        {
+          "year": 2020,
+          "count": 3
+        },
+        {
+          "year": 2021,
+          "count": 75
+        },
+        {
+          "year": 2022,
+          "count": 13
+        },
+        {
+          "year": 2023,
+          "count": 81
+        },
+        {
+          "year": 2024,
+          "count": 14
+        },
+        {
+          "year": 2025,
+          "count": 10
+        },
+        {
+          "year": 2026,
+          "count": 4
+        }
+      ],
+      "styles": {
+        "standard_chart": {
+          "color_rgba": [
+            0.54902,
+            0.635294,
+            0.321569
+          ],
+          "line_style": "--",
+          "marker": "o",
+          "line_width": 2.0,
+          "alpha": 0.85,
+          "marker_size": 4
+        },
+        "ultrawide_chart": {
+          "color_rgba": [
+            0.90463,
+            0.28696,
+            0.04516,
+            1.0
+          ],
+          "line_style": "--",
+          "marker": "o",
+          "line_width": 2.5,
+          "alpha": 0.85,
+          "marker_size": 6
+        }
+      }
+    },
+    {
+      "mt_id": 26,
+      "label": "Judicial System, Anti-Corruption & Criminal Law",
+      "full_legend_label": "MT-26: Judicial System, Anti-Corruption & Criminal Law",
+      "points": [
+        {
+          "year": 2017,
+          "count": 44
+        },
+        {
+          "year": 2018,
+          "count": 47
+        },
+        {
+          "year": 2019,
+          "count": 57
+        },
+        {
+          "year": 2020,
+          "count": 20
+        },
+        {
+          "year": 2021,
+          "count": 96
+        },
+        {
+          "year": 2022,
+          "count": 82
+        },
+        {
+          "year": 2023,
+          "count": 144
+        },
+        {
+          "year": 2024,
+          "count": 23
+        },
+        {
+          "year": 2025,
+          "count": 48
+        },
+        {
+          "year": 2026,
+          "count": 11
+        }
+      ],
+      "styles": {
+        "standard_chart": {
+          "color_rgba": [
+            0.709804,
+            0.811765,
+            0.419608
+          ],
+          "line_style": "-.",
+          "marker": "o",
+          "line_width": 2.0,
+          "alpha": 0.85,
+          "marker_size": 4
+        },
+        "ultrawide_chart": {
+          "color_rgba": [
+            0.8538,
+            0.2217,
+            0.02677,
+            1.0
+          ],
+          "line_style": "-.",
+          "marker": "s",
+          "line_width": 2.5,
+          "alpha": 0.85,
+          "marker_size": 6
+        }
+      }
+    },
+    {
+      "mt_id": 27,
+      "label": "Maritime Boundaries & Fisheries Livelihoods",
+      "full_legend_label": "MT-27: Maritime Boundaries & Fisheries Livelihoods",
+      "points": [
+        {
+          "year": 2017,
+          "count": 31
+        },
+        {
+          "year": 2018,
+          "count": 24
+        },
+        {
+          "year": 2019,
+          "count": 8
+        },
+        {
+          "year": 2020,
+          "count": 6
+        },
+        {
+          "year": 2021,
+          "count": 18
+        },
+        {
+          "year": 2022,
+          "count": 20
+        },
+        {
+          "year": 2023,
+          "count": 8
+        },
+        {
+          "year": 2024,
+          "count": 2
+        },
+        {
+          "year": 2025,
+          "count": 16
+        },
+        {
+          "year": 2026,
+          "count": 1
+        }
+      ],
+      "styles": {
+        "standard_chart": {
+          "color_rgba": [
+            0.807843,
+            0.858824,
+            0.611765
+          ],
+          "line_style": ":",
+          "marker": "o",
+          "line_width": 2.0,
+          "alpha": 0.85,
+          "marker_size": 4
+        },
+        "ultrawide_chart": {
+          "color_rgba": [
+            0.79125,
+            0.16368,
+            0.01387,
+            1.0
+          ],
+          "line_style": ":",
+          "marker": "^",
+          "line_width": 2.5,
+          "alpha": 0.85,
+          "marker_size": 6
+        }
+      }
+    },
+    {
+      "mt_id": 28,
+      "label": "Plantation Economy & Estate Worker Grievances",
+      "full_legend_label": "MT-28: Plantation Economy & Estate Worker Grievances",
+      "points": [
+        {
+          "year": 2017,
+          "count": 5
+        },
+        {
+          "year": 2018,
+          "count": 5
+        },
+        {
+          "year": 2019,
+          "count": 19
+        },
+        {
+          "year": 2020,
+          "count": 5
+        },
+        {
+          "year": 2021,
+          "count": 52
+        },
+        {
+          "year": 2022,
+          "count": 15
+        },
+        {
+          "year": 2023,
+          "count": 25
+        },
+        {
+          "year": 2024,
+          "count": 11
+        },
+        {
+          "year": 2025,
+          "count": 15
+        },
+        {
+          "year": 2026,
+          "count": 2
+        }
+      ],
+      "styles": {
+        "standard_chart": {
+          "color_rgba": [
+            0.54902,
+            0.427451,
+            0.192157
+          ],
+          "line_style": "-",
+          "marker": "o",
+          "line_width": 2.0,
+          "alpha": 0.85,
+          "marker_size": 4
+        },
+        "ultrawide_chart": {
+          "color_rgba": [
+            0.71692,
+            0.11268,
+            0.00629,
+            1.0
+          ],
+          "line_style": "-",
+          "marker": "D",
+          "line_width": 2.5,
+          "alpha": 0.85,
+          "marker_size": 6
+        }
+      }
+    },
+    {
+      "mt_id": 29,
+      "label": "Women & Child Affairs, Heritage & Local Governance",
+      "full_legend_label": "MT-29: Women & Child Affairs, Heritage & Local Governance",
+      "points": [
+        {
+          "year": 2017,
+          "count": 36
+        },
+        {
+          "year": 2018,
+          "count": 18
+        },
+        {
+          "year": 2019,
+          "count": 29
+        },
+        {
+          "year": 2020,
+          "count": 10
+        },
+        {
+          "year": 2021,
+          "count": 61
+        },
+        {
+          "year": 2022,
+          "count": 46
+        },
+        {
+          "year": 2023,
+          "count": 44
+        },
+        {
+          "year": 2024,
+          "count": 13
+        },
+        {
+          "year": 2025,
+          "count": 27
+        },
+        {
+          "year": 2026,
+          "count": 1
+        }
+      ],
+      "styles": {
+        "standard_chart": {
+          "color_rgba": [
+            0.741176,
+            0.619608,
+            0.223529
+          ],
+          "line_style": "--",
+          "marker": "o",
+          "line_width": 2.0,
+          "alpha": 0.85,
+          "marker_size": 4
+        },
+        "ultrawide_chart": {
+          "color_rgba": [
+            0.63082,
+            0.06868,
+            0.00401,
+            1.0
+          ],
+          "line_style": "--",
+          "marker": "v",
+          "line_width": 2.5,
+          "alpha": 0.85,
+          "marker_size": 6
+        }
+      }
+    }
+  ],
+  "tables": {
+    "pivot_counts": {
+      "2017": {
+        "0": 37,
+        "1": 168,
+        "2": 50,
+        "3": 50,
+        "4": 45,
+        "5": 154,
+        "6": 77,
+        "7": 39,
+        "8": 27,
+        "9": 32,
+        "10": 21,
+        "11": 55,
+        "12": 9,
+        "13": 20,
+        "14": 116,
+        "15": 0,
+        "16": 0,
+        "17": 2,
+        "18": 61,
+        "19": 20,
+        "20": 21,
+        "21": 5,
+        "22": 47,
+        "23": 97,
+        "24": 20,
+        "25": 6,
+        "26": 44,
+        "27": 31,
+        "28": 5,
+        "29": 36
+      },
+      "2018": {
+        "0": 158,
+        "1": 77,
+        "2": 62,
+        "3": 27,
+        "4": 59,
+        "5": 77,
+        "6": 79,
+        "7": 48,
+        "8": 15,
+        "9": 39,
+        "10": 15,
+        "11": 46,
+        "12": 13,
+        "13": 22,
+        "14": 46,
+        "15": 50,
+        "16": 0,
+        "17": 5,
+        "18": 35,
+        "19": 11,
+        "20": 5,
+        "21": 13,
+        "22": 33,
+        "23": 36,
+        "24": 12,
+        "25": 15,
+        "26": 47,
+        "27": 24,
+        "28": 5,
+        "29": 18
+      },
+      "2019": {
+        "0": 27,
+        "1": 70,
+        "2": 77,
+        "3": 25,
+        "4": 38,
+        "5": 67,
+        "6": 22,
+        "7": 53,
+        "8": 17,
+        "9": 26,
+        "10": 13,
+        "11": 58,
+        "12": 14,
+        "13": 17,
+        "14": 56,
+        "15": 41,
+        "16": 37,
+        "17": 70,
+        "18": 42,
+        "19": 20,
+        "20": 48,
+        "21": 15,
+        "22": 2,
+        "23": 20,
+        "24": 10,
+        "25": 19,
+        "26": 57,
+        "27": 8,
+        "28": 19,
+        "29": 29
+      },
+      "2020": {
+        "0": 24,
+        "1": 55,
+        "2": 31,
+        "3": 4,
+        "4": 14,
+        "5": 36,
+        "6": 32,
+        "7": 36,
+        "8": 49,
+        "9": 29,
+        "10": 25,
+        "11": 40,
+        "12": 2,
+        "13": 34,
+        "14": 31,
+        "15": 56,
+        "16": 3,
+        "17": 26,
+        "18": 13,
+        "19": 3,
+        "20": 3,
+        "21": 3,
+        "22": 3,
+        "23": 10,
+        "24": 1,
+        "25": 3,
+        "26": 20,
+        "27": 6,
+        "28": 5,
+        "29": 10
+      },
+      "2021": {
+        "0": 59,
+        "1": 304,
+        "2": 120,
+        "3": 127,
+        "4": 281,
+        "5": 139,
+        "6": 30,
+        "7": 145,
+        "8": 47,
+        "9": 106,
+        "10": 36,
+        "11": 223,
+        "12": 6,
+        "13": 66,
+        "14": 138,
+        "15": 85,
+        "16": 47,
+        "17": 180,
+        "18": 89,
+        "19": 82,
+        "20": 37,
+        "21": 24,
+        "22": 17,
+        "23": 19,
+        "24": 25,
+        "25": 75,
+        "26": 96,
+        "27": 18,
+        "28": 52,
+        "29": 61
+      },
+      "2022": {
+        "0": 39,
+        "1": 313,
+        "2": 115,
+        "3": 26,
+        "4": 87,
+        "5": 59,
+        "6": 40,
+        "7": 104,
+        "8": 325,
+        "9": 26,
+        "10": 26,
+        "11": 50,
+        "12": 4,
+        "13": 48,
+        "14": 60,
+        "15": 78,
+        "16": 91,
+        "17": 33,
+        "18": 24,
+        "19": 24,
+        "20": 30,
+        "21": 16,
+        "22": 0,
+        "23": 20,
+        "24": 8,
+        "25": 13,
+        "26": 82,
+        "27": 20,
+        "28": 15,
+        "29": 46
+      },
+      "2023": {
+        "0": 61,
+        "1": 261,
+        "2": 75,
+        "3": 51,
+        "4": 86,
+        "5": 112,
+        "6": 80,
+        "7": 136,
+        "8": 46,
+        "9": 54,
+        "10": 44,
+        "11": 110,
+        "12": 10,
+        "13": 50,
+        "14": 94,
+        "15": 97,
+        "16": 5,
+        "17": 70,
+        "18": 54,
+        "19": 37,
+        "20": 24,
+        "21": 6,
+        "22": 4,
+        "23": 137,
+        "24": 37,
+        "25": 81,
+        "26": 144,
+        "27": 8,
+        "28": 25,
+        "29": 44
+      },
+      "2024": {
+        "0": 51,
+        "1": 59,
+        "2": 47,
+        "3": 18,
+        "4": 47,
+        "5": 49,
+        "6": 52,
+        "7": 74,
+        "8": 28,
+        "9": 12,
+        "10": 19,
+        "11": 30,
+        "12": 20,
+        "13": 13,
+        "14": 20,
+        "15": 28,
+        "16": 1,
+        "17": 28,
+        "18": 13,
+        "19": 19,
+        "20": 4,
+        "21": 6,
+        "22": 1,
+        "23": 25,
+        "24": 23,
+        "25": 14,
+        "26": 23,
+        "27": 2,
+        "28": 11,
+        "29": 13
+      },
+      "2025": {
+        "0": 32,
+        "1": 94,
+        "2": 126,
+        "3": 11,
+        "4": 64,
+        "5": 120,
+        "6": 8,
+        "7": 65,
+        "8": 12,
+        "9": 34,
+        "10": 24,
+        "11": 62,
+        "12": 7,
+        "13": 41,
+        "14": 77,
+        "15": 45,
+        "16": 0,
+        "17": 21,
+        "18": 34,
+        "19": 17,
+        "20": 10,
+        "21": 2,
+        "22": 8,
+        "23": 25,
+        "24": 11,
+        "25": 10,
+        "26": 48,
+        "27": 16,
+        "28": 15,
+        "29": 27
+      },
+      "2026": {
+        "0": 6,
+        "1": 8,
+        "2": 23,
+        "3": 1,
+        "4": 6,
+        "5": 39,
+        "6": 4,
+        "7": 24,
+        "8": 2,
+        "9": 4,
+        "10": 4,
+        "11": 11,
+        "12": 4,
+        "13": 5,
+        "14": 15,
+        "15": 1,
+        "16": 0,
+        "17": 5,
+        "18": 7,
+        "19": 1,
+        "20": 1,
+        "21": 0,
+        "22": 0,
+        "23": 0,
+        "24": 1,
+        "25": 4,
+        "26": 11,
+        "27": 1,
+        "28": 2,
+        "29": 1
+      }
+    },
+    "year_topic_counts": [
+      {
+        "year": 2017,
+        "mt_id": 0,
+        "count": 37
+      },
+      {
+        "year": 2017,
+        "mt_id": 1,
+        "count": 168
+      },
+      {
+        "year": 2017,
+        "mt_id": 2,
+        "count": 50
+      },
+      {
+        "year": 2017,
+        "mt_id": 3,
+        "count": 50
+      },
+      {
+        "year": 2017,
+        "mt_id": 4,
+        "count": 45
+      },
+      {
+        "year": 2017,
+        "mt_id": 5,
+        "count": 154
+      },
+      {
+        "year": 2017,
+        "mt_id": 6,
+        "count": 77
+      },
+      {
+        "year": 2017,
+        "mt_id": 7,
+        "count": 39
+      },
+      {
+        "year": 2017,
+        "mt_id": 8,
+        "count": 27
+      },
+      {
+        "year": 2017,
+        "mt_id": 9,
+        "count": 32
+      },
+      {
+        "year": 2017,
+        "mt_id": 10,
+        "count": 21
+      },
+      {
+        "year": 2017,
+        "mt_id": 11,
+        "count": 55
+      },
+      {
+        "year": 2017,
+        "mt_id": 12,
+        "count": 9
+      },
+      {
+        "year": 2017,
+        "mt_id": 13,
+        "count": 20
+      },
+      {
+        "year": 2017,
+        "mt_id": 14,
+        "count": 116
+      },
+      {
+        "year": 2017,
+        "mt_id": 17,
+        "count": 2
+      },
+      {
+        "year": 2017,
+        "mt_id": 18,
+        "count": 61
+      },
+      {
+        "year": 2017,
+        "mt_id": 19,
+        "count": 20
+      },
+      {
+        "year": 2017,
+        "mt_id": 20,
+        "count": 21
+      },
+      {
+        "year": 2017,
+        "mt_id": 21,
+        "count": 5
+      },
+      {
+        "year": 2017,
+        "mt_id": 22,
+        "count": 47
+      },
+      {
+        "year": 2017,
+        "mt_id": 23,
+        "count": 97
+      },
+      {
+        "year": 2017,
+        "mt_id": 24,
+        "count": 20
+      },
+      {
+        "year": 2017,
+        "mt_id": 25,
+        "count": 6
+      },
+      {
+        "year": 2017,
+        "mt_id": 26,
+        "count": 44
+      },
+      {
+        "year": 2017,
+        "mt_id": 27,
+        "count": 31
+      },
+      {
+        "year": 2017,
+        "mt_id": 28,
+        "count": 5
+      },
+      {
+        "year": 2017,
+        "mt_id": 29,
+        "count": 36
+      },
+      {
+        "year": 2018,
+        "mt_id": 0,
+        "count": 158
+      },
+      {
+        "year": 2018,
+        "mt_id": 1,
+        "count": 77
+      },
+      {
+        "year": 2018,
+        "mt_id": 2,
+        "count": 62
+      },
+      {
+        "year": 2018,
+        "mt_id": 3,
+        "count": 27
+      },
+      {
+        "year": 2018,
+        "mt_id": 4,
+        "count": 59
+      },
+      {
+        "year": 2018,
+        "mt_id": 5,
+        "count": 77
+      },
+      {
+        "year": 2018,
+        "mt_id": 6,
+        "count": 79
+      },
+      {
+        "year": 2018,
+        "mt_id": 7,
+        "count": 48
+      },
+      {
+        "year": 2018,
+        "mt_id": 8,
+        "count": 15
+      },
+      {
+        "year": 2018,
+        "mt_id": 9,
+        "count": 39
+      },
+      {
+        "year": 2018,
+        "mt_id": 10,
+        "count": 15
+      },
+      {
+        "year": 2018,
+        "mt_id": 11,
+        "count": 46
+      },
+      {
+        "year": 2018,
+        "mt_id": 12,
+        "count": 13
+      },
+      {
+        "year": 2018,
+        "mt_id": 13,
+        "count": 22
+      },
+      {
+        "year": 2018,
+        "mt_id": 14,
+        "count": 46
+      },
+      {
+        "year": 2018,
+        "mt_id": 15,
+        "count": 50
+      },
+      {
+        "year": 2018,
+        "mt_id": 17,
+        "count": 5
+      },
+      {
+        "year": 2018,
+        "mt_id": 18,
+        "count": 35
+      },
+      {
+        "year": 2018,
+        "mt_id": 19,
+        "count": 11
+      },
+      {
+        "year": 2018,
+        "mt_id": 20,
+        "count": 5
+      },
+      {
+        "year": 2018,
+        "mt_id": 21,
+        "count": 13
+      },
+      {
+        "year": 2018,
+        "mt_id": 22,
+        "count": 33
+      },
+      {
+        "year": 2018,
+        "mt_id": 23,
+        "count": 36
+      },
+      {
+        "year": 2018,
+        "mt_id": 24,
+        "count": 12
+      },
+      {
+        "year": 2018,
+        "mt_id": 25,
+        "count": 15
+      },
+      {
+        "year": 2018,
+        "mt_id": 26,
+        "count": 47
+      },
+      {
+        "year": 2018,
+        "mt_id": 27,
+        "count": 24
+      },
+      {
+        "year": 2018,
+        "mt_id": 28,
+        "count": 5
+      },
+      {
+        "year": 2018,
+        "mt_id": 29,
+        "count": 18
+      },
+      {
+        "year": 2019,
+        "mt_id": 0,
+        "count": 27
+      },
+      {
+        "year": 2019,
+        "mt_id": 1,
+        "count": 70
+      },
+      {
+        "year": 2019,
+        "mt_id": 2,
+        "count": 77
+      },
+      {
+        "year": 2019,
+        "mt_id": 3,
+        "count": 25
+      },
+      {
+        "year": 2019,
+        "mt_id": 4,
+        "count": 38
+      },
+      {
+        "year": 2019,
+        "mt_id": 5,
+        "count": 67
+      },
+      {
+        "year": 2019,
+        "mt_id": 6,
+        "count": 22
+      },
+      {
+        "year": 2019,
+        "mt_id": 7,
+        "count": 53
+      },
+      {
+        "year": 2019,
+        "mt_id": 8,
+        "count": 17
+      },
+      {
+        "year": 2019,
+        "mt_id": 9,
+        "count": 26
+      },
+      {
+        "year": 2019,
+        "mt_id": 10,
+        "count": 13
+      },
+      {
+        "year": 2019,
+        "mt_id": 11,
+        "count": 58
+      },
+      {
+        "year": 2019,
+        "mt_id": 12,
+        "count": 14
+      },
+      {
+        "year": 2019,
+        "mt_id": 13,
+        "count": 17
+      },
+      {
+        "year": 2019,
+        "mt_id": 14,
+        "count": 56
+      },
+      {
+        "year": 2019,
+        "mt_id": 15,
+        "count": 41
+      },
+      {
+        "year": 2019,
+        "mt_id": 16,
+        "count": 37
+      },
+      {
+        "year": 2019,
+        "mt_id": 17,
+        "count": 70
+      },
+      {
+        "year": 2019,
+        "mt_id": 18,
+        "count": 42
+      },
+      {
+        "year": 2019,
+        "mt_id": 19,
+        "count": 20
+      },
+      {
+        "year": 2019,
+        "mt_id": 20,
+        "count": 48
+      },
+      {
+        "year": 2019,
+        "mt_id": 21,
+        "count": 15
+      },
+      {
+        "year": 2019,
+        "mt_id": 22,
+        "count": 2
+      },
+      {
+        "year": 2019,
+        "mt_id": 23,
+        "count": 20
+      },
+      {
+        "year": 2019,
+        "mt_id": 24,
+        "count": 10
+      },
+      {
+        "year": 2019,
+        "mt_id": 25,
+        "count": 19
+      },
+      {
+        "year": 2019,
+        "mt_id": 26,
+        "count": 57
+      },
+      {
+        "year": 2019,
+        "mt_id": 27,
+        "count": 8
+      },
+      {
+        "year": 2019,
+        "mt_id": 28,
+        "count": 19
+      },
+      {
+        "year": 2019,
+        "mt_id": 29,
+        "count": 29
+      },
+      {
+        "year": 2020,
+        "mt_id": 0,
+        "count": 24
+      },
+      {
+        "year": 2020,
+        "mt_id": 1,
+        "count": 55
+      },
+      {
+        "year": 2020,
+        "mt_id": 2,
+        "count": 31
+      },
+      {
+        "year": 2020,
+        "mt_id": 3,
+        "count": 4
+      },
+      {
+        "year": 2020,
+        "mt_id": 4,
+        "count": 14
+      },
+      {
+        "year": 2020,
+        "mt_id": 5,
+        "count": 36
+      },
+      {
+        "year": 2020,
+        "mt_id": 6,
+        "count": 32
+      },
+      {
+        "year": 2020,
+        "mt_id": 7,
+        "count": 36
+      },
+      {
+        "year": 2020,
+        "mt_id": 8,
+        "count": 49
+      },
+      {
+        "year": 2020,
+        "mt_id": 9,
+        "count": 29
+      },
+      {
+        "year": 2020,
+        "mt_id": 10,
+        "count": 25
+      },
+      {
+        "year": 2020,
+        "mt_id": 11,
+        "count": 40
+      },
+      {
+        "year": 2020,
+        "mt_id": 12,
+        "count": 2
+      },
+      {
+        "year": 2020,
+        "mt_id": 13,
+        "count": 34
+      },
+      {
+        "year": 2020,
+        "mt_id": 14,
+        "count": 31
+      },
+      {
+        "year": 2020,
+        "mt_id": 15,
+        "count": 56
+      },
+      {
+        "year": 2020,
+        "mt_id": 16,
+        "count": 3
+      },
+      {
+        "year": 2020,
+        "mt_id": 17,
+        "count": 26
+      },
+      {
+        "year": 2020,
+        "mt_id": 18,
+        "count": 13
+      },
+      {
+        "year": 2020,
+        "mt_id": 19,
+        "count": 3
+      },
+      {
+        "year": 2020,
+        "mt_id": 20,
+        "count": 3
+      },
+      {
+        "year": 2020,
+        "mt_id": 21,
+        "count": 3
+      },
+      {
+        "year": 2020,
+        "mt_id": 22,
+        "count": 3
+      },
+      {
+        "year": 2020,
+        "mt_id": 23,
+        "count": 10
+      },
+      {
+        "year": 2020,
+        "mt_id": 24,
+        "count": 1
+      },
+      {
+        "year": 2020,
+        "mt_id": 25,
+        "count": 3
+      },
+      {
+        "year": 2020,
+        "mt_id": 26,
+        "count": 20
+      },
+      {
+        "year": 2020,
+        "mt_id": 27,
+        "count": 6
+      },
+      {
+        "year": 2020,
+        "mt_id": 28,
+        "count": 5
+      },
+      {
+        "year": 2020,
+        "mt_id": 29,
+        "count": 10
+      },
+      {
+        "year": 2021,
+        "mt_id": 0,
+        "count": 59
+      },
+      {
+        "year": 2021,
+        "mt_id": 1,
+        "count": 304
+      },
+      {
+        "year": 2021,
+        "mt_id": 2,
+        "count": 120
+      },
+      {
+        "year": 2021,
+        "mt_id": 3,
+        "count": 127
+      },
+      {
+        "year": 2021,
+        "mt_id": 4,
+        "count": 281
+      },
+      {
+        "year": 2021,
+        "mt_id": 5,
+        "count": 139
+      },
+      {
+        "year": 2021,
+        "mt_id": 6,
+        "count": 30
+      },
+      {
+        "year": 2021,
+        "mt_id": 7,
+        "count": 145
+      },
+      {
+        "year": 2021,
+        "mt_id": 8,
+        "count": 47
+      },
+      {
+        "year": 2021,
+        "mt_id": 9,
+        "count": 106
+      },
+      {
+        "year": 2021,
+        "mt_id": 10,
+        "count": 36
+      },
+      {
+        "year": 2021,
+        "mt_id": 11,
+        "count": 223
+      },
+      {
+        "year": 2021,
+        "mt_id": 12,
+        "count": 6
+      },
+      {
+        "year": 2021,
+        "mt_id": 13,
+        "count": 66
+      },
+      {
+        "year": 2021,
+        "mt_id": 14,
+        "count": 138
+      },
+      {
+        "year": 2021,
+        "mt_id": 15,
+        "count": 85
+      },
+      {
+        "year": 2021,
+        "mt_id": 16,
+        "count": 47
+      },
+      {
+        "year": 2021,
+        "mt_id": 17,
+        "count": 180
+      },
+      {
+        "year": 2021,
+        "mt_id": 18,
+        "count": 89
+      },
+      {
+        "year": 2021,
+        "mt_id": 19,
+        "count": 82
+      },
+      {
+        "year": 2021,
+        "mt_id": 20,
+        "count": 37
+      },
+      {
+        "year": 2021,
+        "mt_id": 21,
+        "count": 24
+      },
+      {
+        "year": 2021,
+        "mt_id": 22,
+        "count": 17
+      },
+      {
+        "year": 2021,
+        "mt_id": 23,
+        "count": 19
+      },
+      {
+        "year": 2021,
+        "mt_id": 24,
+        "count": 25
+      },
+      {
+        "year": 2021,
+        "mt_id": 25,
+        "count": 75
+      },
+      {
+        "year": 2021,
+        "mt_id": 26,
+        "count": 96
+      },
+      {
+        "year": 2021,
+        "mt_id": 27,
+        "count": 18
+      },
+      {
+        "year": 2021,
+        "mt_id": 28,
+        "count": 52
+      },
+      {
+        "year": 2021,
+        "mt_id": 29,
+        "count": 61
+      },
+      {
+        "year": 2022,
+        "mt_id": 0,
+        "count": 39
+      },
+      {
+        "year": 2022,
+        "mt_id": 1,
+        "count": 313
+      },
+      {
+        "year": 2022,
+        "mt_id": 2,
+        "count": 115
+      },
+      {
+        "year": 2022,
+        "mt_id": 3,
+        "count": 26
+      },
+      {
+        "year": 2022,
+        "mt_id": 4,
+        "count": 87
+      },
+      {
+        "year": 2022,
+        "mt_id": 5,
+        "count": 59
+      },
+      {
+        "year": 2022,
+        "mt_id": 6,
+        "count": 40
+      },
+      {
+        "year": 2022,
+        "mt_id": 7,
+        "count": 104
+      },
+      {
+        "year": 2022,
+        "mt_id": 8,
+        "count": 325
+      },
+      {
+        "year": 2022,
+        "mt_id": 9,
+        "count": 26
+      },
+      {
+        "year": 2022,
+        "mt_id": 10,
+        "count": 26
+      },
+      {
+        "year": 2022,
+        "mt_id": 11,
+        "count": 50
+      },
+      {
+        "year": 2022,
+        "mt_id": 12,
+        "count": 4
+      },
+      {
+        "year": 2022,
+        "mt_id": 13,
+        "count": 48
+      },
+      {
+        "year": 2022,
+        "mt_id": 14,
+        "count": 60
+      },
+      {
+        "year": 2022,
+        "mt_id": 15,
+        "count": 78
+      },
+      {
+        "year": 2022,
+        "mt_id": 16,
+        "count": 91
+      },
+      {
+        "year": 2022,
+        "mt_id": 17,
+        "count": 33
+      },
+      {
+        "year": 2022,
+        "mt_id": 18,
+        "count": 24
+      },
+      {
+        "year": 2022,
+        "mt_id": 19,
+        "count": 24
+      },
+      {
+        "year": 2022,
+        "mt_id": 20,
+        "count": 30
+      },
+      {
+        "year": 2022,
+        "mt_id": 21,
+        "count": 16
+      },
+      {
+        "year": 2022,
+        "mt_id": 23,
+        "count": 20
+      },
+      {
+        "year": 2022,
+        "mt_id": 24,
+        "count": 8
+      },
+      {
+        "year": 2022,
+        "mt_id": 25,
+        "count": 13
+      },
+      {
+        "year": 2022,
+        "mt_id": 26,
+        "count": 82
+      },
+      {
+        "year": 2022,
+        "mt_id": 27,
+        "count": 20
+      },
+      {
+        "year": 2022,
+        "mt_id": 28,
+        "count": 15
+      },
+      {
+        "year": 2022,
+        "mt_id": 29,
+        "count": 46
+      },
+      {
+        "year": 2023,
+        "mt_id": 0,
+        "count": 61
+      },
+      {
+        "year": 2023,
+        "mt_id": 1,
+        "count": 261
+      },
+      {
+        "year": 2023,
+        "mt_id": 2,
+        "count": 75
+      },
+      {
+        "year": 2023,
+        "mt_id": 3,
+        "count": 51
+      },
+      {
+        "year": 2023,
+        "mt_id": 4,
+        "count": 86
+      },
+      {
+        "year": 2023,
+        "mt_id": 5,
+        "count": 112
+      },
+      {
+        "year": 2023,
+        "mt_id": 6,
+        "count": 80
+      },
+      {
+        "year": 2023,
+        "mt_id": 7,
+        "count": 136
+      },
+      {
+        "year": 2023,
+        "mt_id": 8,
+        "count": 46
+      },
+      {
+        "year": 2023,
+        "mt_id": 9,
+        "count": 54
+      },
+      {
+        "year": 2023,
+        "mt_id": 10,
+        "count": 44
+      },
+      {
+        "year": 2023,
+        "mt_id": 11,
+        "count": 110
+      },
+      {
+        "year": 2023,
+        "mt_id": 12,
+        "count": 10
+      },
+      {
+        "year": 2023,
+        "mt_id": 13,
+        "count": 50
+      },
+      {
+        "year": 2023,
+        "mt_id": 14,
+        "count": 94
+      },
+      {
+        "year": 2023,
+        "mt_id": 15,
+        "count": 97
+      },
+      {
+        "year": 2023,
+        "mt_id": 16,
+        "count": 5
+      },
+      {
+        "year": 2023,
+        "mt_id": 17,
+        "count": 70
+      },
+      {
+        "year": 2023,
+        "mt_id": 18,
+        "count": 54
+      },
+      {
+        "year": 2023,
+        "mt_id": 19,
+        "count": 37
+      },
+      {
+        "year": 2023,
+        "mt_id": 20,
+        "count": 24
+      },
+      {
+        "year": 2023,
+        "mt_id": 21,
+        "count": 6
+      },
+      {
+        "year": 2023,
+        "mt_id": 22,
+        "count": 4
+      },
+      {
+        "year": 2023,
+        "mt_id": 23,
+        "count": 137
+      },
+      {
+        "year": 2023,
+        "mt_id": 24,
+        "count": 37
+      },
+      {
+        "year": 2023,
+        "mt_id": 25,
+        "count": 81
+      },
+      {
+        "year": 2023,
+        "mt_id": 26,
+        "count": 144
+      },
+      {
+        "year": 2023,
+        "mt_id": 27,
+        "count": 8
+      },
+      {
+        "year": 2023,
+        "mt_id": 28,
+        "count": 25
+      },
+      {
+        "year": 2023,
+        "mt_id": 29,
+        "count": 44
+      },
+      {
+        "year": 2024,
+        "mt_id": 0,
+        "count": 51
+      },
+      {
+        "year": 2024,
+        "mt_id": 1,
+        "count": 59
+      },
+      {
+        "year": 2024,
+        "mt_id": 2,
+        "count": 47
+      },
+      {
+        "year": 2024,
+        "mt_id": 3,
+        "count": 18
+      },
+      {
+        "year": 2024,
+        "mt_id": 4,
+        "count": 47
+      },
+      {
+        "year": 2024,
+        "mt_id": 5,
+        "count": 49
+      },
+      {
+        "year": 2024,
+        "mt_id": 6,
+        "count": 52
+      },
+      {
+        "year": 2024,
+        "mt_id": 7,
+        "count": 74
+      },
+      {
+        "year": 2024,
+        "mt_id": 8,
+        "count": 28
+      },
+      {
+        "year": 2024,
+        "mt_id": 9,
+        "count": 12
+      },
+      {
+        "year": 2024,
+        "mt_id": 10,
+        "count": 19
+      },
+      {
+        "year": 2024,
+        "mt_id": 11,
+        "count": 30
+      },
+      {
+        "year": 2024,
+        "mt_id": 12,
+        "count": 20
+      },
+      {
+        "year": 2024,
+        "mt_id": 13,
+        "count": 13
+      },
+      {
+        "year": 2024,
+        "mt_id": 14,
+        "count": 20
+      },
+      {
+        "year": 2024,
+        "mt_id": 15,
+        "count": 28
+      },
+      {
+        "year": 2024,
+        "mt_id": 16,
+        "count": 1
+      },
+      {
+        "year": 2024,
+        "mt_id": 17,
+        "count": 28
+      },
+      {
+        "year": 2024,
+        "mt_id": 18,
+        "count": 13
+      },
+      {
+        "year": 2024,
+        "mt_id": 19,
+        "count": 19
+      },
+      {
+        "year": 2024,
+        "mt_id": 20,
+        "count": 4
+      },
+      {
+        "year": 2024,
+        "mt_id": 21,
+        "count": 6
+      },
+      {
+        "year": 2024,
+        "mt_id": 22,
+        "count": 1
+      },
+      {
+        "year": 2024,
+        "mt_id": 23,
+        "count": 25
+      },
+      {
+        "year": 2024,
+        "mt_id": 24,
+        "count": 23
+      },
+      {
+        "year": 2024,
+        "mt_id": 25,
+        "count": 14
+      },
+      {
+        "year": 2024,
+        "mt_id": 26,
+        "count": 23
+      },
+      {
+        "year": 2024,
+        "mt_id": 27,
+        "count": 2
+      },
+      {
+        "year": 2024,
+        "mt_id": 28,
+        "count": 11
+      },
+      {
+        "year": 2024,
+        "mt_id": 29,
+        "count": 13
+      },
+      {
+        "year": 2025,
+        "mt_id": 0,
+        "count": 32
+      },
+      {
+        "year": 2025,
+        "mt_id": 1,
+        "count": 94
+      },
+      {
+        "year": 2025,
+        "mt_id": 2,
+        "count": 126
+      },
+      {
+        "year": 2025,
+        "mt_id": 3,
+        "count": 11
+      },
+      {
+        "year": 2025,
+        "mt_id": 4,
+        "count": 64
+      },
+      {
+        "year": 2025,
+        "mt_id": 5,
+        "count": 120
+      },
+      {
+        "year": 2025,
+        "mt_id": 6,
+        "count": 8
+      },
+      {
+        "year": 2025,
+        "mt_id": 7,
+        "count": 65
+      },
+      {
+        "year": 2025,
+        "mt_id": 8,
+        "count": 12
+      },
+      {
+        "year": 2025,
+        "mt_id": 9,
+        "count": 34
+      },
+      {
+        "year": 2025,
+        "mt_id": 10,
+        "count": 24
+      },
+      {
+        "year": 2025,
+        "mt_id": 11,
+        "count": 62
+      },
+      {
+        "year": 2025,
+        "mt_id": 12,
+        "count": 7
+      },
+      {
+        "year": 2025,
+        "mt_id": 13,
+        "count": 41
+      },
+      {
+        "year": 2025,
+        "mt_id": 14,
+        "count": 77
+      },
+      {
+        "year": 2025,
+        "mt_id": 15,
+        "count": 45
+      },
+      {
+        "year": 2025,
+        "mt_id": 17,
+        "count": 21
+      },
+      {
+        "year": 2025,
+        "mt_id": 18,
+        "count": 34
+      },
+      {
+        "year": 2025,
+        "mt_id": 19,
+        "count": 17
+      },
+      {
+        "year": 2025,
+        "mt_id": 20,
+        "count": 10
+      },
+      {
+        "year": 2025,
+        "mt_id": 21,
+        "count": 2
+      },
+      {
+        "year": 2025,
+        "mt_id": 22,
+        "count": 8
+      },
+      {
+        "year": 2025,
+        "mt_id": 23,
+        "count": 25
+      },
+      {
+        "year": 2025,
+        "mt_id": 24,
+        "count": 11
+      },
+      {
+        "year": 2025,
+        "mt_id": 25,
+        "count": 10
+      },
+      {
+        "year": 2025,
+        "mt_id": 26,
+        "count": 48
+      },
+      {
+        "year": 2025,
+        "mt_id": 27,
+        "count": 16
+      },
+      {
+        "year": 2025,
+        "mt_id": 28,
+        "count": 15
+      },
+      {
+        "year": 2025,
+        "mt_id": 29,
+        "count": 27
+      },
+      {
+        "year": 2026,
+        "mt_id": 0,
+        "count": 6
+      },
+      {
+        "year": 2026,
+        "mt_id": 1,
+        "count": 8
+      },
+      {
+        "year": 2026,
+        "mt_id": 2,
+        "count": 23
+      },
+      {
+        "year": 2026,
+        "mt_id": 3,
+        "count": 1
+      },
+      {
+        "year": 2026,
+        "mt_id": 4,
+        "count": 6
+      },
+      {
+        "year": 2026,
+        "mt_id": 5,
+        "count": 39
+      },
+      {
+        "year": 2026,
+        "mt_id": 6,
+        "count": 4
+      },
+      {
+        "year": 2026,
+        "mt_id": 7,
+        "count": 24
+      },
+      {
+        "year": 2026,
+        "mt_id": 8,
+        "count": 2
+      },
+      {
+        "year": 2026,
+        "mt_id": 9,
+        "count": 4
+      },
+      {
+        "year": 2026,
+        "mt_id": 10,
+        "count": 4
+      },
+      {
+        "year": 2026,
+        "mt_id": 11,
+        "count": 11
+      },
+      {
+        "year": 2026,
+        "mt_id": 12,
+        "count": 4
+      },
+      {
+        "year": 2026,
+        "mt_id": 13,
+        "count": 5
+      },
+      {
+        "year": 2026,
+        "mt_id": 14,
+        "count": 15
+      },
+      {
+        "year": 2026,
+        "mt_id": 15,
+        "count": 1
+      },
+      {
+        "year": 2026,
+        "mt_id": 17,
+        "count": 5
+      },
+      {
+        "year": 2026,
+        "mt_id": 18,
+        "count": 7
+      },
+      {
+        "year": 2026,
+        "mt_id": 19,
+        "count": 1
+      },
+      {
+        "year": 2026,
+        "mt_id": 20,
+        "count": 1
+      },
+      {
+        "year": 2026,
+        "mt_id": 24,
+        "count": 1
+      },
+      {
+        "year": 2026,
+        "mt_id": 25,
+        "count": 4
+      },
+      {
+        "year": 2026,
+        "mt_id": 26,
+        "count": 11
+      },
+      {
+        "year": 2026,
+        "mt_id": 27,
+        "count": 1
+      },
+      {
+        "year": 2026,
+        "mt_id": 28,
+        "count": 2
+      },
+      {
+        "year": 2026,
+        "mt_id": 29,
+        "count": 1
+      }
+    ]
+  },
+  "chart_presets": {
+    "standard_wide": {
+      "figsize": [
+        24,
+        8
+      ],
+      "legend": {
+        "ncol": 5,
+        "bbox_to_anchor": [
+          0.5,
+          -0.15
+        ],
+        "loc": "upper center"
+      },
+      "x_integer_ticks": true,
+      "grid": {
+        "enabled": true,
+        "linestyle": "--",
+        "alpha": 0.3
+      },
+      "ymin": 0,
+      "event_text_position": "below_x_axis"
+    },
+    "ultrawide": {
+      "figsize": [
+        32,
+        14
+      ],
+      "legend": {
+        "ncol": 5,
+        "bbox_to_anchor": [
+          0.5,
+          -0.12
+        ],
+        "loc": "upper center"
+      },
+      "x_integer_ticks": true,
+      "grid": {
+        "enabled": true,
+        "linestyle": "--",
+        "alpha": 0.4
+      },
+      "ymin": 0,
+      "hide_spines": [
+        "top",
+        "right"
+      ],
+      "event_text_position": "top_inside_with_box"
+    }
+  }
+}
