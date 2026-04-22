@@ -24,27 +24,38 @@ const transformDataForRecharts = (series, years) => {
   });
 };
 
-const CustomTooltip = ({ active, payload, label }) => {
+const CustomTooltip = ({ active, payload, label, isMobile = false }) => {
   if (active && payload && payload.length) {
     // Sort payload by value descending for the tooltip
     const sortedPayload = [...payload].sort((a, b) => b.value - a.value);
+    const maxVisibleItems = isMobile ? 6 : sortedPayload.length;
+    const visiblePayload = sortedPayload.slice(0, maxVisibleItems);
+    const remainingCount = sortedPayload.length - visiblePayload.length;
 
     return (
-      <div className="custom-tooltip">
+      <div
+        className="custom-tooltip"
+        style={{ maxWidth: isMobile ? '220px' : '360px', padding: isMobile ? '0.6rem' : undefined }}
+      >
         <div className="label">Year: {label}</div>
-        <div style={{ maxHeight: '250px', overflowY: 'auto', paddingRight: '10px' }}>
-          {sortedPayload.map((entry, index) => (
+        <div style={{ maxHeight: isMobile ? '120px' : '250px', overflowY: 'auto', paddingRight: isMobile ? '4px' : '10px' }}>
+          {visiblePayload.map((entry, index) => (
             <div key={`item-${index}`} className="tooltip-item">
               <span
                 className="color-dot"
                 style={{ backgroundColor: entry.color }}
               ></span>
-              <span className="tooltip-name" style={{ color: '#475569', maxWidth: '300px', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }} title={entry.name}>
+              <span className="tooltip-name" style={{ color: '#475569', maxWidth: isMobile ? '110px' : '300px', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }} title={entry.name}>
                 {entry.name}
               </span>
               <span className="tooltip-value">{entry.value}</span>
             </div>
           ))}
+          {remainingCount > 0 && (
+            <div style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', marginTop: '0.35rem' }}>
+              +{remainingCount} more topics
+            </div>
+          )}
         </div>
       </div>
     );
@@ -95,7 +106,7 @@ export const TemporalEvolutionChart = ({ data, selectedTopics = [], onTopicSelec
             width={isMobile ? 34 : 44}
             label={!isMobile ? { value: meta?.y_metric || 'Count', angle: -90, position: 'insideLeft', style: { fill: '#64748b' } } : undefined}
           />
-          <Tooltip content={<CustomTooltip />} />
+          <Tooltip content={<CustomTooltip isMobile={isMobile} />} />
 
           {data.events?.map((event, index) => (
             <ReferenceLine
