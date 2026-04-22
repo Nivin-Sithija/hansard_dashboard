@@ -74,10 +74,6 @@ export const TemporalEvolutionChart = ({ data, selectedTopics = [], onTopicSelec
   }, []);
 
   const chartData = useMemo(() => transformDataForRecharts(series, years), [series, years]);
-
-  // If a topic is selected, we might want to highlight it or filter. 
-  // For now, let's keep all lines but maybe adjust opacity, or just filter to the selected one if requested.
-  // Actually, filtering to the selected one is usually clearer if one is selected.
   const activeSeries = selectedTopics.length > 0
     ? series.filter(s => selectedTopics.includes(s.mt_id.toString()))
     : series;
@@ -106,7 +102,7 @@ export const TemporalEvolutionChart = ({ data, selectedTopics = [], onTopicSelec
             width={isMobile ? 34 : 44}
             label={!isMobile ? { value: meta?.y_metric || 'Count', angle: -90, position: 'insideLeft', style: { fill: '#64748b' } } : undefined}
           />
-          <Tooltip content={<CustomTooltip isMobile={isMobile} />} />
+          <Tooltip content={<CustomTooltip isMobile={isMobile} />} wrapperStyle={{ pointerEvents: 'auto' }} />
 
           {data.events?.map((event, index) => (
             <ReferenceLine
