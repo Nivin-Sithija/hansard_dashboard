@@ -246,7 +246,7 @@ function SpeakerCompareView({ speakerTopicMatrix, speakerTopicMatrixByYear, avai
       .sort((a, b) => b.combined - a.combined)
       .slice(0, 12)
       .map(({ tid }) => ({
-        topic: `MT-${tid}`,
+        topic: evolutionData.topic_labels[tid] || `Macro Topic ${tid}`,
         fullLabel: evolutionData.topic_labels[tid] || `Macro Topic ${tid}`,
         [speakerA]: aData[tid] || 0,
         [speakerB]: bData[tid] || 0,
@@ -359,7 +359,7 @@ function SpeakerCompareView({ speakerTopicMatrix, speakerTopicMatrixByYear, avai
               <ResponsiveContainer width="100%" height="100%">
                 <BarChart data={comparisonData.topTopics} layout="vertical" margin={{ top: 5, right: 20, left: 20, bottom: 5 }}>
                   <XAxis type="number" axisLine={false} tickLine={false} tick={{ fill: 'var(--text-secondary)', fontSize: 11 }} />
-                  <YAxis dataKey="topic" type="category" axisLine={false} tickLine={false} tick={{ fill: 'var(--text-secondary)', fontSize: 11 }} width={75} />
+                  <YAxis dataKey="topic" type="category" axisLine={false} tickLine={false} tick={{ fill: 'var(--text-secondary)', fontSize: 11 }} width={170} />
                   <Tooltip content={comparisonTooltip} />
                   <Legend wrapperStyle={{ fontSize: '0.82rem', paddingTop: '0.5rem' }} />
                   <Bar dataKey={speakerA} name={speakerA} fill={COLOR_A} radius={[0, 3, 3, 0]} />
@@ -488,8 +488,8 @@ function TopicCompareView({ evolutionData, keywordsData }) {
               <YAxis axisLine={false} tickLine={false} tick={{ fill: 'var(--text-secondary)', fontSize: 11 }} />
               <Tooltip contentStyle={tooltipStyle} labelStyle={tooltipLabelStyle} itemStyle={tooltipItemStyle} />
               <Legend wrapperStyle={{ fontSize: '0.8rem' }} />
-              <Line type="monotone" dataKey={labelA} stroke={getRgb(topicA)} strokeWidth={2.5} dot={{ r: 3 }} activeDot={{ r: 5 }} name={`MT-${topicA}`} />
-              <Line type="monotone" dataKey={labelB} stroke={getRgb(topicB)} strokeWidth={2.5} dot={{ r: 3 }} activeDot={{ r: 5 }} name={`MT-${topicB}`} strokeDasharray="5 3" />
+              <Line type="monotone" dataKey={labelA} stroke={getRgb(topicA)} strokeWidth={2.5} dot={{ r: 3 }} activeDot={{ r: 5 }} name={labelA} />
+              <Line type="monotone" dataKey={labelB} stroke={getRgb(topicB)} strokeWidth={2.5} dot={{ r: 3 }} activeDot={{ r: 5 }} name={labelB} strokeDasharray="5 3" />
             </LineChart>
           </ResponsiveContainer>
         </div>
@@ -498,8 +498,8 @@ function TopicCompareView({ evolutionData, keywordsData }) {
       {/* Keywords side by side */}
       <div className="grid-2">
         {[
-          { tid: topicA, keywords: keywordsA, color: getRgb(topicA), label: `MT-${topicA} Keywords` },
-          { tid: topicB, keywords: keywordsB, color: getRgb(topicB), label: `MT-${topicB} Keywords` },
+          { tid: topicA, keywords: keywordsA, color: getRgb(topicA), label: `${labelA} — Keywords` },
+          { tid: topicB, keywords: keywordsB, color: getRgb(topicB), label: `${labelB} — Keywords` },
         ].map(({ tid, keywords, color, label }) => (
           <Card key={tid} title={label} icon={Filter}>
             <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem' }}>

@@ -88,7 +88,7 @@ function SpeakerAnalyticsInner({ speakerSpeechesRaw, finalUniqueSpeakers, speake
       const topicId = topicStr.replace('Macro-Topic ', '');
       const label = evolutionData.topic_labels[topicId] || topicStr;
       const rgb = evolutionData.series.find(s => s.mt_id.toString() === topicId)?.styles.standard_chart.color_rgba || [0.5, 0.5, 0.5];
-      return { topic: `MT-${topicId}`, fullLabel: label, count, color: `rgba(${rgb[0]*255},${rgb[1]*255},${rgb[2]*255},0.8)` };
+      return { topic: label, fullLabel: label, count, color: `rgba(${rgb[0]*255},${rgb[1]*255},${rgb[2]*255},0.8)` };
     }).sort((a, b) => b.count - a.count).slice(0, 10);
   }, [speakerInfo, evolutionData]);
 
@@ -206,11 +206,11 @@ function SpeakerAnalyticsInner({ speakerSpeechesRaw, finalUniqueSpeakers, speake
 
               <div className="grid-2">
                 <Card title="Engagement by Topic (Top 10)" icon={PieChart}>
-                  <div style={{ height: 'clamp(250px, 42vh, 350px)' }}>
+                  <div style={{ height: `${Math.max(280, topicChartData.length * 46)}px` }}>
                     <ResponsiveContainer width="100%" height="100%">
                       <BarChart data={topicChartData} layout="vertical" margin={{ top: 10, right: 30, left: 20, bottom: 5 }}>
                         <XAxis type="number" hide />
-                        <YAxis dataKey="topic" type="category" axisLine={false} tickLine={false} tick={{ fill: 'var(--text-secondary)', fontSize: 12 }} width={60} />
+                        <YAxis dataKey="topic" type="category" axisLine={false} tickLine={false} tick={{ fill: 'var(--text-secondary)', fontSize: 11 }} width={170} />
                         <Tooltip cursor={{ fill: 'var(--surface-color)' }} content={({ active, payload }) => {
                           if (active && payload?.length) {
                             const d = payload[0].payload;
