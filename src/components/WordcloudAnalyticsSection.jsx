@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useMemo } from 'react';
 import { Card } from './Card';
-import { Cloud, Calendar, Tag, TrendingUp, Info, Loader2 } from 'lucide-react';
+import { Cloud, Tag, TrendingUp, Info, Loader2 } from 'lucide-react';
 import { readJson } from '../utils/dataPreloader';
 
 // NOTE: Fetches its own data from /public/data/ at runtime.
@@ -61,13 +61,11 @@ const isValidKeyword = (word) => {
   return true;
 };
 
-const YEARS = ['All Years', '2017', '2018', '2019', '2020', '2021', '2022', '2023', '2024', '2025', '2026'];
 const MAX_WORDS = 120;
 
 export default function WordcloudAnalyticsSection({ evolutionData }) {
   const [keywordsByYear, setKeywordsByYear] = useState(null);
   const [fetchError, setFetchError] = useState(null);
-  const [selectedYear, setSelectedYear] = useState('All Years');
   const [selectedTopic, setSelectedTopic] = useState('all');
 
   useEffect(() => {
@@ -89,14 +87,12 @@ export default function WordcloudAnalyticsSection({ evolutionData }) {
   return <WordcloudInner
     keywordsByYear={keywordsByYear}
     evolutionData={evolutionData}
-    selectedYear={selectedYear}
-    setSelectedYear={setSelectedYear}
     selectedTopic={selectedTopic}
     setSelectedTopic={setSelectedTopic}
   />;
 }
 
-function WordcloudInner({ keywordsByYear, evolutionData, selectedYear, setSelectedYear, selectedTopic, setSelectedTopic }) {
+function WordcloudInner({ keywordsByYear, evolutionData, selectedTopic, setSelectedTopic }) {
   const [isMobile, setIsMobile] = useState(() => (typeof window !== 'undefined' ? window.innerWidth <= 768 : false));
 
   useEffect(() => {
@@ -125,16 +121,14 @@ function WordcloudInner({ keywordsByYear, evolutionData, selectedYear, setSelect
     const counts = {};
     if (selectedTopic === 'all') {
       const globalData = keywordsByYear.global_keyword_counts_by_year;
-      const years = selectedYear === 'All Years' ? Object.keys(globalData) : [selectedYear];
-      years.forEach(yr => {
+      Object.keys(globalData).forEach(yr => {
         const kc = globalData[yr]?.keyword_counts;
         if (!kc) return;
         Object.entries(kc).forEach(([word, count]) => { if (isValidKeyword(word)) counts[word] = (counts[word] || 0) + count; });
       });
     } else {
       const topicData = keywordsByYear.topic_keyword_counts_by_year[selectedTopic];
-      const years = selectedYear === 'All Years' ? Object.keys(topicData || {}) : [selectedYear];
-      years.forEach(yr => {
+      Object.keys(topicData || {}).forEach(yr => {
         const kc = topicData?.[yr]?.keyword_counts;
         if (!kc) return;
         Object.entries(kc).forEach(([word, count]) => { if (isValidKeyword(word)) counts[word] = (counts[word] || 0) + count; });
@@ -142,7 +136,7 @@ function WordcloudInner({ keywordsByYear, evolutionData, selectedYear, setSelect
     }
     const cap = isMobile ? 70 : MAX_WORDS;
     return Object.entries(counts).map(([word, count]) => ({ word, count })).sort((a, b) => b.count - a.count).slice(0, cap);
-  }, [selectedYear, selectedTopic, keywordsByYear, isMobile]);
+  }, [selectedTopic, keywordsByYear, isMobile]);
 
   const stats = useMemo(() => {
     if (!cloudWords.length) return null;
@@ -185,25 +179,18 @@ function WordcloudInner({ keywordsByYear, evolutionData, selectedYear, setSelect
 
       {/* Filters */}
       <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', alignItems: 'center', background: 'var(--surface-color)', padding: '1rem 1.5rem', borderRadius: 'var(--radius-lg)', border: '1px solid var(--border-color)', boxShadow: 'var(--shadow-sm)' }}>
-        <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--text-secondary)', fontWeight: 500, fontSize: '0.9rem' }}><Calendar size={16} /> Year</div>
-        <select value={selectedYear} onChange={e => setSelectedYear(e.target.value)} className="select-input" style={{ minWidth: 'min(140px, 100%)' }}>
-          {YEARS.map(yr => <option key={yr} value={yr}>{yr}</option>)}
-        </select>
-
-        <div style={{ width: '1px', height: '28px', background: 'var(--border-color)', margin: '0 0.5rem' }} />
-
         <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--text-secondary)', fontWeight: 500, fontSize: '0.9rem' }}><Tag size={16} /> Topic</div>
         <select value={selectedTopic} onChange={e => setSelectedTopic(e.target.value)} className="select-input" style={{ minWidth: 'min(260px, 100%)' }}>
           <option value="all">All Topics (Global Overview)</option>
           {topicOptions.map(t => {
             const id = t.replace('Macro-Topic ', '');
             const label = evolutionData.topic_labels[id] || t;
-            return <option key={t} value={t}>MT-{id}: {label.length > 55 ? label.slice(0, 55) + '…' : label}</option>;
+            return <option key={t} value={t}>{label.length > 55 ? label.slice(0, 55) + '…' : label}</option>;
           })}
         </select>
 
         <div style={{ marginLeft: 'auto', padding: '0.35rem 1rem', borderRadius: 'var(--radius-md)', background: `rgba(${r},${g},${b},0.1)`, border: `1px solid rgba(${r},${g},${b},0.3)`, fontSize: '0.82rem', fontWeight: 600, color: accentColor }}>
-          {selectedYear} · {selectedTopic === 'all' ? 'Global' : `MT-${selectedTopic.replace('Macro-Topic ', '')}`}
+          {selectedTopic === 'all' ? 'All Topics' : (evolutionData.topic_labels[selectedTopic.replace('Macro-Topic ', '')] || selectedTopic)}
         </div>
       </div>
 
