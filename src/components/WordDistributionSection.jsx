@@ -119,7 +119,7 @@ export const WordDistributionSection = ({ data, selectedTopicId, evolutionData, 
     <Card title={`Keyword Distribution`} icon={Layers} className="h-full">
       <div className="flex-between" style={{ marginBottom: '1rem' }}>
         <p style={{ color: 'var(--text-secondary)', fontSize: '0.95rem' }}>
-          Top 15 words ranked by relative importance.
+          Top 15 words ranked by {metric === 'count' ? 'occurrence count across speeches' : 'discriminative weight within this topic'}.
         </p>
         <div style={{ display: 'flex', gap: '0.5rem' }}>
           <button 
@@ -137,7 +137,7 @@ export const WordDistributionSection = ({ data, selectedTopicId, evolutionData, 
           >
             Absolute Frequency
           </button>
-          <button 
+          <button
             onClick={() => setMetric('tfidf')}
             style={{
               padding: '0.25rem 0.75rem',
@@ -150,7 +150,7 @@ export const WordDistributionSection = ({ data, selectedTopicId, evolutionData, 
               transition: 'all 0.2s'
             }}
           >
-            TF-IDF Rank
+            Topic Specificity
           </button>
         </div>
       </div>
@@ -163,7 +163,13 @@ export const WordDistributionSection = ({ data, selectedTopicId, evolutionData, 
             margin={{ top: 10, right: 30, left: 10, bottom: 20 }}
           >
             <CartesianGrid strokeDasharray="3 3" horizontal={true} vertical={false} stroke="#e2e8f0" />
-            <XAxis type="number" hide />
+            <XAxis
+              type="number"
+              tick={{ fill: '#64748b', fontSize: 11 }}
+              tickLine={false}
+              axisLine={{ stroke: '#e2e8f0' }}
+              label={{ value: metric === 'count' ? 'Occurrences' : 'Specificity Score', position: 'insideBottomRight', offset: -10, fill: '#94a3b8', fontSize: 11 }}
+            />
             <YAxis 
               dataKey="word" 
               type="category" 
