@@ -1,58 +1,128 @@
-import React, { useState, useEffect, useMemo } from 'react';
+import React, { useState, useEffect, useMemo, useRef, useCallback } from 'react';
 import { Card } from './Card';
 import { Cloud, Tag, TrendingUp, Info, Loader2 } from 'lucide-react';
 import { readJson } from '../utils/dataPreloader';
+import cloud from 'd3-cloud';
 
 // NOTE: Fetches its own data from /public/data/ at runtime.
 // This component is React.lazy() loaded — downloaded only when Word Cloud tab is first clicked.
 
-function WordCloud({ words, topicColor, compact = false }) {
+// Vibrant multi-color palette matching the reference image aesthetic
+const WORD_PALETTE = [
+  '#e63946', '#2a9d8f', '#e76f51', '#457b9d', '#f4a261',
+  '#6a4c93', '#2196f3', '#43aa8b', '#f72585', '#4361ee',
+  '#06d6a0', '#fb8500', '#8338ec', '#3a86ff', '#d62828',
+  '#52b788', '#c77dff', '#0077b6', '#ff6b6b', '#48cae4',
+  '#b5838d', '#6d6875', '#e07a5f', '#3d405b', '#81b29a',
+];
+
+function seededRandom(seed) {
+  let s = seed;
+  return () => {
+    s = (s * 16807 + 0) % 2147483647;
+    return (s - 1) / 2147483646;
+  };
+}
+
+function WordCloud({ words, compact = false, width = 700, height = 480 }) {
+  const [placed, setPlaced] = useState([]);
+  const [layoutKey, setLayoutKey] = useState(0);
+
+  useEffect(() => {
+    if (!words || words.length === 0) { setPlaced([]); return; }
+
+    const maxCount = words[0]?.count || 1;
+    const minCount = words[words.length - 1]?.count || 1;
+    const range = maxCount - minCount || 1;
+
+    const minFs = compact ? 10 : 13;
+    const maxFs = compact ? 26 : 68;
+    const getFontSize = (count) => Math.round(minFs + ((count - minCount) / range) * (maxFs - minFs));
+
+    const rand = seededRandom(words.map(w => w.word.charCodeAt(0)).reduce((a, b) => a + b, 42));
+    const ROTATIONS = [0, 0, 0, 90, -90, 0, 0, 45, -45];
+
+    const layout = cloud()
+      .size([width, height])
+      .words(words.map((w, i) => ({
+        text: w.word,
+        size: getFontSize(w.count),
+        count: w.count,
+        color: WORD_PALETTE[i % WORD_PALETTE.length],
+        rotate: compact ? 0 : ROTATIONS[Math.floor(rand() * ROTATIONS.length)],
+      })))
+      .padding(compact ? 2 : 4)
+      .rotate(d => d.rotate)
+      .font('Inter, system-ui, sans-serif')
+      .fontSize(d => d.size)
+      .on('end', (out) => {
+        setPlaced(out);
+        setLayoutKey(k => k + 1);
+      });
+
+    layout.start();
+    return () => layout.stop();
+  }, [words, compact, width, height]);
+
   if (!words || words.length === 0) {
     return <div style={{ textAlign: 'center', padding: '4rem', color: 'var(--text-secondary)' }}>No keyword data available.</div>;
   }
-  const maxCount = words[0]?.count || 1;
-  const minCount = words[words.length - 1]?.count || 1;
-  const range = maxCount - minCount || 1;
-  const getFontSize = (count) => {
-    const minFs = compact ? 10 : 12;
-    const maxFs = compact ? 24 : 54;
-    return Math.round(minFs + ((count - minCount) / range) * (maxFs - minFs));
-  };
-  const getOpacity = (count) => (0.55 + ((count - minCount) / range) * 0.45).toFixed(2);
-  const rotations = [0, 0, 0, -15, 15, -30, 30, -10, 10];
-  const getRotation = (idx, count) => compact ? 0 : (((count - minCount) / range) > 0.7 ? 0 : rotations[idx % rotations.length]);
-  const [r, g, b] = topicColor || [79, 70, 229];
 
   return (
-    <div style={{ display: 'flex', flexWrap: 'wrap', gap: compact ? '0.3rem 0.55rem' : '0.6rem 1rem', alignItems: 'center', justifyContent: 'center', padding: compact ? '0.75rem 0.45rem' : '2rem 1rem', lineHeight: compact ? 1.22 : 1.4, minHeight: compact ? '0' : '320px' }}>
-      {words.map((w, idx) => {
-        const fs = getFontSize(w.count);
-        const op = getOpacity(w.count);
-        const rot = getRotation(idx, w.count);
-        return (
-          <span
-            key={w.word + idx}
-            title={`${w.word}: ${w.count.toLocaleString()} occurrences`}
-            style={{ fontSize: `${fs}px`, fontWeight: fs > 30 ? 700 : fs > 20 ? 600 : 500, color: `rgba(${r},${g},${b},${op})`, transform: `rotate(${rot}deg)`, display: 'inline-block', cursor: 'default', transition: 'all 0.25s ease', padding: '0.1em 0.2em', borderRadius: '4px', userSelect: 'none' }}
+    <svg
+      width={width}
+      height={height}
+      style={{ width: '100%', height: 'auto', display: 'block' }}
+      viewBox={`0 0 ${width} ${height}`}
+    >
+      <g transform={`translate(${width / 2},${height / 2})`}>
+        {placed.map((w, i) => (
+          <text
+            key={w.text + i}
+            textAnchor="middle"
+            transform={`translate(${w.x},${w.y}) rotate(${w.rotate})`}
+            style={{
+              fontSize: `${w.size}px`,
+              fontFamily: 'Inter, system-ui, sans-serif',
+              fontWeight: w.size > 36 ? 700 : w.size > 22 ? 600 : 500,
+              fill: w.color,
+              cursor: 'default',
+              userSelect: 'none',
+              transition: 'opacity 0.2s ease',
+            }}
             onMouseEnter={e => {
               if (compact) return;
-              e.currentTarget.style.color = `rgba(${r},${g},${b},1)`;
-              e.currentTarget.style.background = `rgba(${r},${g},${b},0.1)`;
-              e.currentTarget.style.transform = 'rotate(0deg) scale(1.1)';
+              e.currentTarget.style.opacity = '0.7';
+              e.currentTarget.style.textDecoration = 'underline';
             }}
             onMouseLeave={e => {
               if (compact) return;
-              e.currentTarget.style.color = `rgba(${r},${g},${b},${op})`;
-              e.currentTarget.style.background = 'transparent';
-              e.currentTarget.style.transform = `rotate(${rot}deg) scale(1)`;
+              e.currentTarget.style.opacity = '1';
+              e.currentTarget.style.textDecoration = 'none';
             }}
           >
-            {w.word}
-          </span>
-        );
-      })}
-    </div>
+            <title>{w.text}: {w.count?.toLocaleString()} occurrences</title>
+            {w.text}
+          </text>
+        ))}
+      </g>
+    </svg>
   );
+}
+
+function useContainerWidth(ref) {
+  const [w, setW] = useState(700);
+  useEffect(() => {
+    if (!ref.current) return;
+    const ro = new ResizeObserver(entries => {
+      const entry = entries[0];
+      if (entry) setW(Math.floor(entry.contentRect.width));
+    });
+    ro.observe(ref.current);
+    setW(Math.floor(ref.current.getBoundingClientRect().width));
+    return () => ro.disconnect();
+  }, [ref]);
+  return w;
 }
 
 const isValidKeyword = (word) => {
@@ -64,36 +134,38 @@ const isValidKeyword = (word) => {
 const MAX_WORDS = 120;
 
 export default function WordcloudAnalyticsSection({ evolutionData }) {
-  const [keywordsByYear, setKeywordsByYear] = useState(null);
+  const [keywordsData, setKeywordsData] = useState(null);
   const [fetchError, setFetchError] = useState(null);
   const [selectedTopic, setSelectedTopic] = useState('all');
 
   useEffect(() => {
-    readJson('/data/macro_topic_keyword_counts_by_year.json')
-      .then(setKeywordsByYear)
+    readJson('/data/macro_topic_keywords_100.json')
+      .then(setKeywordsData)
       .catch(err => setFetchError(err.message));
   }, []);
 
   if (fetchError) return <div style={{ textAlign: 'center', padding: '4rem', color: 'var(--text-secondary)' }}>⚠️ {fetchError}</div>;
-  if (!keywordsByYear) {
+  if (!keywordsData) {
     return (
       <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '6rem', gap: '1rem' }}>
         <Loader2 size={36} style={{ color: 'var(--primary-color)', animation: 'spin 1s linear infinite' }} />
-        <p style={{ color: 'var(--text-secondary)', margin: 0 }}>Loading keyword index (812 KB)…</p>
+        <p style={{ color: 'var(--text-secondary)', margin: 0 }}>Loading keyword data…</p>
       </div>
     );
   }
 
   return <WordcloudInner
-    keywordsByYear={keywordsByYear}
+    keywordsData={keywordsData}
     evolutionData={evolutionData}
     selectedTopic={selectedTopic}
     setSelectedTopic={setSelectedTopic}
   />;
 }
 
-function WordcloudInner({ keywordsByYear, evolutionData, selectedTopic, setSelectedTopic }) {
+function WordcloudInner({ keywordsData, evolutionData, selectedTopic, setSelectedTopic }) {
   const [isMobile, setIsMobile] = useState(() => (typeof window !== 'undefined' ? window.innerWidth <= 768 : false));
+  const cloudContainerRef = useRef(null);
+  const containerWidth = useContainerWidth(cloudContainerRef);
 
   useEffect(() => {
     const onResize = () => setIsMobile(window.innerWidth <= 768);
@@ -102,9 +174,9 @@ function WordcloudInner({ keywordsByYear, evolutionData, selectedTopic, setSelec
   }, []);
 
   const topicOptions = useMemo(() =>
-    Object.keys(keywordsByYear.topic_keyword_counts_by_year)
+    Object.keys(keywordsData.count_with_freq || {})
       .sort((a, b) => parseInt(a.replace('Macro-Topic ', '')) - parseInt(b.replace('Macro-Topic ', '')))
-  , [keywordsByYear]);
+  , [keywordsData]);
 
   const topicColor = useMemo(() => {
     if (selectedTopic === 'all') return [79, 70, 229];
@@ -118,25 +190,24 @@ function WordcloudInner({ keywordsByYear, evolutionData, selectedTopic, setSelec
   }, [selectedTopic, evolutionData]);
 
   const cloudWords = useMemo(() => {
-    const counts = {};
+    const cwf = keywordsData.count_with_freq || {};
+    let items = [];
     if (selectedTopic === 'all') {
-      const globalData = keywordsByYear.global_keyword_counts_by_year;
-      Object.keys(globalData).forEach(yr => {
-        const kc = globalData[yr]?.keyword_counts;
-        if (!kc) return;
-        Object.entries(kc).forEach(([word, count]) => { if (isValidKeyword(word)) counts[word] = (counts[word] || 0) + count; });
+      const combined = {};
+      Object.values(cwf).forEach(wordList => {
+        wordList.forEach(({ keyword, count }) => {
+          if (isValidKeyword(keyword)) combined[keyword] = (combined[keyword] || 0) + count;
+        });
       });
+      items = Object.entries(combined).map(([word, count]) => ({ word, count }));
     } else {
-      const topicData = keywordsByYear.topic_keyword_counts_by_year[selectedTopic];
-      Object.keys(topicData || {}).forEach(yr => {
-        const kc = topicData?.[yr]?.keyword_counts;
-        if (!kc) return;
-        Object.entries(kc).forEach(([word, count]) => { if (isValidKeyword(word)) counts[word] = (counts[word] || 0) + count; });
-      });
+      items = (cwf[selectedTopic] || [])
+        .filter(({ keyword }) => isValidKeyword(keyword))
+        .map(({ keyword, count }) => ({ word: keyword, count }));
     }
     const cap = isMobile ? 70 : MAX_WORDS;
-    return Object.entries(counts).map(([word, count]) => ({ word, count })).sort((a, b) => b.count - a.count).slice(0, cap);
-  }, [selectedTopic, keywordsByYear, isMobile]);
+    return items.sort((a, b) => b.count - a.count).slice(0, cap);
+  }, [selectedTopic, keywordsData, isMobile]);
 
   const stats = useMemo(() => {
     if (!cloudWords.length) return null;
@@ -196,12 +267,17 @@ function WordcloudInner({ keywordsByYear, evolutionData, selectedTopic, setSelec
 
       {/* Cloud + Bar Chart */}
       <div style={{ display: 'flex', gap: '2rem', flexWrap: 'wrap', alignItems: 'flex-start' }}>
-        <div style={{ flex: '2', minWidth: 'min(340px, 100%)' }}>
+        <div ref={cloudContainerRef} style={{ flex: '2', minWidth: 'min(340px, 100%)' }}>
           <Card title={`Word Cloud — ${topicLabel}`} icon={Cloud}>
             <div style={{ marginBottom: '0.75rem', display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--text-secondary)', fontSize: '0.82rem' }}>
               <Info size={14} /> Hover a word to see its exact count. Word size reflects frequency.
             </div>
-            <WordCloud words={cloudWords} topicColor={topicColor} compact={isMobile} />
+            <WordCloud
+              words={cloudWords}
+              compact={isMobile}
+              width={Math.max(containerWidth - 48, 300)}
+              height={isMobile ? 320 : 500}
+            />
           </Card>
         </div>
 

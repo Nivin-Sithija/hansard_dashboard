@@ -1074,16 +1074,356 @@
         "count": 142
       },
       {
-        "keyword": "ආණ්ඩු",
-        "count": 136
-      },
-      {
         "keyword": "පාර්ලිමේන්තුවට",
         "count": 139
       },
       {
+        "keyword": "ආණ්ඩු",
+        "count": 136
+      },
+      {
         "keyword": "ආණ්ඩුව",
         "count": 138
+      },
+      {
+        "keyword": "පක්ෂයේ",
+        "count": 136
+      },
+      {
+        "keyword": "විපක්ෂ",
+        "count": 134
+      },
+      {
+        "keyword": "ප්‍රශ්නයක්",
+        "count": 133
+      },
+      {
+        "keyword": "ආණ්ඩුක්‍රම ව්‍යවස්ථා",
+        "count": 131
+      },
+      {
+        "keyword": "මන්ත්‍රීවරු",
+        "count": 130
+      },
+      {
+        "keyword": "පිළිතුරු",
+        "count": 128
+      },
+      {
+        "keyword": "මැතිතුමා",
+        "count": 127
+      },
+      {
+        "keyword": "ව්‍යවස්ථාවේ",
+        "count": 125
+      },
+      {
+        "keyword": "විශ්වාස",
+        "count": 124
+      },
+      {
+        "keyword": "බලය",
+        "count": 123
+      },
+      {
+        "keyword": "දේශපාලන",
+        "count": 121
+      },
+      {
+        "keyword": "තීරණය",
+        "count": 120
+      },
+      {
+        "keyword": "නිදහස්",
+        "count": 118
+      },
+      {
+        "keyword": "ජාතික",
+        "count": 117
+      },
+      {
+        "keyword": "න්‍යාය",
+        "count": 115
+      },
+      {
+        "keyword": "ව්‍යවස්ථාව",
+        "count": 114
+      },
+      {
+        "keyword": "ජනතාව",
+        "count": 112
+      },
+      {
+        "keyword": "පක්ෂ නායක",
+        "count": 111
+      },
+      {
+        "keyword": "යෝජනා",
+        "count": 110
+      },
+      {
+        "keyword": "මන්ත්‍රීවරුන්",
+        "count": 108
+      },
+      {
+        "keyword": "ජනතා",
+        "count": 107
+      },
+      {
+        "keyword": "එක්සත්",
+        "count": 105
+      },
+      {
+        "keyword": "පැහැදිලි",
+        "count": 104
+      },
+      {
+        "keyword": "ආණ්ඩුක්‍රම ව්‍යවස්ථාවේ",
+        "count": 102
+      },
+      {
+        "keyword": "ඔබතුමාගෙන්",
+        "count": 101
+      },
+      {
+        "keyword": "තීන්දු",
+        "count": 99
+      },
+      {
+        "keyword": "මන්ත්‍රීවරුන්ට",
+        "count": 98
+      },
+      {
+        "keyword": "වැඩි",
+        "count": 97
+      },
+      {
+        "keyword": "සම්මත",
+        "count": 95
+      },
+      {
+        "keyword": "බහුතරය",
+        "count": 94
+      },
+      {
+        "keyword": "ආරක්ෂා",
+        "count": 92
+      },
+      {
+        "keyword": "භංග",
+        "count": 91
+      },
+      {
+        "keyword": "විශ්වාස භංග",
+        "count": 89
+      },
+      {
+        "keyword": "ඉඩ",
+        "count": 88
+      },
+      {
+        "keyword": "මතු",
+        "count": 87
+      },
+      {
+        "keyword": "ජනාධිපතිවරයා",
+        "count": 85
+      },
+      {
+        "keyword": "රජය",
+        "count": 84
+      },
+      {
+        "keyword": "තීන්දුව",
+        "count": 82
+      },
+      {
+        "keyword": "යෝජනාවක්",
+        "count": 81
+      },
+      {
+        "keyword": "ජනාධිපතිතුමා",
+        "count": 79
+      },
+      {
+        "keyword": "ආණ්ඩුවක්",
+        "count": 78
+      },
+      {
+        "keyword": "ජනතාවගේ",
+        "count": 76
+      },
+      {
+        "keyword": "අරගෙන",
+        "count": 75
+      },
+      {
+        "keyword": "පක්ෂය",
+        "count": 74
+      },
+      {
+        "keyword": "සාකච්ඡා",
+        "count": 72
+      },
+      {
+        "keyword": "විපක්ෂය",
+        "count": 71
+      },
+      {
+        "keyword": "මුදල්",
+        "count": 69
+      },
+      {
+        "keyword": "ලංකා",
+        "count": 68
+      },
+      {
+        "keyword": "ඡන්දය",
+        "count": 66
+      },
+      {
+        "keyword": "ධුරය",
+        "count": 65
+      },
+      {
+        "keyword": "ආණ්ඩු පක්ෂයේ",
+        "count": 64
+      },
+      {
+        "keyword": "business",
+        "count": 62
+      },
+      {
+        "keyword": "පෙර",
+        "count": 61
+      },
+      {
+        "keyword": "ඉල්ලීමක්",
+        "count": 59
+      },
+      {
+        "keyword": "තේරීම්",
+        "count": 58
+      },
+      {
+        "keyword": "එක්සත් ජනතා",
+        "count": 56
+      },
+      {
+        "keyword": "භාර",
+        "count": 55
+      },
+      {
+        "keyword": "ජනතා නිදහස්",
+        "count": 53
+      },
+      {
+        "keyword": "ආණ්ඩුවට",
+        "count": 52
+      },
+      {
+        "keyword": "ආණ්ඩුවේ",
+        "count": 51
+      },
+      {
+        "keyword": "රාජපක්ෂ",
+        "count": 49
+      },
+      {
+        "keyword": "රැස්වීමේදී",
+        "count": 48
+      },
+      {
+        "keyword": "මන්ත්‍රී",
+        "count": 46
+      },
+      {
+        "keyword": "විශ්වාසභංග",
+        "count": 45
+      },
+      {
+        "keyword": "දුන්",
+        "count": 43
+      },
+      {
+        "keyword": "පැහැදිලිව",
+        "count": 42
+      },
+      {
+        "keyword": "මහින්ද",
+        "count": 40
+      },
+      {
+        "keyword": "ප්‍රශ්නයට",
+        "count": 39
+      },
+      {
+        "keyword": "ව්‍යවස්ථාදායක",
+        "count": 38
+      },
+      {
+        "keyword": "නීති",
+        "count": 36
+      },
+      {
+        "keyword": "නියෝගය",
+        "count": 35
+      },
+      {
+        "keyword": "වාචික",
+        "count": 33
+      },
+      {
+        "keyword": "සම්ප්‍රදාය",
+        "count": 32
+      },
+      {
+        "keyword": "අයිතිය",
+        "count": 30
+      },
+      {
+        "keyword": "මන්ත්‍රීවරයෙක්",
+        "count": 29
+      },
+      {
+        "keyword": "පාලනය",
+        "count": 28
+      },
+      {
+        "keyword": "අයිතිවාසිකම්",
+        "count": 26
+      },
+      {
+        "keyword": "රජයේ",
+        "count": 25
+      },
+      {
+        "keyword": "නායකයා",
+        "count": 23
+      },
+      {
+        "keyword": "ශ්‍රේෂ්ඨාධිකරණය",
+        "count": 22
+      },
+      {
+        "keyword": "නීතිය",
+        "count": 20
+      },
+      {
+        "keyword": "මහින්ද රාජපක්ෂ",
+        "count": 19
+      },
+      {
+        "keyword": "වාචික පිළිතුරු",
+        "count": 17
+      },
+      {
+        "keyword": "මන්ත්‍රීවරුන්ගේ",
+        "count": 16
+      },
+      {
+        "keyword": "තමන්ගේ",
+        "count": 15
       }
     ],
     "Macro-Topic 1": [
@@ -1146,6 +1486,346 @@
       {
         "keyword": "ආණ්ඩුව",
         "count": 882
+      },
+      {
+        "keyword": "මිලියන",
+        "count": 882
+      },
+      {
+        "keyword": "ලංකා",
+        "count": 872
+      },
+      {
+        "keyword": "ආර්ථිකය",
+        "count": 863
+      },
+      {
+        "keyword": "ජනතාවට",
+        "count": 853
+      },
+      {
+        "keyword": "රුපියල් බිලියන",
+        "count": 844
+      },
+      {
+        "keyword": "මූල්‍ය",
+        "count": 835
+      },
+      {
+        "keyword": "යෝජනා",
+        "count": 825
+      },
+      {
+        "keyword": "විදේශ",
+        "count": 816
+      },
+      {
+        "keyword": "විදුලිබල",
+        "count": 807
+      },
+      {
+        "keyword": "රටට",
+        "count": 797
+      },
+      {
+        "keyword": "ජාතික",
+        "count": 788
+      },
+      {
+        "keyword": "ආදායම",
+        "count": 779
+      },
+      {
+        "keyword": "විදුලිය",
+        "count": 769
+      },
+      {
+        "keyword": "ජනාධිපතිතුමා",
+        "count": 760
+      },
+      {
+        "keyword": "දේශීය",
+        "count": 751
+      },
+      {
+        "keyword": "imf",
+        "count": 741
+      },
+      {
+        "keyword": "අරගෙන",
+        "count": 732
+      },
+      {
+        "keyword": "රජයේ",
+        "count": 723
+      },
+      {
+        "keyword": "ආයතන",
+        "count": 713
+      },
+      {
+        "keyword": "දේශපාලන",
+        "count": 704
+      },
+      {
+        "keyword": "වියදම්",
+        "count": 695
+      },
+      {
+        "keyword": "ප්‍රශ්න",
+        "count": 685
+      },
+      {
+        "keyword": "ප්‍රශ්නයක්",
+        "count": 676
+      },
+      {
+        "keyword": "ජාත්‍යන්තර",
+        "count": 667
+      },
+      {
+        "keyword": "ආදායම්",
+        "count": 657
+      },
+      {
+        "keyword": "රාජපක්ෂ",
+        "count": 648
+      },
+      {
+        "keyword": "ගෑස්",
+        "count": 639
+      },
+      {
+        "keyword": "කින්",
+        "count": 629
+      },
+      {
+        "keyword": "භාර",
+        "count": 620
+      },
+      {
+        "keyword": "රටක්",
+        "count": 611
+      },
+      {
+        "keyword": "සහන",
+        "count": 601
+      },
+      {
+        "keyword": "ප්‍රමාණය",
+        "count": 592
+      },
+      {
+        "keyword": "වෙළෙඳ",
+        "count": 583
+      },
+      {
+        "keyword": "ලංකාවේ",
+        "count": 573
+      },
+      {
+        "keyword": "මැතිතුමා",
+        "count": 564
+      },
+      {
+        "keyword": "සාකච්ඡා",
+        "count": 555
+      },
+      {
+        "keyword": "ප්‍රතිපත්ති",
+        "count": 545
+      },
+      {
+        "keyword": "ඩොලර් බිලියන",
+        "count": 536
+      },
+      {
+        "keyword": "ශක්තිමත්",
+        "count": 527
+      },
+      {
+        "keyword": "ගොඩ",
+        "count": 517
+      },
+      {
+        "keyword": "ලක්ෂ",
+        "count": 508
+      },
+      {
+        "keyword": "මණ්ඩලය",
+        "count": 499
+      },
+      {
+        "keyword": "ඇයි",
+        "count": 489
+      },
+      {
+        "keyword": "ඇමෙරිකානු",
+        "count": 480
+      },
+      {
+        "keyword": "ඉන්ධන",
+        "count": 471
+      },
+      {
+        "keyword": "ඩොලර් මිලියන",
+        "count": 461
+      },
+      {
+        "keyword": "ජනතාවගේ",
+        "count": 452
+      },
+      {
+        "keyword": "වසර",
+        "count": 443
+      },
+      {
+        "keyword": "පාලනය",
+        "count": 433
+      },
+      {
+        "keyword": "විශ්වාස",
+        "count": 424
+      },
+      {
+        "keyword": "තමන්ගේ",
+        "count": 415
+      },
+      {
+        "keyword": "පිළිවෙළක්",
+        "count": 405
+      },
+      {
+        "keyword": "පාර්ලිමේන්තුවේ",
+        "count": 396
+      },
+      {
+        "keyword": "ඇමෙරිකානු ඩොලර්",
+        "count": 387
+      },
+      {
+        "keyword": "මාසයේ",
+        "count": 377
+      },
+      {
+        "keyword": "පෞද්ගලික",
+        "count": 368
+      },
+      {
+        "keyword": "අපනයන",
+        "count": 359
+      },
+      {
+        "keyword": "නව",
+        "count": 349
+      },
+      {
+        "keyword": "බලය",
+        "count": 340
+      },
+      {
+        "keyword": "ලෝකයේ",
+        "count": 331
+      },
+      {
+        "keyword": "ආණ්ඩුවේ",
+        "count": 321
+      },
+      {
+        "keyword": "ආයෝජන",
+        "count": 312
+      },
+      {
+        "keyword": "අර්බුදය",
+        "count": 302
+      },
+      {
+        "keyword": "විපක්ෂයේ",
+        "count": 293
+      },
+      {
+        "keyword": "ඉදිරියට",
+        "count": 284
+      },
+      {
+        "keyword": "පාර්ලිමේන්තුවට",
+        "count": 274
+      },
+      {
+        "keyword": "කථාව",
+        "count": 265
+      },
+      {
+        "keyword": "ජන",
+        "count": 256
+      },
+      {
+        "keyword": "විපක්ෂය",
+        "count": 246
+      },
+      {
+        "keyword": "රටවල්",
+        "count": 237
+      },
+      {
+        "keyword": "ප්‍රතිව්‍යුහගත",
+        "count": 228
+      },
+      {
+        "keyword": "රුපියල් මිලියන",
+        "count": 218
+      },
+      {
+        "keyword": "ලෝක",
+        "count": 209
+      },
+      {
+        "keyword": "ගන්නේ",
+        "count": 200
+      },
+      {
+        "keyword": "නිර්මාණය",
+        "count": 190
+      },
+      {
+        "keyword": "ලංකා විදුලිබල",
+        "count": 181
+      },
+      {
+        "keyword": "බලශක්ති",
+        "count": 172
+      },
+      {
+        "keyword": "තීන්දු",
+        "count": 162
+      },
+      {
+        "keyword": "කර්මාන්ත",
+        "count": 153
+      },
+      {
+        "keyword": "වෙච්ච",
+        "count": 144
+      },
+      {
+        "keyword": "වියදම",
+        "count": 134
+      },
+      {
+        "keyword": "ආණ්ඩු",
+        "count": 125
+      },
+      {
+        "keyword": "වසරේ",
+        "count": 116
+      },
+      {
+        "keyword": "හදන්න",
+        "count": 106
+      },
+      {
+        "keyword": "ආණ්ඩුවට",
+        "count": 97
       }
     ],
     "Macro-Topic 10": [
@@ -1198,16 +1878,356 @@
         "count": 109
       },
       {
-        "keyword": "බැංකු",
+        "keyword": "අංක",
         "count": 103
       },
       {
-        "keyword": "අංක",
+        "keyword": "බැංකු",
         "count": 103
       },
       {
         "keyword": "පළාත්",
         "count": 100
+      },
+      {
+        "keyword": "තිශබනවා",
+        "count": 100
+      },
+      {
+        "keyword": "ක්ෂුද්‍ර මූල්‍ය",
+        "count": 98
+      },
+      {
+        "keyword": "රජය",
+        "count": 97
+      },
+      {
+        "keyword": "සමිති",
+        "count": 96
+      },
+      {
+        "keyword": "මැතිවරණය",
+        "count": 95
+      },
+      {
+        "keyword": "රජයේ",
+        "count": 94
+      },
+      {
+        "keyword": "කියනා",
+        "count": 93
+      },
+      {
+        "keyword": "බදු",
+        "count": 92
+      },
+      {
+        "keyword": "නැා",
+        "count": 91
+      },
+      {
+        "keyword": "තිකබනවා",
+        "count": 90
+      },
+      {
+        "keyword": "තිදෙනො",
+        "count": 89
+      },
+      {
+        "keyword": "ජාතික",
+        "count": 88
+      },
+      {
+        "keyword": "ව්‍යාපාරය",
+        "count": 87
+      },
+      {
+        "keyword": "සමුපකාර සමිති",
+        "count": 86
+      },
+      {
+        "keyword": "ආර්ථික",
+        "count": 85
+      },
+      {
+        "keyword": "වාර්තාව",
+        "count": 84
+      },
+      {
+        "keyword": "බැංකුව",
+        "count": 83
+      },
+      {
+        "keyword": "සංවර්ධන",
+        "count": 82
+      },
+      {
+        "keyword": "නියෝග",
+        "count": 80
+      },
+      {
+        "keyword": "යෝජනා",
+        "count": 79
+      },
+      {
+        "keyword": "රුපියල් බිලියන",
+        "count": 78
+      },
+      {
+        "keyword": "සමුපකාර ව්‍යාපාරය",
+        "count": 77
+      },
+      {
+        "keyword": "ජනතාව",
+        "count": 76
+      },
+      {
+        "keyword": "වියදම්",
+        "count": 75
+      },
+      {
+        "keyword": "සාකච්ඡා",
+        "count": 74
+      },
+      {
+        "keyword": "රජයේ මුදල්",
+        "count": 73
+      },
+      {
+        "keyword": "ප්‍රශ්නයක්",
+        "count": 72
+      },
+      {
+        "keyword": "ග්‍රාමීය",
+        "count": 71
+      },
+      {
+        "keyword": "අරගෙන",
+        "count": 70
+      },
+      {
+        "keyword": "පාර්ලිමේන්තුවට",
+        "count": 69
+      },
+      {
+        "keyword": "අතුරු",
+        "count": 68
+      },
+      {
+        "keyword": "කෙටුම්පත",
+        "count": 67
+      },
+      {
+        "keyword": "ව්‍යාපාර",
+        "count": 66
+      },
+      {
+        "keyword": "ආයතනය",
+        "count": 65
+      },
+      {
+        "keyword": "පනත් කෙටුම්පත",
+        "count": 64
+      },
+      {
+        "keyword": "මැතිවරණ",
+        "count": 62
+      },
+      {
+        "keyword": "වගන්තිය",
+        "count": 61
+      },
+      {
+        "keyword": "ආණ්ඩුව",
+        "count": 60
+      },
+      {
+        "keyword": "වැඩි",
+        "count": 59
+      },
+      {
+        "keyword": "පාලන",
+        "count": 58
+      },
+      {
+        "keyword": "සේවා",
+        "count": 57
+      },
+      {
+        "keyword": "අයවැය",
+        "count": 56
+      },
+      {
+        "keyword": "භාර",
+        "count": 55
+      },
+      {
+        "keyword": "පනතේ",
+        "count": 54
+      },
+      {
+        "keyword": "කාර්යාලය",
+        "count": 53
+      },
+      {
+        "keyword": "ප්‍රශ්න",
+        "count": 52
+      },
+      {
+        "keyword": "ජනතාවට",
+        "count": 51
+      },
+      {
+        "keyword": "කරමි",
+        "count": 50
+      },
+      {
+        "keyword": "ලා",
+        "count": 49
+      },
+      {
+        "keyword": "දේශපාලන",
+        "count": 48
+      },
+      {
+        "keyword": "මූල්‍ය ආයතන",
+        "count": 47
+      },
+      {
+        "keyword": "තැන්පත්",
+        "count": 46
+      },
+      {
+        "keyword": "පහසුකම්",
+        "count": 44
+      },
+      {
+        "keyword": "බලය",
+        "count": 43
+      },
+      {
+        "keyword": "අමාත්‍යාංශය",
+        "count": 42
+      },
+      {
+        "keyword": "ආණ්ඩුක්‍රම",
+        "count": 41
+      },
+      {
+        "keyword": "පාර්ලිමේන්තු",
+        "count": 40
+      },
+      {
+        "keyword": "ක්‍රමය",
+        "count": 39
+      },
+      {
+        "keyword": "වාර්තා",
+        "count": 38
+      },
+      {
+        "keyword": "පොලී",
+        "count": 37
+      },
+      {
+        "keyword": "භාණ්ඩ",
+        "count": 36
+      },
+      {
+        "keyword": "ලංකා",
+        "count": 35
+      },
+      {
+        "keyword": "පාර්ලිමේන්තුවේ",
+        "count": 34
+      },
+      {
+        "keyword": "ඡන්ද",
+        "count": 33
+      },
+      {
+        "keyword": "අමාත්‍යවරයා",
+        "count": 32
+      },
+      {
+        "keyword": "මධ්‍ය",
+        "count": 31
+      },
+      {
+        "keyword": "පවත්වා",
+        "count": 30
+      },
+      {
+        "keyword": "ක්‍රම",
+        "count": 29
+      },
+      {
+        "keyword": "ස්ථාවර",
+        "count": 27
+      },
+      {
+        "keyword": "කින්",
+        "count": 26
+      },
+      {
+        "keyword": "තැන්පතු",
+        "count": 25
+      },
+      {
+        "keyword": "පැහැදිලි",
+        "count": 24
+      },
+      {
+        "keyword": "ප්‍රතිපත්ති",
+        "count": 23
+      },
+      {
+        "keyword": "මෙවැනි",
+        "count": 22
+      },
+      {
+        "keyword": "නීති",
+        "count": 21
+      },
+      {
+        "keyword": "වගකීම",
+        "count": 20
+      },
+      {
+        "keyword": "අහිංසක",
+        "count": 19
+      },
+      {
+        "keyword": "සම්මත",
+        "count": 18
+      },
+      {
+        "keyword": "ප්‍රශ්නයට",
+        "count": 17
+      },
+      {
+        "keyword": "දිනැති",
+        "count": 16
+      },
+      {
+        "keyword": "මිලියන",
+        "count": 15
+      },
+      {
+        "keyword": "පියවර",
+        "count": 14
+      },
+      {
+        "keyword": "වන්න",
+        "count": 13
+      },
+      {
+        "keyword": "කර්මාන්ත",
+        "count": 12
+      },
+      {
+        "keyword": "කා",
+        "count": 11
       }
     ],
     "Macro-Topic 11": [
@@ -1270,6 +2290,346 @@
       {
         "keyword": "රජයේ",
         "count": 246
+      },
+      {
+        "keyword": "රෝහල",
+        "count": 246
+      },
+      {
+        "keyword": "මිල",
+        "count": 243
+      },
+      {
+        "keyword": "මුදල්",
+        "count": 240
+      },
+      {
+        "keyword": "ජනතාවට",
+        "count": 238
+      },
+      {
+        "keyword": "ප්‍රතිකාර",
+        "count": 235
+      },
+      {
+        "keyword": "රෝග",
+        "count": 232
+      },
+      {
+        "keyword": "පහසුකම්",
+        "count": 230
+      },
+      {
+        "keyword": "පවතින",
+        "count": 227
+      },
+      {
+        "keyword": "ප්‍රශ්නයක්",
+        "count": 225
+      },
+      {
+        "keyword": "දේශීය",
+        "count": 222
+      },
+      {
+        "keyword": "අමාත්‍යාංශය",
+        "count": 219
+      },
+      {
+        "keyword": "මිලියන",
+        "count": 217
+      },
+      {
+        "keyword": "වාර්තා",
+        "count": 214
+      },
+      {
+        "keyword": "රෝගය",
+        "count": 212
+      },
+      {
+        "keyword": "ලංකාවේ",
+        "count": 209
+      },
+      {
+        "keyword": "පාලනය",
+        "count": 206
+      },
+      {
+        "keyword": "වසංගතය",
+        "count": 204
+      },
+      {
+        "keyword": "වෛද්‍යවරුන්",
+        "count": 201
+      },
+      {
+        "keyword": "වෛද්‍යවරු",
+        "count": 199
+      },
+      {
+        "keyword": "ඩෙංගු",
+        "count": 196
+      },
+      {
+        "keyword": "විශේෂඥ",
+        "count": 193
+      },
+      {
+        "keyword": "ආණ්ඩුව",
+        "count": 191
+      },
+      {
+        "keyword": "කාර්ය",
+        "count": 188
+      },
+      {
+        "keyword": "පෞද්ගලික",
+        "count": 186
+      },
+      {
+        "keyword": "එන්නත",
+        "count": 183
+      },
+      {
+        "keyword": "පරීක්ෂණ",
+        "count": 180
+      },
+      {
+        "keyword": "අරගෙන",
+        "count": 178
+      },
+      {
+        "keyword": "ප්‍රශ්න",
+        "count": 175
+      },
+      {
+        "keyword": "ආයුර්වේද",
+        "count": 173
+      },
+      {
+        "keyword": "දිස්ත්‍රික්කයේ",
+        "count": 170
+      },
+      {
+        "keyword": "සංඛ්‍යාව",
+        "count": 167
+      },
+      {
+        "keyword": "පිළිකා",
+        "count": 165
+      },
+      {
+        "keyword": "ක්ෂේත්‍රයේ",
+        "count": 162
+      },
+      {
+        "keyword": "කොරෝනා",
+        "count": 160
+      },
+      {
+        "keyword": "බිලියන",
+        "count": 157
+      },
+      {
+        "keyword": "වැය",
+        "count": 154
+      },
+      {
+        "keyword": "අමාත්‍යාංශයේ",
+        "count": 152
+      },
+      {
+        "keyword": "උපකරණ",
+        "count": 149
+      },
+      {
+        "keyword": "සේවය",
+        "count": 147
+      },
+      {
+        "keyword": "මිලදී",
+        "count": 144
+      },
+      {
+        "keyword": "මරණ",
+        "count": 141
+      },
+      {
+        "keyword": "සේවා",
+        "count": 139
+      },
+      {
+        "keyword": "මූලික",
+        "count": 136
+      },
+      {
+        "keyword": "ලෝක",
+        "count": 133
+      },
+      {
+        "keyword": "ක්ෂේත්‍රය",
+        "count": 131
+      },
+      {
+        "keyword": "වර්ග",
+        "count": 128
+      },
+      {
+        "keyword": "වියදම්",
+        "count": 126
+      },
+      {
+        "keyword": "සේවාව",
+        "count": 123
+      },
+      {
+        "keyword": "ඖෂධය",
+        "count": 120
+      },
+      {
+        "keyword": "රෝහලට",
+        "count": 118
+      },
+      {
+        "keyword": "රුපියල් මිලියන",
+        "count": 115
+      },
+      {
+        "keyword": "ජනතාවගේ",
+        "count": 113
+      },
+      {
+        "keyword": "රටට",
+        "count": 110
+      },
+      {
+        "keyword": "ගන්නේ",
+        "count": 107
+      },
+      {
+        "keyword": "රෝගීන්ට",
+        "count": 105
+      },
+      {
+        "keyword": "සාකච්ඡා",
+        "count": 102
+      },
+      {
+        "keyword": "ලෝකයේ",
+        "count": 100
+      },
+      {
+        "keyword": "පියවර",
+        "count": 97
+      },
+      {
+        "keyword": "පද්ධතිය",
+        "count": 94
+      },
+      {
+        "keyword": "ප්‍රමාණය",
+        "count": 92
+      },
+      {
+        "keyword": "පළාත්",
+        "count": 89
+      },
+      {
+        "keyword": "හිඟයක්",
+        "count": 87
+      },
+      {
+        "keyword": "ලක්ෂ",
+        "count": 84
+      },
+      {
+        "keyword": "රෝහල්වල",
+        "count": 81
+      },
+      {
+        "keyword": "සෞඛ්‍ය අමාත්‍යාංශය",
+        "count": 79
+      },
+      {
+        "keyword": "ක්‍රම",
+        "count": 76
+      },
+      {
+        "keyword": "වකුගඩු",
+        "count": 74
+      },
+      {
+        "keyword": "මුදලක්",
+        "count": 71
+      },
+      {
+        "keyword": "වර්ෂයේ",
+        "count": 68
+      },
+      {
+        "keyword": "සෞඛ්‍ය ක්ෂේත්‍රය",
+        "count": 66
+      },
+      {
+        "keyword": "රුපියල් බිලියන",
+        "count": 63
+      },
+      {
+        "keyword": "ලෝක සෞඛ්‍ය",
+        "count": 61
+      },
+      {
+        "keyword": "සෞඛ්‍ය ක්ෂේත්‍රයේ",
+        "count": 58
+      },
+      {
+        "keyword": "නියාමන",
+        "count": 55
+      },
+      {
+        "keyword": "නිෂ්පාදනය",
+        "count": 53
+      },
+      {
+        "keyword": "දේශපාලන",
+        "count": 50
+      },
+      {
+        "keyword": "කොවිඩ් වසංගතය",
+        "count": 48
+      },
+      {
+        "keyword": "මර්දනය",
+        "count": 45
+      },
+      {
+        "keyword": "රජයට",
+        "count": 42
+      },
+      {
+        "keyword": "ඉල්ලීමක්",
+        "count": 40
+      },
+      {
+        "keyword": "ඖෂධ නියාමන",
+        "count": 37
+      },
+      {
+        "keyword": "බරපතළ",
+        "count": 35
+      },
+      {
+        "keyword": "තොරතුරු",
+        "count": 32
+      },
+      {
+        "keyword": "හිඟය",
+        "count": 29
+      },
+      {
+        "keyword": "රෝහලක්",
+        "count": 27
       }
     ],
     "Macro-Topic 12": [
@@ -1332,6 +2692,346 @@
       {
         "keyword": "ප්‍රශ්නයක්",
         "count": 29
+      },
+      {
+        "keyword": "ශ්‍රේෂ්ඨාධිකරණය",
+        "count": 29
+      },
+      {
+        "keyword": "රූපවාහිනී",
+        "count": 28
+      },
+      {
+        "keyword": "අදහස්",
+        "count": 28
+      },
+      {
+        "keyword": "නිදහස",
+        "count": 28
+      },
+      {
+        "keyword": "පෞද්ගලික",
+        "count": 27
+      },
+      {
+        "keyword": "ආණ්ඩුක්‍රම",
+        "count": 27
+      },
+      {
+        "keyword": "නීති",
+        "count": 27
+      },
+      {
+        "keyword": "කෙටුම්පතක්",
+        "count": 26
+      },
+      {
+        "keyword": "ආයතනය",
+        "count": 26
+      },
+      {
+        "keyword": "රජයේ",
+        "count": 26
+      },
+      {
+        "keyword": "පනත් කෙටුම්පතක්",
+        "count": 25
+      },
+      {
+        "keyword": "පාර්ලිමේන්තුවට",
+        "count": 25
+      },
+      {
+        "keyword": "කෙටුම්පත්",
+        "count": 25
+      },
+      {
+        "keyword": "නීතිය",
+        "count": 25
+      },
+      {
+        "keyword": "දේශපාලන",
+        "count": 24
+      },
+      {
+        "keyword": "තීන්දුව",
+        "count": 24
+      },
+      {
+        "keyword": "ප්‍රශ්න",
+        "count": 24
+      },
+      {
+        "keyword": "පාර්ලිමේන්තුවේ",
+        "count": 23
+      },
+      {
+        "keyword": "අරගෙන",
+        "count": 23
+      },
+      {
+        "keyword": "බරපතළ",
+        "count": 23
+      },
+      {
+        "keyword": "බලපත්‍ර",
+        "count": 22
+      },
+      {
+        "keyword": "ලක්",
+        "count": 22
+      },
+      {
+        "keyword": "මණ්ඩලය",
+        "count": 22
+      },
+      {
+        "keyword": "ලංකා විදුලිබල",
+        "count": 21
+      },
+      {
+        "keyword": "මාධ්‍ය ආයතන",
+        "count": 21
+      },
+      {
+        "keyword": "ශ්‍රේෂ්ඨාධිකරණයට",
+        "count": 21
+      },
+      {
+        "keyword": "පනතක්",
+        "count": 21
+      },
+      {
+        "keyword": "කැබිනට්",
+        "count": 20
+      },
+      {
+        "keyword": "වෘත්තීය",
+        "count": 20
+      },
+      {
+        "keyword": "සංශෝධනය",
+        "count": 20
+      },
+      {
+        "keyword": "රජයට",
+        "count": 19
+      },
+      {
+        "keyword": "පැහැදිලි",
+        "count": 19
+      },
+      {
+        "keyword": "නීතිපති",
+        "count": 19
+      },
+      {
+        "keyword": "නීතිපතිතුමා",
+        "count": 18
+      },
+      {
+        "keyword": "ඉඩ",
+        "count": 18
+      },
+      {
+        "keyword": "ඉල්ලීමක්",
+        "count": 18
+      },
+      {
+        "keyword": "ව්‍යවස්ථාවට",
+        "count": 17
+      },
+      {
+        "keyword": "රටට",
+        "count": 17
+      },
+      {
+        "keyword": "මහජන",
+        "count": 17
+      },
+      {
+        "keyword": "ආණ්ඩුව",
+        "count": 17
+      },
+      {
+        "keyword": "උපකරණ",
+        "count": 16
+      },
+      {
+        "keyword": "නියාමනය",
+        "count": 16
+      },
+      {
+        "keyword": "පැහැදිලිව",
+        "count": 16
+      },
+      {
+        "keyword": "ජාතික",
+        "count": 15
+      },
+      {
+        "keyword": "ගැසට්",
+        "count": 15
+      },
+      {
+        "keyword": "වැඩි",
+        "count": 15
+      },
+      {
+        "keyword": "රාජපක්ෂ",
+        "count": 14
+      },
+      {
+        "keyword": "මෙවැනි",
+        "count": 14
+      },
+      {
+        "keyword": "ශ්‍රේෂ්ඨාධිකරණයේ",
+        "count": 14
+      },
+      {
+        "keyword": "ආරක්ෂා",
+        "count": 13
+      },
+      {
+        "keyword": "කෙටුම්පතට",
+        "count": 13
+      },
+      {
+        "keyword": "තමන්ගේ",
+        "count": 13
+      },
+      {
+        "keyword": "බලශක්ති",
+        "count": 13
+      },
+      {
+        "keyword": "පාර්ලිමේන්තු",
+        "count": 12
+      },
+      {
+        "keyword": "පනත් කෙටුම්පතට",
+        "count": 12
+      },
+      {
+        "keyword": "සමාජ",
+        "count": 12
+      },
+      {
+        "keyword": "මුදල්",
+        "count": 11
+      },
+      {
+        "keyword": "ලංකාවේ",
+        "count": 11
+      },
+      {
+        "keyword": "ඇතුළත",
+        "count": 11
+      },
+      {
+        "keyword": "පනත් කෙටුම්පත්",
+        "count": 10
+      },
+      {
+        "keyword": "මඟ",
+        "count": 10
+      },
+      {
+        "keyword": "නව",
+        "count": 10
+      },
+      {
+        "keyword": "දෙකක්",
+        "count": 9
+      },
+      {
+        "keyword": "රුපියල්",
+        "count": 9
+      },
+      {
+        "keyword": "ස්වාධීන",
+        "count": 9
+      },
+      {
+        "keyword": "ගාස්තු",
+        "count": 9
+      },
+      {
+        "keyword": "බලය",
+        "count": 8
+      },
+      {
+        "keyword": "එකයි",
+        "count": 8
+      },
+      {
+        "keyword": "අත්පත්",
+        "count": 8
+      },
+      {
+        "keyword": "කෙටුම්පත සම්මත",
+        "count": 7
+      },
+      {
+        "keyword": "ගුවන්",
+        "count": 7
+      },
+      {
+        "keyword": "මැතිතුමා",
+        "count": 7
+      },
+      {
+        "keyword": "මාසයේ",
+        "count": 6
+      },
+      {
+        "keyword": "මණ්ඩල",
+        "count": 6
+      },
+      {
+        "keyword": "මන්ත්‍රීවරු",
+        "count": 6
+      },
+      {
+        "keyword": "අභියෝගයට",
+        "count": 5
+      },
+      {
+        "keyword": "ජනතාව",
+        "count": 5
+      },
+      {
+        "keyword": "විපක්ෂ",
+        "count": 5
+      },
+      {
+        "keyword": "ටී",
+        "count": 5
+      },
+      {
+        "keyword": "දෙපාර්තමේන්තුව",
+        "count": 4
+      },
+      {
+        "keyword": "තීරණය",
+        "count": 4
+      },
+      {
+        "keyword": "නඩු",
+        "count": 4
+      },
+      {
+        "keyword": "සහභාගි",
+        "count": 3
+      },
+      {
+        "keyword": "ඔබතුමාගේ",
+        "count": 3
+      },
+      {
+        "keyword": "අනුමැතිය",
+        "count": 3
       }
     ],
     "Macro-Topic 13": [
@@ -1364,10 +3064,6 @@
         "count": 256
       },
       {
-        "keyword": "tamil",
-        "count": 198
-      },
-      {
         "keyword": "your",
         "count": 192
       },
@@ -1394,6 +3090,350 @@
       {
         "keyword": "within",
         "count": 139
+      },
+      {
+        "keyword": "clean sri",
+        "count": 139
+      },
+      {
+        "keyword": "community",
+        "count": 137
+      },
+      {
+        "keyword": "fact",
+        "count": 136
+      },
+      {
+        "keyword": "whether",
+        "count": 134
+      },
+      {
+        "keyword": "first",
+        "count": 133
+      },
+      {
+        "keyword": "process",
+        "count": 131
+      },
+      {
+        "keyword": "let",
+        "count": 130
+      },
+      {
+        "keyword": "know",
+        "count": 128
+      },
+      {
+        "keyword": "done",
+        "count": 127
+      },
+      {
+        "keyword": "place",
+        "count": 125
+      },
+      {
+        "keyword": "situation",
+        "count": 124
+      },
+      {
+        "keyword": "get",
+        "count": 122
+      },
+      {
+        "keyword": "look",
+        "count": 121
+      },
+      {
+        "keyword": "rajapaksa",
+        "count": 120
+      },
+      {
+        "keyword": "last",
+        "count": 118
+      },
+      {
+        "keyword": "present",
+        "count": 117
+      },
+      {
+        "keyword": "executive",
+        "count": 115
+      },
+      {
+        "keyword": "brought",
+        "count": 114
+      },
+      {
+        "keyword": "long",
+        "count": 112
+      },
+      {
+        "keyword": "change",
+        "count": 111
+      },
+      {
+        "keyword": "support",
+        "count": 109
+      },
+      {
+        "keyword": "countries",
+        "count": 108
+      },
+      {
+        "keyword": "back",
+        "count": 106
+      },
+      {
+        "keyword": "since",
+        "count": 105
+      },
+      {
+        "keyword": "several",
+        "count": 104
+      },
+      {
+        "keyword": "action",
+        "count": 102
+      },
+      {
+        "keyword": "give",
+        "count": 101
+      },
+      {
+        "keyword": "another",
+        "count": 99
+      },
+      {
+        "keyword": "th",
+        "count": 98
+      },
+      {
+        "keyword": "due",
+        "count": 96
+      },
+      {
+        "keyword": "different",
+        "count": 95
+      },
+      {
+        "keyword": "crisis",
+        "count": 93
+      },
+      {
+        "keyword": "majority",
+        "count": 92
+      },
+      {
+        "keyword": "certain",
+        "count": 90
+      },
+      {
+        "keyword": "council",
+        "count": 89
+      },
+      {
+        "keyword": "three",
+        "count": 88
+      },
+      {
+        "keyword": "වැඩසටහන",
+        "count": 86
+      },
+      {
+        "keyword": "opportunity",
+        "count": 85
+      },
+      {
+        "keyword": "statement",
+        "count": 83
+      },
+      {
+        "keyword": "see",
+        "count": 82
+      },
+      {
+        "keyword": "port",
+        "count": 80
+      },
+      {
+        "keyword": "city",
+        "count": 79
+      },
+      {
+        "keyword": "happened",
+        "count": 77
+      },
+      {
+        "keyword": "every",
+        "count": 76
+      },
+      {
+        "keyword": "good",
+        "count": 74
+      },
+      {
+        "keyword": "provisions",
+        "count": 73
+      },
+      {
+        "keyword": "saying",
+        "count": 72
+      },
+      {
+        "keyword": "standing",
+        "count": 70
+      },
+      {
+        "keyword": "already",
+        "count": 69
+      },
+      {
+        "keyword": "colombo",
+        "count": 67
+      },
+      {
+        "keyword": "work",
+        "count": 66
+      },
+      {
+        "keyword": "laws",
+        "count": 64
+      },
+      {
+        "keyword": "however",
+        "count": 63
+      },
+      {
+        "keyword": "presiding",
+        "count": 61
+      },
+      {
+        "keyword": "position",
+        "count": 60
+      },
+      {
+        "keyword": "problem",
+        "count": 58
+      },
+      {
+        "keyword": "part",
+        "count": 57
+      },
+      {
+        "keyword": "various",
+        "count": 56
+      },
+      {
+        "keyword": "trying",
+        "count": 54
+      },
+      {
+        "keyword": "tamils",
+        "count": 53
+      },
+      {
+        "keyword": "port city",
+        "count": 51
+      },
+      {
+        "keyword": "persons",
+        "count": 50
+      },
+      {
+        "keyword": "lankan",
+        "count": 48
+      },
+      {
+        "keyword": "held",
+        "count": 47
+      },
+      {
+        "keyword": "issues",
+        "count": 45
+      },
+      {
+        "keyword": "necessary",
+        "count": 44
+      },
+      {
+        "keyword": "sri lankan",
+        "count": 42
+      },
+      {
+        "keyword": "making",
+        "count": 41
+      },
+      {
+        "keyword": "nation",
+        "count": 40
+      },
+      {
+        "keyword": "former",
+        "count": 38
+      },
+      {
+        "keyword": "needs",
+        "count": 37
+      },
+      {
+        "keyword": "service",
+        "count": 35
+      },
+      {
+        "keyword": "deputy",
+        "count": 34
+      },
+      {
+        "keyword": "future",
+        "count": 32
+      },
+      {
+        "keyword": "citizens",
+        "count": 31
+      },
+      {
+        "keyword": "period",
+        "count": 29
+      },
+      {
+        "keyword": "matters",
+        "count": 28
+      },
+      {
+        "keyword": "use",
+        "count": 26
+      },
+      {
+        "keyword": "months",
+        "count": 25
+      },
+      {
+        "keyword": "trade",
+        "count": 24
+      },
+      {
+        "keyword": "committed",
+        "count": 22
+      },
+      {
+        "keyword": "end",
+        "count": 21
+      },
+      {
+        "keyword": "taking",
+        "count": 19
+      },
+      {
+        "keyword": "solution",
+        "count": 18
+      },
+      {
+        "keyword": "called",
+        "count": 16
+      },
+      {
+        "keyword": "based",
+        "count": 15
       }
     ],
     "Macro-Topic 14": [
@@ -1456,6 +3496,346 @@
       {
         "keyword": "ජාතික",
         "count": 183
+      },
+      {
+        "keyword": "දිස්ත්‍රික්කයේ",
+        "count": 183
+      },
+      {
+        "keyword": "අමාත්‍යාංශය",
+        "count": 181
+      },
+      {
+        "keyword": "ප්‍රශ්නයක්",
+        "count": 179
+      },
+      {
+        "keyword": "දෙපාර්තමේන්තුව",
+        "count": 177
+      },
+      {
+        "keyword": "ප්‍රදේශ",
+        "count": 175
+      },
+      {
+        "keyword": "රජයේ",
+        "count": 173
+      },
+      {
+        "keyword": "ජනතාවගේ",
+        "count": 171
+      },
+      {
+        "keyword": "මිනිස්",
+        "count": 169
+      },
+      {
+        "keyword": "අතුරු",
+        "count": 167
+      },
+      {
+        "keyword": "මහවැලි",
+        "count": 165
+      },
+      {
+        "keyword": "ආරක්ෂා",
+        "count": 163
+      },
+      {
+        "keyword": "ඉඩම",
+        "count": 161
+      },
+      {
+        "keyword": "පවතින",
+        "count": 159
+      },
+      {
+        "keyword": "වැලි",
+        "count": 157
+      },
+      {
+        "keyword": "හානි",
+        "count": 155
+      },
+      {
+        "keyword": "ලේකම්",
+        "count": 153
+      },
+      {
+        "keyword": "අත්පත්",
+        "count": 151
+      },
+      {
+        "keyword": "ප්‍රශ්න",
+        "count": 150
+      },
+      {
+        "keyword": "පදිංචි",
+        "count": 148
+      },
+      {
+        "keyword": "රුපියල්",
+        "count": 146
+      },
+      {
+        "keyword": "ප්‍රශ්නයට",
+        "count": 144
+      },
+      {
+        "keyword": "ප්‍රාදේශීය ලේකම්",
+        "count": 142
+      },
+      {
+        "keyword": "සංවර්ධනය",
+        "count": 140
+      },
+      {
+        "keyword": "යෝජනා",
+        "count": 138
+      },
+      {
+        "keyword": "සාකච්ඡා",
+        "count": 136
+      },
+      {
+        "keyword": "අරගෙන",
+        "count": 134
+      },
+      {
+        "keyword": "පියවර",
+        "count": 132
+      },
+      {
+        "keyword": "අලි මිනිස්",
+        "count": 130
+      },
+      {
+        "keyword": "නිදහස්",
+        "count": 128
+      },
+      {
+        "keyword": "ආයතන",
+        "count": 126
+      },
+      {
+        "keyword": "පවුල්",
+        "count": 124
+      },
+      {
+        "keyword": "අයිතිය",
+        "count": 122
+      },
+      {
+        "keyword": "පිළිවෙළක්",
+        "count": 120
+      },
+      {
+        "keyword": "වනාන්තර",
+        "count": 119
+      },
+      {
+        "keyword": "ප්‍රමාණය",
+        "count": 117
+      },
+      {
+        "keyword": "ව්‍යාපෘති",
+        "count": 115
+      },
+      {
+        "keyword": "ඉඩම්වල",
+        "count": 113
+      },
+      {
+        "keyword": "විනාශ",
+        "count": 111
+      },
+      {
+        "keyword": "රක්ෂිත",
+        "count": 109
+      },
+      {
+        "keyword": "නිවාස",
+        "count": 107
+      },
+      {
+        "keyword": "ජීවත්",
+        "count": 105
+      },
+      {
+        "keyword": "මුදල්",
+        "count": 103
+      },
+      {
+        "keyword": "බලපත්‍ර",
+        "count": 101
+      },
+      {
+        "keyword": "සම්පත්",
+        "count": 99
+      },
+      {
+        "keyword": "ගොවි",
+        "count": 97
+      },
+      {
+        "keyword": "ගැටලු",
+        "count": 95
+      },
+      {
+        "keyword": "වන්දි",
+        "count": 93
+      },
+      {
+        "keyword": "නිලධාරින්",
+        "count": 91
+      },
+      {
+        "keyword": "සතුන්",
+        "count": 89
+      },
+      {
+        "keyword": "උතුරු",
+        "count": 88
+      },
+      {
+        "keyword": "පමණක්",
+        "count": 86
+      },
+      {
+        "keyword": "සොයා",
+        "count": 84
+      },
+      {
+        "keyword": "පවරා",
+        "count": 82
+      },
+      {
+        "keyword": "විසඳුමක්",
+        "count": 80
+      },
+      {
+        "keyword": "වැට",
+        "count": 78
+      },
+      {
+        "keyword": "ගන්නා",
+        "count": 76
+      },
+      {
+        "keyword": "මාර්ග",
+        "count": 74
+      },
+      {
+        "keyword": "ආරක්ෂක",
+        "count": 72
+      },
+      {
+        "keyword": "දෙපාර්තමේන්තුවේ",
+        "count": 70
+      },
+      {
+        "keyword": "තමන්ගේ",
+        "count": 68
+      },
+      {
+        "keyword": "වනජීවී සංරක්ෂණ",
+        "count": 66
+      },
+      {
+        "keyword": "සංරක්ෂණ දෙපාර්තමේන්තුව",
+        "count": 64
+      },
+      {
+        "keyword": "පෞද්ගලික",
+        "count": 62
+      },
+      {
+        "keyword": "ගැසට්",
+        "count": 60
+      },
+      {
+        "keyword": "තොරතුරු",
+        "count": 58
+      },
+      {
+        "keyword": "ක්‍රියාමාර්ග",
+        "count": 57
+      },
+      {
+        "keyword": "වාර්තා",
+        "count": 55
+      },
+      {
+        "keyword": "විශේෂයෙන්",
+        "count": 53
+      },
+      {
+        "keyword": "ගැටුම",
+        "count": 51
+      },
+      {
+        "keyword": "ඔබතුමාගේ",
+        "count": 49
+      },
+      {
+        "keyword": "ගොඩ",
+        "count": 47
+      },
+      {
+        "keyword": "මිනිස් ගැටුම",
+        "count": 45
+      },
+      {
+        "keyword": "භූමි",
+        "count": 43
+      },
+      {
+        "keyword": "හානිය",
+        "count": 41
+      },
+      {
+        "keyword": "ලංකා",
+        "count": 39
+      },
+      {
+        "keyword": "පරිසරය",
+        "count": 37
+      },
+      {
+        "keyword": "වැටවල්",
+        "count": 35
+      },
+      {
+        "keyword": "lrc",
+        "count": 33
+      },
+      {
+        "keyword": "අභය",
+        "count": 31
+      },
+      {
+        "keyword": "දෙපාර්තමේන්තුවට",
+        "count": 29
+      },
+      {
+        "keyword": "අධිකාරිය",
+        "count": 27
+      },
+      {
+        "keyword": "පහසුකම්",
+        "count": 26
+      },
+      {
+        "keyword": "ප්‍රකාශයට",
+        "count": 24
+      },
+      {
+        "keyword": "කෘෂි",
+        "count": 22
+      },
+      {
+        "keyword": "අයිති",
+        "count": 20
       }
     ],
     "Macro-Topic 15": [
@@ -1512,12 +3892,352 @@
         "count": 447
       },
       {
+        "keyword": "පාර්ලිමේන්තුවට",
+        "count": 441
+      },
+      {
         "keyword": "පවුලේ",
         "count": 441
       },
       {
-        "keyword": "පාර්ලිමේන්තුවට",
+        "keyword": "බණ්ඩාර",
         "count": 441
+      },
+      {
+        "keyword": "එක්සත්",
+        "count": 436
+      },
+      {
+        "keyword": "පක්ෂය",
+        "count": 431
+      },
+      {
+        "keyword": "ප්‍රාර්ථනා",
+        "count": 426
+      },
+      {
+        "keyword": "දේශපාලනය",
+        "count": 422
+      },
+      {
+        "keyword": "පාර්ලිමේන්තුවේ",
+        "count": 417
+      },
+      {
+        "keyword": "ඉටු",
+        "count": 412
+      },
+      {
+        "keyword": "නිදහස්",
+        "count": 408
+      },
+      {
+        "keyword": "ශෝක",
+        "count": 403
+      },
+      {
+        "keyword": "නායකයෙක්",
+        "count": 398
+      },
+      {
+        "keyword": "වි",
+        "count": 394
+      },
+      {
+        "keyword": "එක්සත් ජාතික",
+        "count": 389
+      },
+      {
+        "keyword": "වි මු",
+        "count": 384
+      },
+      {
+        "keyword": "තමන්ගේ",
+        "count": 380
+      },
+      {
+        "keyword": "එල්ලාවල",
+        "count": 375
+      },
+      {
+        "keyword": "පෙරේරා",
+        "count": 370
+      },
+      {
+        "keyword": "ජනතාවගේ",
+        "count": 366
+      },
+      {
+        "keyword": "මන්ත්‍රීවරයකු",
+        "count": 361
+      },
+      {
+        "keyword": "සේවය",
+        "count": 356
+      },
+      {
+        "keyword": "මු බණ්ඩාර",
+        "count": 352
+      },
+      {
+        "keyword": "මැතිතුමාට",
+        "count": 347
+      },
+      {
+        "keyword": "ලංකා නිදහස්",
+        "count": 342
+      },
+      {
+        "keyword": "ජනතාවට",
+        "count": 338
+      },
+      {
+        "keyword": "සුව",
+        "count": 333
+      },
+      {
+        "keyword": "නිවන්",
+        "count": 328
+      },
+      {
+        "keyword": "ආර්",
+        "count": 324
+      },
+      {
+        "keyword": "දේශපාලනයට",
+        "count": 319
+      },
+      {
+        "keyword": "මාතර",
+        "count": 314
+      },
+      {
+        "keyword": "අමාත්‍ය",
+        "count": 310
+      },
+      {
+        "keyword": "නිවන් සුව",
+        "count": 305
+      },
+      {
+        "keyword": "අභාවප්‍රාප්ත",
+        "count": 300
+      },
+      {
+        "keyword": "ජනතා",
+        "count": 296
+      },
+      {
+        "keyword": "සිහිපත්",
+        "count": 291
+      },
+      {
+        "keyword": "කේ",
+        "count": 286
+      },
+      {
+        "keyword": "ප්‍රදේශයේ",
+        "count": 282
+      },
+      {
+        "keyword": "මැතිතුමාගේ අභාවය",
+        "count": 277
+      },
+      {
+        "keyword": "යෝජනා",
+        "count": 272
+      },
+      {
+        "keyword": "එතුමිය",
+        "count": 268
+      },
+      {
+        "keyword": "දිස්ත්‍රික්කය",
+        "count": 263
+      },
+      {
+        "keyword": "එම්",
+        "count": 258
+      },
+      {
+        "keyword": "සේවයක්",
+        "count": 254
+      },
+      {
+        "keyword": "මැතිනිය",
+        "count": 249
+      },
+      {
+        "keyword": "අධ්‍යාපනය",
+        "count": 244
+      },
+      {
+        "keyword": "හැටියටත්",
+        "count": 240
+      },
+      {
+        "keyword": "බණ්ඩාර මැතිතුමා",
+        "count": 235
+      },
+      {
+        "keyword": "රටට",
+        "count": 230
+      },
+      {
+        "keyword": "ගජදීර",
+        "count": 226
+      },
+      {
+        "keyword": "මතක්",
+        "count": 221
+      },
+      {
+        "keyword": "පක්ෂ",
+        "count": 216
+      },
+      {
+        "keyword": "තරුණ",
+        "count": 212
+      },
+      {
+        "keyword": "ජන",
+        "count": 207
+      },
+      {
+        "keyword": "වීරකෝන්",
+        "count": 202
+      },
+      {
+        "keyword": "තේරී",
+        "count": 198
+      },
+      {
+        "keyword": "දුන්",
+        "count": 193
+      },
+      {
+        "keyword": "ජයරත්න",
+        "count": 188
+      },
+      {
+        "keyword": "තම",
+        "count": 184
+      },
+      {
+        "keyword": "සේවාවක්",
+        "count": 179
+      },
+      {
+        "keyword": "මහජන",
+        "count": 174
+      },
+      {
+        "keyword": "අමාත්‍යවරයා",
+        "count": 170
+      },
+      {
+        "keyword": "විශේෂයෙන්",
+        "count": 165
+      },
+      {
+        "keyword": "මැතිතුමාත්",
+        "count": 160
+      },
+      {
+        "keyword": "මන්ත්‍රීවරයෙකු",
+        "count": 156
+      },
+      {
+        "keyword": "කොමියුනිස්ට්",
+        "count": 151
+      },
+      {
+        "keyword": "his",
+        "count": 146
+      },
+      {
+        "keyword": "සිංහල",
+        "count": 142
+      },
+      {
+        "keyword": "ලංකාවේ",
+        "count": 137
+      },
+      {
+        "keyword": "අධ්‍යාපන",
+        "count": 132
+      },
+      {
+        "keyword": "ආදරණීය",
+        "count": 128
+      },
+      {
+        "keyword": "නන්ද",
+        "count": 123
+      },
+      {
+        "keyword": "දේශපාලනයේ",
+        "count": 118
+      },
+      {
+        "keyword": "ගලප්පත්ති",
+        "count": 114
+      },
+      {
+        "keyword": "ඉදිරියට",
+        "count": 109
+      },
+      {
+        "keyword": "කැප",
+        "count": 104
+      },
+      {
+        "keyword": "දේශපාලනඥයෙක්",
+        "count": 100
+      },
+      {
+        "keyword": "එස්",
+        "count": 95
+      },
+      {
+        "keyword": "විශ්ව",
+        "count": 90
+      },
+      {
+        "keyword": "කම්කරු",
+        "count": 86
+      },
+      {
+        "keyword": "දකුණු",
+        "count": 81
+      },
+      {
+        "keyword": "සේනානායක",
+        "count": 76
+      },
+      {
+        "keyword": "කොළඹ",
+        "count": 72
+      },
+      {
+        "keyword": "ප්‍රශ්න",
+        "count": 67
+      },
+      {
+        "keyword": "දරුවන්",
+        "count": 62
+      },
+      {
+        "keyword": "වුණත්",
+        "count": 58
+      },
+      {
+        "keyword": "නගර",
+        "count": 53
+      },
+      {
+        "keyword": "වර්ෂයේ",
+        "count": 48
       }
     ],
     "Macro-Topic 16": [
@@ -1580,6 +4300,346 @@
       {
         "keyword": "රිසාඩ්",
         "count": 112
+      },
+      {
+        "keyword": "ii",
+        "count": 112
+      },
+      {
+        "keyword": "විශ්වාස භංග",
+        "count": 110
+      },
+      {
+        "keyword": "භංග",
+        "count": 109
+      },
+      {
+        "keyword": "elizabeth ii",
+        "count": 108
+      },
+      {
+        "keyword": "බදියුදීන්",
+        "count": 107
+      },
+      {
+        "keyword": "රිසාඩ් බදියුදීන්",
+        "count": 106
+      },
+      {
+        "keyword": "sri",
+        "count": 104
+      },
+      {
+        "keyword": "ආරක්ෂක",
+        "count": 103
+      },
+      {
+        "keyword": "people",
+        "count": 102
+      },
+      {
+        "keyword": "තේරීම්",
+        "count": 101
+      },
+      {
+        "keyword": "මන්ත්‍රීවරු",
+        "count": 100
+      },
+      {
+        "keyword": "පාර්ලිමේන්තුවට",
+        "count": 98
+      },
+      {
+        "keyword": "our",
+        "count": 97
+      },
+      {
+        "keyword": "ගිනි",
+        "count": 96
+      },
+      {
+        "keyword": "අරගෙන",
+        "count": 95
+      },
+      {
+        "keyword": "sri lanka",
+        "count": 94
+      },
+      {
+        "keyword": "lanka",
+        "count": 93
+      },
+      {
+        "keyword": "ශෝකය",
+        "count": 91
+      },
+      {
+        "keyword": "නීතිය",
+        "count": 90
+      },
+      {
+        "keyword": "ප්‍රශ්නයක්",
+        "count": 89
+      },
+      {
+        "keyword": "පහර",
+        "count": 88
+      },
+      {
+        "keyword": "අහිංසක",
+        "count": 87
+      },
+      {
+        "keyword": "අතුකෝරළ මැතිතුමා",
+        "count": 85
+      },
+      {
+        "keyword": "මන්ත්‍රීවරයෙක්",
+        "count": 84
+      },
+      {
+        "keyword": "royal",
+        "count": 83
+      },
+      {
+        "keyword": "තමන්ගේ",
+        "count": 82
+      },
+      {
+        "keyword": "මැයි",
+        "count": 81
+      },
+      {
+        "keyword": "වග",
+        "count": 79
+      },
+      {
+        "keyword": "අභාවය",
+        "count": 78
+      },
+      {
+        "keyword": "වෙච්ච",
+        "count": 77
+      },
+      {
+        "keyword": "වගකීම",
+        "count": 76
+      },
+      {
+        "keyword": "මන්ත්‍රීතුමාගේ",
+        "count": 75
+      },
+      {
+        "keyword": "සිද්ධිය",
+        "count": 74
+      },
+      {
+        "keyword": "මැතිතුමාගේ",
+        "count": 72
+      },
+      {
+        "keyword": "ගෙවල්",
+        "count": 71
+      },
+      {
+        "keyword": "commonwealth",
+        "count": 70
+      },
+      {
+        "keyword": "අත්අඩංගුවට",
+        "count": 69
+      },
+      {
+        "keyword": "මිනිස්සු",
+        "count": 68
+      },
+      {
+        "keyword": "family",
+        "count": 66
+      },
+      {
+        "keyword": "පොළොන්නරුව",
+        "count": 65
+      },
+      {
+        "keyword": "චෝදනා",
+        "count": 64
+      },
+      {
+        "keyword": "late",
+        "count": 63
+      },
+      {
+        "keyword": "ආරක්ෂා",
+        "count": 62
+      },
+      {
+        "keyword": "ලක්",
+        "count": 61
+      },
+      {
+        "keyword": "මුස්ලිම්",
+        "count": 59
+      },
+      {
+        "keyword": "විනාශ",
+        "count": 58
+      },
+      {
+        "keyword": "මහජන",
+        "count": 57
+      },
+      {
+        "keyword": "ප්‍රාර්ථනා",
+        "count": 56
+      },
+      {
+        "keyword": "පළාත්",
+        "count": 55
+      },
+      {
+        "keyword": "ඉටු",
+        "count": 53
+      },
+      {
+        "keyword": "පක්ෂ",
+        "count": 52
+      },
+      {
+        "keyword": "දැක්කා",
+        "count": 51
+      },
+      {
+        "keyword": "united",
+        "count": 50
+      },
+      {
+        "keyword": "දිස්ත්‍රික්කයේ",
+        "count": 49
+      },
+      {
+        "keyword": "ප්‍රශ්න",
+        "count": 47
+      },
+      {
+        "keyword": "මාසයේ",
+        "count": 46
+      },
+      {
+        "keyword": "මෙවැනි",
+        "count": 45
+      },
+      {
+        "keyword": "දේපළ",
+        "count": 44
+      },
+      {
+        "keyword": "ම්ලේච්ඡ",
+        "count": 43
+      },
+      {
+        "keyword": "මුළු",
+        "count": 42
+      },
+      {
+        "keyword": "ආණ්ඩුව",
+        "count": 40
+      },
+      {
+        "keyword": "පාවිච්චි",
+        "count": 39
+      },
+      {
+        "keyword": "පොලිස්",
+        "count": 38
+      },
+      {
+        "keyword": "සොයා",
+        "count": 37
+      },
+      {
+        "keyword": "ආදරණීය",
+        "count": 36
+      },
+      {
+        "keyword": "his",
+        "count": 34
+      },
+      {
+        "keyword": "ඝාතනයට",
+        "count": 33
+      },
+      {
+        "keyword": "ආරක්ෂාව",
+        "count": 32
+      },
+      {
+        "keyword": "service",
+        "count": 31
+      },
+      {
+        "keyword": "අංශ",
+        "count": 30
+      },
+      {
+        "keyword": "ජනතාවගේ",
+        "count": 28
+      },
+      {
+        "keyword": "මන්ත්‍රීවරුන්",
+        "count": 27
+      },
+      {
+        "keyword": "පවුලේ",
+        "count": 26
+      },
+      {
+        "keyword": "නිවන්",
+        "count": 25
+      },
+      {
+        "keyword": "ජනතා",
+        "count": 24
+      },
+      {
+        "keyword": "කවුද",
+        "count": 23
+      },
+      {
+        "keyword": "නඩු",
+        "count": 21
+      },
+      {
+        "keyword": "ඉඩ",
+        "count": 20
+      },
+      {
+        "keyword": "ප්‍රනාන්දු",
+        "count": 19
+      },
+      {
+        "keyword": "එතුමිය",
+        "count": 18
+      },
+      {
+        "keyword": "ජාතික",
+        "count": 17
+      },
+      {
+        "keyword": "පොලීසිය",
+        "count": 15
+      },
+      {
+        "keyword": "ජීවිතය",
+        "count": 14
+      },
+      {
+        "keyword": "භාර",
+        "count": 13
+      },
+      {
+        "keyword": "හරින්",
+        "count": 12
       }
     ],
     "Macro-Topic 17": [
@@ -1632,16 +4692,356 @@
         "count": 257
       },
       {
-        "keyword": "රජය",
+        "keyword": "නීතිය",
         "count": 255
       },
       {
-        "keyword": "නීතිය",
+        "keyword": "රජය",
         "count": 255
       },
       {
         "keyword": "අංශ",
         "count": 229
+      },
+      {
+        "keyword": "පරීක්ෂණ",
+        "count": 229
+      },
+      {
+        "keyword": "කවුද",
+        "count": 226
+      },
+      {
+        "keyword": "ජනාධිපති",
+        "count": 224
+      },
+      {
+        "keyword": "ජනතාවට",
+        "count": 221
+      },
+      {
+        "keyword": "තොරතුරු",
+        "count": 219
+      },
+      {
+        "keyword": "වාර්තාව",
+        "count": 216
+      },
+      {
+        "keyword": "ප්‍රහාරයට",
+        "count": 214
+      },
+      {
+        "keyword": "මැතිතුමා",
+        "count": 212
+      },
+      {
+        "keyword": "බුද්ධි අංශ",
+        "count": 209
+      },
+      {
+        "keyword": "බෝම්බ",
+        "count": 207
+      },
+      {
+        "keyword": "ප්‍රශ්න",
+        "count": 204
+      },
+      {
+        "keyword": "සොයා",
+        "count": 202
+      },
+      {
+        "keyword": "ඉරිදා",
+        "count": 199
+      },
+      {
+        "keyword": "අන්තවාදී",
+        "count": 197
+      },
+      {
+        "keyword": "ආගමික",
+        "count": 195
+      },
+      {
+        "keyword": "පාර්ලිමේන්තුවේ",
+        "count": 192
+      },
+      {
+        "keyword": "විමර්ශන",
+        "count": 190
+      },
+      {
+        "keyword": "වාර්තාවේ",
+        "count": 187
+      },
+      {
+        "keyword": "ඇයි",
+        "count": 185
+      },
+      {
+        "keyword": "රංජිත්",
+        "count": 182
+      },
+      {
+        "keyword": "කතෝලික",
+        "count": 180
+      },
+      {
+        "keyword": "පාස්කු ඉරිදා",
+        "count": 178
+      },
+      {
+        "keyword": "අරගෙන",
+        "count": 175
+      },
+      {
+        "keyword": "රාජපක්ෂ",
+        "count": 173
+      },
+      {
+        "keyword": "තමන්ගේ",
+        "count": 170
+      },
+      {
+        "keyword": "සිංහල",
+        "count": 168
+      },
+      {
+        "keyword": "වග",
+        "count": 165
+      },
+      {
+        "keyword": "මෙවැනි",
+        "count": 163
+      },
+      {
+        "keyword": "සොයිසා",
+        "count": 161
+      },
+      {
+        "keyword": "ප්‍රහාරයෙන්",
+        "count": 158
+      },
+      {
+        "keyword": "ත්‍රස්තවාදය",
+        "count": 156
+      },
+      {
+        "keyword": "අප්‍රේල්",
+        "count": 153
+      },
+      {
+        "keyword": "රංජිත් සොයිසා",
+        "count": 151
+      },
+      {
+        "keyword": "රටට",
+        "count": 148
+      },
+      {
+        "keyword": "චෝදනා",
+        "count": 146
+      },
+      {
+        "keyword": "පාර්ලිමේන්තුවට",
+        "count": 144
+      },
+      {
+        "keyword": "ඉටු",
+        "count": 141
+      },
+      {
+        "keyword": "නඩු",
+        "count": 139
+      },
+      {
+        "keyword": "නීති",
+        "count": 136
+      },
+      {
+        "keyword": "ජාතික ආරක්ෂාව",
+        "count": 134
+      },
+      {
+        "keyword": "අත්අඩංගුවට",
+        "count": 132
+      },
+      {
+        "keyword": "භාර",
+        "count": 129
+      },
+      {
+        "keyword": "ආණ්ඩුවේ",
+        "count": 127
+      },
+      {
+        "keyword": "දඬුවම්",
+        "count": 124
+      },
+      {
+        "keyword": "විශ්ව",
+        "count": 122
+      },
+      {
+        "keyword": "ප්‍රහාර",
+        "count": 119
+      },
+      {
+        "keyword": "වාර්තා",
+        "count": 117
+      },
+      {
+        "keyword": "වෙච්ච",
+        "count": 115
+      },
+      {
+        "keyword": "මිය",
+        "count": 112
+      },
+      {
+        "keyword": "ඉස්ලාම්",
+        "count": 110
+      },
+      {
+        "keyword": "ලක්",
+        "count": 107
+      },
+      {
+        "keyword": "සිද්ධිය",
+        "count": 105
+      },
+      {
+        "keyword": "ඉඩ",
+        "count": 102
+      },
+      {
+        "keyword": "සහරාන්",
+        "count": 100
+      },
+      {
+        "keyword": "ත්‍රස්තවාදී",
+        "count": 98
+      },
+      {
+        "keyword": "ප්‍රශ්නයක්",
+        "count": 95
+      },
+      {
+        "keyword": "පාවිච්චි",
+        "count": 93
+      },
+      {
+        "keyword": "ත්‍රස්ත",
+        "count": 90
+      },
+      {
+        "keyword": "පාසල්",
+        "count": 88
+      },
+      {
+        "keyword": "පියවර",
+        "count": 85
+      },
+      {
+        "keyword": "ජන",
+        "count": 83
+      },
+      {
+        "keyword": "වගකීම",
+        "count": 81
+      },
+      {
+        "keyword": "දෙමළ",
+        "count": 78
+      },
+      {
+        "keyword": "ලංකාවේ",
+        "count": 76
+      },
+      {
+        "keyword": "පුද්ගලයන්",
+        "count": 73
+      },
+      {
+        "keyword": "බලයට",
+        "count": 71
+      },
+      {
+        "keyword": "පොලිස්",
+        "count": 68
+      },
+      {
+        "keyword": "ජනතාවගේ",
+        "count": 66
+      },
+      {
+        "keyword": "පාර්ලිමේන්තු",
+        "count": 64
+      },
+      {
+        "keyword": "මාධ්‍ය",
+        "count": 61
+      },
+      {
+        "keyword": "ජනාධිපතිතුමා",
+        "count": 59
+      },
+      {
+        "keyword": "පැහැදිලිව",
+        "count": 56
+      },
+      {
+        "keyword": "සාක්ෂි",
+        "count": 54
+      },
+      {
+        "keyword": "ජීවත්",
+        "count": 51
+      },
+      {
+        "keyword": "නිර්දේශ",
+        "count": 49
+      },
+      {
+        "keyword": "රජයේ",
+        "count": 47
+      },
+      {
+        "keyword": "අහිංසක",
+        "count": 44
+      },
+      {
+        "keyword": "මුළු",
+        "count": 42
+      },
+      {
+        "keyword": "පාලන",
+        "count": 39
+      },
+      {
+        "keyword": "පාස්කු ඉරු",
+        "count": 37
+      },
+      {
+        "keyword": "මතක්",
+        "count": 35
+      },
+      {
+        "keyword": "ඉරු",
+        "count": 32
+      },
+      {
+        "keyword": "හදිසි",
+        "count": 30
+      },
+      {
+        "keyword": "ආණ්ඩුවට",
+        "count": 27
+      },
+      {
+        "keyword": "මුදල්",
+        "count": 25
       }
     ],
     "Macro-Topic 18": [
@@ -1704,6 +5104,346 @@
       {
         "keyword": "ධාවනය",
         "count": 131
+      },
+      {
+        "keyword": "අනතුරු",
+        "count": 131
+      },
+      {
+        "keyword": "මිලියන",
+        "count": 129
+      },
+      {
+        "keyword": "මෝටර්",
+        "count": 128
+      },
+      {
+        "keyword": "රජය",
+        "count": 126
+      },
+      {
+        "keyword": "සාකච්ඡා",
+        "count": 125
+      },
+      {
+        "keyword": "සංවර්ධන",
+        "count": 124
+      },
+      {
+        "keyword": "ගමනාගමන",
+        "count": 122
+      },
+      {
+        "keyword": "ජනතාව",
+        "count": 121
+      },
+      {
+        "keyword": "පිළිවෙළක්",
+        "count": 119
+      },
+      {
+        "keyword": "ජාතික",
+        "count": 118
+      },
+      {
+        "keyword": "අංක",
+        "count": 117
+      },
+      {
+        "keyword": "අමාත්‍යාංශය",
+        "count": 115
+      },
+      {
+        "keyword": "නියෝග",
+        "count": 114
+      },
+      {
+        "keyword": "මාර්ගයේ",
+        "count": 112
+      },
+      {
+        "keyword": "ජනතාවට",
+        "count": 111
+      },
+      {
+        "keyword": "බිලියන",
+        "count": 110
+      },
+      {
+        "keyword": "සේවා",
+        "count": 108
+      },
+      {
+        "keyword": "ලංකාවේ",
+        "count": 107
+      },
+      {
+        "keyword": "ප්‍රශ්න",
+        "count": 106
+      },
+      {
+        "keyword": "නව",
+        "count": 104
+      },
+      {
+        "keyword": "ණය",
+        "count": 103
+      },
+      {
+        "keyword": "ප්‍රශ්නයක්",
+        "count": 101
+      },
+      {
+        "keyword": "සමාගම",
+        "count": 100
+      },
+      {
+        "keyword": "ප්‍රවාහනය",
+        "count": 99
+      },
+      {
+        "keyword": "කොළඹ",
+        "count": 97
+      },
+      {
+        "keyword": "කැබිනට්",
+        "count": 96
+      },
+      {
+        "keyword": "මණ්ඩලය",
+        "count": 94
+      },
+      {
+        "keyword": "බඳවා",
+        "count": 93
+      },
+      {
+        "keyword": "අරගෙන",
+        "count": 92
+      },
+      {
+        "keyword": "ලංකා ගමනාගමන",
+        "count": 90
+      },
+      {
+        "keyword": "මුදලක්",
+        "count": 89
+      },
+      {
+        "keyword": "නීති",
+        "count": 88
+      },
+      {
+        "keyword": "රිය",
+        "count": 86
+      },
+      {
+        "keyword": "ආණ්ඩුව",
+        "count": 85
+      },
+      {
+        "keyword": "වැය",
+        "count": 83
+      },
+      {
+        "keyword": "රජයේ",
+        "count": 82
+      },
+      {
+        "keyword": "හදන්න",
+        "count": 81
+      },
+      {
+        "keyword": "දෙකක්",
+        "count": 79
+      },
+      {
+        "keyword": "සේවය",
+        "count": 78
+      },
+      {
+        "keyword": "මිල",
+        "count": 76
+      },
+      {
+        "keyword": "ව්‍යාපෘතිය",
+        "count": 75
+      },
+      {
+        "keyword": "සමාගම්",
+        "count": 74
+      },
+      {
+        "keyword": "දඩ",
+        "count": 72
+      },
+      {
+        "keyword": "පහසුකම්",
+        "count": 71
+      },
+      {
+        "keyword": "ආර්ථික",
+        "count": 69
+      },
+      {
+        "keyword": "බදු",
+        "count": 68
+      },
+      {
+        "keyword": "පමණක්",
+        "count": 67
+      },
+      {
+        "keyword": "ප්‍රමාණය",
+        "count": 65
+      },
+      {
+        "keyword": "මණ්ඩලයේ",
+        "count": 64
+      },
+      {
+        "keyword": "දෙපාර්තමේන්තුව",
+        "count": 63
+      },
+      {
+        "keyword": "ප්‍රශ්නයට",
+        "count": 61
+      },
+      {
+        "keyword": "පාරවල්",
+        "count": 60
+      },
+      {
+        "keyword": "අතුරු",
+        "count": 58
+      },
+      {
+        "keyword": "පාලම",
+        "count": 57
+      },
+      {
+        "keyword": "ඉදි",
+        "count": 56
+      },
+      {
+        "keyword": "යෝජනා",
+        "count": 54
+      },
+      {
+        "keyword": "මාර්ගයක්",
+        "count": 53
+      },
+      {
+        "keyword": "අධිවේගී මාර්ග",
+        "count": 51
+      },
+      {
+        "keyword": "පළාත්",
+        "count": 50
+      },
+      {
+        "keyword": "චිත්‍රපට",
+        "count": 49
+      },
+      {
+        "keyword": "ලක්ෂ",
+        "count": 47
+      },
+      {
+        "keyword": "අනුමැතිය",
+        "count": 46
+      },
+      {
+        "keyword": "ගන්නා",
+        "count": 45
+      },
+      {
+        "keyword": "රටට",
+        "count": 43
+      },
+      {
+        "keyword": "රුපියල් බිලියන",
+        "count": 42
+      },
+      {
+        "keyword": "ටෙන්ඩර්",
+        "count": 40
+      },
+      {
+        "keyword": "ආයතන",
+        "count": 39
+      },
+      {
+        "keyword": "මාර්ග සංවර්ධන",
+        "count": 38
+      },
+      {
+        "keyword": "අමාත්‍යාංශයේ",
+        "count": 36
+      },
+      {
+        "keyword": "මධ්‍යම",
+        "count": 35
+      },
+      {
+        "keyword": "පියවර",
+        "count": 33
+      },
+      {
+        "keyword": "ඉදිකිරීම්",
+        "count": 32
+      },
+      {
+        "keyword": "සංඛ්‍යාව",
+        "count": 31
+      },
+      {
+        "keyword": "ගැසට්",
+        "count": 29
+      },
+      {
+        "keyword": "සංවර්ධනය",
+        "count": 28
+      },
+      {
+        "keyword": "ජපන්",
+        "count": 26
+      },
+      {
+        "keyword": "බලපත්‍ර",
+        "count": 25
+      },
+      {
+        "keyword": "පාවිච්චි",
+        "count": 24
+      },
+      {
+        "keyword": "වැරදි",
+        "count": 22
+      },
+      {
+        "keyword": "සේවක",
+        "count": 21
+      },
+      {
+        "keyword": "රුපියල් මිලියන",
+        "count": 20
+      },
+      {
+        "keyword": "දියුණු",
+        "count": 18
+      },
+      {
+        "keyword": "පොදු",
+        "count": 17
+      },
+      {
+        "keyword": "මෙවැනි",
+        "count": 15
+      },
+      {
+        "keyword": "වියදම්",
+        "count": 14
       }
     ],
     "Macro-Topic 19": [
@@ -1760,74 +5500,754 @@
         "count": 67
       },
       {
+        "keyword": "ගුවන්",
+        "count": 65
+      },
+      {
         "keyword": "ලංකාවට",
         "count": 64
       },
       {
-        "keyword": "ගුවන්",
-        "count": 65
+        "keyword": "රටවල",
+        "count": 64
+      },
+      {
+        "keyword": "වැඩි",
+        "count": 63
+      },
+      {
+        "keyword": "නියුක්ති",
+        "count": 62
+      },
+      {
+        "keyword": "රටවල්",
+        "count": 61
+      },
+      {
+        "keyword": "පිළිවෙළක්",
+        "count": 61
+      },
+      {
+        "keyword": "විදේශ සේවා",
+        "count": 60
+      },
+      {
+        "keyword": "තොරතුරු",
+        "count": 59
+      },
+      {
+        "keyword": "කොවිඩ්",
+        "count": 59
+      },
+      {
+        "keyword": "ව්‍යාපාරය",
+        "count": 58
+      },
+      {
+        "keyword": "සේවා නියුක්ති",
+        "count": 57
+      },
+      {
+        "keyword": "ප්‍රශ්න",
+        "count": 57
+      },
+      {
+        "keyword": "ප්‍රශ්නයක්",
+        "count": 56
+      },
+      {
+        "keyword": "සංචාරකයන්",
+        "count": 55
+      },
+      {
+        "keyword": "ගෙන්වා",
+        "count": 55
+      },
+      {
+        "keyword": "සංචාරක ව්‍යාපාරය",
+        "count": 54
+      },
+      {
+        "keyword": "සාකච්ඡා",
+        "count": 53
+      },
+      {
+        "keyword": "පිරිසක්",
+        "count": 53
+      },
+      {
+        "keyword": "අරගෙන",
+        "count": 52
+      },
+      {
+        "keyword": "පහසුකම්",
+        "count": 51
+      },
+      {
+        "keyword": "පියවර",
+        "count": 51
+      },
+      {
+        "keyword": "රුපියල්",
+        "count": 50
+      },
+      {
+        "keyword": "සේවය",
+        "count": 49
+      },
+      {
+        "keyword": "ක්ෂේත්‍රය",
+        "count": 49
+      },
+      {
+        "keyword": "ඩොලර්",
+        "count": 48
+      },
+      {
+        "keyword": "හෝටල්",
+        "count": 47
+      },
+      {
+        "keyword": "රජයේ",
+        "count": 47
+      },
+      {
+        "keyword": "පුහුණු",
+        "count": 46
+      },
+      {
+        "keyword": "රටවලට",
+        "count": 45
+      },
+      {
+        "keyword": "ණය",
+        "count": 45
+      },
+      {
+        "keyword": "අතුරු",
+        "count": 44
+      },
+      {
+        "keyword": "කාර්යාල",
+        "count": 43
+      },
+      {
+        "keyword": "ලක්ෂ",
+        "count": 42
+      },
+      {
+        "keyword": "විදේශ විනිමය",
+        "count": 42
+      },
+      {
+        "keyword": "ඔවුන්ට",
+        "count": 41
+      },
+      {
+        "keyword": "පවතින",
+        "count": 40
+      },
+      {
+        "keyword": "ආයතන",
+        "count": 40
+      },
+      {
+        "keyword": "විනිමය",
+        "count": 39
+      },
+      {
+        "keyword": "නිලධාරින්",
+        "count": 38
+      },
+      {
+        "keyword": "කාර්යාංශය",
+        "count": 38
+      },
+      {
+        "keyword": "ලංකාවේ",
+        "count": 37
+      },
+      {
+        "keyword": "වැටුප්",
+        "count": 36
+      },
+      {
+        "keyword": "නිලධාරීන්",
+        "count": 36
+      },
+      {
+        "keyword": "ආරක්ෂාව",
+        "count": 35
+      },
+      {
+        "keyword": "සොයා",
+        "count": 34
+      },
+      {
+        "keyword": "කර්මාන්තය",
+        "count": 34
+      },
+      {
+        "keyword": "සංචාරක කර්මාන්තය",
+        "count": 33
+      },
+      {
+        "keyword": "සහන",
+        "count": 32
+      },
+      {
+        "keyword": "ගැටලු",
+        "count": 32
+      },
+      {
+        "keyword": "ජනතාව",
+        "count": 31
+      },
+      {
+        "keyword": "ඉඩ",
+        "count": 30
+      },
+      {
+        "keyword": "විශේෂයෙන්",
+        "count": 30
+      },
+      {
+        "keyword": "ආණ්ඩුව",
+        "count": 29
+      },
+      {
+        "keyword": "ආර්ථික",
+        "count": 28
+      },
+      {
+        "keyword": "සෞඛ්‍ය",
+        "count": 28
+      },
+      {
+        "keyword": "ගෘහ",
+        "count": 27
+      },
+      {
+        "keyword": "ප්‍රශ්නයට",
+        "count": 26
+      },
+      {
+        "keyword": "සංඛ්‍යාව",
+        "count": 26
+      },
+      {
+        "keyword": "ලියාපදිංචි",
+        "count": 25
+      },
+      {
+        "keyword": "යවන්න",
+        "count": 24
+      },
+      {
+        "keyword": "මෙරටට",
+        "count": 24
+      },
+      {
+        "keyword": "ලාංකිකයන්",
+        "count": 23
+      },
+      {
+        "keyword": "ඇයි",
+        "count": 22
+      },
+      {
+        "keyword": "එක්සත්",
+        "count": 21
+      },
+      {
+        "keyword": "පිළිතුරු",
+        "count": 21
+      },
+      {
+        "keyword": "ජාත්‍යන්තර",
+        "count": 20
+      },
+      {
+        "keyword": "දේශපාලන",
+        "count": 19
+      },
+      {
+        "keyword": "මුදලක්",
+        "count": 19
+      },
+      {
+        "keyword": "යවනවා",
+        "count": 18
+      },
+      {
+        "keyword": "ඔබතුමාගේ",
+        "count": 17
+      },
+      {
+        "keyword": "වසංගතය",
+        "count": 17
+      },
+      {
+        "keyword": "ලාංකික",
+        "count": 16
+      },
+      {
+        "keyword": "මැද",
+        "count": 15
+      },
+      {
+        "keyword": "මිලියන",
+        "count": 15
+      },
+      {
+        "keyword": "අසරණ",
+        "count": 14
+      },
+      {
+        "keyword": "ප්‍රමාණය",
+        "count": 13
+      },
+      {
+        "keyword": "වෘත්තීය",
+        "count": 13
+      },
+      {
+        "keyword": "කාන්තාවන්",
+        "count": 12
+      },
+      {
+        "keyword": "ජාතික",
+        "count": 11
+      },
+      {
+        "keyword": "දියුණු",
+        "count": 11
+      },
+      {
+        "keyword": "අනෙකුත්",
+        "count": 10
+      },
+      {
+        "keyword": "ලංකාව",
+        "count": 9
+      },
+      {
+        "keyword": "ජනතාවගේ",
+        "count": 9
+      },
+      {
+        "keyword": "ආරක්ෂක",
+        "count": 8
+      },
+      {
+        "keyword": "ජනාධිපතිතුමා",
+        "count": 7
+      },
+      {
+        "keyword": "කම්කරු",
+        "count": 7
       }
     ],
     "Macro-Topic 2": [
       {
-        "keyword": "000",
-        "count": 282
-      },
-      {
-        "keyword": "இந்தக்",
-        "count": 173
-      },
-      {
-        "keyword": "இவ்வாறு",
-        "count": 179
-      },
-      {
-        "keyword": "குறித்த",
-        "count": 172
-      },
-      {
-        "keyword": "1",
-        "count": 173
-      },
-      {
-        "keyword": "வேண்டிய",
-        "count": 172
-      },
-      {
         "keyword": "தேர்தல்",
         "count": 166
-      },
-      {
-        "keyword": "3",
-        "count": 162
       },
       {
         "keyword": "தபால்",
         "count": 158
       },
       {
-        "keyword": "2",
-        "count": 156
-      },
-      {
-        "keyword": "இருக்கலாம்",
-        "count": 140
-      },
-      {
-        "keyword": "சேர்ந்த",
-        "count": 141
-      },
-      {
-        "keyword": "5",
-        "count": 137
-      },
-      {
-        "keyword": "தவிசாளர்",
+        "keyword": "கல்வி",
         "count": 136
       },
       {
-        "keyword": "இடத்தில்",
-        "count": 136
+        "keyword": "மனித",
+        "count": 134
+      },
+      {
+        "keyword": "பௌத்த",
+        "count": 133
+      },
+      {
+        "keyword": "இன",
+        "count": 132
+      },
+      {
+        "keyword": "பயங்கரவாதத்",
+        "count": 131
+      },
+      {
+        "keyword": "பிரதமர்",
+        "count": 129
+      },
+      {
+        "keyword": "பிரதித்",
+        "count": 128
+      },
+      {
+        "keyword": "குழுக்களின்",
+        "count": 127
+      },
+      {
+        "keyword": "எங்களுக்கு",
+        "count": 126
+      },
+      {
+        "keyword": "எதிராக",
+        "count": 124
+      },
+      {
+        "keyword": "விடயங்களை",
+        "count": 123
+      },
+      {
+        "keyword": "வாழுகின்ற",
+        "count": 122
+      },
+      {
+        "keyword": "கவனம்",
+        "count": 121
+      },
+      {
+        "keyword": "எனினும்",
+        "count": 119
+      },
+      {
+        "keyword": "செயற்பாடுகள்",
+        "count": 118
+      },
+      {
+        "keyword": "சரியான",
+        "count": 117
+      },
+      {
+        "keyword": "இலங்கையில்",
+        "count": 116
+      },
+      {
+        "keyword": "இதற்கு",
+        "count": 114
+      },
+      {
+        "keyword": "அதேபோல",
+        "count": 113
+      },
+      {
+        "keyword": "யுத்தம்",
+        "count": 112
+      },
+      {
+        "keyword": "நடவடிக்கைகள்",
+        "count": 111
+      },
+      {
+        "keyword": "இதனால்",
+        "count": 109
+      },
+      {
+        "keyword": "பாதிக்கப்பட்ட",
+        "count": 108
+      },
+      {
+        "keyword": "அனைவரும்",
+        "count": 107
+      },
+      {
+        "keyword": "நினைக்கின்றேன்",
+        "count": 106
+      },
+      {
+        "keyword": "தயவுசெய்து",
+        "count": 104
+      },
+      {
+        "keyword": "அந்தச்",
+        "count": 103
+      },
+      {
+        "keyword": "பிரதிச்",
+        "count": 102
+      },
+      {
+        "keyword": "இதுவரை",
+        "count": 101
+      },
+      {
+        "keyword": "விடுதலை",
+        "count": 99
+      },
+      {
+        "keyword": "எனக்",
+        "count": 98
+      },
+      {
+        "keyword": "தமிழர்கள்",
+        "count": 97
+      },
+      {
+        "keyword": "தெரியும்",
+        "count": 96
+      },
+      {
+        "keyword": "சொல்ல",
+        "count": 94
+      },
+      {
+        "keyword": "அவர்களும்",
+        "count": 93
+      },
+      {
+        "keyword": "அவற்றை",
+        "count": 92
+      },
+      {
+        "keyword": "காரணம்",
+        "count": 91
+      },
+      {
+        "keyword": "அதேநேரம்",
+        "count": 89
+      },
+      {
+        "keyword": "குழுக்களின் பிரதித்",
+        "count": 88
+      },
+      {
+        "keyword": "தடைச்",
+        "count": 87
+      },
+      {
+        "keyword": "உரிமை",
+        "count": 86
+      },
+      {
+        "keyword": "சமூகம்",
+        "count": 84
+      },
+      {
+        "keyword": "போதைப்பொருள்",
+        "count": 83
+      },
+      {
+        "keyword": "கைது",
+        "count": 82
+      },
+      {
+        "keyword": "அம்பாறை",
+        "count": 81
+      },
+      {
+        "keyword": "உற்பத்தி",
+        "count": 79
+      },
+      {
+        "keyword": "தாக்குதல்",
+        "count": 78
+      },
+      {
+        "keyword": "பயங்கரவாதத் தடைச்",
+        "count": 77
+      },
+      {
+        "keyword": "ராஜபக்ஷ",
+        "count": 76
+      },
+      {
+        "keyword": "உள்ளூராட்சி",
+        "count": 74
+      },
+      {
+        "keyword": "சந்தர்ப்பம்",
+        "count": 73
+      },
+      {
+        "keyword": "தொல்பொருள்",
+        "count": 72
+      },
+      {
+        "keyword": "விடயத்தில்",
+        "count": 71
+      },
+      {
+        "keyword": "அதேபோல்",
+        "count": 69
+      },
+      {
+        "keyword": "ஆட்சி",
+        "count": 68
+      },
+      {
+        "keyword": "பில்லியன்",
+        "count": 67
+      },
+      {
+        "keyword": "பொலிஸ்",
+        "count": 66
+      },
+      {
+        "keyword": "முதல்",
+        "count": 64
+      },
+      {
+        "keyword": "விவசாய",
+        "count": 63
+      },
+      {
+        "keyword": "எதிர்காலத்தில்",
+        "count": 62
+      },
+      {
+        "keyword": "வருட",
+        "count": 61
+      },
+      {
+        "keyword": "அடுத்து",
+        "count": 59
+      },
+      {
+        "keyword": "தேவை",
+        "count": 58
+      },
+      {
+        "keyword": "இதில்",
+        "count": 57
+      },
+      {
+        "keyword": "தொடர்ந்து",
+        "count": 56
+      },
+      {
+        "keyword": "ஒரே",
+        "count": 54
+      },
+      {
+        "keyword": "அரசாங்க",
+        "count": 53
+      },
+      {
+        "keyword": "வகையிலே",
+        "count": 52
+      },
+      {
+        "keyword": "இவர்கள்",
+        "count": 51
+      },
+      {
+        "keyword": "செய்வதற்கு",
+        "count": 49
+      },
+      {
+        "keyword": "ஏற்பட்ட",
+        "count": 48
+      },
+      {
+        "keyword": "திட்டம்",
+        "count": 47
+      },
+      {
+        "keyword": "விசாரணை",
+        "count": 46
+      },
+      {
+        "keyword": "ஊடாக",
+        "count": 44
+      },
+      {
+        "keyword": "விடயமாகும்",
+        "count": 43
+      },
+      {
+        "keyword": "விவசாயிகள்",
+        "count": 42
+      },
+      {
+        "keyword": "இளைஞர்கள்",
+        "count": 41
+      },
+      {
+        "keyword": "ஒன்று",
+        "count": 39
+      },
+      {
+        "keyword": "அதிகமான",
+        "count": 38
+      },
+      {
+        "keyword": "வரை",
+        "count": 37
+      },
+      {
+        "keyword": "பலர்",
+        "count": 36
+      },
+      {
+        "keyword": "விசேட",
+        "count": 34
+      },
+      {
+        "keyword": "ரீதியாக",
+        "count": 33
+      },
+      {
+        "keyword": "வருகின்றன",
+        "count": 32
+      },
+      {
+        "keyword": "கொடுக்க",
+        "count": 31
+      },
+      {
+        "keyword": "கூற",
+        "count": 29
+      },
+      {
+        "keyword": "நேரத்தில்",
+        "count": 28
+      },
+      {
+        "keyword": "மாவட்டத்திலே",
+        "count": 27
+      },
+      {
+        "keyword": "சிறிய",
+        "count": 26
+      },
+      {
+        "keyword": "பொருளாதாரம்",
+        "count": 24
+      },
+      {
+        "keyword": "தற்போதைய",
+        "count": 23
+      },
+      {
+        "keyword": "பேர்",
+        "count": 22
+      },
+      {
+        "keyword": "அத்துடன்",
+        "count": 21
+      },
+      {
+        "keyword": "இடத்திலே",
+        "count": 19
+      },
+      {
+        "keyword": "அரசு",
+        "count": 18
+      },
+      {
+        "keyword": "மாகாணத்தில்",
+        "count": 17
+      },
+      {
+        "keyword": "அவர்களால்",
+        "count": 16
+      },
+      {
+        "keyword": "மேற்படி",
+        "count": 14
       }
     ],
     "Macro-Topic 20": [
@@ -1836,11 +6256,11 @@
         "count": 235
       },
       {
-        "keyword": "මානව හිමිකම්",
+        "keyword": "හිමිකම්",
         "count": 222
       },
       {
-        "keyword": "හිමිකම්",
+        "keyword": "මානව හිමිකම්",
         "count": 222
       },
       {
@@ -1884,12 +6304,352 @@
         "count": 106
       },
       {
+        "keyword": "ජාතීන්ගේ",
+        "count": 104
+      },
+      {
         "keyword": "ජාතික",
         "count": 103
       },
       {
-        "keyword": "ජාතීන්ගේ",
-        "count": 104
+        "keyword": "ආරක්ෂක",
+        "count": 103
+      },
+      {
+        "keyword": "එක්සත් ජාතීන්ගේ",
+        "count": 101
+      },
+      {
+        "keyword": "දේශපාලන",
+        "count": 100
+      },
+      {
+        "keyword": "ලංකාව",
+        "count": 99
+      },
+      {
+        "keyword": "ලංකාවේ",
+        "count": 98
+      },
+      {
+        "keyword": "රාජපක්ෂ",
+        "count": 97
+      },
+      {
+        "keyword": "සාකච්ඡා",
+        "count": 96
+      },
+      {
+        "keyword": "රටක්",
+        "count": 95
+      },
+      {
+        "keyword": "මැතිතුමා",
+        "count": 94
+      },
+      {
+        "keyword": "යෝජනා",
+        "count": 93
+      },
+      {
+        "keyword": "පලස්තීන",
+        "count": 92
+      },
+      {
+        "keyword": "අරගෙන",
+        "count": 91
+      },
+      {
+        "keyword": "ආරක්ෂා",
+        "count": 89
+      },
+      {
+        "keyword": "ප්‍රශ්න",
+        "count": 88
+      },
+      {
+        "keyword": "යුද",
+        "count": 87
+      },
+      {
+        "keyword": "සම්මත",
+        "count": 86
+      },
+      {
+        "keyword": "පනත්",
+        "count": 85
+      },
+      {
+        "keyword": "ලංකාවට",
+        "count": 84
+      },
+      {
+        "keyword": "ලෝකයේ",
+        "count": 83
+      },
+      {
+        "keyword": "සංශෝධන",
+        "count": 82
+      },
+      {
+        "keyword": "ත්‍රස්තවාදය වැළැක්වීමේ",
+        "count": 81
+      },
+      {
+        "keyword": "වැළැක්වීමේ",
+        "count": 80
+      },
+      {
+        "keyword": "ලංකා",
+        "count": 79
+      },
+      {
+        "keyword": "ජිනීවා",
+        "count": 77
+      },
+      {
+        "keyword": "ජනතාවගේ",
+        "count": 76
+      },
+      {
+        "keyword": "මහින්ද",
+        "count": 75
+      },
+      {
+        "keyword": "බලය",
+        "count": 74
+      },
+      {
+        "keyword": "ජනාධිපතිතුමා",
+        "count": 73
+      },
+      {
+        "keyword": "තමන්ගේ",
+        "count": 72
+      },
+      {
+        "keyword": "ජනතාවට",
+        "count": 71
+      },
+      {
+        "keyword": "නීතිය",
+        "count": 70
+      },
+      {
+        "keyword": "මහින්ද රාජපක්ෂ",
+        "count": 69
+      },
+      {
+        "keyword": "ප්‍රශ්නයක්",
+        "count": 68
+      },
+      {
+        "keyword": "sri",
+        "count": 67
+      },
+      {
+        "keyword": "මුස්ලිම්",
+        "count": 65
+      },
+      {
+        "keyword": "ගිවිසුම",
+        "count": 64
+      },
+      {
+        "keyword": "lanka",
+        "count": 63
+      },
+      {
+        "keyword": "පාර්ලිමේන්තුවේ",
+        "count": 62
+      },
+      {
+        "keyword": "ආරක්ෂාව",
+        "count": 61
+      },
+      {
+        "keyword": "sri lanka",
+        "count": 60
+      },
+      {
+        "keyword": "රජයේ",
+        "count": 59
+      },
+      {
+        "keyword": "නඩු",
+        "count": 58
+      },
+      {
+        "keyword": "සංවිධානය",
+        "count": 57
+      },
+      {
+        "keyword": "ලෝක",
+        "count": 56
+      },
+      {
+        "keyword": "පියවර",
+        "count": 55
+      },
+      {
+        "keyword": "මෙවැනි",
+        "count": 53
+      },
+      {
+        "keyword": "දෙමළ",
+        "count": 52
+      },
+      {
+        "keyword": "හමුදා",
+        "count": 51
+      },
+      {
+        "keyword": "මාසයේ",
+        "count": 50
+      },
+      {
+        "keyword": "නිදහස්",
+        "count": 49
+      },
+      {
+        "keyword": "නීති",
+        "count": 48
+      },
+      {
+        "keyword": "අදහස්",
+        "count": 47
+      },
+      {
+        "keyword": "අමාත්‍යාංශය",
+        "count": 46
+      },
+      {
+        "keyword": "ආර්ථික",
+        "count": 45
+      },
+      {
+        "keyword": "ඉඩ",
+        "count": 44
+      },
+      {
+        "keyword": "ආණ්ඩුවේ",
+        "count": 43
+      },
+      {
+        "keyword": "පාලනය",
+        "count": 41
+      },
+      {
+        "keyword": "ගන්නා",
+        "count": 40
+      },
+      {
+        "keyword": "ගිවිසුම්",
+        "count": 39
+      },
+      {
+        "keyword": "සිංහල",
+        "count": 38
+      },
+      {
+        "keyword": "රණ",
+        "count": 37
+      },
+      {
+        "keyword": "කෙටුම්පත",
+        "count": 36
+      },
+      {
+        "keyword": "පක්ෂ",
+        "count": 35
+      },
+      {
+        "keyword": "පනත් කෙටුම්පත",
+        "count": 34
+      },
+      {
+        "keyword": "සහයෝගය",
+        "count": 33
+      },
+      {
+        "keyword": "දේශීය",
+        "count": 32
+      },
+      {
+        "keyword": "පාවිච්චි",
+        "count": 31
+      },
+      {
+        "keyword": "වැඩි",
+        "count": 29
+      },
+      {
+        "keyword": "රටවල",
+        "count": 28
+      },
+      {
+        "keyword": "ආණ්ඩුක්‍රම",
+        "count": 27
+      },
+      {
+        "keyword": "ඉටු",
+        "count": 26
+      },
+      {
+        "keyword": "ලක්",
+        "count": 25
+      },
+      {
+        "keyword": "වුණත්",
+        "count": 24
+      },
+      {
+        "keyword": "දෙකක්",
+        "count": 23
+      },
+      {
+        "keyword": "අධිකරණ",
+        "count": 22
+      },
+      {
+        "keyword": "හමුදාව",
+        "count": 21
+      },
+      {
+        "keyword": "චෝදනා",
+        "count": 20
+      },
+      {
+        "keyword": "වෙච්ච",
+        "count": 19
+      },
+      {
+        "keyword": "ආණ්ඩු",
+        "count": 17
+      },
+      {
+        "keyword": "අහිංසක",
+        "count": 16
+      },
+      {
+        "keyword": "ආණ්ඩුවක්",
+        "count": 15
+      },
+      {
+        "keyword": "ජීවත්",
+        "count": 14
+      },
+      {
+        "keyword": "මාධ්‍ය",
+        "count": 13
+      },
+      {
+        "keyword": "පමණක්",
+        "count": 12
+      },
+      {
+        "keyword": "පැහැදිලි",
+        "count": 11
       }
     ],
     "Macro-Topic 21": [
@@ -1910,11 +6670,11 @@
         "count": 114
       },
       {
-        "keyword": "දියර",
+        "keyword": "දියර කිරි",
         "count": 102
       },
       {
-        "keyword": "දියර කිරි",
+        "keyword": "දියර",
         "count": 102
       },
       {
@@ -1950,8 +6710,348 @@
         "count": 47
       },
       {
+        "keyword": "ලංකාවේ",
+        "count": 46
+      },
+      {
+        "keyword": "මුදල්",
+        "count": 45
+      },
+      {
         "keyword": "ලීටර්",
         "count": 46
+      },
+      {
+        "keyword": "අමාත්‍යාංශය",
+        "count": 45
+      },
+      {
+        "keyword": "සතුන්",
+        "count": 44
+      },
+      {
+        "keyword": "ලක්ෂ",
+        "count": 44
+      },
+      {
+        "keyword": "පශු",
+        "count": 43
+      },
+      {
+        "keyword": "රජය",
+        "count": 43
+      },
+      {
+        "keyword": "වැය",
+        "count": 42
+      },
+      {
+        "keyword": "ආයතන",
+        "count": 42
+      },
+      {
+        "keyword": "රුපියල් මිලියන",
+        "count": 41
+      },
+      {
+        "keyword": "සමාගම්",
+        "count": 41
+      },
+      {
+        "keyword": "සම්පත්",
+        "count": 40
+      },
+      {
+        "keyword": "නිෂ්පාදන",
+        "count": 40
+      },
+      {
+        "keyword": "ජාතික",
+        "count": 39
+      },
+      {
+        "keyword": "ආණ්ඩුව",
+        "count": 39
+      },
+      {
+        "keyword": "සමාගම",
+        "count": 38
+      },
+      {
+        "keyword": "වෙළෙඳ",
+        "count": 38
+      },
+      {
+        "keyword": "කිරිපිටි",
+        "count": 37
+      },
+      {
+        "keyword": "පශු සම්පත්",
+        "count": 37
+      },
+      {
+        "keyword": "සෞඛ්‍ය",
+        "count": 36
+      },
+      {
+        "keyword": "කර්මාන්තය",
+        "count": 36
+      },
+      {
+        "keyword": "අරගෙන",
+        "count": 35
+      },
+      {
+        "keyword": "ප්‍රශ්නයක්",
+        "count": 35
+      },
+      {
+        "keyword": "මිල",
+        "count": 34
+      },
+      {
+        "keyword": "පරිසර",
+        "count": 34
+      },
+      {
+        "keyword": "ලංකාවට",
+        "count": 33
+      },
+      {
+        "keyword": "ආහාර",
+        "count": 33
+      },
+      {
+        "keyword": "වාර්තා",
+        "count": 32
+      },
+      {
+        "keyword": "ස්වයංපෝෂිත",
+        "count": 32
+      },
+      {
+        "keyword": "මුදල",
+        "count": 31
+      },
+      {
+        "keyword": "ගොවි",
+        "count": 31
+      },
+      {
+        "keyword": "පිළිවෙළක්",
+        "count": 30
+      },
+      {
+        "keyword": "බිලියන",
+        "count": 30
+      },
+      {
+        "keyword": "මුදලක්",
+        "count": 29
+      },
+      {
+        "keyword": "අවශ්‍යතාව",
+        "count": 29
+      },
+      {
+        "keyword": "පරීක්ෂණ",
+        "count": 28
+      },
+      {
+        "keyword": "පෞද්ගලික",
+        "count": 28
+      },
+      {
+        "keyword": "ලංකාව",
+        "count": 27
+      },
+      {
+        "keyword": "රජයේ",
+        "count": 27
+      },
+      {
+        "keyword": "රටක්",
+        "count": 27
+      },
+      {
+        "keyword": "ඉදිරියට",
+        "count": 26
+      },
+      {
+        "keyword": "ආශ්‍රිත",
+        "count": 26
+      },
+      {
+        "keyword": "ගොවියා",
+        "count": 25
+      },
+      {
+        "keyword": "මතු",
+        "count": 25
+      },
+      {
+        "keyword": "ගොවීන්ට",
+        "count": 24
+      },
+      {
+        "keyword": "එකයි",
+        "count": 24
+      },
+      {
+        "keyword": "මිලදී",
+        "count": 23
+      },
+      {
+        "keyword": "විදේශ",
+        "count": 23
+      },
+      {
+        "keyword": "ලංකා",
+        "count": 22
+      },
+      {
+        "keyword": "කර්මාන්ත",
+        "count": 22
+      },
+      {
+        "keyword": "කෘෂිකර්ම",
+        "count": 21
+      },
+      {
+        "keyword": "රුපියල් බිලියන",
+        "count": 21
+      },
+      {
+        "keyword": "ප්‍රශ්න",
+        "count": 20
+      },
+      {
+        "keyword": "ආනයනික",
+        "count": 20
+      },
+      {
+        "keyword": "දියුණු",
+        "count": 19
+      },
+      {
+        "keyword": "ක්‍රම",
+        "count": 19
+      },
+      {
+        "keyword": "බදු",
+        "count": 18
+      },
+      {
+        "keyword": "වාර්තාව",
+        "count": 18
+      },
+      {
+        "keyword": "සාකච්ඡා",
+        "count": 17
+      },
+      {
+        "keyword": "වෛද්‍ය",
+        "count": 17
+      },
+      {
+        "keyword": "ඩොලර්",
+        "count": 16
+      },
+      {
+        "keyword": "ජනතාවට",
+        "count": 16
+      },
+      {
+        "keyword": "පරිමාණ",
+        "count": 15
+      },
+      {
+        "keyword": "දැක්කා",
+        "count": 15
+      },
+      {
+        "keyword": "ගොවීන්",
+        "count": 14
+      },
+      {
+        "keyword": "ආයතනය",
+        "count": 14
+      },
+      {
+        "keyword": "අධිකාරිය",
+        "count": 13
+      },
+      {
+        "keyword": "පාරිභෝගික",
+        "count": 13
+      },
+      {
+        "keyword": "ඉඩම්",
+        "count": 12
+      },
+      {
+        "keyword": "ගන්නා",
+        "count": 12
+      },
+      {
+        "keyword": "අමාත්‍යාංශයට",
+        "count": 11
+      },
+      {
+        "keyword": "අතුරු",
+        "count": 11
+      },
+      {
+        "keyword": "භාර",
+        "count": 10
+      },
+      {
+        "keyword": "ද්‍රව්‍ය",
+        "count": 10
+      },
+      {
+        "keyword": "පහසුකම්",
+        "count": 9
+      },
+      {
+        "keyword": "සමුපකාර",
+        "count": 9
+      },
+      {
+        "keyword": "පතිරණ",
+        "count": 8
+      },
+      {
+        "keyword": "බරපතළ",
+        "count": 8
+      },
+      {
+        "keyword": "ගෙන්වන්න",
+        "count": 8
+      },
+      {
+        "keyword": "සම්පූර්ණ",
+        "count": 7
+      },
+      {
+        "keyword": "ගොවියාට",
+        "count": 7
+      },
+      {
+        "keyword": "ගිවිසුම",
+        "count": 6
+      },
+      {
+        "keyword": "සංවර්ධන",
+        "count": 6
+      },
+      {
+        "keyword": "වියදම්",
+        "count": 5
+      },
+      {
+        "keyword": "වර්ග",
+        "count": 5
       }
     ],
     "Macro-Topic 22": [
@@ -2014,6 +7114,346 @@
       {
         "keyword": "විද්‍යාලය",
         "count": 54
+      },
+      {
+        "keyword": "උපාධිය",
+        "count": 54
+      },
+      {
+        "keyword": "පුහුණුව",
+        "count": 53
+      },
+      {
+        "keyword": "විශ්ව විද්‍යාල",
+        "count": 52
+      },
+      {
+        "keyword": "සිසුන්",
+        "count": 52
+      },
+      {
+        "keyword": "විශ්ව විද්‍යාලය",
+        "count": 51
+      },
+      {
+        "keyword": "පෞද්ගලික",
+        "count": 51
+      },
+      {
+        "keyword": "ප්‍රමිතිය",
+        "count": 50
+      },
+      {
+        "keyword": "නිදහස්",
+        "count": 49
+      },
+      {
+        "keyword": "විද්‍යාලයේ",
+        "count": 49
+      },
+      {
+        "keyword": "ආයතනයේ",
+        "count": 48
+      },
+      {
+        "keyword": "මුදල්",
+        "count": 48
+      },
+      {
+        "keyword": "උපාධි",
+        "count": 47
+      },
+      {
+        "keyword": "විශ්ව විද්‍යාලයේ",
+        "count": 47
+      },
+      {
+        "keyword": "රෝහල",
+        "count": 46
+      },
+      {
+        "keyword": "ඔවුන්ට",
+        "count": 45
+      },
+      {
+        "keyword": "ප්‍රශ්නයක්",
+        "count": 45
+      },
+      {
+        "keyword": "ජාතික",
+        "count": 44
+      },
+      {
+        "keyword": "අනුමැතිය",
+        "count": 44
+      },
+      {
+        "keyword": "සිසුන්ට",
+        "count": 43
+      },
+      {
+        "keyword": "දේශපාලන",
+        "count": 43
+      },
+      {
+        "keyword": "රජයේ වෛද්‍ය",
+        "count": 42
+      },
+      {
+        "keyword": "උසස් අධ්‍යාපන",
+        "count": 41
+      },
+      {
+        "keyword": "ජෝන්",
+        "count": 41
+      },
+      {
+        "keyword": "මහාචාර්ය",
+        "count": 40
+      },
+      {
+        "keyword": "අමාත්‍යාංශය",
+        "count": 40
+      },
+      {
+        "keyword": "ප්‍රතිපාදන",
+        "count": 39
+      },
+      {
+        "keyword": "විද්‍යාලයට",
+        "count": 39
+      },
+      {
+        "keyword": "ආයතනයට",
+        "count": 38
+      },
+      {
+        "keyword": "ශික්ෂණ",
+        "count": 37
+      },
+      {
+        "keyword": "විශ්වවිද්‍යාල",
+        "count": 37
+      },
+      {
+        "keyword": "ප්‍රශ්න",
+        "count": 36
+      },
+      {
+        "keyword": "ලංකා",
+        "count": 36
+      },
+      {
+        "keyword": "දරුවන්ට",
+        "count": 35
+      },
+      {
+        "keyword": "අධ්‍යාපනයේ",
+        "count": 35
+      },
+      {
+        "keyword": "පනත්",
+        "count": 34
+      },
+      {
+        "keyword": "ලංකාවේ",
+        "count": 33
+      },
+      {
+        "keyword": "ආරක්ෂා",
+        "count": 33
+      },
+      {
+        "keyword": "විශ්ව විද්‍යාලයට",
+        "count": 32
+      },
+      {
+        "keyword": "ආයතනයක්",
+        "count": 32
+      },
+      {
+        "keyword": "ශිෂ්‍ය",
+        "count": 31
+      },
+      {
+        "keyword": "බඳවා",
+        "count": 31
+      },
+      {
+        "keyword": "විෂය",
+        "count": 30
+      },
+      {
+        "keyword": "අනාගතය",
+        "count": 29
+      },
+      {
+        "keyword": "වෛද්‍යවරුන්",
+        "count": 29
+      },
+      {
+        "keyword": "ඉටු",
+        "count": 28
+      },
+      {
+        "keyword": "විද්‍යාලයක්",
+        "count": 28
+      },
+      {
+        "keyword": "යෝජනා",
+        "count": 27
+      },
+      {
+        "keyword": "defence",
+        "count": 27
+      },
+      {
+        "keyword": "විශ්ව විද්‍යාලයක්",
+        "count": 26
+      },
+      {
+        "keyword": "රජයට",
+        "count": 25
+      },
+      {
+        "keyword": "ඉඩ",
+        "count": 25
+      },
+      {
+        "keyword": "නිදහස් අධ්‍යාපනය",
+        "count": 24
+      },
+      {
+        "keyword": "university",
+        "count": 24
+      },
+      {
+        "keyword": "විසඳුමක්",
+        "count": 23
+      },
+      {
+        "keyword": "හමුදා",
+        "count": 23
+      },
+      {
+        "keyword": "අරගෙන",
+        "count": 22
+      },
+      {
+        "keyword": "ඉගෙන",
+        "count": 21
+      },
+      {
+        "keyword": "සුදුසුකම්",
+        "count": 21
+      },
+      {
+        "keyword": "ගන්නා",
+        "count": 20
+      },
+      {
+        "keyword": "ලියාපදිංචි",
+        "count": 20
+      },
+      {
+        "keyword": "පාරට",
+        "count": 19
+      },
+      {
+        "keyword": "ශිෂ්‍යයන්",
+        "count": 19
+      },
+      {
+        "keyword": "තීන්දු",
+        "count": 18
+      },
+      {
+        "keyword": "පීඨ",
+        "count": 17
+      },
+      {
+        "keyword": "ආණ්ඩුව",
+        "count": 17
+      },
+      {
+        "keyword": "නීති",
+        "count": 16
+      },
+      {
+        "keyword": "රෝහල්",
+        "count": 16
+      },
+      {
+        "keyword": "මතු",
+        "count": 15
+      },
+      {
+        "keyword": "සාකච්ඡා",
+        "count": 15
+      },
+      {
+        "keyword": "ගැටලුව",
+        "count": 14
+      },
+      {
+        "keyword": "වැඩි",
+        "count": 13
+      },
+      {
+        "keyword": "මූලික",
+        "count": 13
+      },
+      {
+        "keyword": "කෙටුම්පත",
+        "count": 12
+      },
+      {
+        "keyword": "රෝහලක්",
+        "count": 12
+      },
+      {
+        "keyword": "වයඹ",
+        "count": 11
+      },
+      {
+        "keyword": "පැහැදිලි",
+        "count": 11
+      },
+      {
+        "keyword": "පනත් කෙටුම්පත",
+        "count": 10
+      },
+      {
+        "keyword": "පවත්වාගෙන",
+        "count": 9
+      },
+      {
+        "keyword": "අමාත්‍යාංශයේ",
+        "count": 9
+      },
+      {
+        "keyword": "රෝහල්වල",
+        "count": 8
+      },
+      {
+        "keyword": "ලක්",
+        "count": 8
+      },
+      {
+        "keyword": "ජනතාව",
+        "count": 7
+      },
+      {
+        "keyword": "බිහි",
+        "count": 7
+      },
+      {
+        "keyword": "අමාත්‍යවරයා",
+        "count": 6
+      },
+      {
+        "keyword": "රටට",
+        "count": 5
       }
     ],
     "Macro-Topic 23": [
@@ -2076,6 +7516,346 @@
       {
         "keyword": "ජනතාව",
         "count": 143
+      },
+      {
+        "keyword": "කොමිෂන්",
+        "count": 143
+      },
+      {
+        "keyword": "අයිතිය",
+        "count": 141
+      },
+      {
+        "keyword": "ජනතාවගේ",
+        "count": 139
+      },
+      {
+        "keyword": "කෙටුම්පත",
+        "count": 138
+      },
+      {
+        "keyword": "පනත් කෙටුම්පත",
+        "count": 136
+      },
+      {
+        "keyword": "මුදල්",
+        "count": 135
+      },
+      {
+        "keyword": "පවත්වන්න",
+        "count": 133
+      },
+      {
+        "keyword": "යෝජනා",
+        "count": 132
+      },
+      {
+        "keyword": "ජනතාවට",
+        "count": 130
+      },
+      {
+        "keyword": "සංශෝධන",
+        "count": 129
+      },
+      {
+        "keyword": "ආණ්ඩුක්‍රම",
+        "count": 127
+      },
+      {
+        "keyword": "පාලන මැතිවරණය",
+        "count": 126
+      },
+      {
+        "keyword": "නිර්ණය",
+        "count": 124
+      },
+      {
+        "keyword": "පක්ෂ",
+        "count": 123
+      },
+      {
+        "keyword": "සීමා නිර්ණය",
+        "count": 121
+      },
+      {
+        "keyword": "මැතිවරණයට",
+        "count": 120
+      },
+      {
+        "keyword": "සාකච්ඡා",
+        "count": 118
+      },
+      {
+        "keyword": "සම්මත",
+        "count": 117
+      },
+      {
+        "keyword": "මැතිවරණ ක්‍රමය",
+        "count": 115
+      },
+      {
+        "keyword": "මැතිවරණයක්",
+        "count": 114
+      },
+      {
+        "keyword": "පාලන ආයතන",
+        "count": 112
+      },
+      {
+        "keyword": "වැඩි",
+        "count": 111
+      },
+      {
+        "keyword": "බලය",
+        "count": 109
+      },
+      {
+        "keyword": "මැතිවරණ කොමිෂන්",
+        "count": 108
+      },
+      {
+        "keyword": "වියදම්",
+        "count": 106
+      },
+      {
+        "keyword": "පාර්ලිමේන්තුවට",
+        "count": 105
+      },
+      {
+        "keyword": "පාර්ලිමේන්තුවේ",
+        "count": 103
+      },
+      {
+        "keyword": "ප්‍රාදේශීය",
+        "count": 102
+      },
+      {
+        "keyword": "ජාතික",
+        "count": 100
+      },
+      {
+        "keyword": "කොට්ඨාස",
+        "count": 99
+      },
+      {
+        "keyword": "රජයේ",
+        "count": 97
+      },
+      {
+        "keyword": "මැතිවරණය පවත්වන්න",
+        "count": 96
+      },
+      {
+        "keyword": "නාම",
+        "count": 94
+      },
+      {
+        "keyword": "නීති",
+        "count": 93
+      },
+      {
+        "keyword": "ප්‍රශ්නයක්",
+        "count": 91
+      },
+      {
+        "keyword": "පාර්ලිමේන්තු",
+        "count": 90
+      },
+      {
+        "keyword": "තමන්ගේ",
+        "count": 88
+      },
+      {
+        "keyword": "නව",
+        "count": 86
+      },
+      {
+        "keyword": "ප්‍රශ්න",
+        "count": 85
+      },
+      {
+        "keyword": "කොමිසම",
+        "count": 83
+      },
+      {
+        "keyword": "පැවැත්වීම",
+        "count": 82
+      },
+      {
+        "keyword": "පැහැදිලිව",
+        "count": 80
+      },
+      {
+        "keyword": "කැබිනට්",
+        "count": 79
+      },
+      {
+        "keyword": "පළාත් මැතිවරණය",
+        "count": 77
+      },
+      {
+        "keyword": "ප්‍රජාතන්ත්‍රවාදය",
+        "count": 76
+      },
+      {
+        "keyword": "මූලික",
+        "count": 74
+      },
+      {
+        "keyword": "ක්‍රමයට",
+        "count": 73
+      },
+      {
+        "keyword": "පැවැත්වීමට",
+        "count": 71
+      },
+      {
+        "keyword": "නාම යෝජනා",
+        "count": 70
+      },
+      {
+        "keyword": "සල්ලි",
+        "count": 68
+      },
+      {
+        "keyword": "මැතිවරණ කොමිසම",
+        "count": 67
+      },
+      {
+        "keyword": "ඡන්ද අයිතිය",
+        "count": 65
+      },
+      {
+        "keyword": "ප්‍රජාතන්ත්‍රවාදී",
+        "count": 64
+      },
+      {
+        "keyword": "භාර",
+        "count": 62
+      },
+      {
+        "keyword": "මන්ත්‍රීවරුන්",
+        "count": 61
+      },
+      {
+        "keyword": "ජන",
+        "count": 59
+      },
+      {
+        "keyword": "සංශෝධනය",
+        "count": 58
+      },
+      {
+        "keyword": "තීරණය",
+        "count": 56
+      },
+      {
+        "keyword": "රුපියල්",
+        "count": 55
+      },
+      {
+        "keyword": "ගැටලු",
+        "count": 53
+      },
+      {
+        "keyword": "මාසයේ",
+        "count": 52
+      },
+      {
+        "keyword": "වාර්තාව",
+        "count": 50
+      },
+      {
+        "keyword": "පැහැදිලි",
+        "count": 49
+      },
+      {
+        "keyword": "ජනාධිපතිතුමා",
+        "count": 47
+      },
+      {
+        "keyword": "ඇයි",
+        "count": 46
+      },
+      {
+        "keyword": "පවතින",
+        "count": 44
+      },
+      {
+        "keyword": "ඉඩ",
+        "count": 43
+      },
+      {
+        "keyword": "වැටුප්",
+        "count": 41
+      },
+      {
+        "keyword": "තරුණ",
+        "count": 40
+      },
+      {
+        "keyword": "කතා",
+        "count": 38
+      },
+      {
+        "keyword": "සංඛ්‍යාව",
+        "count": 37
+      },
+      {
+        "keyword": "නගර",
+        "count": 35
+      },
+      {
+        "keyword": "පාලනය",
+        "count": 33
+      },
+      {
+        "keyword": "අරගෙන",
+        "count": 32
+      },
+      {
+        "keyword": "තියන්න",
+        "count": 30
+      },
+      {
+        "keyword": "ආණ්ඩුවට",
+        "count": 29
+      },
+      {
+        "keyword": "මන්ත්‍රී",
+        "count": 27
+      },
+      {
+        "keyword": "තීන්දුව",
+        "count": 26
+      },
+      {
+        "keyword": "ඔවුන්ට",
+        "count": 24
+      },
+      {
+        "keyword": "පවත්වන්නේ",
+        "count": 23
+      },
+      {
+        "keyword": "පෙර",
+        "count": 21
+      },
+      {
+        "keyword": "සේවකයන්",
+        "count": 20
+      },
+      {
+        "keyword": "නීතිය",
+        "count": 18
+      },
+      {
+        "keyword": "මනාප",
+        "count": 17
+      },
+      {
+        "keyword": "අයිතිවාසිකම්",
+        "count": 15
       }
     ],
     "Macro-Topic 24": [
@@ -2128,16 +7908,356 @@
         "count": 65
       },
       {
-        "keyword": "ස්වර්ණාභරණ",
+        "keyword": "බද්ද",
         "count": 64
       },
       {
-        "keyword": "බද්ද",
+        "keyword": "ස්වර්ණාභරණ",
         "count": 64
       },
       {
         "keyword": "සුරාබදු",
         "count": 61
+      },
+      {
+        "keyword": "මැණික් ස්වර්ණාභරණ",
+        "count": 61
+      },
+      {
+        "keyword": "කර්මාන්තය",
+        "count": 60
+      },
+      {
+        "keyword": "ප්‍රශ්නයක්",
+        "count": 59
+      },
+      {
+        "keyword": "vat",
+        "count": 59
+      },
+      {
+        "keyword": "බිලියන",
+        "count": 58
+      },
+      {
+        "keyword": "ලංකාවේ",
+        "count": 57
+      },
+      {
+        "keyword": "නිදහස්",
+        "count": 57
+      },
+      {
+        "keyword": "අරගෙන",
+        "count": 56
+      },
+      {
+        "keyword": "යෝජනා",
+        "count": 55
+      },
+      {
+        "keyword": "නීති",
+        "count": 55
+      },
+      {
+        "keyword": "ජාතික",
+        "count": 54
+      },
+      {
+        "keyword": "රුපියල් බිලියන",
+        "count": 53
+      },
+      {
+        "keyword": "ව්‍යාජ",
+        "count": 53
+      },
+      {
+        "keyword": "සංචාරක",
+        "count": 52
+      },
+      {
+        "keyword": "මිලියන",
+        "count": 51
+      },
+      {
+        "keyword": "හොර",
+        "count": 51
+      },
+      {
+        "keyword": "අපනයන",
+        "count": 50
+      },
+      {
+        "keyword": "ක්‍රම",
+        "count": 50
+      },
+      {
+        "keyword": "බද්දක්",
+        "count": 49
+      },
+      {
+        "keyword": "ප්‍රශ්න",
+        "count": 48
+      },
+      {
+        "keyword": "රත්නපුර",
+        "count": 48
+      },
+      {
+        "keyword": "රජයේ",
+        "count": 47
+      },
+      {
+        "keyword": "ඩොලර්",
+        "count": 46
+      },
+      {
+        "keyword": "මත්",
+        "count": 46
+      },
+      {
+        "keyword": "අපනයනය",
+        "count": 45
+      },
+      {
+        "keyword": "දිස්ත්‍රික්කයේ",
+        "count": 44
+      },
+      {
+        "keyword": "දෙපාර්තමේන්තුව",
+        "count": 44
+      },
+      {
+        "keyword": "ලක්ෂ",
+        "count": 43
+      },
+      {
+        "keyword": "තැන්පතු",
+        "count": 42
+      },
+      {
+        "keyword": "විරෝධී",
+        "count": 42
+      },
+      {
+        "keyword": "පිළිවෙළක්",
+        "count": 41
+      },
+      {
+        "keyword": "ජ්‍යෙෂ්ඨ",
+        "count": 40
+      },
+      {
+        "keyword": "ප්‍රමාණය",
+        "count": 40
+      },
+      {
+        "keyword": "නීති විරෝධී",
+        "count": 39
+      },
+      {
+        "keyword": "දේශීය",
+        "count": 39
+      },
+      {
+        "keyword": "රජයට",
+        "count": 38
+      },
+      {
+        "keyword": "පොලී",
+        "count": 37
+      },
+      {
+        "keyword": "සෙස්",
+        "count": 37
+      },
+      {
+        "keyword": "භාවිතය",
+        "count": 36
+      },
+      {
+        "keyword": "රුපියල් මිලියන",
+        "count": 35
+      },
+      {
+        "keyword": "ආණ්ඩුව",
+        "count": 35
+      },
+      {
+        "keyword": "මිල",
+        "count": 34
+      },
+      {
+        "keyword": "අධිකාරිය",
+        "count": 33
+      },
+      {
+        "keyword": "ආරක්ෂා",
+        "count": 33
+      },
+      {
+        "keyword": "පියවර",
+        "count": 32
+      },
+      {
+        "keyword": "සොයා",
+        "count": 31
+      },
+      {
+        "keyword": "ජනතාව",
+        "count": 31
+      },
+      {
+        "keyword": "කින්",
+        "count": 30
+      },
+      {
+        "keyword": "ආයතන",
+        "count": 29
+      },
+      {
+        "keyword": "භාර",
+        "count": 29
+      },
+      {
+        "keyword": "රඳවා",
+        "count": 28
+      },
+      {
+        "keyword": "භාණ්ඩ",
+        "count": 28
+      },
+      {
+        "keyword": "පනත්",
+        "count": 27
+      },
+      {
+        "keyword": "බදු ආදායම",
+        "count": 26
+      },
+      {
+        "keyword": "වුණත්",
+        "count": 26
+      },
+      {
+        "keyword": "නීත්‍යනුකූල",
+        "count": 25
+      },
+      {
+        "keyword": "ගහනවා",
+        "count": 24
+      },
+      {
+        "keyword": "පැහැදිලි",
+        "count": 24
+      },
+      {
+        "keyword": "මිනිස්සු",
+        "count": 23
+      },
+      {
+        "keyword": "ඉල්ලීමක්",
+        "count": 22
+      },
+      {
+        "keyword": "ආදායමක්",
+        "count": 22
+      },
+      {
+        "keyword": "නිෂ්පාදනය",
+        "count": 21
+      },
+      {
+        "keyword": "පොලිය",
+        "count": 20
+      },
+      {
+        "keyword": "වතුර",
+        "count": 20
+      },
+      {
+        "keyword": "පැහැදිලිව",
+        "count": 19
+      },
+      {
+        "keyword": "මතු",
+        "count": 19
+      },
+      {
+        "keyword": "නව",
+        "count": 18
+      },
+      {
+        "keyword": "ඔබතුමාගෙන්",
+        "count": 17
+      },
+      {
+        "keyword": "වෙළෙඳ",
+        "count": 17
+      },
+      {
+        "keyword": "වැය",
+        "count": 16
+      },
+      {
+        "keyword": "දේශපාලන",
+        "count": 15
+      },
+      {
+        "keyword": "පාවිච්චි",
+        "count": 15
+      },
+      {
+        "keyword": "කර්මාන්ත",
+        "count": 14
+      },
+      {
+        "keyword": "සාකච්ඡා",
+        "count": 13
+      },
+      {
+        "keyword": "ආඥාපනත",
+        "count": 13
+      },
+      {
+        "keyword": "ප්‍රවර්ධනය",
+        "count": 12
+      },
+      {
+        "keyword": "පාර්ලිමේන්තුවේ",
+        "count": 11
+      },
+      {
+        "keyword": "ගන්නා",
+        "count": 11
+      },
+      {
+        "keyword": "වර්ධනය",
+        "count": 10
+      },
+      {
+        "keyword": "නිෂ්පාදන",
+        "count": 9
+      },
+      {
+        "keyword": "එකයි",
+        "count": 9
+      },
+      {
+        "keyword": "සාමාන්‍ය",
+        "count": 8
+      },
+      {
+        "keyword": "පමණක්",
+        "count": 8
+      },
+      {
+        "keyword": "ජනතාවට",
+        "count": 7
+      },
+      {
+        "keyword": "අතුරු",
+        "count": 6
       }
     ],
     "Macro-Topic 25": [
@@ -2194,12 +8314,352 @@
         "count": 107
       },
       {
-        "keyword": "අරගෙන",
+        "keyword": "ලංකාවේ",
         "count": 101
       },
       {
         "keyword": "ක්‍රීඩකයන්",
         "count": 101
+      },
+      {
+        "keyword": "අරගෙන",
+        "count": 101
+      },
+      {
+        "keyword": "ජාත්‍යන්තර",
+        "count": 99
+      },
+      {
+        "keyword": "ජාතික",
+        "count": 98
+      },
+      {
+        "keyword": "නීති",
+        "count": 97
+      },
+      {
+        "keyword": "ප්‍රශ්නයක්",
+        "count": 96
+      },
+      {
+        "keyword": "දේශපාලන",
+        "count": 95
+      },
+      {
+        "keyword": "තරග",
+        "count": 94
+      },
+      {
+        "keyword": "රුපියල්",
+        "count": 93
+      },
+      {
+        "keyword": "අමාත්‍යාංශය",
+        "count": 92
+      },
+      {
+        "keyword": "තරුණ",
+        "count": 91
+      },
+      {
+        "keyword": "සංගම්",
+        "count": 90
+      },
+      {
+        "keyword": "ක්‍රීඩාවේ",
+        "count": 89
+      },
+      {
+        "keyword": "පාර්ලිමේන්තුවේ",
+        "count": 88
+      },
+      {
+        "keyword": "ප්‍රශ්න",
+        "count": 87
+      },
+      {
+        "keyword": "සාකච්ඡා",
+        "count": 86
+      },
+      {
+        "keyword": "cope",
+        "count": 84
+      },
+      {
+        "keyword": "යෝජනා",
+        "count": 83
+      },
+      {
+        "keyword": "මිලියන",
+        "count": 82
+      },
+      {
+        "keyword": "කණ්ඩායම",
+        "count": 81
+      },
+      {
+        "keyword": "තහනම්",
+        "count": 80
+      },
+      {
+        "keyword": "icc",
+        "count": 79
+      },
+      {
+        "keyword": "ලෝක",
+        "count": 78
+      },
+      {
+        "keyword": "ක්‍රීඩාවට",
+        "count": 77
+      },
+      {
+        "keyword": "කැබිනට්",
+        "count": 76
+      },
+      {
+        "keyword": "අතුරු",
+        "count": 75
+      },
+      {
+        "keyword": "පුහුණු",
+        "count": 74
+      },
+      {
+        "keyword": "සල්ලි",
+        "count": 73
+      },
+      {
+        "keyword": "පනත්",
+        "count": 72
+      },
+      {
+        "keyword": "මැතිතුමා",
+        "count": 71
+      },
+      {
+        "keyword": "ඩොලර්",
+        "count": 69
+      },
+      {
+        "keyword": "නිර්මාණය",
+        "count": 68
+      },
+      {
+        "keyword": "පළාත්",
+        "count": 67
+      },
+      {
+        "keyword": "විපක්ෂ",
+        "count": 66
+      },
+      {
+        "keyword": "නීතිය",
+        "count": 65
+      },
+      {
+        "keyword": "වෙච්ච",
+        "count": 64
+      },
+      {
+        "keyword": "තීන්දු",
+        "count": 63
+      },
+      {
+        "keyword": "ඇමතිවරයා",
+        "count": 62
+      },
+      {
+        "keyword": "sri",
+        "count": 61
+      },
+      {
+        "keyword": "චෝදනා",
+        "count": 60
+      },
+      {
+        "keyword": "lanka",
+        "count": 59
+      },
+      {
+        "keyword": "රටට",
+        "count": 58
+      },
+      {
+        "keyword": "වැඩි",
+        "count": 57
+      },
+      {
+        "keyword": "පහසුකම්",
+        "count": 56
+      },
+      {
+        "keyword": "වැරදි",
+        "count": 55
+      },
+      {
+        "keyword": "දියුණු",
+        "count": 53
+      },
+      {
+        "keyword": "පාලක",
+        "count": 52
+      },
+      {
+        "keyword": "sri lanka",
+        "count": 51
+      },
+      {
+        "keyword": "ඉල්ලීමක්",
+        "count": 50
+      },
+      {
+        "keyword": "රාජපක්ෂ",
+        "count": 49
+      },
+      {
+        "keyword": "බරපතළ",
+        "count": 48
+      },
+      {
+        "keyword": "රොෂාන්",
+        "count": 47
+      },
+      {
+        "keyword": "දූෂණ",
+        "count": 46
+      },
+      {
+        "keyword": "පරීක්ෂණ",
+        "count": 45
+      },
+      {
+        "keyword": "වාර්තාව",
+        "count": 44
+      },
+      {
+        "keyword": "අධිකරණ",
+        "count": 43
+      },
+      {
+        "keyword": "පාර්ලිමේන්තුවට",
+        "count": 42
+      },
+      {
+        "keyword": "හදන්න",
+        "count": 41
+      },
+      {
+        "keyword": "කවුද",
+        "count": 40
+      },
+      {
+        "keyword": "දඬුවම්",
+        "count": 38
+      },
+      {
+        "keyword": "ඔබතුමාගේ",
+        "count": 37
+      },
+      {
+        "keyword": "සංවර්ධනය",
+        "count": 36
+      },
+      {
+        "keyword": "පිළිවෙළක්",
+        "count": 35
+      },
+      {
+        "keyword": "පැහැදිලිව",
+        "count": 34
+      },
+      {
+        "keyword": "මතු",
+        "count": 33
+      },
+      {
+        "keyword": "ලක්",
+        "count": 32
+      },
+      {
+        "keyword": "බලය",
+        "count": 31
+      },
+      {
+        "keyword": "තමන්ගේ",
+        "count": 30
+      },
+      {
+        "keyword": "දූෂිත",
+        "count": 29
+      },
+      {
+        "keyword": "හොර",
+        "count": 28
+      },
+      {
+        "keyword": "ඇමතිතුමාට",
+        "count": 27
+      },
+      {
+        "keyword": "පැහැදිලි",
+        "count": 26
+      },
+      {
+        "keyword": "භාර",
+        "count": 25
+      },
+      {
+        "keyword": "දෙකක්",
+        "count": 24
+      },
+      {
+        "keyword": "සම්මත",
+        "count": 22
+      },
+      {
+        "keyword": "රණසිංහ",
+        "count": 21
+      },
+      {
+        "keyword": "ඉදිරියට",
+        "count": 20
+      },
+      {
+        "keyword": "ඇයි",
+        "count": 19
+      },
+      {
+        "keyword": "කමිටුව",
+        "count": 18
+      },
+      {
+        "keyword": "අධිකරණය",
+        "count": 17
+      },
+      {
+        "keyword": "කණ්ඩායම්",
+        "count": 16
+      },
+      {
+        "keyword": "ආරක්ෂා",
+        "count": 15
+      },
+      {
+        "keyword": "ලක්ෂ",
+        "count": 14
+      },
+      {
+        "keyword": "මෙවැනි",
+        "count": 13
+      },
+      {
+        "keyword": "වාර්තා",
+        "count": 12
+      },
+      {
+        "keyword": "එකයි",
+        "count": 11
       }
     ],
     "Macro-Topic 26": [
@@ -2224,12 +8684,12 @@
         "count": 316
       },
       {
-        "keyword": "නීති",
-        "count": 287
-      },
-      {
         "keyword": "පොලිස්",
         "count": 289
+      },
+      {
+        "keyword": "නීති",
+        "count": 287
       },
       {
         "keyword": "රජය",
@@ -2262,6 +8722,346 @@
       {
         "keyword": "ආරක්ෂාව",
         "count": 204
+      },
+      {
+        "keyword": "වැඩි",
+        "count": 204
+      },
+      {
+        "keyword": "තොරතුරු",
+        "count": 201
+      },
+      {
+        "keyword": "සංශෝධන",
+        "count": 199
+      },
+      {
+        "keyword": "මත්ද්‍රව්‍ය",
+        "count": 197
+      },
+      {
+        "keyword": "ආරක්ෂක",
+        "count": 195
+      },
+      {
+        "keyword": "විමර්ශන",
+        "count": 193
+      },
+      {
+        "keyword": "දත්ත",
+        "count": 191
+      },
+      {
+        "keyword": "චෝදනා",
+        "count": 188
+      },
+      {
+        "keyword": "මුදල්",
+        "count": 186
+      },
+      {
+        "keyword": "ජනතාව",
+        "count": 184
+      },
+      {
+        "keyword": "අරගෙන",
+        "count": 182
+      },
+      {
+        "keyword": "රාජපක්ෂ",
+        "count": 180
+      },
+      {
+        "keyword": "මාධ්‍ය",
+        "count": 178
+      },
+      {
+        "keyword": "ප්‍රශ්න",
+        "count": 175
+      },
+      {
+        "keyword": "අල්ලස්",
+        "count": 173
+      },
+      {
+        "keyword": "රටට",
+        "count": 171
+      },
+      {
+        "keyword": "ආණ්ඩුව",
+        "count": 169
+      },
+      {
+        "keyword": "ප්‍රශ්නයක්",
+        "count": 167
+      },
+      {
+        "keyword": "බරපතළ",
+        "count": 165
+      },
+      {
+        "keyword": "මෙවැනි",
+        "count": 162
+      },
+      {
+        "keyword": "පරීක්ෂණ",
+        "count": 160
+      },
+      {
+        "keyword": "රජයේ",
+        "count": 158
+      },
+      {
+        "keyword": "ආරක්ෂා",
+        "count": 156
+      },
+      {
+        "keyword": "සමාජ",
+        "count": 154
+      },
+      {
+        "keyword": "නීතිපති",
+        "count": 152
+      },
+      {
+        "keyword": "සාකච්ඡා",
+        "count": 150
+      },
+      {
+        "keyword": "මත්",
+        "count": 147
+      },
+      {
+        "keyword": "ලංකාවේ",
+        "count": 145
+      },
+      {
+        "keyword": "බලය",
+        "count": 143
+      },
+      {
+        "keyword": "දඬුවම්",
+        "count": 141
+      },
+      {
+        "keyword": "පවතින",
+        "count": 139
+      },
+      {
+        "keyword": "පියවර",
+        "count": 137
+      },
+      {
+        "keyword": "නිලධාරින්",
+        "count": 134
+      },
+      {
+        "keyword": "වාර්තාව",
+        "count": 132
+      },
+      {
+        "keyword": "ආයතන",
+        "count": 130
+      },
+      {
+        "keyword": "දෙපාර්තමේන්තුව",
+        "count": 128
+      },
+      {
+        "keyword": "යෝජනා",
+        "count": 126
+      },
+      {
+        "keyword": "විශේෂයෙන්",
+        "count": 124
+      },
+      {
+        "keyword": "සම්මත",
+        "count": 121
+      },
+      {
+        "keyword": "වාර්තා",
+        "count": 119
+      },
+      {
+        "keyword": "ලක්",
+        "count": 117
+      },
+      {
+        "keyword": "විභාග",
+        "count": 115
+      },
+      {
+        "keyword": "නිලධාරීන්",
+        "count": 113
+      },
+      {
+        "keyword": "පාර්ලිමේන්තුවට",
+        "count": 111
+      },
+      {
+        "keyword": "සාක්ෂි",
+        "count": 108
+      },
+      {
+        "keyword": "නීතියේ",
+        "count": 106
+      },
+      {
+        "keyword": "පෞද්ගලික",
+        "count": 104
+      },
+      {
+        "keyword": "ජනතාවට",
+        "count": 102
+      },
+      {
+        "keyword": "බන්ධනාගාර",
+        "count": 100
+      },
+      {
+        "keyword": "භාර",
+        "count": 98
+      },
+      {
+        "keyword": "පාර්ලිමේන්තුවේ",
+        "count": 96
+      },
+      {
+        "keyword": "ජනාධිපති",
+        "count": 93
+      },
+      {
+        "keyword": "නඩුව",
+        "count": 91
+      },
+      {
+        "keyword": "සංශෝධනය",
+        "count": 89
+      },
+      {
+        "keyword": "වුණත්",
+        "count": 87
+      },
+      {
+        "keyword": "ලංකා",
+        "count": 85
+      },
+      {
+        "keyword": "රුපියල්",
+        "count": 83
+      },
+      {
+        "keyword": "ද්‍රව්‍ය",
+        "count": 80
+      },
+      {
+        "keyword": "ආණ්ඩුක්‍රම",
+        "count": 78
+      },
+      {
+        "keyword": "අධිකරණයේ",
+        "count": 76
+      },
+      {
+        "keyword": "අමාත්‍යාංශය",
+        "count": 74
+      },
+      {
+        "keyword": "මූල්‍ය",
+        "count": 72
+      },
+      {
+        "keyword": "ශක්තිමත්",
+        "count": 70
+      },
+      {
+        "keyword": "පොලීසිය",
+        "count": 67
+      },
+      {
+        "keyword": "අත්අඩංගුවට",
+        "count": 65
+      },
+      {
+        "keyword": "විරෝධී",
+        "count": 63
+      },
+      {
+        "keyword": "පමණක්",
+        "count": 61
+      },
+      {
+        "keyword": "මත් ද්‍රව්‍ය",
+        "count": 59
+      },
+      {
+        "keyword": "නිදහස්",
+        "count": 57
+      },
+      {
+        "keyword": "ඔවුන්ට",
+        "count": 54
+      },
+      {
+        "keyword": "රටක්",
+        "count": 52
+      },
+      {
+        "keyword": "ජනාධිපතිතුමා",
+        "count": 50
+      },
+      {
+        "keyword": "විදේශ",
+        "count": 48
+      },
+      {
+        "keyword": "පැමිණිලි",
+        "count": 46
+      },
+      {
+        "keyword": "අදහස්",
+        "count": 44
+      },
+      {
+        "keyword": "සමාජ මාධ්‍ය",
+        "count": 42
+      },
+      {
+        "keyword": "අධිකරණයට",
+        "count": 39
+      },
+      {
+        "keyword": "මැතිතුමා",
+        "count": 37
+      },
+      {
+        "keyword": "තමන්ගේ",
+        "count": 35
+      },
+      {
+        "keyword": "අධිකරණය",
+        "count": 33
+      },
+      {
+        "keyword": "ඉටු",
+        "count": 31
+      },
+      {
+        "keyword": "අල්ලස් දූෂණ",
+        "count": 29
+      },
+      {
+        "keyword": "පෙර",
+        "count": 26
+      },
+      {
+        "keyword": "සොයා",
+        "count": 24
+      },
+      {
+        "keyword": "රිමාන්ඩ්",
+        "count": 22
       }
     ],
     "Macro-Topic 27": [
@@ -2324,6 +9124,346 @@
       {
         "keyword": "බෝට්ටු",
         "count": 70
+      },
+      {
+        "keyword": "රජය",
+        "count": 70
+      },
+      {
+        "keyword": "ධීවර කර්මාන්තය",
+        "count": 69
+      },
+      {
+        "keyword": "ධීවරයන්ට",
+        "count": 68
+      },
+      {
+        "keyword": "ක්‍රම",
+        "count": 67
+      },
+      {
+        "keyword": "ධීවර වරාය",
+        "count": 67
+      },
+      {
+        "keyword": "ඉඩම්",
+        "count": 66
+      },
+      {
+        "keyword": "සම්පත්",
+        "count": 65
+      },
+      {
+        "keyword": "පහසුකම්",
+        "count": 64
+      },
+      {
+        "keyword": "තහනම්",
+        "count": 64
+      },
+      {
+        "keyword": "ලංකා",
+        "count": 63
+      },
+      {
+        "keyword": "ප්‍රශ්න",
+        "count": 62
+      },
+      {
+        "keyword": "ජනතාවට",
+        "count": 61
+      },
+      {
+        "keyword": "ඔවුන්ට",
+        "count": 61
+      },
+      {
+        "keyword": "නීති",
+        "count": 60
+      },
+      {
+        "keyword": "ජනතාව",
+        "count": 59
+      },
+      {
+        "keyword": "අපනයන",
+        "count": 58
+      },
+      {
+        "keyword": "සාකච්ඡා",
+        "count": 58
+      },
+      {
+        "keyword": "ඩීසල්",
+        "count": 57
+      },
+      {
+        "keyword": "ප්‍රශ්නයක්",
+        "count": 56
+      },
+      {
+        "keyword": "මුදලක්",
+        "count": 55
+      },
+      {
+        "keyword": "අයිස්",
+        "count": 55
+      },
+      {
+        "keyword": "සංවර්ධන",
+        "count": 54
+      },
+      {
+        "keyword": "ආණ්ඩුව",
+        "count": 53
+      },
+      {
+        "keyword": "ලංකාවේ",
+        "count": 52
+      },
+      {
+        "keyword": "මිලියන",
+        "count": 52
+      },
+      {
+        "keyword": "අරගෙන",
+        "count": 51
+      },
+      {
+        "keyword": "සංවර්ධනය",
+        "count": 50
+      },
+      {
+        "keyword": "ලක්ෂ",
+        "count": 49
+      },
+      {
+        "keyword": "කර්මාන්තයේ",
+        "count": 49
+      },
+      {
+        "keyword": "යෝජනා",
+        "count": 48
+      },
+      {
+        "keyword": "වැලි",
+        "count": 47
+      },
+      {
+        "keyword": "ඉන්ධන මිල",
+        "count": 47
+      },
+      {
+        "keyword": "පියවර",
+        "count": 46
+      },
+      {
+        "keyword": "සහනාධාරය",
+        "count": 45
+      },
+      {
+        "keyword": "නිෂ්පාදනය",
+        "count": 44
+      },
+      {
+        "keyword": "ආයෝජන",
+        "count": 44
+      },
+      {
+        "keyword": "ජනතාවගේ",
+        "count": 43
+      },
+      {
+        "keyword": "ජාතික",
+        "count": 42
+      },
+      {
+        "keyword": "ලැබෙන්නේ",
+        "count": 41
+      },
+      {
+        "keyword": "දිස්ත්‍රික්කයේ",
+        "count": 41
+      },
+      {
+        "keyword": "සංස්ථාව",
+        "count": 40
+      },
+      {
+        "keyword": "පිළිවෙළක්",
+        "count": 39
+      },
+      {
+        "keyword": "විනාශ",
+        "count": 38
+      },
+      {
+        "keyword": "භූමිතෙල්",
+        "count": 38
+      },
+      {
+        "keyword": "අමාත්‍යාංශය",
+        "count": 37
+      },
+      {
+        "keyword": "ආරක්ෂා",
+        "count": 36
+      },
+      {
+        "keyword": "ප්‍රදේශයේ",
+        "count": 35
+      },
+      {
+        "keyword": "සහනාධාර",
+        "count": 35
+      },
+      {
+        "keyword": "ගන්නා",
+        "count": 34
+      },
+      {
+        "keyword": "සහන",
+        "count": 33
+      },
+      {
+        "keyword": "සම්පත",
+        "count": 32
+      },
+      {
+        "keyword": "හදන්න",
+        "count": 32
+      },
+      {
+        "keyword": "ගොඩ",
+        "count": 31
+      },
+      {
+        "keyword": "පාවිච්චි",
+        "count": 30
+      },
+      {
+        "keyword": "වැය",
+        "count": 29
+      },
+      {
+        "keyword": "නව",
+        "count": 29
+      },
+      {
+        "keyword": "තිඛෙනවා",
+        "count": 28
+      },
+      {
+        "keyword": "දැමීම",
+        "count": 27
+      },
+      {
+        "keyword": "තමන්ගේ",
+        "count": 27
+      },
+      {
+        "keyword": "මිලට",
+        "count": 26
+      },
+      {
+        "keyword": "වරායේ",
+        "count": 25
+      },
+      {
+        "keyword": "සමස්ත",
+        "count": 24
+      },
+      {
+        "keyword": "ක්‍රමය",
+        "count": 24
+      },
+      {
+        "keyword": "මතු",
+        "count": 23
+      },
+      {
+        "keyword": "බදු",
+        "count": 22
+      },
+      {
+        "keyword": "අස්වැන්න",
+        "count": 21
+      },
+      {
+        "keyword": "දියුණු",
+        "count": 21
+      },
+      {
+        "keyword": "පෞද්ගලික",
+        "count": 20
+      },
+      {
+        "keyword": "ස්තුතිවන්ත",
+        "count": 19
+      },
+      {
+        "keyword": "තහනම",
+        "count": 18
+      },
+      {
+        "keyword": "රක්ෂණ",
+        "count": 18
+      },
+      {
+        "keyword": "ක්ෂේත්‍රයේ",
+        "count": 17
+      },
+      {
+        "keyword": "අමාත්‍යාංශයේ",
+        "count": 16
+      },
+      {
+        "keyword": "මිල වැඩි",
+        "count": 15
+      },
+      {
+        "keyword": "කර්මාන්තයට",
+        "count": 15
+      },
+      {
+        "keyword": "රජයේ",
+        "count": 14
+      },
+      {
+        "keyword": "එක්සත්",
+        "count": 13
+      },
+      {
+        "keyword": "අතුරු",
+        "count": 12
+      },
+      {
+        "keyword": "ලීටර්",
+        "count": 12
+      },
+      {
+        "keyword": "භාර",
+        "count": 11
+      },
+      {
+        "keyword": "පිළිවෙළ",
+        "count": 10
+      },
+      {
+        "keyword": "ණය",
+        "count": 9
+      },
+      {
+        "keyword": "කුඩා",
+        "count": 9
+      },
+      {
+        "keyword": "ඔබතුමාගෙන්",
+        "count": 8
+      },
+      {
+        "keyword": "වැටලීම්",
+        "count": 7
       }
     ],
     "Macro-Topic 28": [
@@ -2372,10 +9512,6 @@
         "count": 87
       },
       {
-        "keyword": "1",
-        "count": 85
-      },
-      {
         "keyword": "සමාගම්",
         "count": 83
       },
@@ -2384,8 +9520,352 @@
         "count": 73
       },
       {
-        "keyword": "රුපියල් 1",
+        "keyword": "මාර්ග",
         "count": 71
+      },
+      {
+        "keyword": "ජනතාවට",
+        "count": 70
+      },
+      {
+        "keyword": "පෞද්ගලික අංශයේ",
+        "count": 69
+      },
+      {
+        "keyword": "තේ",
+        "count": 68
+      },
+      {
+        "keyword": "වතු සමාගම්",
+        "count": 68
+      },
+      {
+        "keyword": "නිවාස",
+        "count": 67
+      },
+      {
+        "keyword": "වැටුප රුපියල්",
+        "count": 66
+      },
+      {
+        "keyword": "දෛනික",
+        "count": 65
+      },
+      {
+        "keyword": "කම්කරුවන්ට",
+        "count": 65
+      },
+      {
+        "keyword": "ඔවුන්ට",
+        "count": 64
+      },
+      {
+        "keyword": "රජයේ",
+        "count": 63
+      },
+      {
+        "keyword": "ජීවත්",
+        "count": 62
+      },
+      {
+        "keyword": "සේවකයන්ගේ",
+        "count": 62
+      },
+      {
+        "keyword": "කම්කරුවන්ගේ",
+        "count": 61
+      },
+      {
+        "keyword": "ජාතික",
+        "count": 60
+      },
+      {
+        "keyword": "පහසුකම්",
+        "count": 59
+      },
+      {
+        "keyword": "වැවිලි",
+        "count": 59
+      },
+      {
+        "keyword": "වතු කම්කරු",
+        "count": 58
+      },
+      {
+        "keyword": "ආණ්ඩුව",
+        "count": 57
+      },
+      {
+        "keyword": "අයිතිය",
+        "count": 57
+      },
+      {
+        "keyword": "වැටුප් වැඩි",
+        "count": 56
+      },
+      {
+        "keyword": "වගා",
+        "count": 55
+      },
+      {
+        "keyword": "වතුකරයේ ජනතාව",
+        "count": 54
+      },
+      {
+        "keyword": "ජනතාවගේ",
+        "count": 54
+      },
+      {
+        "keyword": "අයිතිවාසිකම්",
+        "count": 53
+      },
+      {
+        "keyword": "රටට",
+        "count": 52
+      },
+      {
+        "keyword": "පර්චස්",
+        "count": 51
+      },
+      {
+        "keyword": "මාතලේ",
+        "count": 51
+      },
+      {
+        "keyword": "පළාත්",
+        "count": 50
+      },
+      {
+        "keyword": "දිස්ත්‍රික්කයේ",
+        "count": 49
+      },
+      {
+        "keyword": "පනත්",
+        "count": 48
+      },
+      {
+        "keyword": "යෝජනා",
+        "count": 48
+      },
+      {
+        "keyword": "සාකච්ඡා",
+        "count": 47
+      },
+      {
+        "keyword": "කම්කරුවන්",
+        "count": 46
+      },
+      {
+        "keyword": "ආයතන",
+        "count": 46
+      },
+      {
+        "keyword": "අමාත්‍යාංශය",
+        "count": 45
+      },
+      {
+        "keyword": "ප්‍රශ්නයක්",
+        "count": 44
+      },
+      {
+        "keyword": "කුඩා",
+        "count": 43
+      },
+      {
+        "keyword": "ව්‍යාපෘතිය",
+        "count": 43
+      },
+      {
+        "keyword": "ජීවන",
+        "count": 42
+      },
+      {
+        "keyword": "සේවක",
+        "count": 41
+      },
+      {
+        "keyword": "සේවකයන්ට",
+        "count": 40
+      },
+      {
+        "keyword": "සේවය",
+        "count": 40
+      },
+      {
+        "keyword": "මුදල්",
+        "count": 39
+      },
+      {
+        "keyword": "මූලික",
+        "count": 38
+      },
+      {
+        "keyword": "ප්‍රශ්න",
+        "count": 37
+      },
+      {
+        "keyword": "තවමත්",
+        "count": 37
+      },
+      {
+        "keyword": "සේවකයන්",
+        "count": 36
+      },
+      {
+        "keyword": "බීජ",
+        "count": 35
+      },
+      {
+        "keyword": "වැටුපක්",
+        "count": 35
+      },
+      {
+        "keyword": "අරගෙන",
+        "count": 34
+      },
+      {
+        "keyword": "වෘත්තීය",
+        "count": 33
+      },
+      {
+        "keyword": "රජයට",
+        "count": 32
+      },
+      {
+        "keyword": "පාරවල්",
+        "count": 32
+      },
+      {
+        "keyword": "ආර්ථික",
+        "count": 31
+      },
+      {
+        "keyword": "ප්‍රදේශ",
+        "count": 30
+      },
+      {
+        "keyword": "පමණක්",
+        "count": 29
+      },
+      {
+        "keyword": "නඩත්තු",
+        "count": 29
+      },
+      {
+        "keyword": "කර්මාන්ත",
+        "count": 28
+      },
+      {
+        "keyword": "යටිතල",
+        "count": 27
+      },
+      {
+        "keyword": "හදන්න",
+        "count": 26
+      },
+      {
+        "keyword": "සෞඛ්‍ය",
+        "count": 26
+      },
+      {
+        "keyword": "යටිතල පහසුකම්",
+        "count": 25
+      },
+      {
+        "keyword": "වැය",
+        "count": 24
+      },
+      {
+        "keyword": "ආධාර",
+        "count": 23
+      },
+      {
+        "keyword": "කාමර",
+        "count": 23
+      },
+      {
+        "keyword": "සංවර්ධනය",
+        "count": 22
+      },
+      {
+        "keyword": "වගාව",
+        "count": 21
+      },
+      {
+        "keyword": "පාර්ලිමේන්තුවේ",
+        "count": 21
+      },
+      {
+        "keyword": "පවතින",
+        "count": 20
+      },
+      {
+        "keyword": "ප්‍රජාව",
+        "count": 19
+      },
+      {
+        "keyword": "ලැබෙන්නේ",
+        "count": 18
+      },
+      {
+        "keyword": "මුදල",
+        "count": 18
+      },
+      {
+        "keyword": "පිරිසක්",
+        "count": 17
+      },
+      {
+        "keyword": "පාලන",
+        "count": 16
+      },
+      {
+        "keyword": "අධ්‍යාපනය",
+        "count": 15
+      },
+      {
+        "keyword": "කුඩා තේ",
+        "count": 15
+      },
+      {
+        "keyword": "මිලියන",
+        "count": 14
+      },
+      {
+        "keyword": "විශ්‍රාම",
+        "count": 13
+      },
+      {
+        "keyword": "ප්‍රශ්නයට",
+        "count": 12
+      },
+      {
+        "keyword": "ප්‍රාදේශීය",
+        "count": 12
+      },
+      {
+        "keyword": "ප්‍රදේශයේ",
+        "count": 11
+      },
+      {
+        "keyword": "ගන්නා",
+        "count": 10
+      },
+      {
+        "keyword": "ලංකාවේ",
+        "count": 10
+      },
+      {
+        "keyword": "තේ වතු",
+        "count": 9
+      },
+      {
+        "keyword": "කින්",
+        "count": 8
+      },
+      {
+        "keyword": "මාතලේ දිස්ත්‍රික්කයේ",
+        "count": 7
       }
     ],
     "Macro-Topic 29": [
@@ -2448,6 +9928,346 @@
       {
         "keyword": "රුපියල්",
         "count": 95
+      },
+      {
+        "keyword": "වාර්තා",
+        "count": 95
+      },
+      {
+        "keyword": "අමාත්‍යාංශය",
+        "count": 93
+      },
+      {
+        "keyword": "පළාත් පාලන",
+        "count": 92
+      },
+      {
+        "keyword": "ආගමික",
+        "count": 91
+      },
+      {
+        "keyword": "ස්ථාන",
+        "count": 90
+      },
+      {
+        "keyword": "ජනතාව",
+        "count": 89
+      },
+      {
+        "keyword": "වැඩි",
+        "count": 88
+      },
+      {
+        "keyword": "අරගෙන",
+        "count": 87
+      },
+      {
+        "keyword": "ආයතන",
+        "count": 86
+      },
+      {
+        "keyword": "මුදල්",
+        "count": 85
+      },
+      {
+        "keyword": "නගර",
+        "count": 84
+      },
+      {
+        "keyword": "ප්‍රශ්නයට",
+        "count": 83
+      },
+      {
+        "keyword": "බෞද්ධ",
+        "count": 82
+      },
+      {
+        "keyword": "බුද්ධ",
+        "count": 81
+      },
+      {
+        "keyword": "ආරක්ෂා",
+        "count": 80
+      },
+      {
+        "keyword": "කන්ද",
+        "count": 79
+      },
+      {
+        "keyword": "අතුරු",
+        "count": 78
+      },
+      {
+        "keyword": "පිළිවෙළක්",
+        "count": 77
+      },
+      {
+        "keyword": "සෞඛ්‍ය",
+        "count": 76
+      },
+      {
+        "keyword": "විනාශ",
+        "count": 75
+      },
+      {
+        "keyword": "නීති",
+        "count": 74
+      },
+      {
+        "keyword": "මිලියන",
+        "count": 73
+      },
+      {
+        "keyword": "කොළඹ",
+        "count": 72
+      },
+      {
+        "keyword": "ලංකාවේ",
+        "count": 71
+      },
+      {
+        "keyword": "වැය",
+        "count": 70
+      },
+      {
+        "keyword": "ප්‍රශ්න",
+        "count": 69
+      },
+      {
+        "keyword": "මධ්‍යම",
+        "count": 68
+      },
+      {
+        "keyword": "දෙපාර්තමේන්තුව",
+        "count": 67
+      },
+      {
+        "keyword": "ප්‍රදේශයේ",
+        "count": 66
+      },
+      {
+        "keyword": "රජයේ",
+        "count": 65
+      },
+      {
+        "keyword": "අමාත්‍යාංශයේ",
+        "count": 64
+      },
+      {
+        "keyword": "සංවර්ධන",
+        "count": 63
+      },
+      {
+        "keyword": "කාන්තාවන්ට",
+        "count": 62
+      },
+      {
+        "keyword": "පියවර",
+        "count": 61
+      },
+      {
+        "keyword": "නඩු",
+        "count": 60
+      },
+      {
+        "keyword": "පවුල්",
+        "count": 59
+      },
+      {
+        "keyword": "පාසල්",
+        "count": 58
+      },
+      {
+        "keyword": "ආහාර",
+        "count": 57
+      },
+      {
+        "keyword": "දේශපාලන",
+        "count": 56
+      },
+      {
+        "keyword": "මතු",
+        "count": 55
+      },
+      {
+        "keyword": "සාකච්ඡා",
+        "count": 54
+      },
+      {
+        "keyword": "ඔබතුමාගේ",
+        "count": 53
+      },
+      {
+        "keyword": "දරුවන්ගේ",
+        "count": 52
+      },
+      {
+        "keyword": "යෝජනා",
+        "count": 51
+      },
+      {
+        "keyword": "පවතින",
+        "count": 50
+      },
+      {
+        "keyword": "ආර්ථික",
+        "count": 49
+      },
+      {
+        "keyword": "ශාසන",
+        "count": 48
+      },
+      {
+        "keyword": "දිස්ත්‍රික්කයේ",
+        "count": 47
+      },
+      {
+        "keyword": "මුදලක්",
+        "count": 46
+      },
+      {
+        "keyword": "බුද්ධ ශාසන",
+        "count": 45
+      },
+      {
+        "keyword": "ඓතිහාසික",
+        "count": 44
+      },
+      {
+        "keyword": "රුපියල් මිලියන",
+        "count": 43
+      },
+      {
+        "keyword": "තමන්ගේ",
+        "count": 42
+      },
+      {
+        "keyword": "සොයා",
+        "count": 41
+      },
+      {
+        "keyword": "පැහැදිලි",
+        "count": 40
+      },
+      {
+        "keyword": "අධ්‍යාපන",
+        "count": 39
+      },
+      {
+        "keyword": "ඉඩ",
+        "count": 38
+      },
+      {
+        "keyword": "පුරා",
+        "count": 37
+      },
+      {
+        "keyword": "ආණ්ඩුව",
+        "count": 36
+      },
+      {
+        "keyword": "දරුවන්ට",
+        "count": 35
+      },
+      {
+        "keyword": "පාර්ලිමේන්තුවේ",
+        "count": 34
+      },
+      {
+        "keyword": "මැතිතුමා",
+        "count": 33
+      },
+      {
+        "keyword": "ආරක්ෂක",
+        "count": 32
+      },
+      {
+        "keyword": "ජාත්‍යන්තර",
+        "count": 31
+      },
+      {
+        "keyword": "නිවාස",
+        "count": 30
+      },
+      {
+        "keyword": "භාර",
+        "count": 29
+      },
+      {
+        "keyword": "මතක්",
+        "count": 28
+      },
+      {
+        "keyword": "මන්දපෝෂණය",
+        "count": 27
+      },
+      {
+        "keyword": "පමණක්",
+        "count": 26
+      },
+      {
+        "keyword": "මෙවැනි",
+        "count": 25
+      },
+      {
+        "keyword": "බරපතළ",
+        "count": 24
+      },
+      {
+        "keyword": "ඉල්ලීමක්",
+        "count": 23
+      },
+      {
+        "keyword": "පෝෂණය",
+        "count": 22
+      },
+      {
+        "keyword": "ලක්",
+        "count": 21
+      },
+      {
+        "keyword": "පෞද්ගලික",
+        "count": 20
+      },
+      {
+        "keyword": "ස්වාමීන්",
+        "count": 19
+      },
+      {
+        "keyword": "වහන්සේ",
+        "count": 18
+      },
+      {
+        "keyword": "මන්ත්‍රීතුමියනි",
+        "count": 17
+      },
+      {
+        "keyword": "සංශෝධනය",
+        "count": 16
+      },
+      {
+        "keyword": "දිනය",
+        "count": 15
+      },
+      {
+        "keyword": "ආණ්ඩුක්‍රම",
+        "count": 14
+      },
+      {
+        "keyword": "ආරක්ෂාව",
+        "count": 13
+      },
+      {
+        "keyword": "ගන්නා",
+        "count": 12
+      },
+      {
+        "keyword": "ගැටලු",
+        "count": 11
+      },
+      {
+        "keyword": "නීතිය",
+        "count": 10
       }
     ],
     "Macro-Topic 3": [
@@ -2468,15 +10288,15 @@
         "count": 216
       },
       {
+        "keyword": "කොළඹ",
+        "count": 207
+      },
+      {
         "keyword": "රුපියල්",
         "count": 207
       },
       {
         "keyword": "නගරය",
-        "count": 207
-      },
-      {
-        "keyword": "කොළඹ",
         "count": 207
       },
       {
@@ -2510,6 +10330,346 @@
       {
         "keyword": "ලංකා",
         "count": 173
+      },
+      {
+        "keyword": "ආර්ථික",
+        "count": 173
+      },
+      {
+        "keyword": "ජාතික",
+        "count": 171
+      },
+      {
+        "keyword": "ආණ්ඩුව",
+        "count": 169
+      },
+      {
+        "keyword": "හම්බන්තොට",
+        "count": 167
+      },
+      {
+        "keyword": "සේවා",
+        "count": 165
+      },
+      {
+        "keyword": "බදු",
+        "count": 163
+      },
+      {
+        "keyword": "විදේශ",
+        "count": 162
+      },
+      {
+        "keyword": "කෙටුම්පත",
+        "count": 160
+      },
+      {
+        "keyword": "පනත් කෙටුම්පත",
+        "count": 158
+      },
+      {
+        "keyword": "ලංකාවේ",
+        "count": 156
+      },
+      {
+        "keyword": "ණය",
+        "count": 154
+      },
+      {
+        "keyword": "රාජපක්ෂ",
+        "count": 152
+      },
+      {
+        "keyword": "තොටු",
+        "count": 151
+      },
+      {
+        "keyword": "ගුවන් තොටු",
+        "count": 149
+      },
+      {
+        "keyword": "ආයෝජන",
+        "count": 147
+      },
+      {
+        "keyword": "සමාගම",
+        "count": 145
+      },
+      {
+        "keyword": "කොළඹ වරාය",
+        "count": 143
+      },
+      {
+        "keyword": "ආයතන",
+        "count": 141
+      },
+      {
+        "keyword": "යානා",
+        "count": 140
+      },
+      {
+        "keyword": "කැබිනට්",
+        "count": 138
+      },
+      {
+        "keyword": "සාකච්ඡා",
+        "count": 136
+      },
+      {
+        "keyword": "ගුවන් සේවා",
+        "count": 134
+      },
+      {
+        "keyword": "චීන",
+        "count": 132
+      },
+      {
+        "keyword": "ප්‍රශ්නයක්",
+        "count": 130
+      },
+      {
+        "keyword": "ව්‍යාපෘතිය",
+        "count": 129
+      },
+      {
+        "keyword": "වරායේ",
+        "count": 127
+      },
+      {
+        "keyword": "ගුවන් යානා",
+        "count": 125
+      },
+      {
+        "keyword": "ජනාධිපතිතුමා",
+        "count": 123
+      },
+      {
+        "keyword": "ජාත්‍යන්තර",
+        "count": 121
+      },
+      {
+        "keyword": "දියුණු",
+        "count": 119
+      },
+      {
+        "keyword": "සංවර්ධනය",
+        "count": 118
+      },
+      {
+        "keyword": "කොමිෂන්",
+        "count": 116
+      },
+      {
+        "keyword": "ආයතනය",
+        "count": 114
+      },
+      {
+        "keyword": "සිවිල්",
+        "count": 112
+      },
+      {
+        "keyword": "වැය",
+        "count": 110
+      },
+      {
+        "keyword": "පාර්ලිමේන්තුවේ",
+        "count": 108
+      },
+      {
+        "keyword": "ගොඩ",
+        "count": 107
+      },
+      {
+        "keyword": "යෝජනා",
+        "count": 105
+      },
+      {
+        "keyword": "සිවිල් ගුවන්",
+        "count": 103
+      },
+      {
+        "keyword": "අධිකාරිය",
+        "count": 101
+      },
+      {
+        "keyword": "ආර්ථිකය",
+        "count": 99
+      },
+      {
+        "keyword": "අරගෙන",
+        "count": 97
+      },
+      {
+        "keyword": "මැතිතුමා",
+        "count": 96
+      },
+      {
+        "keyword": "ප්‍රශ්න",
+        "count": 94
+      },
+      {
+        "keyword": "බලය",
+        "count": 92
+      },
+      {
+        "keyword": "හම්බන්තොට වරාය",
+        "count": 90
+      },
+      {
+        "keyword": "වියදම්",
+        "count": 88
+      },
+      {
+        "keyword": "පහසුකම්",
+        "count": 86
+      },
+      {
+        "keyword": "රුපියල් බිලියන",
+        "count": 85
+      },
+      {
+        "keyword": "ජනතාව",
+        "count": 83
+      },
+      {
+        "keyword": "පාර්ලිමේන්තුවට",
+        "count": 81
+      },
+      {
+        "keyword": "මහින්ද",
+        "count": 79
+      },
+      {
+        "keyword": "ජනාධිපති",
+        "count": 77
+      },
+      {
+        "keyword": "සංවර්ධන",
+        "count": 75
+      },
+      {
+        "keyword": "මූල්‍ය",
+        "count": 74
+      },
+      {
+        "keyword": "ලෝකයේ",
+        "count": 72
+      },
+      {
+        "keyword": "පෞද්ගලික",
+        "count": 70
+      },
+      {
+        "keyword": "මහින්ද රාජපක්ෂ",
+        "count": 68
+      },
+      {
+        "keyword": "ලංකාවට",
+        "count": 66
+      },
+      {
+        "keyword": "ශ්‍රීලන්කන්",
+        "count": 64
+      },
+      {
+        "keyword": "රැකියා",
+        "count": 63
+      },
+      {
+        "keyword": "ඉඩම්",
+        "count": 61
+      },
+      {
+        "keyword": "ඩොලර් මිලියන",
+        "count": 59
+      },
+      {
+        "keyword": "රජයේ",
+        "count": 57
+      },
+      {
+        "keyword": "සමාගම්",
+        "count": 55
+      },
+      {
+        "keyword": "මත්තල",
+        "count": 53
+      },
+      {
+        "keyword": "ලාභ",
+        "count": 52
+      },
+      {
+        "keyword": "ඩොලර් බිලියන",
+        "count": 50
+      },
+      {
+        "keyword": "නැව්",
+        "count": 48
+      },
+      {
+        "keyword": "ඉඩ",
+        "count": 46
+      },
+      {
+        "keyword": "රුපියල් මිලියන",
+        "count": 44
+      },
+      {
+        "keyword": "මුදලක්",
+        "count": 42
+      },
+      {
+        "keyword": "port",
+        "count": 41
+      },
+      {
+        "keyword": "ආණ්ඩුක්‍රම",
+        "count": 39
+      },
+      {
+        "keyword": "ජනතාවට",
+        "count": 37
+      },
+      {
+        "keyword": "පැහැදිලිව",
+        "count": 35
+      },
+      {
+        "keyword": "ගිවිසුම",
+        "count": 33
+      },
+      {
+        "keyword": "තෙල්",
+        "count": 31
+      },
+      {
+        "keyword": "දේශපාලන",
+        "count": 30
+      },
+      {
+        "keyword": "මෙවැනි",
+        "count": 28
+      },
+      {
+        "keyword": "තොරතුරු",
+        "count": 26
+      },
+      {
+        "keyword": "ව්‍යාපෘති",
+        "count": 24
+      },
+      {
+        "keyword": "සංශෝධන",
+        "count": 22
+      },
+      {
+        "keyword": "සේවය",
+        "count": 20
+      },
+      {
+        "keyword": "නීති",
+        "count": 19
       }
     ],
     "Macro-Topic 4": [
@@ -2572,6 +10732,346 @@
       {
         "keyword": "වෙළෙඳ",
         "count": 268
+      },
+      {
+        "keyword": "වගා",
+        "count": 268
+      },
+      {
+        "keyword": "නිෂ්පාදන",
+        "count": 265
+      },
+      {
+        "keyword": "කර්මාන්තය",
+        "count": 262
+      },
+      {
+        "keyword": "දේශීය",
+        "count": 259
+      },
+      {
+        "keyword": "මුදල්",
+        "count": 256
+      },
+      {
+        "keyword": "තෙල්",
+        "count": 253
+      },
+      {
+        "keyword": "කුඩා",
+        "count": 250
+      },
+      {
+        "keyword": "මිලදී",
+        "count": 248
+      },
+      {
+        "keyword": "වතු",
+        "count": 245
+      },
+      {
+        "keyword": "ජනතාවට",
+        "count": 242
+      },
+      {
+        "keyword": "ජනතාව",
+        "count": 239
+      },
+      {
+        "keyword": "රබර්",
+        "count": 236
+      },
+      {
+        "keyword": "භාණ්ඩ",
+        "count": 233
+      },
+      {
+        "keyword": "මිලක්",
+        "count": 231
+      },
+      {
+        "keyword": "හාල්",
+        "count": 228
+      },
+      {
+        "keyword": "වගාව",
+        "count": 225
+      },
+      {
+        "keyword": "ගැසට්",
+        "count": 222
+      },
+      {
+        "keyword": "ආහාර",
+        "count": 219
+      },
+      {
+        "keyword": "බිත්තර",
+        "count": 216
+      },
+      {
+        "keyword": "ලංකාවේ",
+        "count": 214
+      },
+      {
+        "keyword": "ආණ්ඩුව",
+        "count": 211
+      },
+      {
+        "keyword": "රටට",
+        "count": 208
+      },
+      {
+        "keyword": "ඉඩම්",
+        "count": 205
+      },
+      {
+        "keyword": "ප්‍රශ්නයක්",
+        "count": 202
+      },
+      {
+        "keyword": "අපනයන",
+        "count": 199
+      },
+      {
+        "keyword": "පිළිවෙළක්",
+        "count": 197
+      },
+      {
+        "keyword": "පොල් තෙල්",
+        "count": 194
+      },
+      {
+        "keyword": "සහන",
+        "count": 191
+      },
+      {
+        "keyword": "රජයේ",
+        "count": 188
+      },
+      {
+        "keyword": "ටොන්",
+        "count": 185
+      },
+      {
+        "keyword": "ප්‍රමාණය",
+        "count": 182
+      },
+      {
+        "keyword": "ආයතන",
+        "count": 180
+      },
+      {
+        "keyword": "ඩොලර්",
+        "count": 177
+      },
+      {
+        "keyword": "අමාත්‍යාංශය",
+        "count": 174
+      },
+      {
+        "keyword": "ගොවි",
+        "count": 171
+      },
+      {
+        "keyword": "කෘෂිකර්ම",
+        "count": 168
+      },
+      {
+        "keyword": "අරගෙන",
+        "count": 165
+      },
+      {
+        "keyword": "තේ වතු",
+        "count": 163
+      },
+      {
+        "keyword": "සතොස",
+        "count": 160
+      },
+      {
+        "keyword": "ආරක්ෂා",
+        "count": 157
+      },
+      {
+        "keyword": "ඉරිඟු",
+        "count": 154
+      },
+      {
+        "keyword": "බඩ",
+        "count": 151
+      },
+      {
+        "keyword": "කාබනික",
+        "count": 148
+      },
+      {
+        "keyword": "බිලියන",
+        "count": 145
+      },
+      {
+        "keyword": "මෙට්‍රික් ටොන්",
+        "count": 143
+      },
+      {
+        "keyword": "මෙට්‍රික්",
+        "count": 140
+      },
+      {
+        "keyword": "කුඩා තේ",
+        "count": 137
+      },
+      {
+        "keyword": "පියවර",
+        "count": 134
+      },
+      {
+        "keyword": "බඩ ඉරිඟු",
+        "count": 131
+      },
+      {
+        "keyword": "රසායනික",
+        "count": 128
+      },
+      {
+        "keyword": "සාකච්ඡා",
+        "count": 126
+      },
+      {
+        "keyword": "අස්වැන්න",
+        "count": 123
+      },
+      {
+        "keyword": "පාලනය",
+        "count": 120
+      },
+      {
+        "keyword": "ගොවියාට",
+        "count": 117
+      },
+      {
+        "keyword": "දිස්ත්‍රික්කයේ",
+        "count": 114
+      },
+      {
+        "keyword": "කිලෝ",
+        "count": 111
+      },
+      {
+        "keyword": "ගොවීන්",
+        "count": 109
+      },
+      {
+        "keyword": "ගම්මිරිස්",
+        "count": 106
+      },
+      {
+        "keyword": "ලක්ෂ",
+        "count": 103
+      },
+      {
+        "keyword": "රුපියල් මිලියන",
+        "count": 100
+      },
+      {
+        "keyword": "ආයතනය",
+        "count": 97
+      },
+      {
+        "keyword": "ලංකා",
+        "count": 94
+      },
+      {
+        "keyword": "වැවිලි",
+        "count": 92
+      },
+      {
+        "keyword": "ආනයන",
+        "count": 89
+      },
+      {
+        "keyword": "කහ",
+        "count": 86
+      },
+      {
+        "keyword": "ප්‍රශ්නයට",
+        "count": 83
+      },
+      {
+        "keyword": "ගොවීන්ට",
+        "count": 80
+      },
+      {
+        "keyword": "ගබඩා",
+        "count": 77
+      },
+      {
+        "keyword": "මිලට",
+        "count": 75
+      },
+      {
+        "keyword": "පවතින",
+        "count": 72
+      },
+      {
+        "keyword": "ප්‍රශ්න",
+        "count": 69
+      },
+      {
+        "keyword": "සංවර්ධන",
+        "count": 66
+      },
+      {
+        "keyword": "පෞද්ගලික",
+        "count": 63
+      },
+      {
+        "keyword": "හිමියන්",
+        "count": 60
+      },
+      {
+        "keyword": "රසායනික පොහොර",
+        "count": 58
+      },
+      {
+        "keyword": "බද්ද",
+        "count": 55
+      },
+      {
+        "keyword": "මණ්ඩලය",
+        "count": 52
+      },
+      {
+        "keyword": "පොළේ",
+        "count": 49
+      },
+      {
+        "keyword": "කිලෝවක්",
+        "count": 46
+      },
+      {
+        "keyword": "මෙට්‍රික්ටොන්",
+        "count": 43
+      },
+      {
+        "keyword": "ගොවියා",
+        "count": 40
+      },
+      {
+        "keyword": "අතුරු",
+        "count": 38
+      },
+      {
+        "keyword": "සහනාධාරය",
+        "count": 35
+      },
+      {
+        "keyword": "ගන්නා",
+        "count": 32
+      },
+      {
+        "keyword": "සමාගම්",
+        "count": 29
       }
     ],
     "Macro-Topic 5": [
@@ -2634,6 +11134,346 @@
       {
         "keyword": "ජලය",
         "count": 286
+      },
+      {
+        "keyword": "සංවර්ධන",
+        "count": 286
+      },
+      {
+        "keyword": "ලේකම්",
+        "count": 282
+      },
+      {
+        "keyword": "ජාතික",
+        "count": 279
+      },
+      {
+        "keyword": "සේවා",
+        "count": 276
+      },
+      {
+        "keyword": "මිලියන",
+        "count": 273
+      },
+      {
+        "keyword": "දිස්ත්‍රික්කයේ",
+        "count": 270
+      },
+      {
+        "keyword": "රජයේ",
+        "count": 267
+      },
+      {
+        "keyword": "ලක්ෂ",
+        "count": 264
+      },
+      {
+        "keyword": "පළාත්",
+        "count": 261
+      },
+      {
+        "keyword": "ප්‍රාදේශීය ලේකම්",
+        "count": 258
+      },
+      {
+        "keyword": "ව්‍යාපෘති",
+        "count": 255
+      },
+      {
+        "keyword": "ප්‍රශ්න",
+        "count": 252
+      },
+      {
+        "keyword": "වැය",
+        "count": 249
+      },
+      {
+        "keyword": "පහසුකම්",
+        "count": 246
+      },
+      {
+        "keyword": "අතුරු",
+        "count": 243
+      },
+      {
+        "keyword": "ණය",
+        "count": 240
+      },
+      {
+        "keyword": "අරගෙන",
+        "count": 237
+      },
+      {
+        "keyword": "සේවය",
+        "count": 234
+      },
+      {
+        "keyword": "වියදම්",
+        "count": 231
+      },
+      {
+        "keyword": "ආයතන",
+        "count": 228
+      },
+      {
+        "keyword": "තමන්ගේ",
+        "count": 225
+      },
+      {
+        "keyword": "දේශපාලන",
+        "count": 222
+      },
+      {
+        "keyword": "ප්‍රශ්නයක්",
+        "count": 219
+      },
+      {
+        "keyword": "සාකච්ඡා",
+        "count": 216
+      },
+      {
+        "keyword": "ව්‍යාපෘතිය",
+        "count": 213
+      },
+      {
+        "keyword": "නිලධාරි",
+        "count": 210
+      },
+      {
+        "keyword": "පවුල්",
+        "count": 207
+      },
+      {
+        "keyword": "වැටුප",
+        "count": 204
+      },
+      {
+        "keyword": "නිලධාරින්",
+        "count": 201
+      },
+      {
+        "keyword": "ආබාධිත",
+        "count": 198
+      },
+      {
+        "keyword": "ආපදා",
+        "count": 195
+      },
+      {
+        "keyword": "පවතින",
+        "count": 192
+      },
+      {
+        "keyword": "මුදලක්",
+        "count": 189
+      },
+      {
+        "keyword": "ප්‍රදේශ",
+        "count": 186
+      },
+      {
+        "keyword": "විශ්‍රාම වැටුප්",
+        "count": 183
+      },
+      {
+        "keyword": "ග්‍රාම නිලධාරි",
+        "count": 180
+      },
+      {
+        "keyword": "රුපියල් මිලියන",
+        "count": 176
+      },
+      {
+        "keyword": "ආර්ථික",
+        "count": 173
+      },
+      {
+        "keyword": "වතුර",
+        "count": 170
+      },
+      {
+        "keyword": "සමෘද්ධි",
+        "count": 167
+      },
+      {
+        "keyword": "ආණ්ඩුව",
+        "count": 164
+      },
+      {
+        "keyword": "නිලධාරීන්",
+        "count": 161
+      },
+      {
+        "keyword": "පිළිවෙළක්",
+        "count": 158
+      },
+      {
+        "keyword": "සහන",
+        "count": 155
+      },
+      {
+        "keyword": "වැඩසටහන",
+        "count": 152
+      },
+      {
+        "keyword": "දිස්ත්‍රික්",
+        "count": 149
+      },
+      {
+        "keyword": "ප්‍රතිපාදන",
+        "count": 146
+      },
+      {
+        "keyword": "පියවර",
+        "count": 143
+      },
+      {
+        "keyword": "මතු",
+        "count": 140
+      },
+      {
+        "keyword": "ඔවුන්ට",
+        "count": 137
+      },
+      {
+        "keyword": "ජනතාවගේ",
+        "count": 134
+      },
+      {
+        "keyword": "මාර්ග",
+        "count": 131
+      },
+      {
+        "keyword": "පනත්",
+        "count": 128
+      },
+      {
+        "keyword": "ප්‍රශ්නයට",
+        "count": 125
+      },
+      {
+        "keyword": "පාලන",
+        "count": 122
+      },
+      {
+        "keyword": "ආධාර",
+        "count": 119
+      },
+      {
+        "keyword": "ගෙවල්",
+        "count": 116
+      },
+      {
+        "keyword": "මිනිස්සු",
+        "count": 113
+      },
+      {
+        "keyword": "ගැටලු",
+        "count": 110
+      },
+      {
+        "keyword": "ක්‍රම",
+        "count": 107
+      },
+      {
+        "keyword": "බදු",
+        "count": 104
+      },
+      {
+        "keyword": "ඉදිකිරීම්",
+        "count": 101
+      },
+      {
+        "keyword": "දෙපාර්තමේන්තුව",
+        "count": 98
+      },
+      {
+        "keyword": "වසර",
+        "count": 95
+      },
+      {
+        "keyword": "ආබාධ",
+        "count": 92
+      },
+      {
+        "keyword": "කැබිනට්",
+        "count": 89
+      },
+      {
+        "keyword": "ජන",
+        "count": 86
+      },
+      {
+        "keyword": "සැලසුම්",
+        "count": 83
+      },
+      {
+        "keyword": "විශ්‍රාම වැටුප",
+        "count": 80
+      },
+      {
+        "keyword": "පැහැදිලි",
+        "count": 77
+      },
+      {
+        "keyword": "ජනාධිපතිතුමා",
+        "count": 74
+      },
+      {
+        "keyword": "පරිපාලන",
+        "count": 70
+      },
+      {
+        "keyword": "ප්‍රදේශයේ",
+        "count": 67
+      },
+      {
+        "keyword": "අමාත්‍යාංශ",
+        "count": 64
+      },
+      {
+        "keyword": "සොයා",
+        "count": 61
+      },
+      {
+        "keyword": "පෞද්ගලික",
+        "count": 58
+      },
+      {
+        "keyword": "තොරතුරු",
+        "count": 55
+      },
+      {
+        "keyword": "ලක්",
+        "count": 52
+      },
+      {
+        "keyword": "අමාත්‍යාංශයේ",
+        "count": 49
+      },
+      {
+        "keyword": "සේවයේ",
+        "count": 46
+      },
+      {
+        "keyword": "නව",
+        "count": 43
+      },
+      {
+        "keyword": "පානීය",
+        "count": 40
+      },
+      {
+        "keyword": "භාර",
+        "count": 37
+      },
+      {
+        "keyword": "පාර්ලිමේන්තුවේ",
+        "count": 34
+      },
+      {
+        "keyword": "ඔබතුමාගෙන්",
+        "count": 31
       }
     ],
     "Macro-Topic 6": [
@@ -2696,6 +11536,346 @@
       {
         "keyword": "රජයේ මුදල්",
         "count": 124
+      },
+      {
+        "keyword": "සාකච්ඡා",
+        "count": 124
+      },
+      {
+        "keyword": "ලංකා",
+        "count": 122
+      },
+      {
+        "keyword": "ස්ථාවර නියෝග",
+        "count": 121
+      },
+      {
+        "keyword": "වැඩි",
+        "count": 120
+      },
+      {
+        "keyword": "බැංකුව",
+        "count": 118
+      },
+      {
+        "keyword": "යෝජනා",
+        "count": 117
+      },
+      {
+        "keyword": "කරමි",
+        "count": 116
+      },
+      {
+        "keyword": "බැඳුම්කර",
+        "count": 114
+      },
+      {
+        "keyword": "සභාපති",
+        "count": 113
+      },
+      {
+        "keyword": "වාර්ෂික",
+        "count": 112
+      },
+      {
+        "keyword": "කාර්ය",
+        "count": 110
+      },
+      {
+        "keyword": "වාර්තාවේ",
+        "count": 109
+      },
+      {
+        "keyword": "නිර්දේශ",
+        "count": 108
+      },
+      {
+        "keyword": "මහජන",
+        "count": 106
+      },
+      {
+        "keyword": "කොමිෂන්",
+        "count": 105
+      },
+      {
+        "keyword": "බැංකුවේ",
+        "count": 104
+      },
+      {
+        "keyword": "රජයේ ගිණුම්",
+        "count": 102
+      },
+      {
+        "keyword": "පනත්",
+        "count": 101
+      },
+      {
+        "keyword": "පෙත්සම්",
+        "count": 100
+      },
+      {
+        "keyword": "මූල්‍ය",
+        "count": 99
+      },
+      {
+        "keyword": "මතු",
+        "count": 97
+      },
+      {
+        "keyword": "මැතිතුමා",
+        "count": 96
+      },
+      {
+        "keyword": "බැංකු",
+        "count": 95
+      },
+      {
+        "keyword": "ජනාධිපති",
+        "count": 93
+      },
+      {
+        "keyword": "භාර",
+        "count": 92
+      },
+      {
+        "keyword": "පැහැදිලි",
+        "count": 91
+      },
+      {
+        "keyword": "පාර්ලිමේන්තු",
+        "count": 89
+      },
+      {
+        "keyword": "විපක්ෂයේ",
+        "count": 88
+      },
+      {
+        "keyword": "රජය",
+        "count": 87
+      },
+      {
+        "keyword": "ආණ්ඩු",
+        "count": 85
+      },
+      {
+        "keyword": "ප්‍රශ්නයක්",
+        "count": 84
+      },
+      {
+        "keyword": "වර්ෂය",
+        "count": 83
+      },
+      {
+        "keyword": "තොරතුරු",
+        "count": 81
+      },
+      {
+        "keyword": "පක්ෂ",
+        "count": 80
+      },
+      {
+        "keyword": "ජාතික",
+        "count": 79
+      },
+      {
+        "keyword": "ඔබතුමාගේ",
+        "count": 78
+      },
+      {
+        "keyword": "රුපියල්",
+        "count": 76
+      },
+      {
+        "keyword": "පොදු",
+        "count": 75
+      },
+      {
+        "keyword": "සභාපතිවරයා",
+        "count": 74
+      },
+      {
+        "keyword": "ප්‍රශ්න",
+        "count": 72
+      },
+      {
+        "keyword": "ඔබතුමාගෙන්",
+        "count": 71
+      },
+      {
+        "keyword": "සිල්වා",
+        "count": 70
+      },
+      {
+        "keyword": "හර්ෂ",
+        "count": 68
+      },
+      {
+        "keyword": "හර්ෂ සිල්වා",
+        "count": 67
+      },
+      {
+        "keyword": "ව්‍යාපාර",
+        "count": 66
+      },
+      {
+        "keyword": "finance",
+        "count": 64
+      },
+      {
+        "keyword": "මන්ත්‍රීවරුන්",
+        "count": 63
+      },
+      {
+        "keyword": "අරගෙන",
+        "count": 62
+      },
+      {
+        "keyword": "ආණ්ඩුව",
+        "count": 60
+      },
+      {
+        "keyword": "විමර්ශන",
+        "count": 59
+      },
+      {
+        "keyword": "විපක්ෂයට",
+        "count": 58
+      },
+      {
+        "keyword": "ආණ්ඩුක්‍රම",
+        "count": 57
+      },
+      {
+        "keyword": "කෝප්",
+        "count": 55
+      },
+      {
+        "keyword": "දේශපාලන",
+        "count": 54
+      },
+      {
+        "keyword": "අමාත්‍යාංශයේ",
+        "count": 53
+      },
+      {
+        "keyword": "බැරකම්",
+        "count": 51
+      },
+      {
+        "keyword": "සියලුම",
+        "count": 50
+      },
+      {
+        "keyword": "ඉල්ලීමක්",
+        "count": 49
+      },
+      {
+        "keyword": "කමිටු",
+        "count": 47
+      },
+      {
+        "keyword": "ආරක්ෂා",
+        "count": 46
+      },
+      {
+        "keyword": "වත්කම් බැරකම්",
+        "count": 45
+      },
+      {
+        "keyword": "වත්කම්",
+        "count": 43
+      },
+      {
+        "keyword": "මන්ත්‍රීවරු",
+        "count": 42
+      },
+      {
+        "keyword": "ස්වාධීන",
+        "count": 41
+      },
+      {
+        "keyword": "ස්තුතිවන්ත",
+        "count": 39
+      },
+      {
+        "keyword": "පොදු ව්‍යාපාර",
+        "count": 38
+      },
+      {
+        "keyword": "සොයා",
+        "count": 37
+      },
+      {
+        "keyword": "ආර්ථික",
+        "count": 36
+      },
+      {
+        "keyword": "බලය",
+        "count": 34
+      },
+      {
+        "keyword": "සම්මත",
+        "count": 33
+      },
+      {
+        "keyword": "පරීක්ෂණ",
+        "count": 32
+      },
+      {
+        "keyword": "ජනාධිපතිතුමා",
+        "count": 30
+      },
+      {
+        "keyword": "ලක්",
+        "count": 29
+      },
+      {
+        "keyword": "වංචාව",
+        "count": 28
+      },
+      {
+        "keyword": "ඉඩ",
+        "count": 26
+      },
+      {
+        "keyword": "විගණන",
+        "count": 25
+      },
+      {
+        "keyword": "කමිටුවේ",
+        "count": 24
+      },
+      {
+        "keyword": "ඉටු",
+        "count": 22
+      },
+      {
+        "keyword": "පක්ෂයේ",
+        "count": 21
+      },
+      {
+        "keyword": "copa",
+        "count": 20
+      },
+      {
+        "keyword": "දෙකක්",
+        "count": 18
+      },
+      {
+        "keyword": "නීතිය",
+        "count": 17
+      },
+      {
+        "keyword": "සංවර්ධන",
+        "count": 16
+      },
+      {
+        "keyword": "චෝදනා",
+        "count": 15
+      },
+      {
+        "keyword": "පාලනය",
+        "count": 13
       }
     ],
     "Macro-Topic 7": [
@@ -2758,6 +11938,346 @@
       {
         "keyword": "පළාත්",
         "count": 284
+      },
+      {
+        "keyword": "දරුවන්ට",
+        "count": 284
+      },
+      {
+        "keyword": "වැටුප්",
+        "count": 280
+      },
+      {
+        "keyword": "දරුවන්",
+        "count": 277
+      },
+      {
+        "keyword": "ප්‍රශ්නයක්",
+        "count": 274
+      },
+      {
+        "keyword": "රුපියල්",
+        "count": 271
+      },
+      {
+        "keyword": "ප්‍රශ්න",
+        "count": 268
+      },
+      {
+        "keyword": "ගුරුවරුන්",
+        "count": 265
+      },
+      {
+        "keyword": "නීති",
+        "count": 262
+      },
+      {
+        "keyword": "පත්වීම්",
+        "count": 259
+      },
+      {
+        "keyword": "ගුරුවරු",
+        "count": 256
+      },
+      {
+        "keyword": "සේවා",
+        "count": 253
+      },
+      {
+        "keyword": "රජය",
+        "count": 250
+      },
+      {
+        "keyword": "මුදල්",
+        "count": 247
+      },
+      {
+        "keyword": "පුරප්පාඩු",
+        "count": 244
+      },
+      {
+        "keyword": "විෂය",
+        "count": 241
+      },
+      {
+        "keyword": "පාසල්වල",
+        "count": 238
+      },
+      {
+        "keyword": "පෙර පාසල්",
+        "count": 235
+      },
+      {
+        "keyword": "විභාගයට",
+        "count": 232
+      },
+      {
+        "keyword": "සිසුන්",
+        "count": 229
+      },
+      {
+        "keyword": "ඉංග්‍රීසි",
+        "count": 226
+      },
+      {
+        "keyword": "සාකච්ඡා",
+        "count": 223
+      },
+      {
+        "keyword": "රජයේ",
+        "count": 220
+      },
+      {
+        "keyword": "විදුහල්පති",
+        "count": 217
+      },
+      {
+        "keyword": "අමාත්‍යාංශය",
+        "count": 214
+      },
+      {
+        "keyword": "පාසල",
+        "count": 211
+      },
+      {
+        "keyword": "කොමිෂන්",
+        "count": 208
+      },
+      {
+        "keyword": "වෘත්තීය",
+        "count": 205
+      },
+      {
+        "keyword": "දරුවන්ගේ",
+        "count": 202
+      },
+      {
+        "keyword": "විද්‍යාලයේ",
+        "count": 199
+      },
+      {
+        "keyword": "සේවය",
+        "count": 196
+      },
+      {
+        "keyword": "ප්‍රශ්නයට",
+        "count": 193
+      },
+      {
+        "keyword": "පහසුකම්",
+        "count": 190
+      },
+      {
+        "keyword": "පිළිවෙළක්",
+        "count": 187
+      },
+      {
+        "keyword": "ජාතික පාසල්",
+        "count": 184
+      },
+      {
+        "keyword": "වසර",
+        "count": 181
+      },
+      {
+        "keyword": "ක්‍රම",
+        "count": 178
+      },
+      {
+        "keyword": "පවතින",
+        "count": 175
+      },
+      {
+        "keyword": "අතුරු",
+        "count": 172
+      },
+      {
+        "keyword": "අරගෙන",
+        "count": 169
+      },
+      {
+        "keyword": "ප්‍රතිඵල",
+        "count": 166
+      },
+      {
+        "keyword": "ප්‍රතිපාදන",
+        "count": 163
+      },
+      {
+        "keyword": "විද්‍යාලය",
+        "count": 160
+      },
+      {
+        "keyword": "සංවර්ධන",
+        "count": 157
+      },
+      {
+        "keyword": "සේවයේ",
+        "count": 154
+      },
+      {
+        "keyword": "අධ්‍යයන",
+        "count": 151
+      },
+      {
+        "keyword": "යෝජනා",
+        "count": 148
+      },
+      {
+        "keyword": "ඔබතුමාගෙන්",
+        "count": 145
+      },
+      {
+        "keyword": "ආයතන",
+        "count": 142
+      },
+      {
+        "keyword": "රැකියා",
+        "count": 139
+      },
+      {
+        "keyword": "නව",
+        "count": 136
+      },
+      {
+        "keyword": "කැබිනට්",
+        "count": 133
+      },
+      {
+        "keyword": "මතු",
+        "count": 130
+      },
+      {
+        "keyword": "භාර",
+        "count": 127
+      },
+      {
+        "keyword": "දිස්ත්‍රික්කයේ",
+        "count": 124
+      },
+      {
+        "keyword": "පළාතේ",
+        "count": 121
+      },
+      {
+        "keyword": "ලංකා",
+        "count": 118
+      },
+      {
+        "keyword": "උසස් අධ්‍යාපන",
+        "count": 115
+      },
+      {
+        "keyword": "වර්ෂයේ",
+        "count": 112
+      },
+      {
+        "keyword": "සංඛ්‍යාව",
+        "count": 109
+      },
+      {
+        "keyword": "පන්ති",
+        "count": 106
+      },
+      {
+        "keyword": "පිරිසක්",
+        "count": 103
+      },
+      {
+        "keyword": "උපාධිධාරින්",
+        "count": 100
+      },
+      {
+        "keyword": "ඔබතුමාගේ",
+        "count": 97
+      },
+      {
+        "keyword": "ගැටලු",
+        "count": 94
+      },
+      {
+        "keyword": "නිර්මාණය",
+        "count": 91
+      },
+      {
+        "keyword": "පවත්වා",
+        "count": 88
+      },
+      {
+        "keyword": "ගන්නා",
+        "count": 85
+      },
+      {
+        "keyword": "දෙකක්",
+        "count": 82
+      },
+      {
+        "keyword": "නිර්දේශ",
+        "count": 79
+      },
+      {
+        "keyword": "මණ්ඩල",
+        "count": 76
+      },
+      {
+        "keyword": "සාමාන්‍ය",
+        "count": 73
+      },
+      {
+        "keyword": "සිංහල",
+        "count": 70
+      },
+      {
+        "keyword": "ශිෂ්‍ය",
+        "count": 67
+      },
+      {
+        "keyword": "ඉල්ලීමක්",
+        "count": 64
+      },
+      {
+        "keyword": "සේවයට",
+        "count": 61
+      },
+      {
+        "keyword": "මාරු",
+        "count": 58
+      },
+      {
+        "keyword": "පැහැදිලි",
+        "count": 55
+      },
+      {
+        "keyword": "මාසයේ",
+        "count": 52
+      },
+      {
+        "keyword": "අමාත්‍ය",
+        "count": 49
+      },
+      {
+        "keyword": "පරිපාලන",
+        "count": 46
+      },
+      {
+        "keyword": "නිලධාරින්",
+        "count": 43
+      },
+      {
+        "keyword": "අමාත්‍යාංශයේ",
+        "count": 40
+      },
+      {
+        "keyword": "තීරණය",
+        "count": 37
+      },
+      {
+        "keyword": "ක්‍රමය",
+        "count": 34
+      },
+      {
+        "keyword": "ලක්",
+        "count": 31
       }
     ],
     "Macro-Topic 8": [
@@ -2820,6 +12340,346 @@
       {
         "keyword": "ජනතාවගේ",
         "count": 368
+      },
+      {
+        "keyword": "රනිල්",
+        "count": 368
+      },
+      {
+        "keyword": "පාර්ලිමේන්තුවට",
+        "count": 364
+      },
+      {
+        "keyword": "ආර්ථික",
+        "count": 360
+      },
+      {
+        "keyword": "ජනතාවට",
+        "count": 356
+      },
+      {
+        "keyword": "වික්‍රමසිංහ",
+        "count": 352
+      },
+      {
+        "keyword": "රනිල් වික්‍රමසිංහ",
+        "count": 348
+      },
+      {
+        "keyword": "ජන",
+        "count": 344
+      },
+      {
+        "keyword": "දහනව",
+        "count": 340
+      },
+      {
+        "keyword": "ප්‍රශ්න",
+        "count": 336
+      },
+      {
+        "keyword": "නීතිය",
+        "count": 332
+      },
+      {
+        "keyword": "ජාතික",
+        "count": 329
+      },
+      {
+        "keyword": "රටට",
+        "count": 325
+      },
+      {
+        "keyword": "දහනව ආණ්ඩුක්‍රම",
+        "count": 321
+      },
+      {
+        "keyword": "ඡන්දය",
+        "count": 317
+      },
+      {
+        "keyword": "පාර්ලිමේන්තු",
+        "count": 313
+      },
+      {
+        "keyword": "මුදල්",
+        "count": 309
+      },
+      {
+        "keyword": "වැඩි",
+        "count": 305
+      },
+      {
+        "keyword": "ජනාධිපතිවරයා",
+        "count": 301
+      },
+      {
+        "keyword": "ආණ්ඩුවක්",
+        "count": 297
+      },
+      {
+        "keyword": "පක්ෂ",
+        "count": 293
+      },
+      {
+        "keyword": "හදිසි",
+        "count": 290
+      },
+      {
+        "keyword": "ව්‍යවස්ථාව",
+        "count": 286
+      },
+      {
+        "keyword": "පක්ෂයේ",
+        "count": 282
+      },
+      {
+        "keyword": "අරගෙන",
+        "count": 278
+      },
+      {
+        "keyword": "පනත්",
+        "count": 274
+      },
+      {
+        "keyword": "කථාව",
+        "count": 270
+      },
+      {
+        "keyword": "තමන්ගේ",
+        "count": 266
+      },
+      {
+        "keyword": "සාකච්ඡා",
+        "count": 262
+      },
+      {
+        "keyword": "ලංකා",
+        "count": 258
+      },
+      {
+        "keyword": "ක්‍රමය",
+        "count": 255
+      },
+      {
+        "keyword": "විධායක",
+        "count": 251
+      },
+      {
+        "keyword": "ඇයි",
+        "count": 247
+      },
+      {
+        "keyword": "ආණ්ඩු",
+        "count": 243
+      },
+      {
+        "keyword": "ගෝඨාභය",
+        "count": 239
+      },
+      {
+        "keyword": "යෝජනා",
+        "count": 235
+      },
+      {
+        "keyword": "මිනිස්සු",
+        "count": 231
+      },
+      {
+        "keyword": "පාක්ෂික",
+        "count": 227
+      },
+      {
+        "keyword": "ඡන්ද",
+        "count": 223
+      },
+      {
+        "keyword": "සර්ව",
+        "count": 219
+      },
+      {
+        "keyword": "සර්ව පාක්ෂික",
+        "count": 216
+      },
+      {
+        "keyword": "තෙල්",
+        "count": 212
+      },
+      {
+        "keyword": "පක්ෂය",
+        "count": 208
+      },
+      {
+        "keyword": "සහයෝගය",
+        "count": 204
+      },
+      {
+        "keyword": "මන්ත්‍රීවරු",
+        "count": 200
+      },
+      {
+        "keyword": "කැබිනට්",
+        "count": 196
+      },
+      {
+        "keyword": "විසිවන",
+        "count": 192
+      },
+      {
+        "keyword": "පැහැදිලිව",
+        "count": 188
+      },
+      {
+        "keyword": "පාලනය",
+        "count": 184
+      },
+      {
+        "keyword": "ආරක්ෂා",
+        "count": 180
+      },
+      {
+        "keyword": "රජය",
+        "count": 177
+      },
+      {
+        "keyword": "කවුද",
+        "count": 173
+      },
+      {
+        "keyword": "මැතිවරණ",
+        "count": 169
+      },
+      {
+        "keyword": "විපක්ෂයේ",
+        "count": 165
+      },
+      {
+        "keyword": "ගෝඨාභය රාජපක්ෂ",
+        "count": 161
+      },
+      {
+        "keyword": "විපක්ෂ",
+        "count": 157
+      },
+      {
+        "keyword": "හදිසි නීතිය",
+        "count": 153
+      },
+      {
+        "keyword": "ගොඩ",
+        "count": 149
+      },
+      {
+        "keyword": "කොමිෂන්",
+        "count": 145
+      },
+      {
+        "keyword": "විසිවන ආණ්ඩුක්‍රම",
+        "count": 142
+      },
+      {
+        "keyword": "ආණ්ඩුවේ",
+        "count": 138
+      },
+      {
+        "keyword": "ව්‍යවස්ථාවේ",
+        "count": 134
+      },
+      {
+        "keyword": "බලතල",
+        "count": 130
+      },
+      {
+        "keyword": "ප්‍රතිපත්ති",
+        "count": 126
+      },
+      {
+        "keyword": "මහින්ද",
+        "count": 122
+      },
+      {
+        "keyword": "ආර්ථිකය",
+        "count": 118
+      },
+      {
+        "keyword": "පළාත්",
+        "count": 114
+      },
+      {
+        "keyword": "ප්‍රශ්නයක්",
+        "count": 110
+      },
+      {
+        "keyword": "අර්බුදය",
+        "count": 106
+      },
+      {
+        "keyword": "සම්මත",
+        "count": 103
+      },
+      {
+        "keyword": "නීති",
+        "count": 99
+      },
+      {
+        "keyword": "නිදහස්",
+        "count": 95
+      },
+      {
+        "keyword": "වග",
+        "count": 91
+      },
+      {
+        "keyword": "රුපියල්",
+        "count": 87
+      },
+      {
+        "keyword": "පාලන",
+        "count": 83
+      },
+      {
+        "keyword": "නිර්මාණය",
+        "count": 79
+      },
+      {
+        "keyword": "පාවිච්චි",
+        "count": 75
+      },
+      {
+        "keyword": "දැක්කා",
+        "count": 71
+      },
+      {
+        "keyword": "ආණ්ඩුවට",
+        "count": 67
+      },
+      {
+        "keyword": "ජනතා",
+        "count": 64
+      },
+      {
+        "keyword": "වෙච්ච",
+        "count": 60
+      },
+      {
+        "keyword": "ප්‍රජාතන්ත්‍රවාදී",
+        "count": 56
+      },
+      {
+        "keyword": "භාර",
+        "count": 52
+      },
+      {
+        "keyword": "විධායක ජනාධිපති",
+        "count": 48
+      },
+      {
+        "keyword": "තීන්දු",
+        "count": 44
+      },
+      {
+        "keyword": "රටක්",
+        "count": 40
       }
     ],
     "Macro-Topic 9": [
@@ -2882,6 +12742,346 @@
       {
         "keyword": "නියෝග",
         "count": 85
+      },
+      {
+        "keyword": "ඔබතුමාගේ",
+        "count": 85
+      },
+      {
+        "keyword": "ආරක්ෂාව",
+        "count": 84
+      },
+      {
+        "keyword": "පොලිස්",
+        "count": 83
+      },
+      {
+        "keyword": "අරගෙන",
+        "count": 82
+      },
+      {
+        "keyword": "මන්ත්‍රීවරු",
+        "count": 81
+      },
+      {
+        "keyword": "මතු",
+        "count": 80
+      },
+      {
+        "keyword": "මාධ්‍ය",
+        "count": 79
+      },
+      {
+        "keyword": "ස්ථාවර",
+        "count": 78
+      },
+      {
+        "keyword": "ආණ්ඩුව",
+        "count": 77
+      },
+      {
+        "keyword": "මැතිතුමා",
+        "count": 76
+      },
+      {
+        "keyword": "නීතිය",
+        "count": 76
+      },
+      {
+        "keyword": "මෙවැනි",
+        "count": 75
+      },
+      {
+        "keyword": "ප්‍රකාශයක්",
+        "count": 74
+      },
+      {
+        "keyword": "මන්ත්‍රීවරුන්ට",
+        "count": 73
+      },
+      {
+        "keyword": "ආණ්ඩු",
+        "count": 72
+      },
+      {
+        "keyword": "ආචාර",
+        "count": 71
+      },
+      {
+        "keyword": "පක්ෂයේ",
+        "count": 70
+      },
+      {
+        "keyword": "ඉඩ",
+        "count": 69
+      },
+      {
+        "keyword": "ඉල්ලීමක්",
+        "count": 68
+      },
+      {
+        "keyword": "ආණ්ඩුක්‍රම",
+        "count": 67
+      },
+      {
+        "keyword": "ස්ථාවර නියෝග",
+        "count": 67
+      },
+      {
+        "keyword": "උල්ලංඝනය",
+        "count": 66
+      },
+      {
+        "keyword": "පැහැදිලි",
+        "count": 65
+      },
+      {
+        "keyword": "ආචාර ධර්ම",
+        "count": 64
+      },
+      {
+        "keyword": "පොලීසිය",
+        "count": 63
+      },
+      {
+        "keyword": "හඬ",
+        "count": 62
+      },
+      {
+        "keyword": "දේශපාලන",
+        "count": 61
+      },
+      {
+        "keyword": "ආරක්ෂා",
+        "count": 60
+      },
+      {
+        "keyword": "වාර්තා",
+        "count": 59
+      },
+      {
+        "keyword": "පරීක්ෂණයක්",
+        "count": 58
+      },
+      {
+        "keyword": "භාර",
+        "count": 57
+      },
+      {
+        "keyword": "අත්අඩංගුවට",
+        "count": 57
+      },
+      {
+        "keyword": "අධිකරණ",
+        "count": 56
+      },
+      {
+        "keyword": "තීන්දුව",
+        "count": 55
+      },
+      {
+        "keyword": "විපක්ෂ",
+        "count": 54
+      },
+      {
+        "keyword": "මන්ත්‍රීවරයෙකු",
+        "count": 53
+      },
+      {
+        "keyword": "විපක්ෂයේ",
+        "count": 52
+      },
+      {
+        "keyword": "රජය",
+        "count": 51
+      },
+      {
+        "keyword": "බලතල",
+        "count": 50
+      },
+      {
+        "keyword": "පරීක්ෂණ",
+        "count": 49
+      },
+      {
+        "keyword": "සංග්‍රහය",
+        "count": 49
+      },
+      {
+        "keyword": "පැහැදිලිව",
+        "count": 48
+      },
+      {
+        "keyword": "තමන්ගේ",
+        "count": 47
+      },
+      {
+        "keyword": "දුන්",
+        "count": 46
+      },
+      {
+        "keyword": "මන්ත්‍රීතුමාට",
+        "count": 45
+      },
+      {
+        "keyword": "කොමිෂන්",
+        "count": 44
+      },
+      {
+        "keyword": "කඩ",
+        "count": 43
+      },
+      {
+        "keyword": "ජාතික",
+        "count": 42
+      },
+      {
+        "keyword": "බරපතළ",
+        "count": 41
+      },
+      {
+        "keyword": "මහජන",
+        "count": 40
+      },
+      {
+        "keyword": "ජනතාව",
+        "count": 40
+      },
+      {
+        "keyword": "ඇයි",
+        "count": 39
+      },
+      {
+        "keyword": "පක්ෂ",
+        "count": 38
+      },
+      {
+        "keyword": "සොයා",
+        "count": 37
+      },
+      {
+        "keyword": "ආණ්ඩු පක්ෂයේ",
+        "count": 36
+      },
+      {
+        "keyword": "ගන්නා",
+        "count": 35
+      },
+      {
+        "keyword": "පාවිච්චි",
+        "count": 34
+      },
+      {
+        "keyword": "පහර",
+        "count": 33
+      },
+      {
+        "keyword": "සිද්ධිය",
+        "count": 32
+      },
+      {
+        "keyword": "ආණ්ඩුවේ",
+        "count": 31
+      },
+      {
+        "keyword": "අපහාස",
+        "count": 30
+      },
+      {
+        "keyword": "දුරකථන",
+        "count": 30
+      },
+      {
+        "keyword": "රජයේ",
+        "count": 29
+      },
+      {
+        "keyword": "නීති",
+        "count": 28
+      },
+      {
+        "keyword": "තොරතුරු",
+        "count": 27
+      },
+      {
+        "keyword": "අඩංගුවට",
+        "count": 26
+      },
+      {
+        "keyword": "මන්ත්‍රීවරයෙක්",
+        "count": 25
+      },
+      {
+        "keyword": "දඬුවම්",
+        "count": 24
+      },
+      {
+        "keyword": "නිලධාරින්",
+        "count": 23
+      },
+      {
+        "keyword": "අයිතියක්",
+        "count": 22
+      },
+      {
+        "keyword": "බලය",
+        "count": 22
+      },
+      {
+        "keyword": "මන්ත්‍රීතුමාගේ",
+        "count": 21
+      },
+      {
+        "keyword": "අපරාධ",
+        "count": 20
+      },
+      {
+        "keyword": "නියෝගයක්",
+        "count": 19
+      },
+      {
+        "keyword": "ප්‍රකාශය",
+        "count": 18
+      },
+      {
+        "keyword": "නියෝගය",
+        "count": 17
+      },
+      {
+        "keyword": "මාගේ",
+        "count": 16
+      },
+      {
+        "keyword": "පොදු",
+        "count": 15
+      },
+      {
+        "keyword": "වුණත්",
+        "count": 14
+      },
+      {
+        "keyword": "ව්‍යවස්ථා",
+        "count": 13
+      },
+      {
+        "keyword": "වග",
+        "count": 13
+      },
+      {
+        "keyword": "නඩු",
+        "count": 12
+      },
+      {
+        "keyword": "පෞද්ගලික",
+        "count": 11
+      },
+      {
+        "keyword": "එකයි",
+        "count": 10
+      },
+      {
+        "keyword": "අදහස්",
+        "count": 9
       }
     ]
   }
