@@ -63,7 +63,13 @@ const CustomTooltip = ({ active, payload, label, isMobile = false }) => {
   return null;
 };
 
-export const TemporalEvolutionChart = ({ data, selectedTopics = [], onTopicSelect }) => {
+export const TemporalEvolutionChart = ({
+  data,
+  selectedTopics = [],
+  onTopicSelect,
+  showDots = true,
+  forceLegend = false,
+}) => {
   const { series, years, meta } = data;
   const [isMobile, setIsMobile] = useState(() => (typeof window !== 'undefined' ? window.innerWidth <= 768 : false));
 
@@ -77,7 +83,7 @@ export const TemporalEvolutionChart = ({ data, selectedTopics = [], onTopicSelec
   const activeSeries = selectedTopics.length > 0
     ? series.filter(s => selectedTopics.includes(s.mt_id.toString()))
     : series;
-  const showLegend = selectedTopics.length === 0 && !isMobile;
+  const showLegend = (forceLegend || selectedTopics.length === 0) && !isMobile;
   const showEventLabels = !isMobile;
 
   return (
@@ -144,8 +150,8 @@ export const TemporalEvolutionChart = ({ data, selectedTopics = [], onTopicSelec
                 dataKey={s.label}
                 stroke={color}
                 strokeWidth={selectedTopics.includes(s.mt_id.toString()) ? (isMobile ? 3 : 4) : (isMobile ? 1.5 : 2)}
-                dot={{ r: selectedTopics.includes(s.mt_id.toString()) ? (isMobile ? 4 : 6) : 0, onClick: () => { if (onTopicSelect) onTopicSelect(s.mt_id.toString()); } }}
-                activeDot={{ r: isMobile ? 5 : 8, cursor: 'pointer', onClick: () => { if (onTopicSelect) onTopicSelect(s.mt_id.toString()); } }}
+                dot={showDots ? { r: selectedTopics.includes(s.mt_id.toString()) ? (isMobile ? 4 : 6) : 0, onClick: () => { if (onTopicSelect) onTopicSelect(s.mt_id.toString()); } } : false}
+                activeDot={showDots ? { r: isMobile ? 5 : 8, cursor: 'pointer', onClick: () => { if (onTopicSelect) onTopicSelect(s.mt_id.toString()); } } : false}
                 isAnimationActive={true}
                 opacity={selectedTopics.length > 0 && !selectedTopics.includes(s.mt_id.toString()) ? 0.3 : 1}
               />

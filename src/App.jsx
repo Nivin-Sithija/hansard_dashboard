@@ -135,6 +135,7 @@ function AppShell({
   selectedTopics, setSelectedTopics, activeDetailTopic, setActiveDetailTopic, activeTab, setActiveTab
 }) {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [didInitializeTopSix, setDidInitializeTopSix] = useState(false);
 
   useEffect(() => {
     document.body.style.overflow = isMobileMenuOpen ? 'hidden' : '';
@@ -147,6 +148,11 @@ function AppShell({
     if (topicId === 'all') {
       setSelectedTopics([]);
       setActiveDetailTopic(null);
+      return;
+    }
+    if (topicId === 'top6') {
+      setSelectedTopics(topSixTopicIds);
+      setActiveDetailTopic('cumulative');
       return;
     }
     setSelectedTopics(prev => {
@@ -226,7 +232,7 @@ function AppShell({
     return { total, peak: peak.year, peakCount: peak.count, topWords, topSpeakers, label: evolutionData.topic_labels[topicId], avg: Math.round(total / 10) };
   };
 
-  const tabTitles = { topics: 'Topic Analytics', speakers: 'Speaker Analytics', wordcloud: 'Word Cloud Analytics', sessions: 'Parliament Sessions', comparative: 'Comparative Analysis' };
+  const tabTitles = { topics: 'Topic Analysis of Parliament Speeches', speakers: 'Speaker Analytics', wordcloud: 'Word Cloud Analytics', sessions: 'Parliament Sessions', comparative: 'Comparative Analysis' };
   const tabTitle = tabTitles[activeTab] || 'Analytics';
   const navItems = [
     { id: 'topics', icon: <LayoutDashboard size={18} />, label: 'Topic Analytics' },
@@ -239,7 +245,44 @@ function AppShell({
     () => evolutionData.series.reduce((sum, s) => sum + s.points.reduce((inner, p) => inner + p.count, 0), 0),
     [evolutionData]
   );
+  const topSixTopicIds = useMemo(() => {
+    return [...evolutionData.series]
+      .map(topic => ({
+        id: topic.mt_id.toString(),
+        total: topic.points.reduce((sum, p) => sum + p.count, 0),
+      }))
+      .sort((a, b) => b.total - a.total)
+      .slice(0, 6)
+      .map(item => item.id);
+  }, [evolutionData]);
+  const isTopSixSelected = useMemo(() => {
+    if (selectedTopics.length !== topSixTopicIds.length || topSixTopicIds.length === 0) return false;
+    return topSixTopicIds.every(id => selectedTopics.includes(id));
+  }, [selectedTopics, topSixTopicIds]);
+  const chartCardTitle = useMemo(() => {
+    if (isTopSixSelected) return 'Top 6 Macro-Topic Temporal Distribution';
+    if (selectedTopics.length === 0) return 'Temporal Evolution Across All Macro-Topics';
+    if (selectedTopics.length === 1) return `Temporal Evolution: MT-${selectedTopics[0]}`;
+    return `Temporal Evolution: ${selectedTopics.length} Selected Macro-Topics`;
+  }, [isTopSixSelected, selectedTopics]);
+  const chartCardDescription = useMemo(() => {
+    if (isTopSixSelected) {
+      return 'Year-wise speech trends for the six macro-topics with the highest total volume.';
+    }
+    if (selectedTopics.length === 0) {
+      return 'Year-wise speech trends across all macro-topics. Use the selector below to focus on specific themes.';
+    }
+    return 'Year-wise speech trends for the currently selected macro-topics. Event markers indicate major national milestones.';
+  }, [isTopSixSelected, selectedTopics]);
   const macroTopicCount = useMemo(() => Object.keys(evolutionData.topic_labels || {}).length, [evolutionData]);
+
+  useEffect(() => {
+    if (!didInitializeTopSix && topSixTopicIds.length > 0 && selectedTopics.length === 0) {
+      setSelectedTopics(topSixTopicIds);
+      setActiveDetailTopic('cumulative');
+      setDidInitializeTopSix(true);
+    }
+  }, [didInitializeTopSix, topSixTopicIds, selectedTopics, setSelectedTopics, setActiveDetailTopic]);
 
   return (
     <div className="app-shell" style={{ display: 'flex', minHeight: '100vh', background: 'var(--background-color)' }}>
@@ -342,19 +385,6 @@ function AppShell({
         ) : (
           // Topic Analytics (eager — data already available)
           <>
-            {/* ── Research Framing Strip ── */}
-            <div style={{ background: 'linear-gradient(135deg, rgba(79,70,229,0.06) 0%, rgba(14,165,233,0.06) 100%)', border: '1px solid rgba(79,70,229,0.18)', borderRadius: 'var(--radius-lg)', padding: '1.25rem 1.5rem', marginBottom: '1.25rem', display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
-              <p style={{ margin: 0, fontSize: '0.95rem', color: 'var(--text-primary)', lineHeight: 1.65 }}>
-                This dashboard presents the findings of a computational analysis of Sri Lanka&apos;s parliamentary Hansard records (2017–2026), spanning the 9th Parliament. Using semantic clustering of over{' '}
-                <strong style={{ color: 'var(--primary-color)' }}>{totalClusteredSpeeches.toLocaleString()} speeches</strong> across{' '}
-                <strong style={{ color: 'var(--primary-color)' }}>Sinhala, Tamil, and English</strong>, the analysis identifies{' '}
-                <strong style={{ color: 'var(--primary-color)' }}>{macroTopicCount} macro-level discourse themes</strong> and tracks how parliamentary attention has shifted in response to major national events.
-              </p>
-              <p style={{ margin: 0, fontSize: '0.82rem', color: 'var(--text-secondary)', lineHeight: 1.5 }}>
-                Topics were identified through computational analysis of speech transcripts. Cluster labels reflect the dominant semantic content of each group. This dashboard is a research supplement and should be read alongside the full methodology paper.
-              </p>
-            </div>
-
             {/* ── Corpus Overview + Topic Filter ── */}
             <div className="flex-between topic-overview-card" style={{ background: 'var(--surface-color)', padding: '1rem 1.25rem', borderRadius: 'var(--radius-lg)', boxShadow: 'var(--shadow-sm)' }}>
               <div className="overview-stats-row" style={{ display: 'flex', alignItems: 'center', gap: '1.5rem', flexWrap: 'wrap' }}>
@@ -380,43 +410,54 @@ function AppShell({
                   <div style={{ fontSize: '0.68rem', color: 'var(--text-secondary)', marginTop: '0.1rem' }}>9th Parliament</div>
                 </div>
               </div>
-              <div>
-                <select value="default" onChange={(e) => toggleTopic(e.target.value)} className="select-input" style={{ marginBottom: '1rem' }}>
-                  <option value="default" disabled>Add Topic to Analysis...</option>
-                  <option value="all">Reset to All Topics (Clear Selection)</option>
-                  {Object.entries(evolutionData.topic_labels).map(([id, label]) => {
-                    const seriesItem = evolutionData.series.find(s => s.mt_id.toString() === id);
-                    const speechCount = seriesItem ? seriesItem.points.reduce((sum, p) => sum + p.count, 0) : 0;
-                    return (
-                      <option key={id} value={id}>MT-{id}: {label.slice(0, 55)}{label.length > 55 ? '...' : ''} ({speechCount.toLocaleString()} speeches)</option>
-                    );
-                  })}
-                </select>
-                {selectedTopics.length > 0 && (
-                  <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem', marginTop: '0.5rem' }}>
-                    {selectedTopics.map(id => {
-                      const seriesItem = evolutionData.series.find(s => s.mt_id.toString() === id);
-                      const rgb = seriesItem?.styles.standard_chart.color_rgba || [0.5, 0.5, 0.5];
-                      const speechCount = seriesItem ? seriesItem.points.reduce((sum, p) => sum + p.count, 0) : 0;
-                      return (
-                        <div key={id} onClick={() => toggleTopic(id)} style={{ padding: '0.25rem 0.75rem', borderRadius: '999px', background: `rgba(${rgb[0]*255},${rgb[1]*255},${rgb[2]*255},0.2)`, border: `1px solid rgba(${rgb[0]*255},${rgb[1]*255},${rgb[2]*255},0.8)`, fontSize: '0.85rem', cursor: 'pointer', display: 'flex', alignItems: 'center', gap: '0.5rem', fontWeight: 500 }}>
-                          MT-{id}
-                          <span style={{ fontSize: '0.72rem', color: 'var(--text-secondary)', fontWeight: 400 }}>{speechCount.toLocaleString()}</span>
-                          <span style={{ fontSize: '1rem', lineHeight: 1 }}>×</span>
-                        </div>
-                      );
-                    })}
-                  </div>
-                )}
-              </div>
             </div>
 
             <div style={{ marginTop: '1.25rem' }}>
-              <Card title="Temporal Evolution of Macro Topics" icon={Activity} className="w-full topic-card-compact">
+              <Card title={chartCardTitle} icon={Activity} className="w-full topic-card-compact">
                 <div style={{ marginBottom: '1rem', color: 'var(--text-secondary)' }}>
-                  <p>This chart traces speech frequency per discourse theme across the parliamentary term. Vertical markers indicate major national events; spikes at these intersections indicate heightened parliamentary attention to the corresponding theme.</p>
+                  <p>{chartCardDescription}</p>
                 </div>
-                <TemporalEvolutionChart data={evolutionData} selectedTopics={selectedTopics} onTopicSelect={toggleTopic} />
+                <TemporalEvolutionChart
+                  data={evolutionData}
+                  selectedTopics={selectedTopics}
+                  onTopicSelect={toggleTopic}
+                  showDots={!isTopSixSelected}
+                  forceLegend={isTopSixSelected}
+                />
+
+                <div style={{ marginTop: '1rem', width: 'min(800px, 100%)', alignSelf: 'flex-start', padding: '1rem 1.25rem', borderRadius: 'var(--radius-lg)', border: '1px solid var(--border-color)', background: 'var(--background-color)', boxSizing: 'border-box' }}>
+                  <div style={{ marginBottom: '0.75rem', color: 'var(--text-secondary)', fontSize: '0.9rem' }}>
+                    Add topic to analysis
+                  </div>
+                  <select value="default" onChange={(e) => toggleTopic(e.target.value)} className="select-input" style={{ marginBottom: '1rem' }}>
+                    <option value="default" disabled>Add Topic to Analysis...</option>
+                    <option value="all">Reset to All Topics (Clear Selection)</option>
+                    <option value="top6">Top 6 Macro-Topic Distribution (Default)</option>
+                    {Object.entries(evolutionData.topic_labels).map(([id, label]) => {
+                      const seriesItem = evolutionData.series.find(s => s.mt_id.toString() === id);
+                      const speechCount = seriesItem ? seriesItem.points.reduce((sum, p) => sum + p.count, 0) : 0;
+                      return (
+                        <option key={id} value={id}>MT-{id}: {label.slice(0, 55)}{label.length > 55 ? '...' : ''} ({speechCount.toLocaleString()} speeches)</option>
+                      );
+                    })}
+                  </select>
+                  {selectedTopics.length > 0 && (
+                    <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem', marginTop: '0.5rem' }}>
+                      {selectedTopics.map(id => {
+                        const seriesItem = evolutionData.series.find(s => s.mt_id.toString() === id);
+                        const rgb = seriesItem?.styles.standard_chart.color_rgba || [0.5, 0.5, 0.5];
+                        const speechCount = seriesItem ? seriesItem.points.reduce((sum, p) => sum + p.count, 0) : 0;
+                        return (
+                          <div key={id} onClick={() => toggleTopic(id)} style={{ padding: '0.25rem 0.75rem', borderRadius: '999px', background: `rgba(${rgb[0]*255},${rgb[1]*255},${rgb[2]*255},0.2)`, border: `1px solid rgba(${rgb[0]*255},${rgb[1]*255},${rgb[2]*255},0.8)`, fontSize: '0.85rem', cursor: 'pointer', display: 'flex', alignItems: 'center', gap: '0.5rem', fontWeight: 500 }}>
+                            MT-{id}
+                            <span style={{ fontSize: '0.72rem', color: 'var(--text-secondary)', fontWeight: 400 }}>{speechCount.toLocaleString()}</span>
+                            <span style={{ fontSize: '1rem', lineHeight: 1 }}>×</span>
+                          </div>
+                        );
+                      })}
+                    </div>
+                  )}
+                </div>
               </Card>
             </div>
 
