@@ -297,24 +297,23 @@ function AppShell({
       {/* Main Content */}
       <main className="dashboard-main" style={{ flex: 1, padding: '2rem 3rem', height: '100vh', overflowY: 'auto' }}>
         <div className="mobile-top-stack">
-          <div className="mobile-brand-hero">
-            <img src="/logo.svg" alt="SL Hansard Dashboard Logo" />
-            <div>
-              <h1>SL Hansard Dashboard</h1>
-              <p>Parliamentary Discourse &amp; Macro-Topic Evolution (2017-2026)</p>
-            </div>
-          </div>
-
           <div className="mobile-topbar">
-            <h1 className="mobile-topbar-title">{tabTitle}</h1>
+            <div className="mobile-topbar-brand">
+              <img src="/logo.svg" alt="SL Hansard Dashboard Logo" />
+              <span>SL Hansard Dashboard</span>
+            </div>
             <button
               className="mobile-menu-toggle"
               onClick={() => setIsMobileMenuOpen(prev => !prev)}
               aria-label="Open navigation menu"
               type="button"
             >
-              <Menu size={20} />
+              <Menu size={24} />
             </button>
+          </div>
+
+          <div className="mobile-brand-hero">
+            <h1 className="mobile-section-title">{tabTitle}</h1>
           </div>
         </div>
 

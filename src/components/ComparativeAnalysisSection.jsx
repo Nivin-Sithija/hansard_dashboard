@@ -124,9 +124,9 @@ function HeatmapView({ speakerTopicMatrix, finalUniqueSpeakers, evolutionData })
   const SPEAKER_LABEL_WIDTH = isMobile ? 122 : 180;
 
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
+    <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem', minWidth: 0 }}>
       {/* Controls */}
-      <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', alignItems: 'flex-end', background: 'var(--surface-color)', padding: '1rem 1.5rem', borderRadius: 'var(--radius-lg)', border: '1px solid var(--border-color)' }}>
+      <div className="heatmap-controls" style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', alignItems: 'flex-end', background: 'var(--surface-color)', padding: '1rem 1.5rem', borderRadius: 'var(--radius-lg)', border: '1px solid var(--border-color)' }}>
         <div style={{ flex: 1, minWidth: 'min(200px, 100%)' }}>
           <div style={{ fontSize: '0.78rem', fontWeight: 600, color: 'var(--text-secondary)', marginBottom: '0.4rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Search Speakers</div>
           <div style={{ position: 'relative' }}>
@@ -146,7 +146,7 @@ function HeatmapView({ speakerTopicMatrix, finalUniqueSpeakers, evolutionData })
             {(isMobile ? [8, 10, 12, 15, 20] : [10, 15, 20, 25, 30]).map(n => <option key={n} value={n}>Top {n}</option>)}
           </select>
         </div>
-        <div style={{ marginLeft: 'auto', fontSize: '0.82rem', color: 'var(--text-secondary)', alignSelf: 'center' }}>
+        <div className="heatmap-controls-info" style={{ marginLeft: 'auto', fontSize: '0.82rem', color: 'var(--text-secondary)', alignSelf: 'center' }}>
           Showing {displayedSpeakers.length} speakers × {visibleTopicIds.length}/{topicIds.length} topics
         </div>
       </div>
@@ -157,7 +157,7 @@ function HeatmapView({ speakerTopicMatrix, finalUniqueSpeakers, evolutionData })
           Each cell shows the number of speeches by that speaker in that topic. Darker = more speeches. Hover for exact value.
           {isMobile ? ' Mobile view shows the most active topic columns.' : ''}
         </p>
-        <div style={{ overflowX: 'auto', overflowY: 'auto', maxHeight: isMobile ? '440px' : '600px' }}>
+        <div style={{ overflowX: 'auto', overflowY: 'auto', maxHeight: isMobile ? '440px' : '600px', width: '100%' }}>
           <div style={{ display: 'inline-block', minWidth: 'max-content' }}>
             {/* Topic header row */}
             <div style={{ display: 'flex', marginBottom: '4px', paddingLeft: `${SPEAKER_LABEL_WIDTH}px`, gap: isMobile ? '2px' : '3px' }}>
@@ -206,7 +206,7 @@ function HeatmapView({ speakerTopicMatrix, finalUniqueSpeakers, evolutionData })
           </div>
         </div>
         {/* Legend */}
-        <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginTop: '1.25rem' }}>
+        <div className="heatmap-legend" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginTop: '1.25rem', flexWrap: 'wrap' }}>
           <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)' }}>0 speeches</span>
           {[0.07, 0.25, 0.43, 0.61, 0.79, 0.95].map(op => (
             <div key={op} style={{ width: `${CELL_SIZE}px`, height: `${CELL_SIZE}px`, borderRadius: '3px', background: `rgba(79,70,229,${op})`, border: '1px solid var(--border-color)' }} />
@@ -452,25 +452,25 @@ function TopicCompareView({ evolutionData, keywordsData }) {
       </div>
 
       {/* Stats row */}
-      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
+      <div className="topic-stats-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
         {[
           { tid: topicA, total: totalA, peak: peakA, color: getRgb(topicA) },
           { tid: topicB, total: totalB, peak: peakB, color: getRgb(topicB) },
         ].map(({ tid, total, peak, color }, idx) => (
-          <div key={tid} style={{ padding: '1.25rem', borderRadius: 'var(--radius-lg)', background: 'var(--surface-color)', border: `1px solid var(--border-color)`, borderLeft: `4px solid ${color}` }}>
+          <div key={tid} className="topic-stat-card" style={{ padding: '1.25rem', borderRadius: 'var(--radius-lg)', background: 'var(--surface-color)', border: `1px solid var(--border-color)`, borderLeft: `4px solid ${color}` }}>
             <div style={{ fontSize: '0.75rem', fontWeight: 700, color: 'var(--text-secondary)', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '0.75rem' }}>
               {idx === 0 ? 'Topic A' : 'Topic B'} — MT-{tid}
             </div>
-            <div style={{ fontSize: '0.9rem', fontWeight: 600, color: 'var(--text-primary)', marginBottom: '0.75rem', lineHeight: 1.3 }}>
+            <div className="topic-stat-label-text" style={{ fontSize: '0.9rem', fontWeight: 600, color: 'var(--text-primary)', marginBottom: '0.75rem', lineHeight: 1.3 }}>
               {evolutionData.topic_labels[tid]}
             </div>
-            <div style={{ display: 'flex', gap: '1.5rem' }}>
+            <div className="topic-stat-numbers" style={{ display: 'flex', gap: '1.5rem' }}>
               <div>
-                <div style={{ fontSize: '1.4rem', fontWeight: 700, color }}>{total.toLocaleString()}</div>
+                <div className="topic-stat-num" style={{ fontSize: '1.4rem', fontWeight: 700, color }}>{total.toLocaleString()}</div>
                 <div style={{ fontSize: '0.72rem', color: 'var(--text-secondary)', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.05em' }}>Total Speeches</div>
               </div>
               <div>
-                <div style={{ fontSize: '1.4rem', fontWeight: 700, color }}>{peak?.year}</div>
+                <div className="topic-stat-num" style={{ fontSize: '1.4rem', fontWeight: 700, color }}>{peak?.year}</div>
                 <div style={{ fontSize: '0.72rem', color: 'var(--text-secondary)', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.05em' }}>Peak Year</div>
               </div>
             </div>
@@ -594,12 +594,13 @@ export default function ComparativeAnalysisSection({ evolutionData, keywordsData
   ];
 
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
+    <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem', minWidth: 0 }}>
       {/* Sub-tab nav */}
-      <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
+      <div className="comparative-subtab-nav" style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
         {SUB_TABS.map(({ id, label, icon }) => (
           <button
             key={id}
+            className="comparative-subtab-btn"
             onClick={() => setSubTab(id)}
             style={{
               display: 'flex', alignItems: 'center', gap: '0.5rem',
