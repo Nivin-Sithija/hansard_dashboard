@@ -399,6 +399,22 @@ h1, h2, h3, h4, h5, h6 {
     right: 0.9rem;
   }
 
+  .research-framing-strip {
+    padding: 0.9rem 1rem !important;
+    margin-bottom: 1rem !important;
+    text-align: center;
+  }
+
+  .research-framing-main {
+    font-size: 0.8rem !important;
+    line-height: 1.55 !important;
+  }
+
+  .research-framing-note {
+    font-size: 0.7rem !important;
+    line-height: 1.45 !important;
+  }
+
   .topic-overview-card {
     padding: 0.8rem !important;
     gap: 0.9rem !important;
@@ -407,10 +423,14 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .overview-stats-row {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
     width: 100%;
-    flex-wrap: nowrap !important;
-    justify-content: space-between;
-    gap: 0.55rem !important;
+    gap: 0.65rem !important;
+  }
+
+  .overview-stat-divider {
+    display: none !important;
   }
 
   .overview-stat-value {
@@ -420,11 +440,6 @@ h1, h2, h3, h4, h5, h6 {
   .overview-stat-label {
     font-size: 0.62rem !important;
     letter-spacing: 0.035em !important;
-  }
-
-  .overview-stat-divider {
-    height: 28px !important;
-    opacity: 0.9;
   }
 
   .topic-card-compact {
@@ -502,22 +517,24 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .sessions-overview-banner {
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center;
     padding: 0.9rem 1rem !important;
-    align-items: flex-start !important;
+    gap: 0.65rem !important;
   }
 
   .sessions-overview-metrics {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
     width: 100%;
     padding-right: 0 !important;
-    gap: 0.9rem !important;
-    justify-content: space-between;
-    flex-wrap: wrap !important;
+    gap: 0.6rem !important;
   }
 
   .sessions-overview-metric {
-    flex: 1 1 calc(50% - 0.5rem);
+    text-align: center !important;
     min-width: 0;
-    text-align: left !important;
   }
 
   .sessions-overview-value {
@@ -530,14 +547,17 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .speaker-overview-banner {
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center;
     padding: 0.9rem 1rem !important;
-    align-items: flex-start !important;
-    gap: 0.8rem !important;
-    flex-wrap: wrap !important;
+    gap: 0.65rem !important;
+    flex-wrap: nowrap !important;
   }
 
   .speaker-overview-copy {
     width: 100%;
+    text-align: center;
   }
 
   .speaker-overview-copy h3 {
@@ -552,14 +572,15 @@ h1, h2, h3, h4, h5, h6 {
   .speaker-overview-metrics {
     width: 100%;
     padding-right: 0 !important;
-    gap: 0.9rem !important;
-    justify-content: space-between;
+    gap: 1.5rem !important;
+    justify-content: center !important;
     flex-wrap: nowrap !important;
   }
 
   .speaker-overview-metric {
-    flex: 1 1 0;
+    flex: 0 0 auto;
     min-width: 0;
+    text-align: center;
   }
 
   .speaker-overview-value {
@@ -569,6 +590,23 @@ h1, h2, h3, h4, h5, h6 {
   .speaker-overview-label {
     font-size: 0.62rem !important;
     letter-spacing: 0.03em !important;
+  }
+
+  .wordcloud-overview-banner {
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center;
+    padding: 0.9rem 1rem !important;
+    gap: 0.65rem !important;
+  }
+
+  .wordcloud-overview-metrics {
+    display: flex;
+    justify-content: center !important;
+    gap: 1rem !important;
+    padding-right: 0 !important;
+    width: 100%;
+    flex-wrap: nowrap !important;
   }
 
   .speaker-stat-cards {
@@ -603,8 +641,31 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 0.7rem !important;
   }
 
+  .speaker-picker-panel {
+    flex-direction: column !important;
+    align-items: stretch !important;
+    padding: 0.85rem 0.9rem !important;
+    gap: 0.5rem !important;
+  }
+
+  .speaker-picker-vs {
+    text-align: center;
+    justify-content: center;
+    padding-bottom: 0 !important;
+    font-size: 0.78rem !important;
+    color: var(--text-secondary);
+    font-weight: 700;
+    letter-spacing: 0.1em;
+  }
+
+  .speaker-year-filter {
+    min-width: 0 !important;
+    width: 100%;
+  }
+
   .comparative-subtab-nav {
     gap: 0.4rem !important;
+    justify-content: center;
   }
 
   .comparative-subtab-btn {
@@ -616,6 +677,11 @@ h1, h2, h3, h4, h5, h6 {
   .comparative-subtab-btn svg {
     width: 14px !important;
     height: 14px !important;
+  }
+
+  .heatmap-card {
+    overflow: hidden;
+    min-width: 0;
   }
 
   .heatmap-controls {
@@ -746,10 +812,11 @@ h1, h2, h3, h4, h5, h6 {
 
   .sessions-overview-banner {
     padding: 0.75rem 0.8rem !important;
+    gap: 0.5rem !important;
   }
 
   .sessions-overview-metrics {
-    gap: 0.65rem !important;
+    gap: 0.5rem !important;
   }
 
   .sessions-overview-value {

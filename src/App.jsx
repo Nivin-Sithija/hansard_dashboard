@@ -298,7 +298,7 @@ function AppShell({
       <main className="dashboard-main" style={{ flex: 1, padding: '2rem 3rem', height: '100vh', overflowY: 'auto' }}>
         <div className="mobile-top-stack">
           <div className="mobile-topbar">
-            <div className="mobile-topbar-brand">
+            <div className="mobile-topbar-brand" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} style={{ cursor: 'pointer' }}>
               <img src="/logo.svg" alt="SL Hansard Dashboard Logo" />
               <span>SL Hansard Dashboard</span>
             </div>
@@ -342,14 +342,14 @@ function AppShell({
           // Topic Analytics (eager — data already available)
           <>
             {/* ── Research Framing Strip ── */}
-            <div style={{ background: 'linear-gradient(135deg, rgba(79,70,229,0.06) 0%, rgba(14,165,233,0.06) 100%)', border: '1px solid rgba(79,70,229,0.18)', borderRadius: 'var(--radius-lg)', padding: '1.25rem 1.5rem', marginBottom: '1.25rem', display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
-              <p style={{ margin: 0, fontSize: '0.95rem', color: 'var(--text-primary)', lineHeight: 1.65 }}>
+            <div className="research-framing-strip" style={{ background: 'var(--surface-color)', border: '1px solid var(--border-color)', borderRadius: 'var(--radius-lg)', padding: '1.25rem 1.5rem', marginBottom: '1.25rem', display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+              <p className="research-framing-main" style={{ margin: 0, fontSize: '0.95rem', color: 'var(--text-primary)', lineHeight: 1.65 }}>
                 This dashboard presents the findings of a computational analysis of Sri Lanka&apos;s parliamentary Hansard records (2017–2026), spanning the 9th Parliament. Using semantic clustering of over{' '}
                 <strong style={{ color: 'var(--primary-color)' }}>{totalClusteredSpeeches.toLocaleString()} speeches</strong> across{' '}
                 <strong style={{ color: 'var(--primary-color)' }}>Sinhala, Tamil, and English</strong>, the analysis identifies{' '}
                 <strong style={{ color: 'var(--primary-color)' }}>{macroTopicCount} macro-level discourse themes</strong> and tracks how parliamentary attention has shifted in response to major national events.
               </p>
-              <p style={{ margin: 0, fontSize: '0.82rem', color: 'var(--text-secondary)', lineHeight: 1.5 }}>
+              <p className="research-framing-note" style={{ margin: 0, fontSize: '0.82rem', color: 'var(--text-secondary)', lineHeight: 1.5 }}>
                 Topics were identified through computational analysis of speech transcripts. Cluster labels reflect the dominant semantic content of each group. This dashboard is a research supplement and should be read alongside the full methodology paper.
               </p>
             </div>
