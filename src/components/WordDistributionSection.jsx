@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from 'react';
+import React, { useMemo, useState, useEffect } from 'react';
 import {
   BarChart,
   Bar,
@@ -31,6 +31,13 @@ const CustomBarTooltip = ({ active, payload }) => {
 
 export const WordDistributionSection = ({ data, selectedTopicId, evolutionData, selectedTopicsArray = [] }) => {
   const [metric, setMetric] = useState('count'); // 'count' or 'tfidf'
+  const [isMobile, setIsMobile] = useState(() => typeof window !== 'undefined' && window.innerWidth <= 768);
+
+  useEffect(() => {
+    const onResize = () => setIsMobile(window.innerWidth <= 768);
+    window.addEventListener('resize', onResize);
+    return () => window.removeEventListener('resize', onResize);
+  }, []);
 
   const chartData = useMemo(() => {
     if (selectedTopicId === 'all') return [];
@@ -160,7 +167,7 @@ export const WordDistributionSection = ({ data, selectedTopicId, evolutionData, 
           <BarChart
             layout="vertical"
             data={chartData}
-            margin={{ top: 10, right: 30, left: 10, bottom: 20 }}
+            margin={{ top: 10, right: isMobile ? 8 : 30, left: 10, bottom: 20 }}
           >
             <CartesianGrid strokeDasharray="3 3" horizontal={true} vertical={false} stroke="#e2e8f0" />
             <XAxis
@@ -170,13 +177,13 @@ export const WordDistributionSection = ({ data, selectedTopicId, evolutionData, 
               axisLine={{ stroke: '#e2e8f0' }}
               label={{ value: metric === 'count' ? 'Occurrences' : 'Specificity Score', position: 'insideBottomRight', offset: -10, fill: '#94a3b8', fontSize: 11 }}
             />
-            <YAxis 
-              dataKey="word" 
-              type="category" 
-              tick={{ fill: '#475569', fontSize: 12 }}
+            <YAxis
+              dataKey="word"
+              type="category"
+              tick={{ fill: '#475569', fontSize: isMobile ? 10 : 12 }}
               tickLine={false}
               axisLine={{ stroke: '#e2e8f0' }}
-              width={160}
+              width={isMobile ? 85 : 160}
             />
             <Tooltip cursor={{ fill: 'rgba(226, 232, 240, 0.4)' }} content={<CustomBarTooltip />} />
             <Bar dataKey="score" radius={[0, 4, 4, 0]}>

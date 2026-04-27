@@ -340,24 +340,23 @@ function AppShell({
       {/* Main Content */}
       <main className="dashboard-main" style={{ flex: 1, padding: '2rem 3rem', height: '100vh', overflowY: 'auto' }}>
         <div className="mobile-top-stack">
-          <div className="mobile-brand-hero">
-            <img src="/logo.svg" alt="SL Hansard Dashboard Logo" />
-            <div>
-              <h1>SL Hansard Dashboard</h1>
-              <p>Parliamentary Discourse &amp; Macro-Topic Evolution (2017-2026)</p>
-            </div>
-          </div>
-
           <div className="mobile-topbar">
-            <h1 className="mobile-topbar-title">{tabTitle}</h1>
+            <div className="mobile-topbar-brand" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} style={{ cursor: 'pointer' }}>
+              <img src="/logo.svg" alt="SL Hansard Dashboard Logo" />
+              <span>SL Hansard Dashboard</span>
+            </div>
             <button
               className="mobile-menu-toggle"
               onClick={() => setIsMobileMenuOpen(prev => !prev)}
               aria-label="Open navigation menu"
               type="button"
             >
-              <Menu size={20} />
+              <Menu size={24} />
             </button>
+          </div>
+
+          <div className="mobile-brand-hero">
+            <h1 className="mobile-section-title">{tabTitle}</h1>
           </div>
         </div>
 
@@ -385,6 +384,19 @@ function AppShell({
         ) : (
           // Topic Analytics (eager — data already available)
           <>
+            {/* ── Research Framing Strip ── */}
+            <div className="research-framing-strip" style={{ background: 'var(--surface-color)', border: '1px solid var(--border-color)', borderRadius: 'var(--radius-lg)', padding: '1.25rem 1.5rem', marginBottom: '1.25rem', display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+              <p className="research-framing-main" style={{ margin: 0, fontSize: '0.95rem', color: 'var(--text-primary)', lineHeight: 1.65 }}>
+                This dashboard presents the findings of a computational analysis of Sri Lanka&apos;s parliamentary Hansard records (2017–2026), spanning the 9th Parliament. Using semantic clustering of over{' '}
+                <strong style={{ color: 'var(--primary-color)' }}>{totalClusteredSpeeches.toLocaleString()} speeches</strong> across{' '}
+                <strong style={{ color: 'var(--primary-color)' }}>Sinhala, Tamil, and English</strong>, the analysis identifies{' '}
+                <strong style={{ color: 'var(--primary-color)' }}>{macroTopicCount} macro-level discourse themes</strong> and tracks how parliamentary attention has shifted in response to major national events.
+              </p>
+              <p className="research-framing-note" style={{ margin: 0, fontSize: '0.82rem', color: 'var(--text-secondary)', lineHeight: 1.5 }}>
+                Topics were identified through computational analysis of speech transcripts. Cluster labels reflect the dominant semantic content of each group. This dashboard is a research supplement and should be read alongside the full methodology paper.
+              </p>
+            </div>
+
             {/* ── Corpus Overview + Topic Filter ── */}
             <div className="flex-between topic-overview-card" style={{ background: 'var(--surface-color)', padding: '1rem 1.25rem', borderRadius: 'var(--radius-lg)', boxShadow: 'var(--shadow-sm)' }}>
               <div className="overview-stats-row" style={{ display: 'flex', alignItems: 'center', gap: '1.5rem', flexWrap: 'wrap' }}>

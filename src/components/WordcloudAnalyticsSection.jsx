@@ -227,20 +227,20 @@ function WordcloudInner({ keywordsData, evolutionData, selectedTopic, setSelecte
     <div style={{ display: 'flex', flexDirection: 'column', gap: '2rem' }}>
 
       {/* Overview Banner */}
-      <div style={{ background: 'var(--surface-color)', padding: '1.25rem 2rem', borderRadius: 'var(--radius-lg)', border: '1px solid var(--border-color)', display: 'flex', justifyContent: 'space-between', alignItems: 'center', boxShadow: 'var(--shadow-sm)', flexWrap: 'wrap', gap: '1rem' }}>
+      <div className="wordcloud-overview-banner" style={{ background: 'var(--surface-color)', padding: '1.25rem 2rem', borderRadius: 'var(--radius-lg)', border: '1px solid var(--border-color)', display: 'flex', justifyContent: 'space-between', alignItems: 'center', boxShadow: 'var(--shadow-sm)', flexWrap: 'wrap', gap: '1rem' }}>
         <div>
           <h3 style={{ margin: '0 0 0.25rem 0', color: 'var(--text-primary)', fontSize: '1.1rem' }}>Word Cloud Analytics</h3>
           <p style={{ margin: 0, color: 'var(--text-secondary)', fontSize: '0.85rem' }}>Explore parliamentary vocabulary by year and topic. Top {MAX_WORDS} terms shown.</p>
         </div>
         {stats && (
-          <div style={{ display: 'flex', gap: '2.5rem', paddingRight: '1rem' }}>
+          <div className="wordcloud-overview-metrics" style={{ display: 'flex', gap: '2.5rem', paddingRight: '1rem' }}>
             {[
               { value: stats.uniqueWords, label: 'Unique Terms' },
               { value: stats.total.toLocaleString(), label: 'Total Mentions' },
               { value: stats.topWord, label: `Top Term (${stats.topCount?.toLocaleString()}×)`, small: true },
             ].map(({ value, label, small }) => (
               <div key={label} style={{ textAlign: 'center' }}>
-                <div style={{ fontSize: 'clamp(1.05rem, 3.8vw, 1.4rem)', fontWeight: 700, color: accentColor, ...(small ? { maxWidth: '180px', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' } : {}) }}>{value}</div>
+                <div style={{ fontSize: 'clamp(1.05rem, 3.8vw, 1.4rem)', fontWeight: 700, color: accentColor, ...(small ? { maxWidth: '90px', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' } : {}) }}>{value}</div>
                 <div style={{ fontSize: '0.72rem', textTransform: 'uppercase', color: 'var(--text-secondary)', fontWeight: 600, letterSpacing: '0.05em' }}>{label}</div>
               </div>
             ))}

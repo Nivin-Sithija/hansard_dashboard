@@ -66,12 +66,12 @@ function SpeakerPicker({ label, value, onChange, speakers, exclude }) {
 
 // ── Heatmap View ──
 function HeatmapView({ speakerTopicMatrix, finalUniqueSpeakers, evolutionData }) {
-  const [isMobile, setIsMobile] = useState(() => (typeof window !== 'undefined' ? window.innerWidth <= 768 : false));
-  const [topN, setTopN] = useState(() => (typeof window !== 'undefined' && window.innerWidth <= 768 ? 12 : 20));
+  const [isMobile, setIsMobile] = useState(() => (typeof window !== 'undefined' ? window.innerWidth <= 1024 : false));
+  const [topN, setTopN] = useState(() => (typeof window !== 'undefined' && window.innerWidth <= 1024 ? 12 : 20));
   const [searchQuery, setSearchQuery] = useState('');
 
   useEffect(() => {
-    const onResize = () => setIsMobile(window.innerWidth <= 768);
+    const onResize = () => setIsMobile(window.innerWidth <= 1024);
     window.addEventListener('resize', onResize);
     return () => window.removeEventListener('resize', onResize);
   }, []);
@@ -124,9 +124,9 @@ function HeatmapView({ speakerTopicMatrix, finalUniqueSpeakers, evolutionData })
   const SPEAKER_LABEL_WIDTH = isMobile ? 122 : 180;
 
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
+    <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem', minWidth: 0, maxWidth: '100%' }}>
       {/* Controls */}
-      <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', alignItems: 'flex-end', background: 'var(--surface-color)', padding: '1rem 1.5rem', borderRadius: 'var(--radius-lg)', border: '1px solid var(--border-color)' }}>
+      <div className="heatmap-controls" style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', alignItems: 'flex-end', background: 'var(--surface-color)', padding: '1rem 1.5rem', borderRadius: 'var(--radius-lg)', border: '1px solid var(--border-color)' }}>
         <div style={{ flex: 1, minWidth: 'min(200px, 100%)' }}>
           <div style={{ fontSize: '0.78rem', fontWeight: 600, color: 'var(--text-secondary)', marginBottom: '0.4rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Search Speakers</div>
           <div style={{ position: 'relative' }}>
@@ -146,18 +146,18 @@ function HeatmapView({ speakerTopicMatrix, finalUniqueSpeakers, evolutionData })
             {(isMobile ? [8, 10, 12, 15, 20] : [10, 15, 20, 25, 30]).map(n => <option key={n} value={n}>Top {n}</option>)}
           </select>
         </div>
-        <div style={{ marginLeft: 'auto', fontSize: '0.82rem', color: 'var(--text-secondary)', alignSelf: 'center' }}>
+        <div className="heatmap-controls-info" style={{ marginLeft: 'auto', fontSize: '0.82rem', color: 'var(--text-secondary)', alignSelf: 'center' }}>
           Showing {displayedSpeakers.length} speakers × {visibleTopicIds.length}/{topicIds.length} topics
         </div>
       </div>
 
       {/* Heatmap Grid */}
-      <Card title="Speaker × Topic Heatmap" icon={Grid3x3}>
+      <Card title="Speaker × Topic Heatmap" icon={Grid3x3} className="heatmap-card">
         <p style={{ margin: '0 0 1rem', color: 'var(--text-secondary)', fontSize: '0.82rem' }}>
           Each cell shows the number of speeches by that speaker in that topic. Darker = more speeches. Hover for exact value.
           {isMobile ? ' Mobile view shows the most active topic columns.' : ''}
         </p>
-        <div style={{ overflowX: 'auto', overflowY: 'auto', maxHeight: isMobile ? '440px' : '600px' }}>
+        <div style={{ overflowX: 'auto', overflowY: 'auto', maxHeight: isMobile ? '440px' : '600px', width: '100%' }}>
           <div style={{ display: 'inline-block', minWidth: 'max-content' }}>
             {/* Topic header row */}
             <div style={{ display: 'flex', marginBottom: '4px', paddingLeft: `${SPEAKER_LABEL_WIDTH}px`, gap: isMobile ? '2px' : '3px' }}>
@@ -206,7 +206,7 @@ function HeatmapView({ speakerTopicMatrix, finalUniqueSpeakers, evolutionData })
           </div>
         </div>
         {/* Legend */}
-        <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginTop: '1.25rem' }}>
+        <div className="heatmap-legend" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginTop: '1.25rem', flexWrap: 'wrap' }}>
           <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)' }}>0 speeches</span>
           {[0.07, 0.25, 0.43, 0.61, 0.79, 0.95].map(op => (
             <div key={op} style={{ width: `${CELL_SIZE}px`, height: `${CELL_SIZE}px`, borderRadius: '3px', background: `rgba(79,70,229,${op})`, border: '1px solid var(--border-color)' }} />
@@ -223,6 +223,12 @@ function SpeakerCompareView({ speakerTopicMatrix, speakerTopicMatrixByYear, avai
   const [speakerA, setSpeakerA] = useState('');
   const [speakerB, setSpeakerB] = useState('');
   const [selectedYear, setSelectedYear] = useState('All');
+  const [isMobile, setIsMobile] = useState(() => typeof window !== 'undefined' && window.innerWidth <= 1024);
+  useEffect(() => {
+    const onResize = () => setIsMobile(window.innerWidth <= 1024);
+    window.addEventListener('resize', onResize);
+    return () => window.removeEventListener('resize', onResize);
+  }, []);
 
   const activeMatrix = useMemo(() => {
     if (selectedYear === 'All') return speakerTopicMatrix;
@@ -292,11 +298,11 @@ function SpeakerCompareView({ speakerTopicMatrix, speakerTopicMatrixByYear, avai
   return (
     <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
       {/* Picker */}
-      <div style={{ background: 'var(--surface-color)', padding: '1.25rem 1.5rem', borderRadius: 'var(--radius-lg)', border: '1px solid var(--border-color)', display: 'flex', gap: '1.5rem', flexWrap: 'wrap', alignItems: 'flex-end' }}>
+      <div className="speaker-picker-panel" style={{ background: 'var(--surface-color)', padding: '1.25rem 1.5rem', borderRadius: 'var(--radius-lg)', border: '1px solid var(--border-color)', display: 'flex', gap: '1.5rem', flexWrap: 'wrap', alignItems: 'flex-end' }}>
         <SpeakerPicker label="Speaker A" value={speakerA} onChange={setSpeakerA} speakers={finalUniqueSpeakers} exclude={speakerB} />
-        <div style={{ display: 'flex', alignItems: 'center', paddingBottom: '0.5rem', color: 'var(--text-secondary)', fontWeight: 700, fontSize: '1.2rem' }}>VS</div>
+        <div className="speaker-picker-vs" style={{ display: 'flex', alignItems: 'center', paddingBottom: '0.5rem', color: 'var(--text-secondary)', fontWeight: 700, fontSize: '1.2rem' }}>VS</div>
         <SpeakerPicker label="Speaker B" value={speakerB} onChange={setSpeakerB} speakers={finalUniqueSpeakers} exclude={speakerA} />
-        <div style={{ minWidth: 'min(180px, 100%)' }}>
+        <div className="speaker-year-filter" style={{ minWidth: 'min(180px, 100%)' }}>
           <div style={{ fontSize: '0.78rem', fontWeight: 600, color: 'var(--text-secondary)', marginBottom: '0.4rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Year Filter</div>
           <select value={selectedYear} onChange={e => setSelectedYear(e.target.value)} className="select-input" style={{ minWidth: 'min(180px, 100%)' }}>
             <option value="All">All Years</option>
@@ -355,13 +361,21 @@ function SpeakerCompareView({ speakerTopicMatrix, speakerTopicMatrixByYear, avai
 
           {/* Topic comparison chart */}
           <Card title="Topic Engagement Comparison (Top 12 Shared/Active Topics)" icon={BarChart2}>
-            <div style={{ height: '380px' }}>
+            <div style={{ height: isMobile ? '480px' : '380px' }}>
               <ResponsiveContainer width="100%" height="100%">
-                <BarChart data={comparisonData.topTopics} layout="vertical" margin={{ top: 5, right: 20, left: 20, bottom: 5 }}>
-                  <XAxis type="number" axisLine={false} tickLine={false} tick={{ fill: 'var(--text-secondary)', fontSize: 11 }} />
-                  <YAxis dataKey="topic" type="category" axisLine={false} tickLine={false} tick={{ fill: 'var(--text-secondary)', fontSize: 11 }} width={170} />
+                <BarChart data={comparisonData.topTopics} layout="vertical" margin={{ top: 5, right: isMobile ? 8 : 20, left: isMobile ? 4 : 20, bottom: 5 }}>
+                  <XAxis type="number" axisLine={false} tickLine={false} tick={{ fill: 'var(--text-secondary)', fontSize: isMobile ? 9 : 11 }} />
+                  <YAxis
+                    dataKey="topic"
+                    type="category"
+                    axisLine={false}
+                    tickLine={false}
+                    tick={{ fill: 'var(--text-secondary)', fontSize: isMobile ? 9 : 11 }}
+                    width={isMobile ? 110 : 170}
+                    tickFormatter={val => isMobile && val.length > 22 ? val.slice(0, 22) + '…' : val}
+                  />
                   <Tooltip content={comparisonTooltip} />
-                  <Legend wrapperStyle={{ fontSize: '0.82rem', paddingTop: '0.5rem' }} />
+                  <Legend wrapperStyle={{ fontSize: isMobile ? '0.72rem' : '0.82rem', paddingTop: '0.5rem' }} />
                   <Bar dataKey={speakerA} name={speakerA} fill={COLOR_A} radius={[0, 3, 3, 0]} />
                   <Bar dataKey={speakerB} name={speakerB} fill={COLOR_B} radius={[0, 3, 3, 0]} />
                 </BarChart>
@@ -452,25 +466,25 @@ function TopicCompareView({ evolutionData, keywordsData }) {
       </div>
 
       {/* Stats row */}
-      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
+      <div className="topic-stats-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
         {[
           { tid: topicA, total: totalA, peak: peakA, color: getRgb(topicA) },
           { tid: topicB, total: totalB, peak: peakB, color: getRgb(topicB) },
         ].map(({ tid, total, peak, color }, idx) => (
-          <div key={tid} style={{ padding: '1.25rem', borderRadius: 'var(--radius-lg)', background: 'var(--surface-color)', border: `1px solid var(--border-color)`, borderLeft: `4px solid ${color}` }}>
+          <div key={tid} className="topic-stat-card" style={{ padding: '1.25rem', borderRadius: 'var(--radius-lg)', background: 'var(--surface-color)', border: `1px solid var(--border-color)`, borderLeft: `4px solid ${color}` }}>
             <div style={{ fontSize: '0.75rem', fontWeight: 700, color: 'var(--text-secondary)', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '0.75rem' }}>
               {idx === 0 ? 'Topic A' : 'Topic B'} — MT-{tid}
             </div>
-            <div style={{ fontSize: '0.9rem', fontWeight: 600, color: 'var(--text-primary)', marginBottom: '0.75rem', lineHeight: 1.3 }}>
+            <div className="topic-stat-label-text" style={{ fontSize: '0.9rem', fontWeight: 600, color: 'var(--text-primary)', marginBottom: '0.75rem', lineHeight: 1.3 }}>
               {evolutionData.topic_labels[tid]}
             </div>
-            <div style={{ display: 'flex', gap: '1.5rem' }}>
+            <div className="topic-stat-numbers" style={{ display: 'flex', gap: '1.5rem' }}>
               <div>
-                <div style={{ fontSize: '1.4rem', fontWeight: 700, color }}>{total.toLocaleString()}</div>
+                <div className="topic-stat-num" style={{ fontSize: '1.4rem', fontWeight: 700, color }}>{total.toLocaleString()}</div>
                 <div style={{ fontSize: '0.72rem', color: 'var(--text-secondary)', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.05em' }}>Total Speeches</div>
               </div>
               <div>
-                <div style={{ fontSize: '1.4rem', fontWeight: 700, color }}>{peak?.year}</div>
+                <div className="topic-stat-num" style={{ fontSize: '1.4rem', fontWeight: 700, color }}>{peak?.year}</div>
                 <div style={{ fontSize: '0.72rem', color: 'var(--text-secondary)', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.05em' }}>Peak Year</div>
               </div>
             </div>
@@ -594,12 +608,13 @@ export default function ComparativeAnalysisSection({ evolutionData, keywordsData
   ];
 
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
+    <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem', minWidth: 0 }}>
       {/* Sub-tab nav */}
-      <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
+      <div className="comparative-subtab-nav" style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
         {SUB_TABS.map(({ id, label, icon }) => (
           <button
             key={id}
+            className="comparative-subtab-btn"
             onClick={() => setSubTab(id)}
             style={{
               display: 'flex', alignItems: 'center', gap: '0.5rem',
