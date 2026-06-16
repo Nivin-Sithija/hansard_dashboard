@@ -1,40 +1,101 @@
 [
   {
     "name": "ගරු සජිත් ප්‍රේමදාස",
-    "total_speeches": 429,
+    "total_speeches": 442,
     "aliases": [
-      "Hon. Sajith Premadasa"
+      "Hon. Sajith Premadasa",
+      "සජිත් ප්‍රේමදාස මහතා"
+    ]
+  },
+  {
+    "name": "ගරු ලක්ෂ්මන් කිරිඇල්ල",
+    "total_speeches": 290,
+    "aliases": [
+      "ගරු (නීතිඥ) ලක්ෂ්මන් කිරිඇල්ල මහතා"
     ]
   },
   {
     "name": "ගරු දිනේශ් ගුණවර්ධන මහතා",
     "total_speeches": 257,
     "aliases": [
-      "ගරු දිෙන්ෂ් ගුණවර්ධන මහතා",
       "Hon. Dinesh Gunawardena",
       "ගරු දිනේෂ් ගුණර්වධන මහතා",
+      "ගරු දිෙන්ෂ් ගුණවර්ධන මහතා",
       "දිනේෂ් ගුණවර්ධන"
     ]
   },
   {
-    "name": "ගරු ලක්ෂ්මන් කිරිඇල්ල",
-    "total_speeches": 248,
-    "aliases": []
+    "name": "ගරු චමින්ද විජේසිරි මහතා",
+    "total_speeches": 220,
+    "aliases": [
+      "Chaminda Wijesiri",
+      "ගරු චමින්ද විෙජ්සිරි මහතා",
+      "චමින්ද විජේසිරි"
+    ]
   },
   {
-    "name": "ගරු අනුර දිසානායක",
-    "total_speeches": 178,
-    "aliases": []
+    "name": "(ආචාර්ය) බන්දුල ගුණවර්ධන මහතා",
+    "total_speeches": 218,
+    "aliases": [
+      "(Dr.) Bandula Gunawardane",
+      "ගරු බන්දුල ගුණවර්ධන"
+    ]
   },
   {
-    "name": "ගරු චමින්ද විෙජ්සිරි මහතා",
-    "total_speeches": 171,
-    "aliases": []
+    "name": "ගරු අනුර කුමාර දිසානායක මහතා",
+    "total_speeches": 205,
+    "aliases": [
+      "Anura Dissanayake",
+      "Hon. Anura Kumara Dissanayake",
+      "අනුර කුමාර දිසානායක",
+      "ගරු අනුර දිසානායක"
+    ]
+  },
+  {
+    "name": "ගරු (ආචාර්ය) සුසිල් ප්‍රේමජයන්ත",
+    "total_speeches": 199,
+    "aliases": [
+      "ගරු ඒ. ඩී. සුසිල් ප්‍රේමජයන්ත මහතා",
+      "ගරු නීතිඥ (ආචාර්ය) සුසිල් ප්‍රේමජයන්ත මහතා",
+      "ගරු සුසිල් ප්‍රේමජයන්ත"
+    ]
+  },
+  {
+    "name": "ගරු හේෂා විතානගේ",
+    "total_speeches": 190,
+    "aliases": [
+      "Heshan Withanage",
+      "ගරු හේෂා විතානගේ අංකුඹුර ආරච්චි මහතා",
+      "ගරු හේෂාන් විතානගේ මහතා",
+      "හේෂාන් විතානගේ"
+    ]
   },
   {
     "name": "ගරු දයාසිරි ජයසේකර",
-    "total_speeches": 155,
-    "aliases": []
+    "total_speeches": 176,
+    "aliases": [
+      "ගරු නීතිඥ දයාසිරි ජයසේකර මහතා"
+    ]
+  },
+  {
+    "name": "ගරු (ආචාර්ය) හර්ෂ ද සිල්වා මහතා",
+    "total_speeches": 167,
+    "aliases": [
+      "(ආචාර්ය) හර්ෂ ද සිල්වා",
+      "Harsha De Silva",
+      "The Hon. (Dr.) Harsha De Silva",
+      "ගරු (ආචාර්‌ය) හර්ෂ ද සිල්වා මහතා",
+      "ගරු (ණචාර්ය) හර්ෂ ද සල්වා මහතා",
+      "හර්ෂ ද සිල්වා"
+    ]
+  },
+  {
+    "name": "ගරු බුද්ධික පතිරණ මහතා",
+    "total_speeches": 157,
+    "aliases": [
+      "Buddhika Pathirana",
+      "බුද්ධික පතිරණ"
+    ]
   },
   {
     "name": "ගරු සී. බී. රත්නායක මහතා",
@@ -42,16 +103,20 @@
     "aliases": []
   },
   {
-    "name": "(ආචාර්ය) බන්දුල ගුණවර්ධන මහතා",
-    "total_speeches": 150,
+    "name": "ගරු රනිල් වික්‍රමසිංහ මහතා",
+    "total_speeches": 148,
     "aliases": [
-      "(Dr.) Bandula Gunawardane"
+      "Hon. Ranil Wickremesinghe",
+      "ගරු ණනිල් වික්‍රමසසහ මහතා",
+      "රනිල් වික්‍රමසිංහ"
     ]
   },
   {
-    "name": "ගරු හේෂා විතානගේ",
-    "total_speeches": 143,
-    "aliases": []
+    "name": "ගරු නලින් බණ්ඩාර ජයමහා මහතා",
+    "total_speeches": 140,
+    "aliases": [
+      "නලින් බණ්ඩාර ජයමහ"
+    ]
   },
   {
     "name": "ගරු මහින්ද අමරවීර",
@@ -59,33 +124,28 @@
     "aliases": []
   },
   {
-    "name": "එස්. එම්. මරික්කාර් මහතා",
+    "name": "ගරු එස්. එම්. මරික්කාර් මහතා",
+    "total_speeches": 132,
+    "aliases": [
+      "S. M. Marikkar",
+      "එස්. එම්. මරික්කාර් මහතා"
+    ]
+  },
+  {
+    "name": "ගරු (වෛද්‍ය) නලින්ද ජයතිස්ස මහතා",
     "total_speeches": 130,
-    "aliases": []
-  },
-  {
-    "name": "ගරු බුද්ධික පතිරණ මහතා",
-    "total_speeches": 129,
     "aliases": [
-      "Buddhika Pathirana"
+      "ආචාර්ය නලින්ද ජයතිස්ස",
+      "නලින්ද ජයතිස්ස මහතා"
     ]
   },
   {
-    "name": "ගරු රනිල් වික්‍රමසිංහ මහතා",
-    "total_speeches": 128,
+    "name": "ගරු ඉරාන් වික්‍රමරත්න මහතා",
+    "total_speeches": 120,
     "aliases": [
-      "ගරු ණනිල් වික්‍රමසසහ මහතා",
-      "Hon. Ranil Wickremesinghe"
-    ]
-  },
-  {
-    "name": "ගරු (ආචාර්ය) හර්ෂ ද සිල්වා මහතා",
-    "total_speeches": 119,
-    "aliases": [
-      "ගරු (ආචාර්‌ය) හර්ෂ ද සිල්වා මහතා",
-      "The Hon. (Dr.) Harsha De Silva",
-      "ගරු (ණචාර්ය) හර්ෂ ද සල්වා මහතා",
-      "Harsha De Silva"
+      "Eran Wickramaratne",
+      "The Hon. Eran Wickramaratne",
+      "ඉරාන් වික්‍රමරත්න"
     ]
   },
   {
@@ -94,22 +154,21 @@
     "aliases": []
   },
   {
-    "name": "ගරු විමල් වීරවංශ මහතා",
-    "total_speeches": 105,
+    "name": "ගරු මුජිබර් රහමන් මහතා",
+    "total_speeches": 109,
     "aliases": [
-      "විමල් වීරවංශ",
-      "Hon. Wimal Weerawansa"
+      "ගරු මුජිබර් රහුමාන්",
+      "ගරු මුජීබුර් රහුමාන් මහතා",
+      "මුජිබුර් රහුමාන්"
     ]
   },
   {
-    "name": "ගරු නලින් බණ්ඩාර ජයමහා මහතා",
-    "total_speeches": 103,
-    "aliases": []
-  },
-  {
-    "name": "ගරු (වෛද්‍ය) නලින්ද ජයතිස්ස මහතා",
-    "total_speeches": 101,
-    "aliases": []
+    "name": "ගරු විමල් වීරවංශ මහතා",
+    "total_speeches": 105,
+    "aliases": [
+      "Hon. Wimal Weerawansa",
+      "විමල් වීරවංශ"
+    ]
   },
   {
     "name": "ගරු මයෝහිණී කුමාරි විජේරත්න",
@@ -117,16 +176,59 @@
     "aliases": []
   },
   {
-    "name": "ගරු විජිත හේරත්",
-    "total_speeches": 95,
-    "aliases": []
+    "name": "ගරු විජිත හේරත් මහතා",
+    "total_speeches": 96,
+    "aliases": [
+      "Vijitha Herath",
+      "ගරු විජිත හේරත්"
+    ]
   },
   {
-    "name": "ගරු ඉරාන් වික්‍රමරත්න මහතා",
-    "total_speeches": 92,
+    "name": "ගරු රවී කරුණානායක මහතා",
+    "total_speeches": 96,
     "aliases": [
-      "Eran Wickramaratne",
-      "The Hon. Eran Wickramaratne"
+      "රවි කරුණානායක"
+    ]
+  },
+  {
+    "name": "ගරු ඩලස් අලහප්පෙරුම මහතා",
+    "total_speeches": 96,
+    "aliases": [
+      "Dullas Alahapperuma",
+      "ගරු ඩලස් අලහප්ෙපරුම් මහතා",
+      "ඩලස් අලහප්පෙරුම"
+    ]
+  },
+  {
+    "name": "ගරු රවුෆ් හකීම් මහතා",
+    "total_speeches": 94,
+    "aliases": [
+      "Rauff Hakeem",
+      "The Hon. Rauff Hakeem",
+      "ගරු (නීතිඥ) රවුෆ් හකීම් මහතා",
+      "රවුල් හකීම්",
+      "රවුෆ් හකීම්"
+    ]
+  },
+  {
+    "name": "ගරු කාංචන විජේසේකර මහතා",
+    "total_speeches": 93,
+    "aliases": [
+      "කාංචන විජේසේකර"
+    ]
+  },
+  {
+    "name": "ගරු ප්‍රසන්න රණතුංග මහතා",
+    "total_speeches": 93,
+    "aliases": [
+      "ප්‍රසන්න රණතුංග"
+    ]
+  },
+  {
+    "name": "ගරු ශෙහාන් සේමසිංහ",
+    "total_speeches": 91,
+    "aliases": [
+      "ෂෙහාන් සේමසිංහ"
     ]
   },
   {
@@ -135,50 +237,79 @@
     "aliases": []
   },
   {
+    "name": "ගරු (වෛද්‍ය) රාජිත සේනාරත්න මහතා",
+    "total_speeches": 90,
+    "aliases": [
+      "ගරු රාජිත සේනාරත්න"
+    ]
+  },
+  {
+    "name": "ගරු ජේ. සී. අලවතුවල මහතා",
+    "total_speeches": 89,
+    "aliases": [
+      "ජේ. සී. අලවතුවල"
+    ]
+  },
+  {
     "name": "ගරු වාසුදේව නානායක්කාර",
     "total_speeches": 87,
     "aliases": []
   },
   {
-    "name": "ගරු රවී කරුණානායක මහතා",
-    "total_speeches": 86,
-    "aliases": []
-  },
-  {
-    "name": "ගරු මුජිබර් රහමන් මහතා",
-    "total_speeches": 86,
+    "name": "ගරු නිමල් ලාන්සා මහතා",
+    "total_speeches": 87,
     "aliases": [
-      "ගරු මුජීබුර් රහුමාන් මහතා"
+      "Nimal Lanza",
+      "නිමල් ලාන්සා"
     ]
   },
   {
-    "name": "ගරු ඩලස් අලහප්පෙරුම මහතා",
+    "name": "ගරු (ආචාර්ය) හරිනි අමරසූරිය මෙනෙවිය",
+    "total_speeches": 84,
+    "aliases": [
+      "(ආචාර්ය) හරිනි අමරසූරිය",
+      "Harini Amarasuriya",
+      "The Hon. (Dr.) Harini Amarasuriya",
+      "ගරු හරිනි අමරසූරිය"
+    ]
+  },
+  {
+    "name": "ගරු (වෛද්‍ය) රමේෂ් පතිරණ මහතා",
     "total_speeches": 81,
     "aliases": [
-      "Dullas Alahapperuma",
-      "ගරු ඩලස් අලහප්ෙපරුම් මහතා"
+      "රමේෂ් පතිරණ"
     ]
   },
   {
-    "name": "ගරු නිමල් ලාන්සා මහතා",
-    "total_speeches": 78,
+    "name": "ගරු සාණක්‍ය රාජපුත්‍රන් රාසමාණික්කම් මහතා",
+    "total_speeches": 81,
     "aliases": [
-      "Nimal Lanza"
+      "සාණක්කියන් රාජපුත්තිරන් රාසමානික්කම්"
     ]
   },
   {
-    "name": "ගරු ශෙහාන් සේමසිංහ",
-    "total_speeches": 78,
-    "aliases": []
+    "name": "ගරු වීරසුමන වීරසිංහ මහතා",
+    "total_speeches": 79,
+    "aliases": [
+      "වීරසුමන වීරසිංහ"
+    ]
   },
   {
-    "name": "ගරු රවුෆ් හකීම් මහතා",
+    "name": "ගරු (ආචාර්ය) විජයදාස රාජපක්ෂ මහතා",
+    "total_speeches": 79,
+    "aliases": [
+      "Dr. Wijeyadasa Rajapakshe",
+      "ගරු ජනාධිපති නීතිඥ (ආචාර්ය) විජයදාස රාජපක්ෂ මහතා",
+      "ගරු විජයදාස රාජපක්ෂ",
+      "විජයදාස රාජපක්ෂ මහතා"
+    ]
+  },
+  {
+    "name": "ගරු අජිත් පී. පෙරේරා මහතා",
     "total_speeches": 78,
     "aliases": [
-      "Rauff Hakeem",
-      "රවුෆ් හකීම්",
-      "රවුල් හකීම්",
-      "The Hon. Rauff Hakeem"
+      "Ajith P. Perera",
+      "අජිත් පී. පෙරේරා"
     ]
   },
   {
@@ -191,9 +322,18 @@
     ]
   },
   {
-    "name": "ගරු කාංචන විජේසේකර මහතා",
-    "total_speeches": 76,
-    "aliases": []
+    "name": "ගරු ශාන්ත බණ්ඩාර මහතා",
+    "total_speeches": 75,
+    "aliases": [
+      "ශාන්ත බණ්ඩාර"
+    ]
+  },
+  {
+    "name": "ගරු හෙක්ටර් අප්පුහාමි මහතා",
+    "total_speeches": 74,
+    "aliases": [
+      "හෙක්ටර් අප්පුහාමි"
+    ]
   },
   {
     "name": "නිමල් සිරිපාල ද සිල්වා මහතා",
@@ -201,43 +341,37 @@
     "aliases": []
   },
   {
-    "name": "ගරු ප්‍රසන්න රණතුංග මහතා",
+    "name": "ගරු උදය ප්‍රභාත් ගම්මන්පිල මහතා",
     "total_speeches": 72,
-    "aliases": []
-  },
-  {
-    "name": "ගරු (ආචාර්ය) සුසිල් ප්‍රේමජයන්ත",
-    "total_speeches": 71,
-    "aliases": []
-  },
-  {
-    "name": "ගරු (ආචාර්ය) හරිනි අමරසූරිය මෙනෙවිය",
-    "total_speeches": 70,
     "aliases": [
-      "The Hon. (Dr.) Harini Amarasuriya",
-      "Harini Amarasuriya",
-      "(ආචාර්ය) හරිනි අමරසූරිය"
+      "Hon. Udaya Prabhath Gammanpila",
+      "Udaya Gammanpila",
+      "ගරු උදය ගම්මන්පිල"
     ]
   },
   {
-    "name": "ගරු (වෛද්‍ය) රමේෂ් පතිරණ මහතා",
+    "name": "ගරු නාමල් රාජපක්ෂ",
+    "total_speeches": 70,
+    "aliases": [
+      "ගරු නීතිඥ නාමල් රාජපක්ෂ මහතා"
+    ]
+  },
+  {
+    "name": "ගරු ඩග්ලස් දේවානන්දා මහතා",
     "total_speeches": 69,
-    "aliases": []
+    "aliases": [
+      "Hon. Douglas Devananda",
+      "ඩග්ලස් දේවානන්දා"
+    ]
   },
   {
-    "name": "ගරු (වෛද්‍ය) රාජිත සේනාරත්න මහතා",
+    "name": "ගරු සිවඥානම් ශ්‍රීතරන් මහතා",
     "total_speeches": 68,
-    "aliases": []
-  },
-  {
-    "name": "ගරු ජේ. සී. අලවතුවල මහතා",
-    "total_speeches": 68,
-    "aliases": []
-  },
-  {
-    "name": "ගරු බන්දුල ගුණවර්ධන",
-    "total_speeches": 68,
-    "aliases": []
+    "aliases": [
+      "Sivagnanam Shritharan",
+      "ගරු සිවඥා නම් ශ්‍රී තරන් මහතා",
+      "සිවඥානම් ශ්‍රී තරන්"
+    ]
   },
   {
     "name": "ගරු මනුෂ නානායක්කාර",
@@ -252,19 +386,28 @@
     ]
   },
   {
-    "name": "ගරු නීතිඥ (ආචාර්ය) සුසිල් ප්‍රේමජයන්ත මහතා",
-    "total_speeches": 65,
-    "aliases": []
+    "name": "ගරු ලසන්ත අලගියවන්න මහතා",
+    "total_speeches": 62,
+    "aliases": [
+      "Hon. Lasantha Alagiyawanna",
+      "ලසන්ත අලගියවන්න"
+    ]
   },
   {
-    "name": "ගරු නාමල් රාජපක්ෂ",
-    "total_speeches": 61,
-    "aliases": []
-  },
-  {
-    "name": "ගරු ඉන්දික අනුරුද්ධ ෙහේරත් මහතා",
+    "name": "ගරු ඉන්දික අනුරුද්ධ හේරත් මහතා",
     "total_speeches": 60,
-    "aliases": []
+    "aliases": [
+      "ගරු ඉන්දික අනුරුද්ධ ෙහේරත් මහතා"
+    ]
+  },
+  {
+    "name": "ගරු රෝහිත අබේගුණවර්ධන මහතා",
+    "total_speeches": 60,
+    "aliases": [
+      "Rohitha Abegunawardhana",
+      "ගරු රෝහිත අබේගුණර්වධන මහතා",
+      "රෝහිත අබේගුණවර්ධන"
+    ]
   },
   {
     "name": "ගරු රෝහණ බණ්ඩාර",
@@ -272,27 +415,10 @@
     "aliases": []
   },
   {
-    "name": "ගරු ශාන්ත බණ්ඩාර මහතා",
-    "total_speeches": 58,
-    "aliases": []
-  },
-  {
-    "name": "ගරු අජිත් පී. පෙරේරා මහතා",
+    "name": "ගරු වසන්ත යාපා බණ්ඩාර",
     "total_speeches": 57,
     "aliases": [
-      "Ajith P. Perera"
-    ]
-  },
-  {
-    "name": "ගරු වීරසුමන වීරසිංහ මහතා",
-    "total_speeches": 57,
-    "aliases": []
-  },
-  {
-    "name": "ගරු ඩග්ලස් දේවානන්දා මහතා",
-    "total_speeches": 57,
-    "aliases": [
-      "Hon. Douglas Devananda"
+      "ගරු (නීතිඥ) වසන්ත යාපා බණ්ඩාර මහතා"
     ]
   },
   {
@@ -300,8 +426,8 @@
     "total_speeches": 56,
     "aliases": [
       "Kavinda Heshan Jayawardhana",
-      "ගරු කවින්ද හේෂාන් ජයවර්ධන",
-      "The Hon. (Dr.) Kavinda Heshan Jayawardhana"
+      "The Hon. (Dr.) Kavinda Heshan Jayawardhana",
+      "ගරු කවින්ද හේෂාන් ජයවර්ධන"
     ]
   },
   {
@@ -310,16 +436,45 @@
     "aliases": []
   },
   {
-    "name": "ගරු සුසිල් ප්‍රේමජයන්ත",
-    "total_speeches": 54,
-    "aliases": []
+    "name": "ගරු ජී. ජී. පොන්නම්බලම් මහතා",
+    "total_speeches": 56,
+    "aliases": [
+      "G.G. Ponnambalam",
+      "The Hon. G.G. Ponnambalam",
+      "ජී. ජී. පොන්නම්බලම්"
+    ]
   },
   {
-    "name": "ගරු (ආචාර්ය) විජයදාස රාජපක්ෂ මහතා",
-    "total_speeches": 54,
+    "name": "ගරු අශෝක් අබේසිංහ මහතා",
+    "total_speeches": 56,
     "aliases": [
-      "විජයදාස රාජපක්ෂ මහතා",
-      "Dr. Wijeyadasa Rajapakshe"
+      "Ashok Abeysinghe",
+      "අශෝක් අබේසිංහ"
+    ]
+  },
+  {
+    "name": "ගරු ජනාධිපති නීතිඥ එම්. යූ. එම්. අලි සබ්රි මහතා",
+    "total_speeches": 53,
+    "aliases": [
+      "Ali Sabry",
+      "එම්. යූ. එම්. අලි සබ්රි",
+      "ගරු එම්. යූ. එම්. අලි සබ්රි මහතා"
+    ]
+  },
+  {
+    "name": "ගරු ප්‍රේමනාත් සී. දොලවත්ත මහතා",
+    "total_speeches": 53,
+    "aliases": [
+      "ගරු නීතිඥ ප්‍රේම්නාත් සී. දොලවත්ත මහතා"
+    ]
+  },
+  {
+    "name": "ගරු රංජිත් මද්දුම බණ්ඩාර මහතා",
+    "total_speeches": 53,
+    "aliases": [
+      "ගරු ආර්. එම්. රංජිත් මද්දුම බණ්ඩාර මහතා",
+      "ගරු රංජිත් මද්දුම බණ්ඩාර",
+      "ගරු රංජිත් මද්දුමබණ්ඩාර මහතා"
     ]
   },
   {
@@ -330,45 +485,74 @@
     ]
   },
   {
-    "name": "ගරු හෙක්ටර් අප්පුහාමි මහතා",
+    "name": "ගරු ජානක වක්කුඹුර මහතා",
     "total_speeches": 52,
-    "aliases": []
+    "aliases": [
+      "Janaka Wakkumbura",
+      "ජානක වක්කුඹුර"
+    ]
   },
   {
-    "name": "ගරු සිවඥා නම් ශ්‍රී තරන් මහතා",
+    "name": "ගරු (ආචාර්ය) සරත් වීරසේකර මහතා",
     "total_speeches": 51,
-    "aliases": []
+    "aliases": [
+      "Sarath Weerasekera",
+      "ගරු සරත් වීරසේකර මහතා"
+    ]
+  },
+  {
+    "name": "ගරු හර්ෂණ රාජකරුණා මහතා",
+    "total_speeches": 50,
+    "aliases": [
+      "හර්ෂණ රාජකරුණා"
+    ]
+  },
+  {
+    "name": "ගරු චමල් රාජපක්ෂ මහතා",
+    "total_speeches": 50,
+    "aliases": [
+      "චමල් රාජපක්ෂ"
+    ]
   },
   {
     "name": "ගරු පාඨලී චම්පික රණවක මහතා",
     "total_speeches": 49,
     "aliases": [
-      "පාඨලී චම්පික රණවක",
-      "Patali Champika Ranawaka"
+      "Patali Champika Ranawaka",
+      "පාඨලී චම්පික රණවක"
     ]
   },
   {
-    "name": "ගරු සාණක්‍ය රාජපුත්‍රන් රාසමාණික්කම් මහතා",
-    "total_speeches": 49,
-    "aliases": []
-  },
-  {
-    "name": "ගරු රෝහිත අබේගුණවර්ධන මහතා",
+    "name": "ගරු කනක හේරත් මහතා",
     "total_speeches": 49,
     "aliases": [
-      "ගරු රෝහිත අබේගුණර්වධන මහතා",
-      "Rohitha Abegunawardhana"
+      "Kanaka Herath",
+      "කනක හේරත්"
     ]
   },
   {
-    "name": "චමින්ද විජේසිරි",
-    "total_speeches": 48,
-    "aliases": []
+    "name": "ගරු නිරෝෂන් පෙරේරා මහතා",
+    "total_speeches": 49,
+    "aliases": [
+      "Hon. Niroshan Perera",
+      "ගරු නිවරෝෂන් පෙරේරා මහතා",
+      "නිරෝෂන් පෙරේරා"
+    ]
   },
   {
-    "name": "ගරු උදය ගම්මන්පිල",
-    "total_speeches": 47,
-    "aliases": []
+    "name": "ගරු රිෂාඩ් බදියුදීන් මහතා",
+    "total_speeches": 48,
+    "aliases": [
+      "Hon. Risad Badhiutheen",
+      "ගරු රිසාඩ් බදියුදීන්"
+    ]
+  },
+  {
+    "name": "ගරු රොෂාන් රණසිංහ මහතා",
+    "total_speeches": 48,
+    "aliases": [
+      "රොෂාන් රණසිංහ"
+    ]
   },
   {
     "name": "ගරු තුෂාර ඉඳුනිල් අමරසේන මහතා",
@@ -376,11 +560,26 @@
     "aliases": []
   },
   {
-    "name": "ගරු ජී. ජී. පොන්නම්බලම් මහතා",
+    "name": "ගරු ඉෂාක් රහුමාන් මහතා",
+    "total_speeches": 46,
+    "aliases": [
+      "Hon. Ishak Rahuman",
+      "ඉෂාක් රහුමාන්"
+    ]
+  },
+  {
+    "name": "ගරු ඉම්රාන් මහරූෆ් මහතා",
     "total_speeches": 45,
     "aliases": [
-      "The Hon. G.G. Ponnambalam",
-      "G.G. Ponnambalam"
+      "Hon. Imran Maharoof",
+      "ඉම්රාන් මහරූෆ්"
+    ]
+  },
+  {
+    "name": "ගරු (මහාචාර්ය ) ජී. එල්. පීරිස් මහතා",
+    "total_speeches": 45,
+    "aliases": [
+      "(මහාචාර්ය ) ජී.එල්. පීරිස්"
     ]
   },
   {
@@ -389,24 +588,23 @@
     "aliases": []
   },
   {
-    "name": "ගරු (නීතිඥ) ලක්ෂ්මන් කිරිඇල්ල මහතා",
-    "total_speeches": 42,
-    "aliases": []
-  },
-  {
-    "name": "ගරු (පූජ්‍ය ) අතුරලියේ රතන හිමි",
-    "total_speeches": 42,
-    "aliases": []
-  },
-  {
-    "name": "ගරු ජානක වක්කුඹුර මහතා",
-    "total_speeches": 42,
+    "name": "ගරු ගෙවිඳු කුමාරතුංග මහතා",
+    "total_speeches": 43,
     "aliases": [
-      "Janaka Wakkumbura"
+      "ගෙවිඳු කුමාරතුංග"
     ]
   },
   {
-    "name": "ගරු වසන්ත යාපා බණ්ඩාර",
+    "name": "ගරු සමප්‍රිය හේරත්",
+    "total_speeches": 43,
+    "aliases": [
+      "ගරු සමන්ප්‍රිය හේරත් මහතා",
+      "ගරු සමන්පිය හේරත්",
+      "සමන්ප්‍රිය හේරත්"
+    ]
+  },
+  {
+    "name": "ගරු (පූජ්‍ය ) අතුරලියේ රතන හිමි",
     "total_speeches": 42,
     "aliases": []
   },
@@ -426,27 +624,10 @@
     "aliases": []
   },
   {
-    "name": "ගරු හර්ෂණ රාජකරුණා මහතා",
+    "name": "ගරු රංජිත් සියඹලාපිටිය මහතා",
     "total_speeches": 41,
-    "aliases": []
-  },
-  {
-    "name": "ගරු (ආචාර්ය) සරත් වීරසේකර මහතා",
-    "total_speeches": 41,
-    "aliases": []
-  },
-  {
-    "name": "ගරු කනක හේරත් මහතා",
-    "total_speeches": 40,
     "aliases": [
-      "Kanaka Herath"
-    ]
-  },
-  {
-    "name": "ගරු අශෝක් අබේසිංහ මහතා",
-    "total_speeches": 40,
-    "aliases": [
-      "Ashok Abeysinghe"
+      "රංජිත් සියඹලාපිටිය"
     ]
   },
   {
@@ -460,16 +641,37 @@
     "aliases": []
   },
   {
-    "name": "ගරු ලසන්ත අලගියවන්න මහතා",
-    "total_speeches": 39,
+    "name": "ගරු වඩිවේල් සුරේෂ් මහතා",
+    "total_speeches": 40,
     "aliases": [
-      "Hon. Lasantha Alagiyawanna"
+      "Hon. Vadivel Suresh",
+      "ගරු වඩිවෙල් සුරේෂ් මහතා",
+      "වඩිවේලු සුරේෂ්"
+    ]
+  },
+  {
+    "name": "ගරු සෙල්වරාජා කජේන්ද්‍රන් මහතා",
+    "total_speeches": 40,
+    "aliases": [
+      "Selvarajah Kajendran",
+      "The Hon. Selvarajah Kajendren",
+      "සෙල්වරාජා කජේන්ද්‍රන්"
     ]
   },
   {
     "name": "ගරු චන්දිම වීරක්කොඩි",
     "total_speeches": 39,
     "aliases": []
+  },
+  {
+    "name": "ගරු ඉ. චාල්ස් නිර්මලනාදන් මහතා",
+    "total_speeches": 39,
+    "aliases": [
+      "Hon. I. Charles Nirmalanathan",
+      "ඉ. චාල්ස් නිර්මලනාදන් මහතා",
+      "ගරු ඉ. චාල්ස් නිර්මලනාදන්",
+      "ගරු ඉ. චාල්ස් නිර්මාලනාදන් මහතා"
+    ]
   },
   {
     "name": "ගරු හරීන් ප්‍රනාන්දු මහතා",
@@ -487,42 +689,8 @@
     "aliases": []
   },
   {
-    "name": "නලින් බණ්ඩාර ජයමහ",
-    "total_speeches": 37,
-    "aliases": []
-  },
-  {
     "name": "ගරු ජගත් කුමාර සුමිත්‍රා ආරච්චි මහතා",
     "total_speeches": 37,
-    "aliases": []
-  },
-  {
-    "name": "ගරු චමල් රාජපක්ෂ මහතා",
-    "total_speeches": 36,
-    "aliases": []
-  },
-  {
-    "name": "ගරු එම්. යූ. එම්. අලි සබ්රි මහතා",
-    "total_speeches": 36,
-    "aliases": []
-  },
-  {
-    "name": "ගරු ඉෂාක් රහුමාන් මහතා",
-    "total_speeches": 36,
-    "aliases": [
-      "Hon. Ishak Rahuman"
-    ]
-  },
-  {
-    "name": "ගරු ඉම්රාන් මහරූෆ් මහතා",
-    "total_speeches": 36,
-    "aliases": [
-      "Hon. Imran Maharoof"
-    ]
-  },
-  {
-    "name": "ගරු (මහාචාර්ය ) ජී. එල්. පීරිස් මහතා",
-    "total_speeches": 35,
     "aliases": []
   },
   {
@@ -551,14 +719,19 @@
     "aliases": []
   },
   {
-    "name": "ගරු ප්‍රේමනාත් සී. දොලවත්ත මහතා",
-    "total_speeches": 34,
-    "aliases": []
+    "name": "ගරු (මහාචාර්ය) චරිත හේරත් මහතා",
+    "total_speeches": 35,
+    "aliases": [
+      "(මහාචාර්ය) චරිත හේරත්"
+    ]
   },
   {
-    "name": "ගරු රිසාඩ් බදියුදීන්",
+    "name": "ගරු දිලිප් වෙදආරච්චි මහතා",
     "total_speeches": 34,
-    "aliases": []
+    "aliases": [
+      "Dilip Wedaarachchi",
+      "දිලිප් වෙදආරච්චි"
+    ]
   },
   {
     "name": "ගරු (මේජර්) සුර්දර්ශන දෙනිපිටිය මහතා",
@@ -566,43 +739,16 @@
     "aliases": []
   },
   {
-    "name": "ගරු ආර්. එම්. රංජිත් මද්දුම බණ්ඩාර මහතා",
-    "total_speeches": 32,
-    "aliases": []
-  },
-  {
-    "name": "ගරු ගෙවිඳු කුමාරතුංග මහතා",
-    "total_speeches": 32,
-    "aliases": []
-  },
-  {
-    "name": "ගරු රොෂාන් රණසිංහ මහතා",
-    "total_speeches": 32,
-    "aliases": []
-  },
-  {
-    "name": "සාණක්කියන් රාජපුත්තිරන් රාසමානික්කම්",
-    "total_speeches": 32,
-    "aliases": []
-  },
-  {
-    "name": "ගරු නිවරෝෂන් පෙරේරා මහතා",
-    "total_speeches": 30,
-    "aliases": []
-  },
-  {
-    "name": "ගරු රංජිත් සියඹලාපිටිය මහතා",
-    "total_speeches": 30,
-    "aliases": []
+    "name": "ගරු ෆයිසර් මුස්තාෆා මහතා",
+    "total_speeches": 31,
+    "aliases": [
+      "ගරු සයිසර් මුස්තාපා මහතා",
+      "ගරු ෆයිසර් මුස්තාපා"
+    ]
   },
   {
     "name": "ගරු මධුර විතානගේ",
     "total_speeches": 30,
-    "aliases": []
-  },
-  {
-    "name": "ගරු වඩිවේල් සුරේෂ් මහතා",
-    "total_speeches": 29,
     "aliases": []
   },
   {
@@ -621,42 +767,8 @@
     "aliases": []
   },
   {
-    "name": "ඉරාන් වික්‍රමරත්න",
-    "total_speeches": 28,
-    "aliases": []
-  },
-  {
     "name": "ගරු මයන්ත දිසානායක මහතා",
     "total_speeches": 28,
-    "aliases": []
-  },
-  {
-    "name": "හේෂාන් විතානගේ",
-    "total_speeches": 28,
-    "aliases": []
-  },
-  {
-    "name": "ගරු ෆයිසර් මුස්තාපා",
-    "total_speeches": 28,
-    "aliases": []
-  },
-  {
-    "name": "බුද්ධික පතිරණ",
-    "total_speeches": 28,
-    "aliases": []
-  },
-  {
-    "name": "ගරු අනුර කුමාර දිසානායක මහතා",
-    "total_speeches": 27,
-    "aliases": [
-      "අනුර කුමාර දිසානායක",
-      "Hon. Anura Kumara Dissanayake",
-      "Anura Dissanayake"
-    ]
-  },
-  {
-    "name": "(ආචාර්ය) හර්ෂ ද සිල්වා",
-    "total_speeches": 27,
     "aliases": []
   },
   {
@@ -675,14 +787,17 @@
     "aliases": []
   },
   {
-    "name": "ගරු ඉ. චාල්ස් නිර්මලනාදන්",
+    "name": "ගරු අශෝක ප්‍රියන්ත මහතා",
     "total_speeches": 27,
     "aliases": []
   },
   {
-    "name": "ගරු අශෝක ප්‍රියන්ත මහතා",
+    "name": "ගරු මනෝ ගනේෂන් මහතා",
     "total_speeches": 27,
-    "aliases": []
+    "aliases": [
+      "Hon. Mano Ganesan",
+      "ගරු මනෝ ගනේසන්"
+    ]
   },
   {
     "name": "ගරු එස්. බී. දිසානායක මහතා",
@@ -693,14 +808,6 @@
     "name": "ගරු වජිර අබේවර්ධන මහතා",
     "total_speeches": 26,
     "aliases": []
-  },
-  {
-    "name": "ගරු උදය ප්‍රභාත් ගම්මන්පිල මහතා",
-    "total_speeches": 25,
-    "aliases": [
-      "Hon. Udaya Prabhath Gammanpila",
-      "Udaya Gammanpila"
-    ]
   },
   {
     "name": "තනුර දිසානායක",
@@ -726,13 +833,6 @@
     "name": "ගරු කුමාර ජයකොඩි මහතා",
     "total_speeches": 24,
     "aliases": []
-  },
-  {
-    "name": "ගරු සමප්‍රිය හේරත්",
-    "total_speeches": 24,
-    "aliases": [
-      "ගරු සමන්පිය හේරත්"
-    ]
   },
   {
     "name": "ගරු අනුර ප්‍රියදර්ශන යාපා මහතා",
@@ -768,11 +868,6 @@
     ]
   },
   {
-    "name": "ලසන්ත අලගියවන්න",
-    "total_speeches": 23,
-    "aliases": []
-  },
-  {
     "name": "තුෂාර ඉඳුනිල් අමරසේන",
     "total_speeches": 23,
     "aliases": []
@@ -780,21 +875,6 @@
   {
     "name": "ගරු එස්. ශ්‍රී තරන් මහතා",
     "total_speeches": 23,
-    "aliases": []
-  },
-  {
-    "name": "ගරු (මහාචාර්ය) චරිත හේරත් මහතා",
-    "total_speeches": 22,
-    "aliases": []
-  },
-  {
-    "name": "ගරු රාජිත සේනාරත්න",
-    "total_speeches": 22,
-    "aliases": []
-  },
-  {
-    "name": "වීරසුමන වීරසිංහ",
-    "total_speeches": 22,
     "aliases": []
   },
   {
@@ -810,23 +890,10 @@
     ]
   },
   {
-    "name": "හෙක්ටර් අප්පුහාමි",
-    "total_speeches": 22,
-    "aliases": []
-  },
-  {
     "name": "ගරු විදුර වික්‍රමනායක මහතා",
     "total_speeches": 22,
     "aliases": [
       "Vidura Wickramanayaka"
-    ]
-  },
-  {
-    "name": "ගරු සෙල්වරාජා කජේන්ද්‍රන් මහතා",
-    "total_speeches": 22,
-    "aliases": [
-      "The Hon. Selvarajah Kajendren",
-      "Selvarajah Kajendran"
     ]
   },
   {
@@ -845,52 +912,12 @@
     "aliases": []
   },
   {
-    "name": "ගරු දිලිප් වෙදආරච්චි මහතා",
-    "total_speeches": 22,
-    "aliases": [
-      "Dilip Wedaarachchi"
-    ]
-  },
-  {
-    "name": "අජිත් පී. පෙරේරා",
-    "total_speeches": 21,
-    "aliases": []
-  },
-  {
-    "name": "ගරු නීතිඥ දයාසිරි ජයසේකර මහතා",
-    "total_speeches": 21,
-    "aliases": []
-  },
-  {
-    "name": "ගරු රංජිත් මද්දුම බණ්ඩාර මහතා",
-    "total_speeches": 21,
-    "aliases": [
-      "ගරු රංජිත් මද්දුමබණ්ඩාර මහතා",
-      "ගරු රංජිත් මද්දුම බණ්ඩාර"
-    ]
-  },
-  {
-    "name": "ප්‍රසන්න රණතුංග",
-    "total_speeches": 21,
-    "aliases": []
-  },
-  {
     "name": "ගරු වසන්ත සමරසිංහ",
     "total_speeches": 21,
     "aliases": []
   },
   {
     "name": "ගරු කේ. පී. එස්. කුමාරසිරි මහතා",
-    "total_speeches": 21,
-    "aliases": []
-  },
-  {
-    "name": "හර්ෂ ද සිල්වා",
-    "total_speeches": 21,
-    "aliases": []
-  },
-  {
-    "name": "ජේ. සී. අලවතුවල",
     "total_speeches": 21,
     "aliases": []
   },
@@ -905,11 +932,6 @@
     "aliases": []
   },
   {
-    "name": "රනිල් වික්‍රමසිංහ",
-    "total_speeches": 20,
-    "aliases": []
-  },
-  {
     "name": "ගරු (වෛද්‍ය) සුදර්ශිනී ප්‍රනාන්දුපුල්ලේ මහත්මිය",
     "total_speeches": 20,
     "aliases": []
@@ -920,14 +942,16 @@
     "aliases": []
   },
   {
-    "name": "නලින්ද ජයතිස්ස මහතා",
+    "name": "ගරු ආනන්ද විජේපාල මහතා",
     "total_speeches": 20,
     "aliases": []
   },
   {
-    "name": "ගරු ආනන්ද විජේපාල මහතා",
+    "name": "ගරු ජයන්තා කැටගොඩ මහතා",
     "total_speeches": 20,
-    "aliases": []
+    "aliases": [
+      "ජයන්ත කැටගොඩ"
+    ]
   },
   {
     "name": "ගරු ගාමිණී ලොකුගේ මහතා",
@@ -937,22 +961,12 @@
     ]
   },
   {
-    "name": "ගරු නීතිඥ ප්‍රේම්නාත් සී. දොලවත්ත මහතා",
-    "total_speeches": 19,
-    "aliases": []
-  },
-  {
     "name": "ගරු (ආචාර්ය) නාලක ගොඩහේවා මහතා",
     "total_speeches": 19,
     "aliases": []
   },
   {
     "name": "ගයාන්ත කරුණාතිලක",
-    "total_speeches": 19,
-    "aliases": []
-  },
-  {
-    "name": "ගරු මනෝ ගනේසන්",
     "total_speeches": 19,
     "aliases": []
   },
@@ -974,17 +988,7 @@
     "aliases": []
   },
   {
-    "name": "නිරෝෂන් පෙරේරා",
-    "total_speeches": 18,
-    "aliases": []
-  },
-  {
     "name": "ගරු ඉම්තියාස් බාකීර් මාකාර් මහතා",
-    "total_speeches": 18,
-    "aliases": []
-  },
-  {
-    "name": "සෙල්වරාජා කජේන්ද්‍රන්",
     "total_speeches": 18,
     "aliases": []
   },
@@ -1009,27 +1013,9 @@
     "aliases": []
   },
   {
-    "name": "ශාන්ත බණ්ඩාර",
-    "total_speeches": 17,
-    "aliases": []
-  },
-  {
-    "name": "කාංචන විජේසේකර",
-    "total_speeches": 17,
-    "aliases": []
-  },
-  {
     "name": "ගරු බී. වයි. ජී. රත්නසේකර",
     "total_speeches": 17,
     "aliases": []
-  },
-  {
-    "name": "ගරු ජනාධිපති නීතිඥ එම්. යූ. එම්. අලි සබ්රි මහතා",
-    "total_speeches": 17,
-    "aliases": [
-      "එම්. යූ. එම්. අලි සබ්රි",
-      "Ali Sabry"
-    ]
   },
   {
     "name": "ගරු අරුන්දික ප්‍රනාන්දු මහතා",
@@ -1037,16 +1023,18 @@
     "aliases": []
   },
   {
-    "name": "ගරු ජීවන් තොන්ඩමන් මහතා",
+    "name": "ගරු ජීවන් තොණ්ඩමන් මහතා",
     "total_speeches": 17,
-    "aliases": []
+    "aliases": [
+      "ගරු ජීවන් තොන්ඩමන් මහතා"
+    ]
   },
   {
     "name": "ගරු ධර්මලිංගම් සිද්ධාර්ථන් මහතා",
     "total_speeches": 17,
     "aliases": [
-      "ගරු ධර්මලිංගම් සිද්ධාර්ථන් මහතා (Hon. Dharmalingam Sithadthan)",
-      "Hon. Dharmalingam Sithadthan"
+      "Hon. Dharmalingam Sithadthan",
+      "ගරු ධර්මලිංගම් සිද්ධාර්ථන් මහතා (Hon. Dharmalingam Sithadthan)"
     ]
   },
   {
@@ -1060,17 +1048,7 @@
     "aliases": []
   },
   {
-    "name": "ගරු (නීතිඥ) රවුෆ් හකීම් මහතා",
-    "total_speeches": 16,
-    "aliases": []
-  },
-  {
     "name": "ගරු සුජීව සේනසිංහ",
-    "total_speeches": 16,
-    "aliases": []
-  },
-  {
-    "name": "අශෝක් අබේසිංහ",
     "total_speeches": 16,
     "aliases": []
   },
@@ -1081,11 +1059,6 @@
   },
   {
     "name": "ගරු පියල් නිශාන්ත ද සිල්වා",
-    "total_speeches": 16,
-    "aliases": []
-  },
-  {
-    "name": "සිවඥානම් ශ්‍රී තරන්",
     "total_speeches": 16,
     "aliases": []
   },
@@ -1102,19 +1075,30 @@
     ]
   },
   {
-    "name": "රොෂාන් රණසිංහ",
-    "total_speeches": 16,
-    "aliases": []
-  },
-  {
     "name": "ගරු රාජවරෝදියම් සම්පන්දන් මහතා",
     "total_speeches": 16,
     "aliases": [
-      "ගරු රාජවනරෝදියම් සම්පන්දන් මහතා",
-      "රාජවරෝදියම් සම්පන්තන් මහතා",
       "Hon. R. Sampanthan",
       "The Hon. Leader of the Opposition (R. Sampanthan)",
-      "The Hon. Rajavarothiam Sampanthan"
+      "The Hon. Rajavarothiam Sampanthan",
+      "ගරු රාජවනරෝදියම් සම්පන්දන් මහතා",
+      "රාජවරෝදියම් සම්පන්තන් මහතා"
+    ]
+  },
+  {
+    "name": "ගරු බිමල් රත්නායක මහතා",
+    "total_speeches": 16,
+    "aliases": [
+      "Hon. Bimal Rathnayake",
+      "බිමල් රත්නායක"
+    ]
+  },
+  {
+    "name": "ගරු ගාමිණී ජයවික්‍රම පෙරේරා මහතා",
+    "total_speeches": 16,
+    "aliases": [
+      "Hon. Gamini Jayawickrama Perera",
+      "ගරු ගාමිණි ජයවික්‍රම පෙරේරා මහතා"
     ]
   },
   {
@@ -1145,11 +1129,6 @@
     "aliases": []
   },
   {
-    "name": "ගරු (නීතිඥ) වසන්ත යාපා බණ්ඩාර මහතා",
-    "total_speeches": 15,
-    "aliases": []
-  },
-  {
     "name": "ගරු කේ. වී. සමන්ත විද්‍යාරත්න මහතා",
     "total_speeches": 15,
     "aliases": []
@@ -1163,11 +1142,6 @@
   },
   {
     "name": "ගරු උදයන කිරිඳිගොඩ මහතා",
-    "total_speeches": 15,
-    "aliases": []
-  },
-  {
-    "name": "ඩලස් අලහප්පෙරුම",
     "total_speeches": 15,
     "aliases": []
   },
@@ -1188,11 +1162,6 @@
   },
   {
     "name": "ගරු ජෝන් සෙනෙවිරත්න",
-    "total_speeches": 14,
-    "aliases": []
-  },
-  {
-    "name": "මුජිබුර් රහුමාන්",
     "total_speeches": 14,
     "aliases": []
   },
@@ -1219,29 +1188,7 @@
     "aliases": []
   },
   {
-    "name": "ගරු රිෂාඩ් බදියුදීන් මහතා",
-    "total_speeches": 14,
-    "aliases": [
-      "Hon. Risad Badhiutheen"
-    ]
-  },
-  {
-    "name": "ගරු විජයදාස රාජපක්ෂ",
-    "total_speeches": 14,
-    "aliases": []
-  },
-  {
     "name": "ගරු ලකී ජයවර්ධන මහතා",
-    "total_speeches": 14,
-    "aliases": []
-  },
-  {
-    "name": "චමල් රාජපක්ෂ",
-    "total_speeches": 14,
-    "aliases": []
-  },
-  {
-    "name": "ගරු හරිනි අමරසූරිය",
     "total_speeches": 14,
     "aliases": []
   },
@@ -1258,22 +1205,7 @@
     "aliases": []
   },
   {
-    "name": "බිමල් රත්නායක",
-    "total_speeches": 13,
-    "aliases": []
-  },
-  {
     "name": "වේලු කුමාර්",
-    "total_speeches": 13,
-    "aliases": []
-  },
-  {
-    "name": "ෂෙහාන් සේමසිංහ",
-    "total_speeches": 13,
-    "aliases": []
-  },
-  {
-    "name": "ගරු ගාමිණි ජයවික්‍රම පෙරේරා මහතා",
     "total_speeches": 13,
     "aliases": []
   },
@@ -1283,32 +1215,12 @@
     "aliases": []
   },
   {
-    "name": "(මහාචාර්ය) චරිත හේරත්",
-    "total_speeches": 13,
-    "aliases": []
-  },
-  {
-    "name": "සජිත් ප්‍රේමදාස මහතා",
-    "total_speeches": 13,
-    "aliases": []
-  },
-  {
-    "name": "ගරු ජයන්තා කැටගොඩ මහතා",
-    "total_speeches": 12,
-    "aliases": []
-  },
-  {
     "name": "ගරු අනුර ප්‍රියර්දර්ශන යාපා",
     "total_speeches": 12,
     "aliases": []
   },
   {
     "name": "ගරු සාගර කාරියවසම්",
-    "total_speeches": 12,
-    "aliases": []
-  },
-  {
-    "name": "ඩග්ලස් දේවානන්දා",
     "total_speeches": 12,
     "aliases": []
   },
@@ -1338,11 +1250,6 @@
     "aliases": []
   },
   {
-    "name": "දිලිප් වෙදආරච්චි",
-    "total_speeches": 12,
-    "aliases": []
-  },
-  {
     "name": "ගරු (වෛද්‍ය) උපුල් ගලප්පත්ති මහතා",
     "total_speeches": 12,
     "aliases": []
@@ -1358,24 +1265,10 @@
     "aliases": []
   },
   {
-    "name": "රමේෂ් පතිරණ",
-    "total_speeches": 12,
-    "aliases": []
-  },
-  {
     "name": "ගරු මයිල්වාගනම් තිලකරාජා මහතා",
     "total_speeches": 12,
     "aliases": [
       "Hon. Mylvaganam Thilakarajah"
-    ]
-  },
-  {
-    "name": "ගරු ඉ. චාල්ස් නිර්මලනාදන් මහතා",
-    "total_speeches": 12,
-    "aliases": [
-      "Hon. I. Charles Nirmalanathan",
-      "ඉ. චාල්ස් නිර්මලනාදන් මහතා",
-      "ගරු ඉ. චාල්ස් නිර්මාලනාදන් මහතා"
     ]
   },
   {
@@ -1394,11 +1287,6 @@
     "aliases": []
   },
   {
-    "name": "ගරු ජනාධිපති නීතිඥ (ආචාර්ය) විජයදාස රාජපක්ෂ මහතා",
-    "total_speeches": 11,
-    "aliases": []
-  },
-  {
     "name": "ගරු ටී. රංජිත් ද සොයිසා මහතා",
     "total_speeches": 11,
     "aliases": [
@@ -1406,17 +1294,7 @@
     ]
   },
   {
-    "name": "ගෙවිඳු කුමාරතුංග",
-    "total_speeches": 11,
-    "aliases": []
-  },
-  {
     "name": "මෛත්‍රිපාල සිරිසේන",
-    "total_speeches": 11,
-    "aliases": []
-  },
-  {
-    "name": "රංජිත් සියඹලාපිටිය",
     "total_speeches": 11,
     "aliases": []
   },
@@ -1432,11 +1310,6 @@
   },
   {
     "name": "ගරු ගීතා සමන්මලී කුමාරසිංහ මහත්මිය",
-    "total_speeches": 11,
-    "aliases": []
-  },
-  {
-    "name": "රෝහිත අබේගුණවර්ධන",
     "total_speeches": 11,
     "aliases": []
   },
@@ -1473,44 +1346,12 @@
     ]
   },
   {
-    "name": "ජී. ජී. පොන්නම්බලම්",
-    "total_speeches": 11,
-    "aliases": []
-  },
-  {
-    "name": "ගරු හේෂාන් විතානගේ මහතා",
-    "total_speeches": 10,
-    "aliases": [
-      "Heshan Withanage"
-    ]
-  },
-  {
-    "name": "රවි කරුණානායක",
-    "total_speeches": 10,
-    "aliases": []
-  },
-  {
     "name": "ගරු එස්. සී. මුතුකුමාරණ මහතා",
     "total_speeches": 10,
     "aliases": []
   },
   {
-    "name": "ඉෂාක් රහුමාන්",
-    "total_speeches": 10,
-    "aliases": []
-  },
-  {
     "name": "ගරු අකිල එල්ලාවල",
-    "total_speeches": 10,
-    "aliases": []
-  },
-  {
-    "name": "ගරු සමන්ප්‍රිය හේරත් මහතා",
-    "total_speeches": 10,
-    "aliases": []
-  },
-  {
-    "name": "ජානක වක්කුඹුර",
     "total_speeches": 10,
     "aliases": []
   },
@@ -1565,11 +1406,6 @@
     "aliases": []
   },
   {
-    "name": "වඩිවේලු සුරේෂ්",
-    "total_speeches": 10,
-    "aliases": []
-  },
-  {
     "name": "ගරු ජයරත්න හේරත් මහතා",
     "total_speeches": 10,
     "aliases": []
@@ -1590,35 +1426,13 @@
     "aliases": []
   },
   {
-    "name": "(මහාචාර්ය ) ජී.එල්. පීරිස්",
-    "total_speeches": 10,
-    "aliases": []
-  },
-  {
     "name": "ගරු සංජීව එදිරිමාන්න මහතා",
     "total_speeches": 10,
     "aliases": []
   },
   {
-    "name": "ගරු සරත් වීරසේකර මහතා",
-    "total_speeches": 10,
-    "aliases": [
-      "Sarath Weerasekera"
-    ]
-  },
-  {
     "name": "ගරු ටිරාන් අලස් මහතා",
     "total_speeches": 10,
-    "aliases": []
-  },
-  {
-    "name": "ගරු නීතිඥ නාමල් රාජපක්ෂ මහතා",
-    "total_speeches": 9,
-    "aliases": []
-  },
-  {
-    "name": "ගරු ඒ. ඩී. සුසිල් ප්‍රේමජයන්ත මහතා",
-    "total_speeches": 9,
     "aliases": []
   },
   {
@@ -1632,26 +1446,11 @@
     "aliases": []
   },
   {
-    "name": "සමන්ප්‍රිය හේරත්",
-    "total_speeches": 9,
-    "aliases": []
-  },
-  {
-    "name": "හර්ෂණ රාජකරුණා",
-    "total_speeches": 9,
-    "aliases": []
-  },
-  {
     "name": "ගරු අ. අරවින්ද් කුමාර් මහතා",
     "total_speeches": 9,
     "aliases": [
       "Hon. A. Aravindh Kumar"
     ]
-  },
-  {
-    "name": "ඉම්රාන් මහරූෆ්",
-    "total_speeches": 9,
-    "aliases": []
   },
   {
     "name": "ගරු අසංක නවරත්න මහතා",
@@ -1674,11 +1473,6 @@
     "aliases": []
   },
   {
-    "name": "ගරු මුජිබර් රහුමාන්",
-    "total_speeches": 9,
-    "aliases": []
-  },
-  {
     "name": "ගරු (ආචාර්ය) එම්. එල්. ඒ. එම්. හිස්බුල්ලාහ් මහතා",
     "total_speeches": 9,
     "aliases": []
@@ -1694,27 +1488,12 @@
     "aliases": []
   },
   {
-    "name": "කනක හේරත්",
-    "total_speeches": 9,
-    "aliases": []
-  },
-  {
-    "name": "ආචාර්ය නලින්ද ජයතිස්ස",
-    "total_speeches": 9,
-    "aliases": []
-  },
-  {
     "name": "ගරු ශෂීන්ද්‍ර රාජපක්ෂ මහතා",
     "total_speeches": 9,
     "aliases": []
   },
   {
     "name": "සන්දිත් සමරසිංහ",
-    "total_speeches": 9,
-    "aliases": []
-  },
-  {
-    "name": "ගරු හේෂා විතානගේ අංකුඹුර ආරච්චි මහතා",
     "total_speeches": 9,
     "aliases": []
   },
@@ -1758,11 +1537,6 @@
     "aliases": []
   },
   {
-    "name": "නිමල් ලාන්සා",
-    "total_speeches": 9,
-    "aliases": []
-  },
-  {
     "name": "ගරු තිලක් මාරපන මහතා",
     "total_speeches": 9,
     "aliases": []
@@ -1773,19 +1547,7 @@
     "aliases": []
   },
   {
-    "name": "ගරු මනෝ ගනේෂන් මහතා",
-    "total_speeches": 8,
-    "aliases": [
-      "Hon. Mano Ganesan"
-    ]
-  },
-  {
     "name": "ගරු සාගල රත්නායක",
-    "total_speeches": 8,
-    "aliases": []
-  },
-  {
-    "name": "ජයන්ත කැටගොඩ",
     "total_speeches": 8,
     "aliases": []
   },
@@ -1997,9 +1759,9 @@
     "name": "ගරු ජීවන් තොණ්ඩමන්",
     "total_speeches": 7,
     "aliases": [
-      "ජීවන් තොන්ඩමන්",
+      "Hon. Jeevan Thondaman",
       "ජීවන් තොණ්ඩමන්",
-      "Hon. Jeevan Thondaman"
+      "ජීවන් තොන්ඩමන්"
     ]
   },
   {
@@ -2331,8 +2093,8 @@
     "name": "ගරු (ආචාර්ය) නලින්ද ජයතිස්ස මහතා",
     "total_speeches": 5,
     "aliases": [
-      "Nalinda Jayathissa",
-      "Hon. (Dr.) Nalinda Jayathissa"
+      "Hon. (Dr.) Nalinda Jayathissa",
+      "Nalinda Jayathissa"
     ]
   },
   {
@@ -2841,13 +2603,6 @@
     "aliases": []
   },
   {
-    "name": "ගරු බිමල් රත්නායක මහතා",
-    "total_speeches": 3,
-    "aliases": [
-      "Hon. Bimal Rathnayake"
-    ]
-  },
-  {
     "name": "ගරු (ආචාර්ය) (මේජර්) ප්‍රදීප් උඳුගොඩ මහතා",
     "total_speeches": 3,
     "aliases": []
@@ -2866,13 +2621,6 @@
     "name": "ගරු ලුතිනන් කමාන්ඩර් (විශ්‍රාමික) ප්‍රගීත් මධුරංග මහතා",
     "total_speeches": 3,
     "aliases": []
-  },
-  {
-    "name": "ගරු ෆයිසර් මුස්තාෆා මහතා",
-    "total_speeches": 3,
-    "aliases": [
-      "ගරු සයිසර් මුස්තාපා මහතා"
-    ]
   },
   {
     "name": "නාලක ගොඩහේවා",
@@ -2918,13 +2666,6 @@
     "name": "ගරු ලොහාන් රත්වත්තේ මහතා",
     "total_speeches": 3,
     "aliases": []
-  },
-  {
-    "name": "ගරු ගාමිණී ජයවික්‍රම පෙරේරා මහතා",
-    "total_speeches": 3,
-    "aliases": [
-      "Hon. Gamini Jayawickrama Perera"
-    ]
   },
   {
     "name": "අරුන් හේමචන්ද්‍ර මහතා",
@@ -3025,13 +2766,6 @@
     "name": "ගරු කථානායකතුමා (ගරු කරු ජයසූරිය මහතා)",
     "total_speeches": 2,
     "aliases": []
-  },
-  {
-    "name": "ගරු එස්. එම්. මරික්කාර් මහතා",
-    "total_speeches": 2,
-    "aliases": [
-      "S. M. Marikkar"
-    ]
   },
   {
     "name": "මනුෂ නානායක්කාර මහතා",
@@ -3795,13 +3529,6 @@
     ]
   },
   {
-    "name": "ගරු සිවඥානම් ශ්‍රීතරන් මහතා",
-    "total_speeches": 1,
-    "aliases": [
-      "Sivagnanam Shritharan"
-    ]
-  },
-  {
     "name": "ගරු ඊ. සරවනපවන් මහතා",
     "total_speeches": 1,
     "aliases": [
@@ -3948,8 +3675,8 @@
     "name": "மாண்புமிகு தவராஜா கலையரசன்",
     "total_speeches": 1,
     "aliases": [
-      "මාண்புமிகு தவராஜா கலையரசன்",
-      "මාண்புமிகு தவராஜா கலை அரசன்"
+      "මාண்புமிகு தவராஜா கலை அரசன்",
+      "මාண்புமிகு தவராஜா கலையரசன்"
     ]
   },
   {
@@ -4118,13 +3845,6 @@
     "name": "සිවාජිලිංගම්",
     "total_speeches": 1,
     "aliases": []
-  },
-  {
-    "name": "ගරු චමින්ද විජේසිරි මහතා",
-    "total_speeches": 1,
-    "aliases": [
-      "Chaminda Wijesiri"
-    ]
   },
   {
     "name": "ගරු (ආචාර්ය) සරත් අමුණුගම මහතා (විශේෂ කාර්ය භාර අමාත්‍යතුමා)",
@@ -4697,13 +4417,6 @@
     "aliases": []
   },
   {
-    "name": "ගරු නිරෝෂන් පෙරේරා මහතා",
-    "total_speeches": 1,
-    "aliases": [
-      "Hon. Niroshan Perera"
-    ]
-  },
-  {
     "name": "ගරු ශාන්ත අබේසේකර",
     "total_speeches": 1,
     "aliases": []
@@ -4787,13 +4500,6 @@
     "name": "මලීෂා කුමාරතුංග",
     "total_speeches": 1,
     "aliases": []
-  },
-  {
-    "name": "ගරු විජිත හේරත් මහතා",
-    "total_speeches": 1,
-    "aliases": [
-      "Vijitha Herath"
-    ]
   },
   {
     "name": "අමිල ප්‍රසාද්",
@@ -4914,13 +4620,6 @@
     "name": "ගරු ලකී ජයවර්ධන මහතා (මූලාසනයේ සිටියදී)",
     "total_speeches": 1,
     "aliases": []
-  },
-  {
-    "name": "ගරු වඩිවෙල් සුරේෂ් මහතා",
-    "total_speeches": 1,
-    "aliases": [
-      "Hon. Vadivel Suresh"
-    ]
   },
   {
     "name": "කේ. කේ. පියදාස",

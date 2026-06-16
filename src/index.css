@@ -81,6 +81,33 @@ h1, h2, h3, h4, h5, h6 {
   gap: 0.5rem;
 }
 
+/* Topics tab stat card grid — 4-col → 2-col on narrow screens */
+.topics-stat-cards {
+  grid-template-columns: repeat(4, 1fr);
+}
+@media (max-width: 860px) {
+  .topics-stat-cards { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 480px) {
+  .topics-stat-cards { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* Directory card — scroll list grows to content, capped by max-height on the list itself */
+.card.directory-card {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0;
+}
+.card.directory-card .card-content {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Speaker detail column — use flex gap for spacing, suppress card margin-bottom */
+.speaker-detail-section .card {
+  margin-bottom: 0;
+}
+
 /* Charts Wrapper */
 .chart-wrapper {
   width: 100%;
@@ -91,13 +118,13 @@ h1, h2, h3, h4, h5, h6 {
 /* Grid Layouts */
 .grid-2 {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
 }
 
 .grid-3 {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
 }
 
@@ -263,7 +290,19 @@ h1, h2, h3, h4, h5, h6 {
   background: #94a3b8;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1100px) {
+  .grid-2 {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 900px) {
+  .grid-3 {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 600px) {
   .app-container {
     padding: 1rem;
   }
@@ -923,5 +962,98 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 1024px) {
   .sidebar-brand {
     display: none;
+  }
+}
+
+/* ── Sidebar collapse toggle ──────────────────────────────────── */
+.sidebar-toggle-btn {
+  /* shown only on desktop */
+}
+.sidebar-toggle-btn:hover {
+  background: var(--background-color) !important;
+  color: var(--primary-color) !important;
+}
+@media (max-width: 1024px) {
+  .sidebar-toggle-btn {
+    display: none !important;
+  }
+}
+
+/* ── Hero Banner ──────────────────────────────────────────────── */
+.hero-banner {
+  animation: heroBannerIn 0.5s ease-out both;
+}
+
+@keyframes heroBannerIn {
+  from { opacity: 0; transform: translateY(-6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 1024px) {
+  .hero-banner-logo,
+  .hero-banner-divider {
+    display: none;
+  }
+
+  .hero-banner-content {
+    padding: 1.25rem 1.25rem !important;
+  }
+
+  .hero-banner-building {
+    width: 70% !important;
+    opacity: 0.4 !important;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero-banner-pills {
+    gap: 0.4rem !important;
+  }
+
+  .hero-banner-building {
+    width: 60% !important;
+    opacity: 0.25 !important;
+  }
+
+  .hero-banner-content {
+    padding: 1.1rem 1rem !important;
+    text-align: center !important;
+  }
+
+  .hero-banner-content > div {
+    align-items: center !important;
+  }
+
+  .hero-banner-content p {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .hero-banner h2 {
+    font-size: 1.15rem !important;
+  }
+
+  .hero-banner-eyebrow {
+    letter-spacing: 0.06em !important;
+    font-size: 0.62rem !important;
+  }
+
+  /* Stat cards — smaller on mobile */
+  .topics-stat-cards > div {
+    padding: 0.65rem 0.5rem !important;
+  }
+
+  .topics-stat-cards > div > div:first-child {
+    font-size: 1.15rem !important;
+  }
+
+  .topics-stat-cards > div > div:nth-child(2) {
+    font-size: 0.65rem !important;
+    margin-top: 0.2rem !important;
+  }
+
+  .topics-stat-cards > div > div:last-child {
+    font-size: 0.6rem !important;
+    margin-top: 0.1rem !important;
   }
 }

@@ -62,4 +62,5 @@ export const DASHBOARD_DATA_URLS = [
   '/data/final_unique_speakers.json',
   '/data/macro_topic_keyword_counts_by_year.json',
   '/data/parliament_sessions_summary.json',
+  '/data/speaker_images.json',
 ];
