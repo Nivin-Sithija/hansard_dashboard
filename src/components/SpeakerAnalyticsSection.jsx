@@ -152,7 +152,7 @@ function SpeakerAnalyticsInner({ speakerSpeechesRaw, finalUniqueSpeakers, speake
         </div>
       </div>
 
-      <div style={{ display: 'flex', flexWrap: 'wrap', gap: '2rem', alignItems: 'flex-start' }}>
+      <div style={{ display: 'flex', flexWrap: 'wrap', gap: '2rem', alignItems: 'flex-start', minWidth: 0 }}>
 
         {/* Speaker Directory */}
         <div style={{ flex: '1', minWidth: 'min(300px, 100%)' }}>
@@ -166,27 +166,27 @@ function SpeakerAnalyticsInner({ speakerSpeechesRaw, finalUniqueSpeakers, speake
                 style={{ width: '100%', padding: '0.75rem 1rem', borderRadius: 'var(--radius-md)', border: '1px solid var(--border-color)', background: 'var(--background-color)', color: 'var(--text-primary)', fontSize: '0.95rem', outline: 'none', boxSizing: 'border-box' }}
               />
             </div>
-            <div style={{ maxHeight: 'calc(100vh - 440px)', overflowY: 'auto', display: 'flex', flexDirection: 'column', gap: '0.5rem', paddingRight: '0.5rem' }}>
+            <div className="speaker-directory-list" style={{ maxHeight: 'calc(100vh - 440px)', overflowY: 'auto', display: 'flex', flexDirection: 'column', gap: '0.5rem', paddingRight: '0.5rem' }}>
               {filteredSpeakersList.map(item => {
                 const sp = item.name;
                 const isSelected = sp === selectedSpeaker;
                 const imgInfo = speakerImages[sp];
                 return (
-                  <button key={sp} onClick={() => setSelectedSpeaker(sp)} style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '0.65rem 0.85rem', background: isSelected ? 'rgba(79,70,229,0.1)' : 'var(--background-color)', border: isSelected ? '1px solid var(--primary-color)' : '1px solid transparent', borderRadius: 'var(--radius-md)', cursor: 'pointer', textAlign: 'left', transition: 'all 0.2s ease', gap: '0.75rem' }}>
+                  <button key={sp} className="speaker-directory-row" onClick={() => setSelectedSpeaker(sp)} style={{ display: 'flex', alignItems: 'center', padding: '0.65rem 0.85rem', background: isSelected ? 'rgba(79,70,229,0.1)' : 'var(--background-color)', border: isSelected ? '1px solid var(--primary-color)' : '1px solid transparent', borderRadius: 'var(--radius-md)', cursor: 'pointer', textAlign: 'left', transition: 'all 0.2s ease', gap: '0.75rem', minWidth: 0 }}>
                     {imgInfo ? (
-                      <img src={imgInfo.localPath} alt="" style={{ width: 30, height: 30, borderRadius: '50%', objectFit: 'cover', flexShrink: 0, border: isSelected ? '2px solid var(--primary-color)' : '2px solid var(--border-color)' }} />
+                      <img src={imgInfo.localPath} alt="" className="speaker-directory-avatar" style={{ width: 30, height: 30, borderRadius: '50%', objectFit: 'cover', flexShrink: 0, border: isSelected ? '2px solid var(--primary-color)' : '2px solid var(--border-color)' }} />
                     ) : (
-                      <div style={{ width: 30, height: 30, borderRadius: '50%', background: isSelected ? 'rgba(79,70,229,0.15)' : 'var(--border-color)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
+                      <div className="speaker-directory-avatar" style={{ width: 30, height: 30, borderRadius: '50%', background: isSelected ? 'rgba(79,70,229,0.15)' : 'var(--border-color)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
                         <User size={14} color={isSelected ? 'var(--primary-color)' : 'var(--text-secondary)'} />
                       </div>
                     )}
-                    <div style={{ display: 'flex', flexDirection: 'column', overflow: 'hidden', flex: 1 }}>
-                      <span style={{ fontWeight: isSelected ? 600 : 500, color: isSelected ? 'var(--primary-color)' : 'var(--text-primary)', textOverflow: 'ellipsis', whiteSpace: 'nowrap', overflow: 'hidden', fontSize: '0.875rem' }}>{sp}</span>
+                    <div style={{ display: 'flex', flexDirection: 'column', overflow: 'hidden', flex: '0 1 auto', minWidth: 0, maxWidth: '65%' }}>
+                      <span className="speaker-directory-name" style={{ fontWeight: isSelected ? 600 : 500, color: isSelected ? 'var(--primary-color)' : 'var(--text-primary)', textOverflow: 'ellipsis', whiteSpace: 'nowrap', overflow: 'hidden', fontSize: '0.875rem' }}>{sp}</span>
                       {item.matchedAlias && (
-                        <span style={{ fontSize: '0.72rem', color: 'var(--text-secondary)', marginTop: '0.1rem', textOverflow: 'ellipsis', whiteSpace: 'nowrap', overflow: 'hidden' }}>alias: {item.matchedAlias}</span>
+                        <span className="speaker-directory-alias" style={{ fontSize: '0.72rem', color: 'var(--text-secondary)', marginTop: '0.1rem', textOverflow: 'ellipsis', whiteSpace: 'nowrap', overflow: 'hidden' }}>alias: {item.matchedAlias}</span>
                       )}
                     </div>
-                    <span style={{ fontSize: '0.8rem', color: 'var(--text-secondary)', background: 'var(--border-color)', padding: '0.15rem 0.5rem', borderRadius: '1rem', flexShrink: 0 }}>
+                    <span className="speaker-directory-badge" style={{ fontSize: '0.8rem', color: 'var(--text-secondary)', background: 'var(--border-color)', padding: '0.15rem 0.5rem', borderRadius: '1rem', flexShrink: 0, marginLeft: 'auto' }}>
                       {speakersData[sp]?.total || 0}
                     </span>
                   </button>
