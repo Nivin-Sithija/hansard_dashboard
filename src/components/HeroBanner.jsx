@@ -48,6 +48,7 @@ export function HeroBanner() {
 
       {/* Fade-out vignette so building doesn't bleed into the left text */}
       <div
+        className="hero-banner-vignette"
         aria-hidden="true"
         style={{
           position: 'absolute',

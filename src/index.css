@@ -1091,22 +1091,35 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .hero-banner-building {
-    width: 60% !important;
-    opacity: 0.25 !important;
+    top: 50% !important;
+    left: 50% !important;
+    right: auto !important;
+    bottom: auto !important;
+    transform: translate(-50%, -50%) !important;
+    height: auto !important;
+    width: 80% !important;
+    object-position: center !important;
+    opacity: 0.5 !important;
   }
 
   .hero-banner-content {
-    padding: 1.1rem 1rem !important;
+    padding: 1.1rem 1.25rem !important;
     text-align: center !important;
   }
 
   .hero-banner-content > div {
     align-items: center !important;
+    width: 100% !important;
   }
 
   .hero-banner-content p {
     margin-left: auto !important;
     margin-right: auto !important;
+    max-width: 100% !important;
+  }
+
+  .hero-banner-vignette {
+    background: radial-gradient(ellipse at center, rgba(255,255,255,0.55) 0%, #ffffff 70%) !important;
   }
 
   .hero-banner h2 {
