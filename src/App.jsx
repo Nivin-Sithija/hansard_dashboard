@@ -89,7 +89,7 @@ function TopicsBanner({ totalClusteredSpeeches, macroTopicCount, speakerCounts, 
       <div className="topics-stat-cards" style={{ display: 'grid', gap: '1rem' }}>
         {statCards.map(({ value, label, sub }) => (
           <div key={label} style={{ background: 'var(--surface-color)', border: '1px solid var(--border-color)', borderRadius: 'var(--radius-lg)', padding: '1.1rem 1.25rem', boxShadow: 'var(--shadow-sm)', textAlign: 'center' }}>
-            <div style={{ fontSize: '1.6rem', fontWeight: 700, color: 'var(--primary-color)', lineHeight: 1.1 }}>{value}</div>
+            <div className="stat-num" style={{ fontSize: '2.15rem' }}>{value}</div>
             <div style={{ fontSize: '0.75rem', fontWeight: 600, color: 'var(--text-primary)', textTransform: 'uppercase', letterSpacing: '0.04em', marginTop: '0.3rem' }}>{label}</div>
             <div style={{ fontSize: '0.7rem', color: 'var(--text-secondary)', marginTop: '0.2rem' }}>{sub}</div>
           </div>
@@ -112,27 +112,7 @@ function App() {
   // ── UI state ──
   const [selectedTopics, setSelectedTopics] = useState([]);
   const [activeDetailTopic, setActiveDetailTopic] = useState(null);
-
-  const VALID_TABS = ['topics', 'speakers', 'wordcloud', 'sessions', 'comparative'];
-  const [activeTab, setActiveTab] = useState(() => {
-    const hash = window.location.hash.replace('#', '');
-    return VALID_TABS.includes(hash) ? hash : 'topics';
-  });
-
-  // Keep hash in sync when tab changes
-  useEffect(() => {
-    window.location.hash = activeTab;
-  }, [activeTab]);
-
-  // Handle browser back / forward
-  useEffect(() => {
-    const onHashChange = () => {
-      const hash = window.location.hash.replace('#', '');
-      if (VALID_TABS.includes(hash)) setActiveTab(hash);
-    };
-    window.addEventListener('hashchange', onHashChange);
-    return () => window.removeEventListener('hashchange', onHashChange);
-  }, []);
+  const [activeTab, setActiveTab] = useState('topics');
 
   // Fetch all core files in parallel on mount
   useEffect(() => {
@@ -201,6 +181,8 @@ function AppShell({
 }) {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isSidebarCollapsed, setIsSidebarCollapsed] = useState(false);
+  const [didInitializeTopSix, setDidInitializeTopSix] = useState(false);
+
   useEffect(() => {
     document.body.style.overflow = isMobileMenuOpen ? 'hidden' : '';
     return () => {
@@ -341,7 +323,13 @@ function AppShell({
   const macroTopicCount = useMemo(() => Object.keys(evolutionData.topic_labels || {}).length, [evolutionData]);
 
   return (
-    <div className="app-shell" style={{ display: 'flex', minHeight: '100vh', background: 'var(--background-color)' }}>
+    <div className="app-shell" style={{
+      display: 'flex', minHeight: '100vh',
+      background:
+        'radial-gradient(circle at 20% 18%, rgba(14, 165, 233, 0.13), transparent 32%),' +
+        'radial-gradient(circle at 72% 24%, rgba(236, 72, 153, 0.12), transparent 34%),' +
+        'linear-gradient(160deg, #eef2ff 0%, #f1f5f9 42%, #eef2ff 100%)'
+    }}>
 
       {isMobileMenuOpen && <div className="mobile-nav-overlay" onClick={() => setIsMobileMenuOpen(false)} />}
 
@@ -377,7 +365,7 @@ function AppShell({
       </button>
 
       {/* Sidebar Navigation */}
-      <aside className={`dashboard-sidebar ${isMobileMenuOpen ? 'open' : ''}`} style={{ width: isSidebarCollapsed ? '0' : '280px', minWidth: 0, flexShrink: 0, overflow: 'hidden', transition: 'width 0.25s ease', background: 'var(--surface-color)', borderRight: '1px solid var(--border-color)', boxShadow: 'var(--shadow-sm)', zIndex: 10, position: 'sticky', top: 0, height: '100vh' }}>
+      <aside className={`dashboard-sidebar ${isMobileMenuOpen ? 'open' : ''}`} style={{ width: isSidebarCollapsed ? '0' : '280px', minWidth: 0, flexShrink: 0, overflow: 'hidden', transition: 'width 0.25s ease', background: 'var(--sidebar-color)', borderRight: '1px solid var(--border-color)', boxShadow: 'var(--shadow-sm)', zIndex: 10, position: 'sticky', top: 0, height: '100vh' }}>
         {/* Inner wrapper is always 280px wide so overflow:hidden on aside clips it cleanly */}
         <div style={{ width: '280px', minWidth: '280px', padding: '2rem 1.5rem', display: 'flex', flexDirection: 'column', gap: '2.5rem', height: '100%' }}>
           <button
@@ -449,7 +437,7 @@ function AppShell({
         </div>
 
         <header style={{ marginBottom: '2rem' }}>
-          <h2 className="page-title" style={{ margin: 0, fontSize: '1.75rem', color: 'var(--text-primary)' }}>{tabTitle}</h2>
+          <h2 className="page-title" style={{ margin: 0, fontSize: '2rem' }}>{tabTitle}</h2>
         </header>
 
         {/* Lazy-loaded tabs wrapped in Suspense */}
@@ -620,7 +608,7 @@ function TopicDetailPanel({ selectedTopics, activeDetailTopic, setActiveDetailTo
               ].map(({ label, value }) => (
                 <div key={label} className="meta-stat-item">
                   <p className="meta-stat-label" style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>{label}</p>
-                  <p className="meta-stat-value" style={{ fontSize: '1.5rem', fontWeight: 600, color: 'var(--text-primary)' }}>{value}</p>
+                  <p className="meta-stat-value stat-num" style={{ fontSize: '1.5rem' }}>{value}</p>
                 </div>
               ))}
             </div>

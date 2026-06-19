@@ -150,7 +150,7 @@ export function SectionBanner({ type = 'topics', title, subtitle, metrics = [] }
         <div className="section-banner-metrics" style={{ display: 'flex', gap: '2rem', flexWrap: 'wrap', flexShrink: 0 }}>
           {metrics.map(({ value, label }) => (
             <div key={label} style={{ textAlign: 'center' }}>
-              <div style={{ fontSize: '1.35rem', fontWeight: 700, color: 'var(--primary-color)', lineHeight: 1.1 }}>{value}</div>
+              <div className="stat-num" style={{ fontSize: '1.5rem' }}>{value}</div>
               <div style={{ fontSize: '0.7rem', textTransform: 'uppercase', color: 'var(--text-secondary)', fontWeight: 600, letterSpacing: '0.05em', marginTop: '0.15rem' }}>{label}</div>
             </div>
           ))}

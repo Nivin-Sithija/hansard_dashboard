@@ -84,7 +84,7 @@ export default function ParliamentSessionsSection() {
             { value: Object.keys(stats.uniqueByYearCounts || {}).reduce((max, y) => ((stats.uniqueByYearCounts?.[y] || 0) > (stats.uniqueByYearCounts?.[max] || 0) ? y : max), ''), label: 'Peak Activity Year' },
           ].map(({ value, label }) => (
             <div key={label} className="sessions-overview-metric" style={{ textAlign: 'center' }}>
-              <div className="sessions-overview-value" style={{ fontSize: '1.4rem', fontWeight: 700, color: 'var(--primary-color)' }}>{value}</div>
+              <div className="sessions-overview-value stat-num" style={{ fontSize: '1.5rem' }}>{value}</div>
               <div className="sessions-overview-label" style={{ fontSize: '0.72rem', textTransform: 'uppercase', color: 'var(--text-secondary)', fontWeight: 600, letterSpacing: '0.05em' }}>{label}</div>
             </div>
           ))}

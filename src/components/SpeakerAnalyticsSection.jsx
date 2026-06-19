@@ -3,6 +3,7 @@ import { Card } from './Card';
 import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, Cell, LineChart, Line, CartesianGrid } from 'recharts';
 import { User, Activity, PieChart, Info, Search, Loader2 } from 'lucide-react';
 import { readJson } from '../utils/dataPreloader';
+import { SectionBanner } from './SectionBanner';
 
 // NOTE: All data is fetched at runtime from /public/data/ — no static imports.
 // This component is React.lazy() loaded — only downloaded when the Speaker tab is clicked.
@@ -11,20 +12,23 @@ export default function SpeakerAnalyticsSection({ speakerNorm, evolutionData }) 
   // ── Fetch heavy data on mount ──
   const [speakerSpeechesRaw, setSpeakerSpeechesRaw] = useState(null);
   const [finalUniqueSpeakers, setFinalUniqueSpeakers] = useState(null);
+  const [speakerImages, setSpeakerImages] = useState({});
   const [fetchError, setFetchError] = useState(null);
 
   useEffect(() => {
     Promise.all([
       readJson('/data/speaker_speeches_per_year_by_topic.json'),
       readJson('/data/final_unique_speakers.json'),
-    ]).then(([speeches, unique]) => {
+      readJson('/data/speaker_images.json'),
+    ]).then(([speeches, unique, imgs]) => {
       setSpeakerSpeechesRaw(speeches);
       setFinalUniqueSpeakers(unique);
+      setSpeakerImages(imgs || {});
     }).catch(err => setFetchError(err.message));
   }, []);
 
   if (fetchError) {
-    return <div style={{ textAlign: 'center', padding: '4rem', color: 'var(--text-secondary)' }}>⚠️ {fetchError}</div>;
+    return <div style={{ textAlign: 'center', padding: '4rem', color: 'var(--text-secondary)' }}>Error: {fetchError}</div>;
   }
 
   if (!speakerSpeechesRaw || !finalUniqueSpeakers) {
@@ -41,10 +45,11 @@ export default function SpeakerAnalyticsSection({ speakerNorm, evolutionData }) 
     finalUniqueSpeakers={finalUniqueSpeakers}
     speakerNorm={speakerNorm}
     evolutionData={evolutionData}
+    speakerImages={speakerImages}
   />;
 }
 
-function SpeakerAnalyticsInner({ speakerSpeechesRaw, finalUniqueSpeakers, speakerNorm, evolutionData }) {
+function SpeakerAnalyticsInner({ speakerSpeechesRaw, finalUniqueSpeakers, speakerNorm, evolutionData, speakerImages }) {
   const [selectedSpeaker, setSelectedSpeaker] = useState('');
   const [searchTerm, setSearchTerm] = useState('');
 
@@ -103,15 +108,23 @@ function SpeakerAnalyticsInner({ speakerSpeechesRaw, finalUniqueSpeakers, speake
   }, [speakerInfo]);
 
   const filteredSpeakersList = useMemo(() => {
-    if (!searchTerm) return finalUniqueSpeakers.slice(0, 50).map(s => ({ name: s.name, matchedAlias: null }));
+    if (!searchTerm) return finalUniqueSpeakers.map(s => ({ name: s.name, matchedAlias: null }));
     const lower = searchTerm.toLowerCase();
+    const terms = lower.split(/\s+/).filter(Boolean);
+    const matches = (text) => {
+      if (!text) return false;
+      const t = text.toLowerCase();
+      return terms.every(term => t.includes(term));
+    };
     return finalUniqueSpeakers.map(sp => {
-      if (sp.name.toLowerCase().includes(lower)) return { name: sp.name, matchedAlias: null, isMatch: true };
-      const matchedAlias = sp.aliases.find(a => a.toLowerCase().includes(lower));
+      const englishName = speakerImages[sp.name]?.manthriName;
+      if (matches(sp.name)) return { name: sp.name, matchedAlias: null, isMatch: true };
+      if (matches(englishName)) return { name: sp.name, matchedAlias: englishName, isMatch: true };
+      const matchedAlias = sp.aliases.find(a => matches(a));
       if (matchedAlias) return { name: sp.name, matchedAlias, isMatch: true };
       return { isMatch: false };
-    }).filter(x => x.isMatch).slice(0, 50);
-  }, [searchTerm, finalUniqueSpeakers]);
+    }).filter(x => x.isMatch);
+  }, [searchTerm, finalUniqueSpeakers, speakerImages]);
 
   const globalStats = useMemo(() => ({
     speakerCount: finalUniqueSpeakers.length,
@@ -124,16 +137,16 @@ function SpeakerAnalyticsInner({ speakerSpeechesRaw, finalUniqueSpeakers, speake
       {/* Overview Banner */}
       <div className="speaker-overview-banner" style={{ background: 'var(--surface-color)', padding: '1.25rem 2rem', borderRadius: 'var(--radius-lg)', border: '1px solid var(--border-color)', display: 'flex', justifyContent: 'space-between', alignItems: 'center', boxShadow: 'var(--shadow-sm)' }}>
         <div className="speaker-overview-copy">
-          <h3 style={{ margin: '0 0 0.25rem 0', color: 'var(--text-primary)', fontSize: '1.1rem' }}>Global Speaker Overview</h3>
+          <h3 style={{ margin: '0 0 0.25rem 0', color: 'var(--text-primary)', fontSize: '1.1rem' }}>Speaker Overview</h3>
           <p style={{ margin: 0, color: 'var(--text-secondary)', fontSize: '0.85rem' }}>Summary of cleanly identified parliamentarians and their cumulative contributions.</p>
         </div>
         <div className="speaker-overview-metrics" style={{ display: 'flex', gap: '3rem', paddingRight: '2rem', flexWrap: 'wrap' }}>
           <div className="speaker-overview-metric" style={{ textAlign: 'center' }}>
-            <div className="speaker-overview-value" style={{ fontSize: '1.5rem', fontWeight: 700, color: 'var(--primary-color)' }}>{globalStats.speakerCount}</div>
+            <div className="speaker-overview-value stat-num" style={{ fontSize: '1.5rem' }}>{globalStats.speakerCount}</div>
             <div className="speaker-overview-label" style={{ fontSize: '0.75rem', textTransform: 'uppercase', color: 'var(--text-secondary)', fontWeight: 600, letterSpacing: '0.05em' }}>Unique Speakers</div>
           </div>
           <div className="speaker-overview-metric" style={{ textAlign: 'center' }}>
-            <div className="speaker-overview-value" style={{ fontSize: '1.5rem', fontWeight: 700, color: 'var(--primary-color)' }}>{globalStats.totalSpeeches.toLocaleString()}</div>
+            <div className="speaker-overview-value stat-num" style={{ fontSize: '1.5rem' }}>{globalStats.totalSpeeches.toLocaleString()}</div>
             <div className="speaker-overview-label" style={{ fontSize: '0.75rem', textTransform: 'uppercase', color: 'var(--text-secondary)', fontWeight: 600, letterSpacing: '0.05em' }}>Attributed Speeches</div>
           </div>
         </div>
@@ -143,8 +156,8 @@ function SpeakerAnalyticsInner({ speakerSpeechesRaw, finalUniqueSpeakers, speake
 
         {/* Speaker Directory */}
         <div style={{ flex: '1', minWidth: 'min(300px, 100%)' }}>
-          <Card title="Speaker Directory" icon={Search}>
-            <div style={{ marginBottom: '1rem' }}>
+          <Card title="Member Directory" icon={Search} className="directory-card">
+            <div style={{ marginBottom: '0.75rem', flexShrink: 0 }}>
               <input
                 type="text"
                 placeholder="Search in Sinhala, Tamil or English…"
@@ -153,19 +166,27 @@ function SpeakerAnalyticsInner({ speakerSpeechesRaw, finalUniqueSpeakers, speake
                 style={{ width: '100%', padding: '0.75rem 1rem', borderRadius: 'var(--radius-md)', border: '1px solid var(--border-color)', background: 'var(--background-color)', color: 'var(--text-primary)', fontSize: '0.95rem', outline: 'none', boxSizing: 'border-box' }}
               />
             </div>
-            <div style={{ maxHeight: '400px', overflowY: 'auto', display: 'flex', flexDirection: 'column', gap: '0.5rem', paddingRight: '0.5rem' }}>
+            <div style={{ maxHeight: 'calc(100vh - 440px)', overflowY: 'auto', display: 'flex', flexDirection: 'column', gap: '0.5rem', paddingRight: '0.5rem' }}>
               {filteredSpeakersList.map(item => {
                 const sp = item.name;
                 const isSelected = sp === selectedSpeaker;
+                const imgInfo = speakerImages[sp];
                 return (
-                  <button key={sp} onClick={() => setSelectedSpeaker(sp)} style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '0.75rem 1rem', background: isSelected ? 'rgba(79,70,229,0.1)' : 'var(--background-color)', border: isSelected ? '1px solid var(--primary-color)' : '1px solid transparent', borderRadius: 'var(--radius-md)', cursor: 'pointer', textAlign: 'left', transition: 'all 0.2s ease' }}>
-                    <div style={{ display: 'flex', flexDirection: 'column', overflow: 'hidden' }}>
-                      <span style={{ fontWeight: isSelected ? 600 : 500, color: isSelected ? 'var(--primary-color)' : 'var(--text-primary)', textOverflow: 'ellipsis', whiteSpace: 'nowrap', overflow: 'hidden' }}>{sp}</span>
+                  <button key={sp} onClick={() => setSelectedSpeaker(sp)} style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '0.65rem 0.85rem', background: isSelected ? 'rgba(79,70,229,0.1)' : 'var(--background-color)', border: isSelected ? '1px solid var(--primary-color)' : '1px solid transparent', borderRadius: 'var(--radius-md)', cursor: 'pointer', textAlign: 'left', transition: 'all 0.2s ease', gap: '0.75rem' }}>
+                    {imgInfo ? (
+                      <img src={imgInfo.localPath} alt="" style={{ width: 30, height: 30, borderRadius: '50%', objectFit: 'cover', flexShrink: 0, border: isSelected ? '2px solid var(--primary-color)' : '2px solid var(--border-color)' }} />
+                    ) : (
+                      <div style={{ width: 30, height: 30, borderRadius: '50%', background: isSelected ? 'rgba(79,70,229,0.15)' : 'var(--border-color)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
+                        <User size={14} color={isSelected ? 'var(--primary-color)' : 'var(--text-secondary)'} />
+                      </div>
+                    )}
+                    <div style={{ display: 'flex', flexDirection: 'column', overflow: 'hidden', flex: 1 }}>
+                      <span style={{ fontWeight: isSelected ? 600 : 500, color: isSelected ? 'var(--primary-color)' : 'var(--text-primary)', textOverflow: 'ellipsis', whiteSpace: 'nowrap', overflow: 'hidden', fontSize: '0.875rem' }}>{sp}</span>
                       {item.matchedAlias && (
-                        <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', marginTop: '0.1rem', textOverflow: 'ellipsis', whiteSpace: 'nowrap', overflow: 'hidden' }}>Matched: {item.matchedAlias}</span>
+                        <span style={{ fontSize: '0.72rem', color: 'var(--text-secondary)', marginTop: '0.1rem', textOverflow: 'ellipsis', whiteSpace: 'nowrap', overflow: 'hidden' }}>alias: {item.matchedAlias}</span>
                       )}
                     </div>
-                    <span style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', background: 'var(--border-color)', padding: '0.15rem 0.5rem', borderRadius: '1rem', marginLeft: '0.5rem', flexShrink: 0 }}>
+                    <span style={{ fontSize: '0.8rem', color: 'var(--text-secondary)', background: 'var(--border-color)', padding: '0.15rem 0.5rem', borderRadius: '1rem', flexShrink: 0 }}>
                       {speakersData[sp]?.total || 0}
                     </span>
                   </button>
@@ -179,24 +200,36 @@ function SpeakerAnalyticsInner({ speakerSpeechesRaw, finalUniqueSpeakers, speake
         </div>
 
         {/* Speaker Detail */}
-        <div style={{ flex: '3', minWidth: 'min(400px, 100%)', display: 'flex', flexDirection: 'column', gap: '2rem' }}>
+        <div className="speaker-detail-section" style={{ flex: '3', minWidth: 'min(400px, 100%)', display: 'flex', flexDirection: 'column', gap: '2rem' }}>
           {speakerInfo ? (
             <>
               <div className="speaker-stat-cards" style={{ display: 'flex', gap: '1.5rem', flexWrap: 'wrap' }}>
-                <Card className="flex-1 speaker-profile-card" style={{ padding: '1.5rem' }}>
-                  <div className="speaker-profile-content" style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
-                    <div className="speaker-profile-icon-wrap" style={{ padding: '0.15rem' }}>
-                      <User size={32} color="var(--primary-color)" />
-                    </div>
-                    <div>
-                    <h2 style={{ margin: 0, fontSize: '1.25rem', color: 'var(--text-primary)' }}>{selectedSpeaker}</h2>
-                    <p style={{ margin: '0.25rem 0 0', color: 'var(--text-secondary)', fontSize: '0.9rem' }}>Global Rank: #{allSpeakers.indexOf(selectedSpeaker) + 1}</p>
+                {/* Profile card — with photo if available */}
+                <Card className="flex-1 speaker-profile-card" style={{ padding: '1.5rem', minWidth: 'min(260px, 100%)' }}>
+                  <div className="speaker-profile-content" style={{ display: 'flex', alignItems: 'center', gap: '1.25rem' }}>
+                    {speakerImages[selectedSpeaker] ? (
+                      <img
+                        src={speakerImages[selectedSpeaker].localPath}
+                        alt={speakerImages[selectedSpeaker].manthriName}
+                        style={{ width: 72, height: 72, borderRadius: '50%', objectFit: 'cover', border: '3px solid var(--primary-color)', flexShrink: 0 }}
+                      />
+                    ) : (
+                      <div style={{ width: 72, height: 72, borderRadius: '50%', background: 'var(--background-color)', border: '2px solid var(--border-color)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
+                        <User size={32} color="var(--text-secondary)" />
+                      </div>
+                    )}
+                    <div style={{ overflow: 'hidden' }}>
+                      <h2 style={{ margin: 0, fontSize: '1.1rem', color: 'var(--text-primary)', lineHeight: 1.3 }}>{selectedSpeaker}</h2>
+                      {speakerImages[selectedSpeaker] && (
+                        <p style={{ margin: '0.1rem 0 0.15rem', fontSize: '0.8rem', color: 'var(--primary-color)', fontWeight: 500 }}>{speakerImages[selectedSpeaker].manthriName}</p>
+                      )}
+                      <p style={{ margin: '0.2rem 0 0', color: 'var(--text-secondary)', fontSize: '0.82rem' }}>Rank #{allSpeakers.indexOf(selectedSpeaker) + 1} by speech count</p>
                     </div>
                   </div>
                 </Card>
                 <Card className="flex-1 speaker-kpi-card" style={{ padding: '1.5rem' }}>
                   <p style={{ margin: 0, color: 'var(--text-secondary)', fontSize: '0.85rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Total Speeches</p>
-                  <p style={{ margin: '0.5rem 0 0', fontSize: 'clamp(1.45rem, 5vw, 2rem)', fontWeight: 700, color: 'var(--text-primary)' }}>{speakerInfo.total}</p>
+                  <p style={{ margin: '0.5rem 0 0', fontSize: 'clamp(1.45rem, 5vw, 2rem)', fontWeight: 700, color: 'var(--text-primary)' }}>{speakerInfo.total.toLocaleString()}</p>
                 </Card>
                 <Card className="flex-1 speaker-kpi-card" style={{ padding: '1.5rem' }}>
                   <p style={{ margin: 0, color: 'var(--text-secondary)', fontSize: '0.85rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Active Topics</p>
@@ -205,7 +238,7 @@ function SpeakerAnalyticsInner({ speakerSpeechesRaw, finalUniqueSpeakers, speake
               </div>
 
               <div className="grid-2">
-                <Card title="Engagement by Topic (Top 10)" icon={PieChart}>
+                <Card title="Top 10 Topics" icon={PieChart}>
                   <div style={{ height: `${Math.max(280, topicChartData.length * 46)}px` }}>
                     <ResponsiveContainer width="100%" height="100%">
                       <BarChart data={topicChartData} layout="vertical" margin={{ top: 10, right: 30, left: 20, bottom: 5 }}>
@@ -226,7 +259,7 @@ function SpeakerAnalyticsInner({ speakerSpeechesRaw, finalUniqueSpeakers, speake
                   </div>
                 </Card>
 
-                <Card title="Temporal Speech Activity" icon={Activity}>
+                <Card title="Speeches Over Time" icon={Activity}>
                   <div style={{ height: 'clamp(250px, 42vh, 350px)' }}>
                     <ResponsiveContainer width="100%" height="100%">
                       <LineChart data={yearlyTrendData} margin={{ top: 20, right: 30, left: 0, bottom: 20 }}>
@@ -244,8 +277,8 @@ function SpeakerAnalyticsInner({ speakerSpeechesRaw, finalUniqueSpeakers, speake
           ) : (
             <div style={{ background: 'var(--surface-color)', padding: '3rem', borderRadius: 'var(--radius-lg)', textAlign: 'center', border: '1px solid var(--border-color)' }}>
               <Info size={48} color="var(--text-secondary)" style={{ margin: '0 auto 1rem', opacity: 0.5 }} />
-              <h3 style={{ color: 'var(--text-primary)' }}>No Speaker Selected</h3>
-              <p style={{ color: 'var(--text-secondary)' }}>Select a speaker from the directory to view their analytics.</p>
+              <h3 style={{ color: 'var(--text-primary)' }}>No Member Selected</h3>
+              <p style={{ color: 'var(--text-secondary)' }}>Select a member from the directory on the left to view their profile.</p>
             </div>
           )}
         </div>

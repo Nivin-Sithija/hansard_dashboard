@@ -112,9 +112,10 @@ export function HeroBanner() {
           <h2
             style={{
               margin: '0 0 0.75rem',
-              fontSize: '1.5rem',
-              fontWeight: 800,
-              color: 'var(--text-primary)',
+              fontSize: '1.75rem',
+              fontFamily: 'var(--display-font)',
+              fontWeight: 700,
+              color: '#0f172a',
               letterSpacing: '-0.015em',
               lineHeight: 1.15,
             }}
@@ -131,7 +132,7 @@ export function HeroBanner() {
               maxWidth: '75%',
             }}
           >
-            Trilingual topic modeling of parliamentary debates — an NLP analysis using embeddings and clustering to track how parliamentary attention has shifted in response to major national events.
+            Trilingual topic modeling of parliamentary debates - an NLP analysis using embeddings and clustering to track how parliamentary attention has shifted in response to major national events.
           </p>
 
 
