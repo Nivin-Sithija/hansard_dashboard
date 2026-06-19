@@ -12,18 +12,15 @@ export default function SpeakerAnalyticsSection({ speakerNorm, evolutionData }) 
   // ── Fetch heavy data on mount ──
   const [speakerSpeechesRaw, setSpeakerSpeechesRaw] = useState(null);
   const [finalUniqueSpeakers, setFinalUniqueSpeakers] = useState(null);
-  const [speakerImages, setSpeakerImages] = useState({});
   const [fetchError, setFetchError] = useState(null);
 
   useEffect(() => {
     Promise.all([
       readJson('/data/speaker_speeches_per_year_by_topic.json'),
       readJson('/data/final_unique_speakers.json'),
-      readJson('/data/speaker_images.json'),
-    ]).then(([speeches, unique, imgs]) => {
+    ]).then(([speeches, unique]) => {
       setSpeakerSpeechesRaw(speeches);
       setFinalUniqueSpeakers(unique);
-      setSpeakerImages(imgs || {});
     }).catch(err => setFetchError(err.message));
   }, []);
 
@@ -45,11 +42,17 @@ export default function SpeakerAnalyticsSection({ speakerNorm, evolutionData }) 
     finalUniqueSpeakers={finalUniqueSpeakers}
     speakerNorm={speakerNorm}
     evolutionData={evolutionData}
-    speakerImages={speakerImages}
   />;
 }
 
-function SpeakerAnalyticsInner({ speakerSpeechesRaw, finalUniqueSpeakers, speakerNorm, evolutionData, speakerImages }) {
+function SpeakerAnalyticsInner({ speakerSpeechesRaw, finalUniqueSpeakers, speakerNorm, evolutionData }) {
+  const speakerImages = useMemo(() => {
+    const map = {};
+    finalUniqueSpeakers.forEach(sp => {
+      if (sp.localPath) map[sp.name] = sp;
+    });
+    return map;
+  }, [finalUniqueSpeakers]);
   const [selectedSpeaker, setSelectedSpeaker] = useState('');
   const [searchTerm, setSearchTerm] = useState('');
 

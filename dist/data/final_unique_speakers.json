@@ -5,7 +5,11 @@
     "aliases": [
       "Hon. Sajith Premadasa",
       "සජිත් ප්‍රේමදාස මහතා"
-    ]
+    ],
+    "manthriName": "Sajith Premadasa",
+    "slug": "sajith-premadasa",
+    "imageUrl": "https://assets.manthri.lk/uploads/politician/profile_image/149/thumb_Premadasa-86771a9b90bf59c57ade8545e6c55c4a.png",
+    "localPath": "/images/speakers/sajith-premadasa.png"
   },
   {
     "name": "ගරු ලක්ෂ්මන් කිරිඇල්ල",
@@ -14,7 +18,11 @@
       "ගරු (නීතිඥ) ලක්ෂ්මන් කිරිඇල්ල මහතා",
       "ලක්ෂ්මන් කිරිඇල්ල මහතා",
       "ගරු ලක්ෂ්මන් කිරිඇල්ල මහතා (සභානායක)"
-    ]
+    ],
+    "manthriName": "Lakshman Kiriella",
+    "slug": "lakshman-kiriella",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/91/Lakshman_Kiriella.jpg",
+    "localPath": "/images/speakers/lakshman-kiriella.png"
   },
   {
     "name": "ගරු දිනේශ් ගුණවර්ධන මහතා",
@@ -24,7 +32,11 @@
       "ගරු දිනේෂ් ගුණර්වධන මහතා",
       "ගරු දිෙන්ෂ් ගුණවර්ධන මහතා",
       "දිනේෂ් ගුණවර්ධන"
-    ]
+    ],
+    "manthriName": "Dinesh Gunawardena",
+    "slug": "dinesh-gunawardena",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Dinesh_Gunawardena_%28cropped%29.jpg/330px-Dinesh_Gunawardena_%28cropped%29.jpg",
+    "localPath": "/images/speakers/dinesh-gunawardena.png"
   },
   {
     "name": "ගරු චමින්ද විජේසිරි මහතා",
@@ -34,7 +46,11 @@
       "ගරු චමින්ද විෙජ්සිරි මහතා",
       "චමින්ද විජේසිරි",
       "ගරු වමින්ද විජේසිරි"
-    ]
+    ],
+    "manthriName": "Chaminda Wijesiri",
+    "slug": "chaminda-wijesiri",
+    "imageUrl": "https://assets.manthri.lk/uploads/politician/profile_image/292/thumb_Wijesiri-c9702b9e1d40e1f32aaaa57a03f716ef.png",
+    "localPath": "/images/speakers/chaminda-wijesiri.png"
   },
   {
     "name": "(ආචාර්ය) බන්දුල ගුණවර්ධන මහතා",
@@ -42,7 +58,11 @@
     "aliases": [
       "(Dr.) Bandula Gunawardane",
       "ගරු බන්දුල ගුණවර්ධන"
-    ]
+    ],
+    "manthriName": "Bandula Gunawardena",
+    "slug": "bandula-gunawardena",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Bandula_Gunawardane_2023_cr1.jpg/330px-Bandula_Gunawardane_2023_cr1.jpg",
+    "localPath": "/images/speakers/bandula-gunawardena.png"
   },
   {
     "name": "ගරු අනුර කුමාර දිසානායක මහතා",
@@ -52,7 +72,11 @@
       "Hon. Anura Kumara Dissanayake",
       "අනුර කුමාර දිසානායක",
       "ගරු අනුර දිසානායක"
-    ]
+    ],
+    "manthriName": "Anura Kumara Dissanayake",
+    "slug": "anura-kumara-dissanayake",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Dissanayake_2026.jpg/330px-Dissanayake_2026.jpg",
+    "localPath": "/images/speakers/anura-kumara-dissanayake.png"
   },
   {
     "name": "ගරු (ආචාර්ය) සුසිල් ප්‍රේමජයන්ත",
@@ -61,7 +85,11 @@
       "ගරු ඒ. ඩී. සුසිල් ප්‍රේමජයන්ත මහතා",
       "ගරු නීතිඥ (ආචාර්ය) සුසිල් ප්‍රේමජයන්ත මහතා",
       "ගරු සුසිල් ප්‍රේමජයන්ත"
-    ]
+    ],
+    "manthriName": "Susil Premajayantha",
+    "slug": "susil-premajayantha",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a7/Susil_Premajayantha.jpg",
+    "localPath": "/images/speakers/susil-premajayantha.png"
   },
   {
     "name": "ගරු හේෂා විතානගේ",
@@ -72,7 +100,11 @@
       "ගරු හේෂාන් විතානගේ මහතා",
       "හේෂාන් විතානගේ",
       "මහේෂා විතානගේ"
-    ]
+    ],
+    "manthriName": "Hesha Withanage",
+    "slug": "hesha-withanage",
+    "imageUrl": "https://assets.manthri.lk/uploads/politician/profile_image/74/medium_Withanage-4b46c3bd2da6b08e870f31ae21ba0006.png",
+    "localPath": "/images/speakers/hesha-withanage.png"
   },
   {
     "name": "ගරු දයාසිරි ජයසේකර",
@@ -80,7 +112,11 @@
     "aliases": [
       "ගරු නීතිඥ දයාසිරි ජයසේකර මහතා",
       "දයාසිරි ජයසේකර මහතා"
-    ]
+    ],
+    "manthriName": "Dayasiri Jayasekara",
+    "slug": "dayasiri-jayasekara",
+    "imageUrl": "https://assets.manthri.lk/uploads/politician/profile_image/46/medium_Jayasekera-55cdc882d608e77c3ce346a0925cf0a8.png",
+    "localPath": "/images/speakers/dayasiri-jayasekara.png"
   },
   {
     "name": "ගරු (ආචාර්ය) හර්ෂ ද සිල්වා මහතා",
@@ -94,14 +130,22 @@
       "හර්ෂ ද සිල්වා",
       "ගරු හර්ෂ ද සිල්වා මහතා",
       "ගරු (වෛද්‍ය) හර්ෂ ද සිල්වා"
-    ]
+    ],
+    "manthriName": "Harsha de Silva",
+    "slug": "harsha-de-silva",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Harsha_de_Silva_Portrait.jpg/330px-Harsha_de_Silva_Portrait.jpg",
+    "localPath": "/images/speakers/harsha-de-silva.png"
   },
   {
     "name": "ගරු සී. බී. රත්නායක මහතා",
     "total_speeches": 160,
     "aliases": [
       "සී.බී. රත්නායක"
-    ]
+    ],
+    "manthriName": "C.B. Rathnayake",
+    "slug": "c-b-rathnayake",
+    "imageUrl": "https://www.parliament.lk/uploads/images/members/profile_images/thumbs/299.jpg",
+    "localPath": "/images/speakers/c-b-rathnayake.png"
   },
   {
     "name": "ගරු බුද්ධික පතිරණ මහතා",
@@ -109,7 +153,11 @@
     "aliases": [
       "Buddhika Pathirana",
       "බුද්ධික පතිරණ"
-    ]
+    ],
+    "manthriName": "Buddhika Pathirana",
+    "slug": "buddhika-pathirana",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Buddhika_Pathirana.jpg/330px-Buddhika_Pathirana.jpg",
+    "localPath": "/images/speakers/buddhika-pathirana.png"
   },
   {
     "name": "ගරු රනිල් වික්‍රමසිංහ මහතා",
@@ -118,7 +166,11 @@
       "Hon. Ranil Wickremesinghe",
       "ගරු ණනිල් වික්‍රමසසහ මහතා",
       "රනිල් වික්‍රමසිංහ"
-    ]
+    ],
+    "manthriName": "Ranil Wickremesinghe",
+    "slug": "ranil-wickremesinghe",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/President_Dr_Muizzu_meets_Sri_Lankan_President_Ranil_Wickremesinghe_%28cropped%29.jpg/330px-President_Dr_Muizzu_meets_Sri_Lankan_President_Ranil_Wickremesinghe_%28cropped%29.jpg",
+    "localPath": "/images/speakers/ranil-wickremesinghe.png"
   },
   {
     "name": "ගරු මහින්ද අමරවීර",
@@ -128,7 +180,11 @@
       "Mahinda Amaraweera",
       "The Hon. Mahinda Amaraweera",
       "මහින්ද අමරවීර මහතා"
-    ]
+    ],
+    "manthriName": "Mahinda Amaraweera",
+    "slug": "mahinda-amaraweera",
+    "imageUrl": "https://www.parliament.lk/uploads/images/members/profile_images/thumbs/262.jpg",
+    "localPath": "/images/speakers/mahinda-amaraweera.png"
   },
   {
     "name": "ගරු නලින් බණ්ඩාර ජයමහා මහතා",
@@ -137,7 +193,11 @@
       "නලින් බණ්ඩාර ජයමහ",
       "ගරු නලින් බණ්ඩාර ජයමහ මහතා",
       "Nalin Bandara Jayamaha"
-    ]
+    ],
+    "manthriName": "Nalin Bandara Jayamaha",
+    "slug": "nalin-jayamaha",
+    "imageUrl": "https://www.parliament.lk/uploads/images/members/profile_images/thumbs/3208.jpg",
+    "localPath": "/images/speakers/nalin-jayamaha.png"
   },
   {
     "name": "ගරු ගයන්ත කරුණාතිලක",
@@ -147,7 +207,11 @@
       "ගරු ගයාන්ති කරුණාතිලක මහතා",
       "ගරු ගයන්ත කරුණාතිලක මහතා",
       "Hon. Gayantha Karunatileka"
-    ]
+    ],
+    "manthriName": "Gayantha Karunatilaka",
+    "slug": "gayantha-karunatilaka",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Gayantha_Karunathilaka.jpg",
+    "localPath": "/images/speakers/gayantha-karunatilaka.png"
   },
   {
     "name": "ගරු (වෛද්‍ය) නලින්ද ජයතිස්ස මහතා",
@@ -158,7 +222,11 @@
       "ගරු (ආචාර්ය) නලින්ද ජයතිස්ස මහතා",
       "Hon. (Dr.) Nalinda Jayathissa",
       "Nalinda Jayathissa"
-    ]
+    ],
+    "manthriName": "Nalinda Jayatissa",
+    "slug": "nalinda-jayatissa",
+    "imageUrl": "https://assets.manthri.lk/uploads/politician/profile_image/87/medium_Jayatissa-589a5063e80675bf18d1edbffaf86dd6.png",
+    "localPath": "/images/speakers/nalinda-jayatissa.png"
   },
   {
     "name": "ගරු එස්. එම්. මරික්කාර් මහතා",
@@ -167,7 +235,11 @@
       "S. M. Marikkar",
       "එස්. එම්. මරික්කාර් මහතා",
       "ගරු (නීතිඥ) එස්. එම්. මරික්කාර් මහතා"
-    ]
+    ],
+    "manthriName": "S. M. Marikkar",
+    "slug": "s-m-marikkar",
+    "imageUrl": "https://assets.manthri.lk/uploads/politician/profile_image/174/thumb_Marikkar-4092e8033c4c4d2a72064c0a0c2acc95.png",
+    "localPath": "/images/speakers/s-m-marikkar.png"
   },
   {
     "name": "ගරු ඉරාන් වික්‍රමරත්න මහතා",
@@ -176,7 +248,11 @@
       "Eran Wickramaratne",
       "The Hon. Eran Wickramaratne",
       "ඉරාන් වික්‍රමරත්න"
-    ]
+    ],
+    "manthriName": "Eran Wickramaratne",
+    "slug": "eran-wickramaratne",
+    "imageUrl": "https://www.parliament.lk/uploads/images/members/profile_images/thumbs/3200.jpg",
+    "localPath": "/images/speakers/eran-wickramaratne.png"
   },
   {
     "name": "ගරු නාමල් රාජපක්ෂ",
@@ -185,7 +261,11 @@
       "ගරු නීතිඥ නාමල් රාජපක්ෂ මහතා",
       "ගරු චමල් රාජපක්ෂ මහතා",
       "චමල් රාජපක්ෂ"
-    ]
+    ],
+    "manthriName": "Namal Rajapaksa",
+    "slug": "namal-rajapaksa",
+    "imageUrl": null,
+    "localPath": "/images/speakers/namal-rajapaksa.jpg"
   },
   {
     "name": "ගරු මුජිබර් රහමන් මහතා",
@@ -194,7 +274,11 @@
       "ගරු මුජිබර් රහුමාන්",
       "ගරු මුජීබුර් රහුමාන් මහතා",
       "මුජිබුර් රහුමාන්"
-    ]
+    ],
+    "manthriName": "Mujibur Rahman",
+    "slug": "mujibur-rahman",
+    "imageUrl": "https://www.parliament.lk/uploads/images/members/profile_images/thumbs/3213.jpg",
+    "localPath": "/images/speakers/mujibur-rahman.png"
   },
   {
     "name": "ගරු විමල් වීරවංශ මහතා",
@@ -202,7 +286,11 @@
     "aliases": [
       "Hon. Wimal Weerawansa",
       "විමල් වීරවංශ"
-    ]
+    ],
+    "manthriName": "Wimal Weerawansa",
+    "slug": "wimal-weerawansa",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/WimalWeerawansa.jpg/330px-WimalWeerawansa.jpg",
+    "localPath": "/images/speakers/wimal-weerawansa.png"
   },
   {
     "name": "ගරු මයෝහිණී කුමාරි විජේරත්න",
@@ -210,7 +298,11 @@
     "aliases": [
       "ගරු (මිය) රෝහිණී කුමාරි විජේරත්න මහත්මිය",
       "ගරු වරෝහිණී කුමාරි විජයරත්න මහත්මිය"
-    ]
+    ],
+    "manthriName": "Rohini Kumari Wijerathna",
+    "slug": "rohini-kumari-wijeratna",
+    "imageUrl": "https://www.parliament.lk/uploads/images/members/profile_images/thumbs/3233.jpg",
+    "localPath": "/images/speakers/rohini-kumari-wijeratna.png"
   },
   {
     "name": "ගරු රවී කරුණානායක මහතා",
@@ -219,7 +311,11 @@
       "රවි කරුණානායක",
       "ගරු රවි කරුණානායක මහතා",
       "The Hon. Ravi Karunanayake"
-    ]
+    ],
+    "manthriName": "Ravi Karunanayake",
+    "slug": "ravi-karunanayake",
+    "imageUrl": "https://assets.manthri.lk/uploads/politician/profile_image/160/thumb_Karunanayake-cba2a25e2654297f64f4f43d13d88838.png",
+    "localPath": "/images/speakers/ravi-karunanayake.png"
   },
   {
     "name": "ගරු විජිත හේරත් මහතා",
@@ -228,7 +324,11 @@
       "Vijitha Herath",
       "ගරු විජිත හේරත්",
       "විජිත හේරත් මහතා"
-    ]
+    ],
+    "manthriName": "Vijitha Herath",
+    "slug": "vijitha-herath",
+    "imageUrl": "https://assets.manthri.lk/uploads/politician/profile_image/212/thumb_Herath-234fcdfec6e9033b36ab14479e2d9847.png",
+    "localPath": "/images/speakers/vijitha-herath.png"
   },
   {
     "name": "ගරු ඩලස් අලහප්පෙරුම මහතා",
@@ -237,7 +337,11 @@
       "Dullas Alahapperuma",
       "ගරු ඩලස් අලහප්ෙපරුම් මහතා",
       "ඩලස් අලහප්පෙරුම"
-    ]
+    ],
+    "manthriName": "Dullas Alahapperuma",
+    "slug": "dullas-alahapperuma",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Dullas_Alahapperuma_GloCha-Klagenfurt-2014_9799-2.jpg/330px-Dullas_Alahapperuma_GloCha-Klagenfurt-2014_9799-2.jpg",
+    "localPath": "/images/speakers/dullas-alahapperuma.png"
   },
   {
     "name": "ගරු ශෙහාන් සේමසිංහ",
@@ -245,7 +349,11 @@
     "aliases": [
       "ෂෙහාන් සේමසිංහ",
       "ගරු ෂෙහාන් සේමසිංහ මහතා"
-    ]
+    ],
+    "manthriName": "Shehan Semasinghe",
+    "slug": "shehan-semasinghe",
+    "imageUrl": "https://www.parliament.lk/uploads/images/members/profile_images/thumbs/3151.jpg",
+    "localPath": "/images/speakers/shehan-semasinghe.png"
   },
   {
     "name": "ගරු රවුෆ් හකීම් මහතා",
@@ -256,7 +364,11 @@
       "ගරු (නීතිඥ) රවුෆ් හකීම් මහතා",
       "රවුල් හකීම්",
       "රවුෆ් හකීම්"
-    ]
+    ],
+    "manthriName": "Rauff Hakeem",
+    "slug": "rauff-hakeem",
+    "imageUrl": "https://assets.manthri.lk/uploads/politician/profile_image/159/thumb_Hakeem-906f493e7e8ee370cf73e2e83cfa030f.png",
+    "localPath": "/images/speakers/rauff-hakeem.png"
   },
   {
     "name": "ගරු නලින් ප්‍රනාන්දු",
@@ -272,14 +384,22 @@
     "total_speeches": 93,
     "aliases": [
       "කාංචන විජේසේකර"
-    ]
+    ],
+    "manthriName": "Kanchana Wijesekara",
+    "slug": "kanchana-wijesekara",
+    "imageUrl": "https://www.parliament.lk/uploads/images/members/profile_images/thumbs/3239.jpg",
+    "localPath": "/images/speakers/kanchana-wijesekara.png"
   },
   {
     "name": "ගරු ප්‍රසන්න රණතුංග මහතා",
     "total_speeches": 93,
     "aliases": [
       "ප්‍රසන්න රණතුංග"
-    ]
+    ],
+    "manthriName": "Prasanna Ranatunga",
+    "slug": "prasanna-ranatunga",
+    "imageUrl": "https://www.parliament.lk/uploads/images/members/profile_images/thumbs/3220.jpg",
+    "localPath": "/images/speakers/prasanna-ranatunga.png"
   },
   {
     "name": "ගරු (වෛද්‍ය) රාජිත සේනාරත්න මහතා",
@@ -287,7 +407,11 @@
     "aliases": [
       "ගරු රාජිත සේනාරත්න",
       "ගරු (ආචාර්ය) රාජිත සේනාරත්න මහතා"
-    ]
+    ],
+    "manthriName": "Rajitha Senaratne",
+    "slug": "rajitha-senaratne",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Dr.Rajitha_Senaratna.jpg/330px-Dr.Rajitha_Senaratna.jpg",
+    "localPath": "/images/speakers/rajitha-senaratne.png"
   },
   {
     "name": "ගරු වාසුදේව නානායක්කාර",
@@ -296,12 +420,20 @@
       "ගරු වාසුදේව නානායක්කාර මහතා",
       "Hon. Vasudeva Nanayakkara",
       "වාසුදෙව් නානායක්කාර මහතා"
-    ]
+    ],
+    "manthriName": "Vasudeva Nanayakkara",
+    "slug": "vasudeva-nanayakkara",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Vasudeva_Nanayakkara.jpg/330px-Vasudeva_Nanayakkara.jpg",
+    "localPath": "/images/speakers/vasudeva-nanayakkara.png"
   },
   {
     "name": "ගරු මහින්දානන්ද අලුත්ගමගේ මහතා",
     "total_speeches": 90,
-    "aliases": []
+    "aliases": [],
+    "manthriName": "Mahindananda Aluthgamage",
+    "slug": "mahindananda-aluthgamage",
+    "imageUrl": "https://www.parliament.lk/uploads/images/members/profile_images/thumbs/58.jpg",
+    "localPath": "/images/speakers/mahindananda-aluthgamage.png"
   },
   {
     "name": "ගරු සාණක්‍ය රාජපුත්‍රන් රාසමාණික්කම් මහතා",
@@ -312,14 +444,22 @@
       "The Hon. Shanakiyan Rajaputhiran Rasamanickam",
       "ගරු ශානක්කියන් රාජපුත්තිරන් රාසමානික්කම් මහතා",
       "ගරු ෂාණක් කික්කියන් රාජ පුත්තිරන් රා සමාණික්කම් මහතා"
-    ]
+    ],
+    "manthriName": "Shanakiyan Rajaputhiran Rasamanickam",
+    "slug": "shanakiyan-rajaputhiran-rasamanickam",
+    "imageUrl": "https://assets.manthri.lk/uploads/politician/profile_image/186/thumb_Shanakiyan-ae71dfe8279cbde0b86601d081ca3993.png",
+    "localPath": "/images/speakers/shanakiyan-rajaputhiran-rasamanickam.png"
   },
   {
     "name": "ගරු ජේ. සී. අලවතුවල මහතා",
     "total_speeches": 89,
     "aliases": [
       "ජේ. සී. අලවතුවල"
-    ]
+    ],
+    "manthriName": "J. C. Alawathuwala",
+    "slug": "j-c-alawathuwala",
+    "imageUrl": null,
+    "localPath": "/images/speakers/j-c-alawathuwala.png"
   },
   {
     "name": "ගරු නිමල් ලාන්සා මහතා",
@@ -327,7 +467,11 @@
     "aliases": [
       "Nimal Lanza",
       "නිමල් ලාන්සා"
-    ]
+    ],
+    "manthriName": "Nimal Lanza",
+    "slug": "nimal-lanza",
+    "imageUrl": "https://www.parliament.lk/uploads/images/members/profile_images/thumbs/3222.jpg",
+    "localPath": "/images/speakers/nimal-lanza.png"
   },
   {
     "name": "ගරු (ආචාර්ය) හරිනි අමරසූරිය මෙනෙවිය",
@@ -337,7 +481,11 @@
       "Harini Amarasuriya",
       "The Hon. (Dr.) Harini Amarasuriya",
       "ගරු හරිනි අමරසූරිය"
-    ]
+    ],
+    "manthriName": "Harini Amarasuriya",
+    "slug": "harini-amarasuriya",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Harini_Amarasuriya%2C_PM_of_Sri_Lanka.jpeg/330px-Harini_Amarasuriya%2C_PM_of_Sri_Lanka.jpeg",
+    "localPath": "/images/speakers/harini-amarasuriya.png"
   },
   {
     "name": "ගරු (වෛද්‍ය) රමේෂ් පතිරණ මහතා",
@@ -354,14 +502,22 @@
       "ගරු (නීතිඥ) නිමල් සිරිපාල ද සිල්වා මහතා",
       "ගරු නිමල් සිරිපාල ද සිල්වා මහතා",
       "Nimal Siripala De Silva"
-    ]
+    ],
+    "manthriName": "Nimal Siripala de Silva",
+    "slug": "nimal-siripala-de-silva",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Nimal_Siripala_de_Silva_2023.jpg/330px-Nimal_Siripala_de_Silva_2023.jpg",
+    "localPath": "/images/speakers/nimal-siripala-de-silva.png"
   },
   {
     "name": "ගරු වීරසුමන වීරසිංහ මහතා",
     "total_speeches": 79,
     "aliases": [
       "වීරසුමන වීරසිංහ"
-    ]
+    ],
+    "manthriName": "Weerasumana Weerasinghe",
+    "slug": "weerasumana-weerasinghe",
+    "imageUrl": null,
+    "localPath": "/images/speakers/weerasumana-weerasinghe.png"
   },
   {
     "name": "ගරු (ආචාර්ය) විජයදාස රාජපක්ෂ මහතා",
@@ -371,7 +527,11 @@
       "ගරු ජනාධිපති නීතිඥ (ආචාර්ය) විජයදාස රාජපක්ෂ මහතා",
       "ගරු විජයදාස රාජපක්ෂ",
       "විජයදාස රාජපක්ෂ මහතා"
-    ]
+    ],
+    "manthriName": "Wijayadasa Rajapaksha",
+    "slug": "wijayadasa-rajapaksha",
+    "imageUrl": null,
+    "localPath": "/images/speakers/wijayadasa-rajapaksha.png"
   },
   {
     "name": "ගරු අජිත් පී. පෙරේරා මහතා",
@@ -379,7 +539,11 @@
     "aliases": [
       "Ajith P. Perera",
       "අජිත් පී. පෙරේරා"
-    ]
+    ],
+    "manthriName": "Ajith P. Perera",
+    "slug": "ajith-p-perera",
+    "imageUrl": null,
+    "localPath": "/images/speakers/ajith-p-perera.jpg"
   },
   {
     "name": "ගරු එම්. ඒ. සුමන්තිරන්",
@@ -390,7 +554,11 @@
       "The Hon. M.A. Sumanthiran",
       "ගරු එම්. ඒ. සුමන්දිරන් මහතා",
       "ගරු (නීතිඥ) එම්. ඒ. සුමන්තිරන් මහතා"
-    ]
+    ],
+    "manthriName": "M. A. Sumanthiran",
+    "slug": "m-a-sumanthiran",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8b/M._A._Sumanthiran.jpg",
+    "localPath": "/images/speakers/m-a-sumanthiran.png"
   },
   {
     "name": "ගරු ශාන්ත බණ්ඩාර මහතා",
@@ -404,7 +572,11 @@
     "total_speeches": 74,
     "aliases": [
       "හෙක්ටර් අප්පුහාමි"
-    ]
+    ],
+    "manthriName": "Hector Appuhamy",
+    "slug": "hector-appuhamy",
+    "imageUrl": "https://www.parliament.lk/uploads/images/members/profile_images/thumbs/3258.jpg",
+    "localPath": "/images/speakers/hector-appuhamy.jpg"
   },
   {
     "name": "ගරු උදය ප්‍රභාත් ගම්මන්පිල මහතා",
@@ -452,7 +624,11 @@
       "Sivagnanam Shritharan",
       "ගරු සිවඥා නම් ශ්‍රී තරන් මහතා",
       "සිවඥානම් ශ්‍රී තරන්"
-    ]
+    ],
+    "manthriName": "Sivagnanam Shritharan",
+    "slug": "sivagnanam-shritharan",
+    "imageUrl": "https://assets.manthri.lk/uploads/politician/profile_image/188/thumb_Siritharan-2b2bd6c11983346a20f1487b4e769f92.png",
+    "localPath": "/images/speakers/sivagnanam-shritharan.png"
   },
   {
     "name": "ගරු ඉන්දික අනුරුද්ධ හේරත් මහතා",
@@ -486,7 +662,11 @@
       "The Hon. (Dr.) Kavinda Heshan Jayawardhana",
       "ගරු කවින්ද හේෂාන් ජයවර්ධන",
       "ගරු (වෛද්‍ය) කාවින්ද ජයවර්ධන"
-    ]
+    ],
+    "manthriName": "Kavinda Heshan Jayawardhana",
+    "slug": "kavinda-heshan-jayawardhana",
+    "imageUrl": "https://www.parliament.lk/uploads/images/members/profile_images/thumbs/3276.jpg",
+    "localPath": "/images/speakers/kavinda-heshan-jayawardhana.jpg"
   },
   {
     "name": "ගරු රෝහිත අබේගුණවර්ධන මහතා",
@@ -495,7 +675,11 @@
       "Rohitha Abegunawardhana",
       "ගරු රෝහිත අබේගුණර්වධන මහතා",
       "රෝහිත අබේගුණවර්ධන"
-    ]
+    ],
+    "manthriName": "Rohitha Abegunawardhana",
+    "slug": "rohitha-abegunawardhana",
+    "imageUrl": "https://assets.manthri.lk/uploads/politician/profile_image/167/thumb_Abeygunawardhana-c42c2b7f280df8e268926343c8339ebe.png",
+    "localPath": "/images/speakers/rohitha-abegunawardhana.png"
   },
   {
     "name": "ගරු ප්‍රේමනාත් සී. දොලවත්ත මහතා",
@@ -511,7 +695,11 @@
     "aliases": [
       "Sunil Handunnetti",
       "සුනිල් හඳුන්නෙත්ති"
-    ]
+    ],
+    "manthriName": "Sunil Handunnetti",
+    "slug": "sunil-handunnetti",
+    "imageUrl": "https://www.parliament.lk/uploads/images/members/profile_images/thumbs/201.jpg",
+    "localPath": "/images/speakers/sunil-handunnetti.jpg"
   },
   {
     "name": "ගරු වසන්ත යාපා බණ්ඩාර",
@@ -560,7 +748,11 @@
       "ගරු රංජිත් මද්දුමබණ්ඩාර මහතා",
       "රංජිත් මද්දුම බණ්ඩාර මහතා",
       "රංජිත් බණ්ඩාර"
-    ]
+    ],
+    "manthriName": "R. M. Ranjith Madduma Bandara",
+    "slug": "r-m-ranjith-madduma-bandara",
+    "imageUrl": "https://www.parliament.lk/uploads/images/members/profile_images/thumbs/148.jpg",
+    "localPath": "/images/speakers/r-m-ranjith-madduma-bandara.jpg"
   },
   {
     "name": "ගරු අජිත් මාන්නප්පෙරුම මහතා",
@@ -592,7 +784,11 @@
     "total_speeches": 50,
     "aliases": [
       "හර්ෂණ රාජකරුණා"
-    ]
+    ],
+    "manthriName": "Harshana Rajakaruna",
+    "slug": "harshana-rajakaruna",
+    "imageUrl": "https://www.parliament.lk/uploads/images/members/profile_images/thumbs/3217.jpg",
+    "localPath": "/images/speakers/harshana-rajakaruna.jpg"
   },
   {
     "name": "ගරු පාඨලී චම්පික රණවක මහතා",
@@ -628,7 +824,11 @@
       "ගරු කබීර් හෂීම් මහතා",
       "Hon. Kabir Hashim",
       "කබීර් හෂීම් මහතා"
-    ]
+    ],
+    "manthriName": "Kabir Hashim",
+    "slug": "kabir-hashim",
+    "imageUrl": "https://www.parliament.lk/uploads/images/members/profile_images/thumbs/259.jpg",
+    "localPath": "/images/speakers/kabir-hashim.jpg"
   },
   {
     "name": "ගරු රිෂාඩ් බදියුදීන් මහතා",
@@ -636,7 +836,11 @@
     "aliases": [
       "Hon. Risad Badhiutheen",
       "ගරු රිසාඩ් බදියුදීන්"
-    ]
+    ],
+    "manthriName": "Rishad Bathiudeen",
+    "slug": "rishad-bathiudeen",
+    "imageUrl": "https://www.parliament.lk/uploads/images/members/profile_images/thumbs/293.jpg",
+    "localPath": "/images/speakers/rishad-bathiudeen.jpg"
   },
   {
     "name": "ගරු රොෂාන් රණසිංහ මහතා",
@@ -657,7 +861,11 @@
     "total_speeches": 47,
     "aliases": [
       "චාමර සම්පත් දසනායක"
-    ]
+    ],
+    "manthriName": "Chamara Sampath Dasanayake",
+    "slug": "chamara-sampath-dasanayake",
+    "imageUrl": "https://www.parliament.lk/uploads/images/members/profile_images/thumbs/3309.jpg",
+    "localPath": "/images/speakers/chamara-sampath-dasanayake.jpg"
   },
   {
     "name": "ගරු ඉෂාක් රහුමාන් මහතා",
@@ -691,7 +899,11 @@
     "aliases": [
       "Hon. Imran Maharoof",
       "ඉම්රාන් මහරූෆ්"
-    ]
+    ],
+    "manthriName": "Imran Maharoof",
+    "slug": "imran-maharoof",
+    "imageUrl": "https://www.parliament.lk/uploads/images/members/profile_images/thumbs/3279.jpg",
+    "localPath": "/images/speakers/imran-maharoof.jpg"
   },
   {
     "name": "ගරු (මහාචාර්ය ) ජී. එල්. පීරිස් මහතා",
@@ -829,7 +1041,11 @@
     "total_speeches": 39,
     "aliases": [
       "ගරු කින්ස් නෙල්සන් මහතා"
-    ]
+    ],
+    "manthriName": "Kins Nelson",
+    "slug": "kins-nelson",
+    "imageUrl": "https://www.parliament.lk/uploads/images/members/profile_images/thumbs/3307.jpg",
+    "localPath": "/images/speakers/kins-nelson.jpg"
   },
   {
     "name": "අතිගරු මෛත්‍රීපාල සිරිසේන මහතා",
@@ -850,7 +1066,11 @@
       "ගරු සයිසර් මුස්තාපා මහතා",
       "ගරු ෆයිසර් මුස්තාපා",
       "ෆයිසර් මුස්තාෆා"
-    ]
+    ],
+    "manthriName": "Faiszer Musthapha",
+    "slug": "faiszer-musthapha",
+    "imageUrl": "https://www.parliament.lk/uploads/images/members/profile_images/thumbs/1432.jpg",
+    "localPath": "/images/speakers/faiszer-musthapha.jpg"
   },
   {
     "name": "ප්‍රමිත බණ්ඩාර තෙන්නකෝන්",
@@ -879,7 +1099,11 @@
     "aliases": [
       "Dilip Wedaarachchi",
       "දිලිප් වෙදආරච්චි"
-    ]
+    ],
+    "manthriName": "Dilip Wedaarachchi",
+    "slug": "dilip-wedaarachchi",
+    "imageUrl": "https://www.parliament.lk/uploads/images/members/profile_images/thumbs/181.jpg",
+    "localPath": "/images/speakers/dilip-wedaarachchi.jpg"
   },
   {
     "name": "ගරු මයන්ත දිසානායක මහතා",
@@ -893,7 +1117,11 @@
     "total_speeches": 34,
     "aliases": [
       "කේ. සුජිත් සංජය පෙරේරා"
-    ]
+    ],
+    "manthriName": "K. Sujith Sanjaya Perera",
+    "slug": "k-sujith-sanjaya-perera",
+    "imageUrl": "https://www.parliament.lk/uploads/images/members/profile_images/thumbs/3270.jpg",
+    "localPath": "/images/speakers/k-sujith-sanjaya-perera.jpg"
   },
   {
     "name": "ගරු එස්. බී. දිසානායක මහතා",
@@ -944,7 +1172,11 @@
     "total_speeches": 29,
     "aliases": [
       "අනුරාධ ජයරත්න මහතා"
-    ]
+    ],
+    "manthriName": "Anuradha Jayaratne",
+    "slug": "anuradha-jayaratne",
+    "imageUrl": "https://www.parliament.lk/uploads/images/members/profile_images/thumbs/3232.jpg",
+    "localPath": "/images/speakers/anuradha-jayaratne.jpg"
   },
   {
     "name": "ගරු තාරක බාලසූරිය මහතා",
@@ -1002,7 +1234,11 @@
     "aliases": [
       "Hon. Mano Ganesan",
       "ගරු මනෝ ගනේසන්"
-    ]
+    ],
+    "manthriName": "Mano Ganesan",
+    "slug": "mano-ganesan",
+    "imageUrl": "https://assets.manthri.lk/uploads/politician/profile_image/225/thumb_mano-ganesan-removebg-preview-06b7fb293c5b755f50d67bf07acb1e0f.png",
+    "localPath": "/images/speakers/mano-ganesan.png"
   },
   {
     "name": "ගරු ජගත් පුෂ්පකුමාර මහතා",
@@ -1073,7 +1309,11 @@
   {
     "name": "තනුර දිසානායක",
     "total_speeches": 25,
-    "aliases": []
+    "aliases": [],
+    "manthriName": "Thanura Dissanayake",
+    "slug": "thanura-dissanayake",
+    "imageUrl": "https://www.parliament.lk/uploads/images/members/profile_images/thumbs/3499.jpg",
+    "localPath": "/images/speakers/thanura-dissanayake.jpg"
   },
   {
     "name": "ගරු (මහාචාර්‌ය) රංජිත් බණ්ඩාර මහතා",
@@ -1087,7 +1327,11 @@
       "Ramanathan Archchuna",
       "The Hon. (Dr.) Ramanathan Archchuna",
       "රාමනාදන් අච්චුනා"
-    ]
+    ],
+    "manthriName": "Ramanathan Archchuna",
+    "slug": "ramanathan-archchuna",
+    "imageUrl": "https://assets.manthri.lk/uploads/politician/profile_image/156/thumb_17-02118835b5153dffa83b4194813e30f8.png",
+    "localPath": "/images/speakers/ramanathan-archchuna.png"
   },
   {
     "name": "ගරු ගුණතිලක රාජපක්ෂ මහතා",
@@ -1099,7 +1343,11 @@
   {
     "name": "ගරු කුමාර ජයකොඩි මහතා",
     "total_speeches": 24,
-    "aliases": []
+    "aliases": [],
+    "manthriName": "Kumara Jayakody",
+    "slug": "kumara-jayakody",
+    "imageUrl": "https://www.parliament.lk/uploads/images/members/profile_images/thumbs/3611.jpg",
+    "localPath": "/images/speakers/kumara-jayakody.jpg"
   },
   {
     "name": "ගරු තලතා අතුකෝරල මෙනෙවිය",
@@ -1114,7 +1362,11 @@
     "total_speeches": 24,
     "aliases": [
       "ඩී. වී. චානක"
-    ]
+    ],
+    "manthriName": "D. V. Chanaka",
+    "slug": "d-v-chanaka",
+    "imageUrl": "https://www.parliament.lk/uploads/images/members/profile_images/thumbs/3240.jpg",
+    "localPath": "/images/speakers/d-v-chanaka.jpg"
   },
   {
     "name": "ගරු ජීවන් තොණ්ඩමන් මහතා",
@@ -1125,7 +1377,11 @@
       "Hon. Jeevan Thondaman",
       "ජීවන් තොණ්ඩමන්",
       "ජීවන් තොන්ඩමන්"
-    ]
+    ],
+    "manthriName": "Jeevan Thondaman",
+    "slug": "jeevan-thondaman",
+    "imageUrl": "https://www.parliament.lk/uploads/images/members/profile_images/thumbs/3329.jpg",
+    "localPath": "/images/speakers/jeevan-thondaman.jpg"
   },
   {
     "name": "ෆීල්ඩ් මාර්ෂල් සරත් ෆොන්සේකා",
@@ -1139,7 +1395,11 @@
     "total_speeches": 23,
     "aliases": [
       "වසන්ත සමරසිංහ මහතා"
-    ]
+    ],
+    "manthriName": "Wasantha Samarasinghe",
+    "slug": "wasantha-samarasinghe",
+    "imageUrl": "https://www.parliament.lk/uploads/images/members/profile_images/thumbs/1495.jpg",
+    "localPath": "/images/speakers/wasantha-samarasinghe.jpg"
   },
   {
     "name": "ගරු අරුන්දික ප්‍රනාන්දු මහතා",
@@ -1187,7 +1447,11 @@
     "aliases": [
       "ගරු මහින්ද රාජපක්ෂ මහතා",
       "Hon. Mahinda Rajapaksa"
-    ]
+    ],
+    "manthriName": "Mahinda Rajapaksha",
+    "slug": "mahinda-rajapaksha",
+    "imageUrl": null,
+    "localPath": "/images/speakers/mahinda-rajapaksha.png"
   },
   {
     "name": "ගරු ආනන්ද අලුත්ගමගේ",
@@ -1201,7 +1465,11 @@
     "total_speeches": 21,
     "aliases": [
       "ආනන්ද විජේපාල"
-    ]
+    ],
+    "manthriName": "Ananda Wijepala",
+    "slug": "ananda-wijepala",
+    "imageUrl": "https://www.parliament.lk/uploads/images/members/profile_images/thumbs/3549.jpg",
+    "localPath": "/images/speakers/ananda-wijepala.jpg"
   },
   {
     "name": "ගරු එස්. වියාලේන්ද්‍රන් මහතා",
@@ -1232,7 +1500,11 @@
     "aliases": [
       "සුසිල් රණසිංහ",
       "(වෛද්‍ය) සුසිල් රණසිංහ"
-    ]
+    ],
+    "manthriName": "Susil Ranasinghe",
+    "slug": "susil-ranasinghe",
+    "imageUrl": "https://www.parliament.lk/uploads/images/members/profile_images/thumbs/3568.jpg",
+    "localPath": "/images/speakers/susil-ranasinghe.jpg"
   },
   {
     "name": "ගරු සී. වී. විග්නේශ්වරන් මහතා",
@@ -1277,7 +1549,11 @@
     "aliases": [
       "අර්ජුන සුජීව සේනසිංහ මහතා",
       "ගරු නීතිඥ අර්ජුන සුජීව සේනසිංහ මහතා"
-    ]
+    ],
+    "manthriName": "Arjuna Sujeewa Senasinghe",
+    "slug": "arjuna-sujeewa-senasinghe",
+    "imageUrl": "https://www.parliament.lk/uploads/images/members/profile_images/thumbs/3132.jpg",
+    "localPath": "/images/speakers/arjuna-sujeewa-senasinghe.jpg"
   },
   {
     "name": "ගරු රාජවරෝදියම් සම්පන්දන් මහතා",
@@ -1307,7 +1583,11 @@
     "aliases": [
       "Nihal Galappaththi",
       "නිහාල් ගලප්පත්ති"
-    ]
+    ],
+    "manthriName": "Nihal Galappaththi",
+    "slug": "nihal-galappaththi",
+    "imageUrl": "https://www.parliament.lk/uploads/images/members/profile_images/thumbs/83.jpg",
+    "localPath": "/images/speakers/nihal-galappaththi.jpg"
   },
   {
     "name": "ගරු රෝහණ දිසානායක මහතා",
@@ -1323,7 +1603,11 @@
       "The Hon. Harshana Nanayakkara, Attorney-at-Law",
       "ගරු (වෛද්‍ය) හර්ෂණ නානායක්කාර",
       "හර්ෂණ නානායක්කාර මහතා"
-    ]
+    ],
+    "manthriName": "Harshana Nanayakkara",
+    "slug": "harshana-nanayakkara",
+    "imageUrl": "https://www.parliament.lk/uploads/images/members/profile_images/thumbs/3464.jpg",
+    "localPath": "/images/speakers/harshana-nanayakkara.jpg"
   },
   {
     "name": "ගරු බී. වයි. ජී. රත්නසේකර",
@@ -1355,7 +1639,11 @@
       "ඥානමුත්තු ශ්‍රී නේසන්",
       "ගරු ඥානමුත්තු ශ්‍රීනේෂන් මහතා",
       "The Hon. Gnanamuthu Srineshan"
-    ]
+    ],
+    "manthriName": "Gnanamuththu Srineshan",
+    "slug": "gnanamuththu-srineshan",
+    "imageUrl": "https://www.parliament.lk/uploads/images/members/profile_images/thumbs/3250.jpg",
+    "localPath": "/images/speakers/gnanamuththu-srineshan.jpg"
   },
   {
     "name": "ගරු කේ. වී. සමන්ත විද්‍යාරත්න මහතා",
@@ -1394,7 +1682,11 @@
       "Hon. Bimal Rathnayake",
       "බිමල් රත්නායක",
       "ගරු බිමල් ණත්නායක මහතා"
-    ]
+    ],
+    "manthriName": "Bimal Rathnayake",
+    "slug": "bimal-rathnayake",
+    "imageUrl": "https://assets.manthri.lk/uploads/politician/profile_image/158/thumb_images-removebg-preview-1b951a8ee7ecbd5e1dbe6d5a16da6ca5.png",
+    "localPath": "/images/speakers/bimal-rathnayake.png"
   },
   {
     "name": "ගරු උදයන කිරිඳිගොඩ මහතා",
@@ -1427,7 +1719,11 @@
   {
     "name": "ගරු සංජීව රණසිංහ මහතා",
     "total_speeches": 16,
-    "aliases": []
+    "aliases": [],
+    "manthriName": "Sanjeewa Ranasingha",
+    "slug": "sanjeewa-ranasingha",
+    "imageUrl": "https://www.parliament.lk/uploads/images/members/profile_images/thumbs/3490.jpg",
+    "localPath": "/images/speakers/sanjeewa-ranasingha.jpg"
   },
   {
     "name": "ගරු පියල් නිශාන්ත ද සිල්වා",
@@ -1484,7 +1780,11 @@
     "aliases": [
       "ගරු රුවන් විජේවීර මහතා",
       "රුවන් විජේවර්ධන"
-    ]
+    ],
+    "manthriName": "Ruwan Wijeweera",
+    "slug": "ruwan-wijeweera",
+    "imageUrl": "https://www.parliament.lk/uploads/images/members/profile_images/thumbs/3586.jpg",
+    "localPath": "/images/speakers/ruwan-wijeweera.jpg"
   },
   {
     "name": "ගරු (වෛද්‍ය) සීතා අරඹෙ පොළ මහත්මිය",
@@ -1500,7 +1800,11 @@
   {
     "name": "ගරු අනුර කරුණාතිලක මහතා",
     "total_speeches": 15,
-    "aliases": []
+    "aliases": [],
+    "manthriName": "Anura Karunathilaka",
+    "slug": "anura-karunathilaka",
+    "imageUrl": "https://www.parliament.lk/uploads/images/members/profile_images/thumbs/3604.jpg",
+    "localPath": "/images/speakers/anura-karunathilaka.jpg"
   },
   {
     "name": "ගරු සිවනේ සතුරෙයි චන්ද්‍රකාන්තන් මහතා",
@@ -1616,7 +1920,11 @@
     "total_speeches": 13,
     "aliases": [
       "දම්මික පටබැඳි"
-    ]
+    ],
+    "manthriName": "Dammika Patabendi",
+    "slug": "dammika-patabendi",
+    "imageUrl": "https://www.parliament.lk/uploads/images/members/profile_images/thumbs/3597.jpg",
+    "localPath": "/images/speakers/dammika-patabendi.jpg"
   },
   {
     "name": "ගරු කරුණාරත්න පරණ විතාන මහතා",
@@ -1631,7 +1939,11 @@
     "total_speeches": 13,
     "aliases": [
       "හංසක විජේමුණි"
-    ]
+    ],
+    "manthriName": "Hansaka Wijemuni",
+    "slug": "hansaka-wijemuni",
+    "imageUrl": "https://www.parliament.lk/uploads/images/members/profile_images/thumbs/3498.jpg",
+    "localPath": "/images/speakers/hansaka-wijemuni.jpg"
   },
   {
     "name": "ගරු ලලිත් එල්ලාවල මහතා",
@@ -1645,7 +1957,11 @@
     "total_speeches": 13,
     "aliases": [
       "චතුරංග අබේසිංහ"
-    ]
+    ],
+    "manthriName": "Chathuranga Abeysinghe",
+    "slug": "chathuranga-abeysinghe",
+    "imageUrl": "https://www.parliament.lk/uploads/images/members/profile_images/thumbs/3460.jpg",
+    "localPath": "/images/speakers/chathuranga-abeysinghe.jpg"
   },
   {
     "name": "ගරු ඒ. එල්. එම්. අතාඋල්ලා මහතා",
@@ -1697,7 +2013,11 @@
     "aliases": [
       "අනිල් ජයන්ත",
       "ගරු අනිල් ජයන්ත මහතා"
-    ]
+    ],
+    "manthriName": "Anil Jayantha",
+    "slug": "anil-jayantha",
+    "imageUrl": "https://www.parliament.lk/uploads/images/members/profile_images/thumbs/3472.jpg",
+    "localPath": "/images/speakers/anil-jayantha.jpg"
   },
   {
     "name": "ගරු මහින්ද සමරසිංහ මහතා",
@@ -1725,7 +2045,11 @@
     "total_speeches": 12,
     "aliases": [
       "වරුණ ලියනගේ"
-    ]
+    ],
+    "manthriName": "Waruna Liyanage",
+    "slug": "waruna-liyanage",
+    "imageUrl": "https://www.parliament.lk/uploads/images/members/profile_images/thumbs/3287.jpg",
+    "localPath": "/images/speakers/waruna-liyanage.jpg"
   },
   {
     "name": "ගරු අමිර්තනාදන් අඩෙක්කලනාදන් මහතා",
@@ -1751,7 +2075,11 @@
     "total_speeches": 11,
     "aliases": [
       "මධුර සෙනෙවිරත්න"
-    ]
+    ],
+    "manthriName": "Madhura Senevirathna",
+    "slug": "madhura-senevirathna",
+    "imageUrl": "https://www.parliament.lk/uploads/images/members/profile_images/thumbs/3510.jpg",
+    "localPath": "/images/speakers/madhura-senevirathna.jpg"
   },
   {
     "name": "ගරු සුසන්ත පුංචිනිලමේ මහතා",
@@ -1777,12 +2105,20 @@
   {
     "name": "ගරු ඩබ්ලිව්. එච්. එම්. ධර්මසේන මහතා",
     "total_speeches": 10,
-    "aliases": []
+    "aliases": [],
+    "manthriName": "W. H. M. Dharmasena",
+    "slug": "w-h-m-dharmasena",
+    "imageUrl": "https://www.parliament.lk/uploads/images/members/profile_images/thumbs/3294.jpg",
+    "localPath": "/images/speakers/w-h-m-dharmasena.jpg"
   },
   {
     "name": "ගරු මයිල්වාගනම් ජෙගදීස්වරන් මහතා",
     "total_speeches": 10,
-    "aliases": []
+    "aliases": [],
+    "manthriName": "Mayilvaganam Jegatheeswaran",
+    "slug": "mayilvaganam-jegatheeswaran",
+    "imageUrl": "https://www.parliament.lk/uploads/images/members/profile_images/thumbs/3537.jpg",
+    "localPath": "/images/speakers/mayilvaganam-jegatheeswaran.jpg"
   },
   {
     "name": "ගරු ශ්‍රීධරන් මහතා",
@@ -1856,12 +2192,20 @@
   {
     "name": "ගරු (ආචාර්ය) එම්. එල්. ඒ. එම්. හිස්බුල්ලාහ් මහතා",
     "total_speeches": 9,
-    "aliases": []
+    "aliases": [],
+    "manthriName": "M.L.A.M. Hizbullah",
+    "slug": "m-l-a-m-hizbullah",
+    "imageUrl": "https://www.parliament.lk/uploads/images/members/profile_images/thumbs/228.jpg",
+    "localPath": "/images/speakers/m-l-a-m-hizbullah.jpg"
   },
   {
     "name": "ගරු (වෛද්‍ය) පත්මනාදන් සත්‍යලිංගම් මහතා",
     "total_speeches": 9,
-    "aliases": []
+    "aliases": [],
+    "manthriName": "Pathmanathan Sathiyalingam",
+    "slug": "pathmanathan-sathiyalingam",
+    "imageUrl": "https://www.parliament.lk/uploads/images/members/profile_images/thumbs/3621.jpg",
+    "localPath": "/images/speakers/pathmanathan-sathiyalingam.jpg"
   },
   {
     "name": "ගරු චින්තක අමල් මායාදුන්න මහතා",
@@ -1936,12 +2280,20 @@
   {
     "name": "ගරු රාමලිංගම් චන්ද්‍ර සේකර් මහතා",
     "total_speeches": 8,
-    "aliases": []
+    "aliases": [],
+    "manthriName": "Ramalingam Chandrasekar",
+    "slug": "ramalingam-chandrasekar",
+    "imageUrl": "https://www.parliament.lk/uploads/images/members/profile_images/thumbs/275.jpg",
+    "localPath": "/images/speakers/ramalingam-chandrasekar.jpg"
   },
   {
     "name": "ගරු අරවින්ද සෙනරත් මහතා",
     "total_speeches": 8,
-    "aliases": []
+    "aliases": [],
+    "manthriName": "Aravinda Senarath",
+    "slug": "aravinda-senarath",
+    "imageUrl": "https://www.parliament.lk/uploads/images/members/profile_images/thumbs/3530.jpg",
+    "localPath": "/images/speakers/aravinda-senarath.jpg"
   },
   {
     "name": "ගරු සනත් නිශාන්ත",
@@ -1961,19 +2313,31 @@
   {
     "name": "ගරු අසිත නිරෝෂණ එගොඩ විතාන මහතා",
     "total_speeches": 8,
-    "aliases": []
+    "aliases": [],
+    "manthriName": "Asitha Niroshana Egoda Vithana",
+    "slug": "asitha-niroshana-egoda-vithana",
+    "imageUrl": "https://www.parliament.lk/uploads/images/members/profile_images/thumbs/3466.jpg",
+    "localPath": "/images/speakers/asitha-niroshana-egoda-vithana.jpg"
   },
   {
     "name": "ගරු සුනිල් කුමාර ගමගේ මහතා",
     "total_speeches": 8,
-    "aliases": []
+    "aliases": [],
+    "manthriName": "Sunil Kumara Gamage",
+    "slug": "sunil-kumara-gamage",
+    "imageUrl": "https://www.parliament.lk/uploads/images/members/profile_images/thumbs/3615.jpg",
+    "localPath": "/images/speakers/sunil-kumara-gamage.jpg"
   },
   {
     "name": "ගරු පලනි දිගම්බරම් මහතා",
     "total_speeches": 8,
     "aliases": [
       "පලනි දිගම්බරම්"
-    ]
+    ],
+    "manthriName": "Palani Thigambaram",
+    "slug": "palani-thigambaram",
+    "imageUrl": "https://www.parliament.lk/uploads/images/members/profile_images/thumbs/3160.jpg",
+    "localPath": "/images/speakers/palani-thigambaram.jpg"
   },
   {
     "name": "ගරු ශ්‍රියානි විජේවික්‍රම මහත්මිය",
@@ -2037,7 +2401,11 @@
     "total_speeches": 8,
     "aliases": [
       "ගරු එම්. නිසාම් කාරියප්පර් මහතා"
-    ]
+    ],
+    "manthriName": "M. Nizam Kariapper",
+    "slug": "m-nizam-kariapper",
+    "imageUrl": "https://www.parliament.lk/uploads/images/members/profile_images/thumbs/3623.jpg",
+    "localPath": "/images/speakers/m-nizam-kariapper.jpg"
   },
   {
     "name": "තිලංග සුමතිපාල",
@@ -2089,7 +2457,11 @@
     "total_speeches": 7,
     "aliases": [
       "සුසන්ත කුමාර නවරත්න"
-    ]
+    ],
+    "manthriName": "Susantha Kumara Nawarathna",
+    "slug": "susantha-kumara-nawarathna",
+    "imageUrl": "https://www.parliament.lk/uploads/images/members/profile_images/thumbs/3569.jpg",
+    "localPath": "/images/speakers/susantha-kumara-nawarathna.jpg"
   },
   {
     "name": "ගරු ලලිත් වර්ණ කුමාර මහතා",
@@ -2136,12 +2508,20 @@
   {
     "name": "ගරු සුනිල් රත්නසිරි මහතා",
     "total_speeches": 6,
-    "aliases": []
+    "aliases": [],
+    "manthriName": "Sunil Rathnasiri",
+    "slug": "sunil-rathnasiri",
+    "imageUrl": "https://www.parliament.lk/uploads/images/members/profile_images/thumbs/3576.jpg",
+    "localPath": "/images/speakers/sunil-rathnasiri.jpg"
   },
   {
     "name": "ගරු තුරෛරාසා රවිකරන් මහතා",
     "total_speeches": 6,
-    "aliases": []
+    "aliases": [],
+    "manthriName": "Thurairasa Ravikaran",
+    "slug": "thurairasa-ravikaran",
+    "imageUrl": "https://www.parliament.lk/uploads/images/members/profile_images/thumbs/3538.jpg",
+    "localPath": "/images/speakers/thurairasa-ravikaran.jpg"
   },
   {
     "name": "ගරු අලි සබ්රි රහීම් මහතා",
@@ -2151,12 +2531,20 @@
   {
     "name": "ගරු නාමල් කරුණාරත්න මහතා",
     "total_speeches": 6,
-    "aliases": []
+    "aliases": [],
+    "manthriName": "Namal Karunaratne",
+    "slug": "namal-karunaratne",
+    "imageUrl": "https://www.parliament.lk/uploads/images/members/profile_images/thumbs/1465.jpg",
+    "localPath": "/images/speakers/namal-karunaratne.jpg"
   },
   {
     "name": "ගරු අජිත් ගිහාන් මහතා",
     "total_speeches": 6,
-    "aliases": []
+    "aliases": [],
+    "manthriName": "Ajith Gihan",
+    "slug": "ajith-gihan",
+    "imageUrl": "https://www.parliament.lk/uploads/images/members/profile_images/thumbs/3561.jpg",
+    "localPath": "/images/speakers/ajith-gihan.jpg"
   },
   {
     "name": "ගරු අමීර් අලි සිහාබ්දීන් මහතා",
@@ -2185,7 +2573,11 @@
     "total_speeches": 6,
     "aliases": [
       "ගරු (වෛද්‍ය) ප්‍රසන්න ගුණසේන මහතා"
-    ]
+    ],
+    "manthriName": "Prasanna Gunasena",
+    "slug": "prasanna-gunasena",
+    "imageUrl": "https://www.parliament.lk/uploads/images/members/profile_images/thumbs/3497.jpg",
+    "localPath": "/images/speakers/prasanna-gunasena.jpg"
   },
   {
     "name": "ගරු කථානායකතුමා",
@@ -2210,7 +2602,11 @@
   {
     "name": "ගරු රවීන්ද්‍ර බණ්ඩාර මහතා",
     "total_speeches": 5,
-    "aliases": []
+    "aliases": [],
+    "manthriName": "Ravindra Bandara",
+    "slug": "ravindra-bandara",
+    "imageUrl": "https://www.parliament.lk/uploads/images/members/profile_images/thumbs/3580.jpg",
+    "localPath": "/images/speakers/ravindra-bandara.jpg"
   },
   {
     "name": "ගරු ලක්ෂ්මන් යාපා අබේවර්ධන මහතා",
@@ -2235,17 +2631,29 @@
   {
     "name": "ගරු ඔෂානි උමංගා මහත්මිය",
     "total_speeches": 5,
-    "aliases": []
+    "aliases": [],
+    "manthriName": "Oshani Umanga",
+    "slug": "oshani-umanga",
+    "imageUrl": "https://www.parliament.lk/uploads/images/members/profile_images/thumbs/3492.jpg",
+    "localPath": "/images/speakers/oshani-umanga.jpg"
   },
   {
     "name": "ගරු නීතිඥ ලක්මාලි හේම චන්ද්‍ර මෙනෙවිය",
     "total_speeches": 5,
-    "aliases": []
+    "aliases": [],
+    "manthriName": "Lakmali Hemachandra",
+    "slug": "lakmali-hemachandra",
+    "imageUrl": "https://www.parliament.lk/uploads/images/members/profile_images/thumbs/3614.jpg",
+    "localPath": "/images/speakers/lakmali-hemachandra.jpg"
   },
   {
     "name": "ගරු මංජුල සුරවීර ආරච්චි මහතා",
     "total_speeches": 5,
-    "aliases": []
+    "aliases": [],
+    "manthriName": "Manjula Suraweera Arachchi",
+    "slug": "manjula-suraweera-arachchi",
+    "imageUrl": "https://www.parliament.lk/uploads/images/members/profile_images/thumbs/3509.jpg",
+    "localPath": "/images/speakers/manjula-suraweera-arachchi.jpg"
   },
   {
     "name": "ගරු ඒ. එච්. එම්. ෆවුසි මහතා",
@@ -2277,7 +2685,11 @@
     "total_speeches": 5,
     "aliases": [
       "දිලිත් ජයවීර"
-    ]
+    ],
+    "manthriName": "Dilith Jayaweera",
+    "slug": "dilith-jayaweera",
+    "imageUrl": "https://www.parliament.lk/uploads/images/members/profile_images/thumbs/3620.jpg",
+    "localPath": "/images/speakers/dilith-jayaweera.jpg"
   },
   {
     "name": "ගරු අබ්දුල්ලා මහ් රූෆ් මහතා",
@@ -2353,7 +2765,11 @@
   {
     "name": "ගරු (වෛද්‍ය) නිශාන්ත සමරවීර මහතා",
     "total_speeches": 4,
-    "aliases": []
+    "aliases": [],
+    "manthriName": "Nishantha Samaraweera",
+    "slug": "nishantha-samaraweera",
+    "imageUrl": "https://www.parliament.lk/uploads/images/members/profile_images/thumbs/3517.jpg",
+    "localPath": "/images/speakers/nishantha-samaraweera.jpg"
   },
   {
     "name": "උදය ගම්මන්පිල මහතා",
@@ -2363,17 +2779,29 @@
   {
     "name": "ගරු (මහාචාර්ය) සේන නානායක්කාර මහතා",
     "total_speeches": 4,
-    "aliases": []
+    "aliases": [],
+    "manthriName": "Sena Nanayakkara",
+    "slug": "sena-nanayakkara",
+    "imageUrl": "https://www.parliament.lk/uploads/images/members/profile_images/thumbs/3567.jpg",
+    "localPath": "/images/speakers/sena-nanayakkara.jpg"
   },
   {
     "name": "ගරු දේවානන්ද සුරවීර මහතා",
     "total_speeches": 4,
-    "aliases": []
+    "aliases": [],
+    "manthriName": "Dewananda Suraweera",
+    "slug": "dewananda-suraweera",
+    "imageUrl": "https://www.parliament.lk/uploads/images/members/profile_images/thumbs/3471.jpg",
+    "localPath": "/images/speakers/dewananda-suraweera.jpg"
   },
   {
     "name": "ගරු ලාල් ප්‍රේමනාත් මහතා",
     "total_speeches": 4,
-    "aliases": []
+    "aliases": [],
+    "manthriName": "Lal Premanath",
+    "slug": "lal-premanath",
+    "imageUrl": "https://www.parliament.lk/uploads/images/members/profile_images/thumbs/3526.jpg",
+    "localPath": "/images/speakers/lal-premanath.jpg"
   },
   {
     "name": "ගරු වසන්ත අළුවිහාරේ මහතා",
@@ -2383,7 +2811,11 @@
   {
     "name": "ගරු උපුල් කිත්සිරි මහතා",
     "total_speeches": 4,
-    "aliases": []
+    "aliases": [],
+    "manthriName": "Upul Kithsiri",
+    "slug": "upul-kithsiri",
+    "imageUrl": "https://www.parliament.lk/uploads/images/members/profile_images/thumbs/3593.jpg",
+    "localPath": "/images/speakers/upul-kithsiri.jpg"
   },
   {
     "name": "ගරු වසන්ත සේනානායක මහතා",
@@ -2405,7 +2837,11 @@
   {
     "name": "ගරු සුගත් වසන්ත ද සිල්වා මහතා",
     "total_speeches": 4,
-    "aliases": []
+    "aliases": [],
+    "manthriName": "Sugath Wasantha de Silva",
+    "slug": "sugath-wasantha-de-silva",
+    "imageUrl": "https://www.parliament.lk/uploads/images/members/profile_images/thumbs/3617.jpg",
+    "localPath": "/images/speakers/sugath-wasantha-de-silva.jpg"
   },
   {
     "name": "ගජේන්ද්‍රකුමාර් පොන්නම්බලම්",
@@ -2427,7 +2863,11 @@
     "total_speeches": 4,
     "aliases": [
       "එරංග වීරරත්න"
-    ]
+    ],
+    "manthriName": "Eranga Weeraratne",
+    "slug": "eranga-weeraratne",
+    "imageUrl": "https://www.parliament.lk/uploads/images/members/profile_images/thumbs/3607.jpg",
+    "localPath": "/images/speakers/eranga-weeraratne.jpg"
   },
   {
     "name": "ගරු රත්න ගමගේ මහතා",
@@ -2441,7 +2881,11 @@
     "total_speeches": 4,
     "aliases": [
       "සරෝජා සාවිත්‍රි පෝල්රාජ්"
-    ]
+    ],
+    "manthriName": "Saroja Savithri Paulraj",
+    "slug": "saroja-savithri-paulraj",
+    "imageUrl": "https://www.parliament.lk/uploads/images/members/profile_images/thumbs/3522.jpg",
+    "localPath": "/images/speakers/saroja-savithri-paulraj.jpg"
   },
   {
     "name": "மாண்புமிகு சாணக்கியன் ராஜபுத்திரன் இராசமாணிக்கம்",
@@ -2462,7 +2906,11 @@
     "total_speeches": 4,
     "aliases": [
       "නන්දන මිල්ලගල"
-    ]
+    ],
+    "manthriName": "Nandana Millagala",
+    "slug": "nandana-millagala",
+    "imageUrl": "https://www.parliament.lk/uploads/images/members/profile_images/thumbs/3601.jpg",
+    "localPath": "/images/speakers/nandana-millagala.jpg"
   },
   {
     "name": "ගරු ජගත් කුමාර මහතා",
@@ -2500,7 +2948,11 @@
   {
     "name": "ගරු පී. රුවන් සෙනරත් මහතා",
     "total_speeches": 3,
-    "aliases": []
+    "aliases": [],
+    "manthriName": "P. Ruwan Senarath",
+    "slug": "p-ruwan-senarath",
+    "imageUrl": "https://www.parliament.lk/uploads/images/members/profile_images/thumbs/3531.jpg",
+    "localPath": "/images/speakers/p-ruwan-senarath.jpg"
   },
   {
     "name": "ප්‍රසන්න රණවීර",
@@ -2535,7 +2987,11 @@
   {
     "name": "ගරු කේ. ඉලංකුමාරන් මහතා",
     "total_speeches": 3,
-    "aliases": []
+    "aliases": [],
+    "manthriName": "K. Ilankumaran",
+    "slug": "k-ilankumaran",
+    "imageUrl": "https://www.parliament.lk/uploads/images/members/profile_images/thumbs/3532.jpg",
+    "localPath": "/images/speakers/k-ilankumaran.jpg"
   },
   {
     "name": "ගරු අම්බිකා සාමීවෙල් මෙනෙවිය",
@@ -2545,7 +3001,11 @@
   {
     "name": "ගරු ධනුෂ්ක රංගනාත් මහතා",
     "total_speeches": 3,
-    "aliases": []
+    "aliases": [],
+    "manthriName": "Danushka Ranganath",
+    "slug": "danushka-ranganath",
+    "imageUrl": "https://www.parliament.lk/uploads/images/members/profile_images/thumbs/3491.jpg",
+    "localPath": "/images/speakers/danushka-ranganath.jpg"
   },
   {
     "name": "ගරු ලසින් භාෂණ ගමගේ මහතා",
@@ -2555,7 +3015,11 @@
   {
     "name": "ගරු චානක මාදුගොඩ මහතා",
     "total_speeches": 3,
-    "aliases": []
+    "aliases": [],
+    "manthriName": "Chanaka Madugoda",
+    "slug": "chanaka-madugoda",
+    "imageUrl": "https://www.parliament.lk/uploads/images/members/profile_images/thumbs/3521.jpg",
+    "localPath": "/images/speakers/chanaka-madugoda.jpg"
   },
   {
     "name": "ගරු ලුතිනන් කමාන්ඩර් (විශ්‍රාමික) ප්‍රගීත් මධුරංග මහතා",
@@ -2580,7 +3044,11 @@
   {
     "name": "අරුන් හේමචන්ද්‍ර මහතා",
     "total_speeches": 3,
-    "aliases": []
+    "aliases": [],
+    "manthriName": "Arun Hemachandra",
+    "slug": "arun-hemachandra",
+    "imageUrl": "https://www.parliament.lk/uploads/images/members/profile_images/thumbs/3547.jpg",
+    "localPath": "/images/speakers/arun-hemachandra.jpg"
   },
   {
     "name": "ගරු (වෛද්‍ය) තුසිතා විජේමාන්න මහත්මිය",
@@ -2590,17 +3058,29 @@
   {
     "name": "ගරු අරුණ පනාගොඩ මහතා",
     "total_speeches": 3,
-    "aliases": []
+    "aliases": [],
+    "manthriName": "Aruna Panagoda",
+    "slug": "aruna-panagoda",
+    "imageUrl": "https://www.parliament.lk/uploads/images/members/profile_images/thumbs/3462.jpg",
+    "localPath": "/images/speakers/aruna-panagoda.jpg"
   },
   {
     "name": "ගරු ඇන්ටන් ජයකොඩි මහතා",
     "total_speeches": 3,
-    "aliases": []
+    "aliases": [],
+    "manthriName": "Anton Jayakody",
+    "slug": "anton-jayakody",
+    "imageUrl": "https://www.parliament.lk/uploads/images/members/profile_images/thumbs/3564.jpg",
+    "localPath": "/images/speakers/anton-jayakody.jpg"
   },
   {
     "name": "ගරු මුනීර් මුලාෆර් මහතා",
     "total_speeches": 3,
-    "aliases": []
+    "aliases": [],
+    "manthriName": "Muneer Mulaffer",
+    "slug": "muneer-mulaffer",
+    "imageUrl": "https://www.parliament.lk/uploads/images/members/profile_images/thumbs/3475.jpg",
+    "localPath": "/images/speakers/muneer-mulaffer.jpg"
   },
   {
     "name": "ගරු (මහාචාර්‌ය) එල්.එම්. අබේවික්‍රම මහතා",
@@ -2610,7 +3090,11 @@
   {
     "name": "ගරු (වෛද්‍ය) නාමල් සුදර්ශන මහතා",
     "total_speeches": 3,
-    "aliases": []
+    "aliases": [],
+    "manthriName": "Namal Sudarshana",
+    "slug": "namal-sudarshana",
+    "imageUrl": "https://www.parliament.lk/uploads/images/members/profile_images/thumbs/3553.jpg",
+    "localPath": "/images/speakers/namal-sudarshana.jpg"
   },
   {
     "name": "ගරු (වෛද්‍ය) කවින්ද හේෂාන් ජයර්වර්ධන මහතා",
@@ -2659,7 +3143,11 @@
     "total_speeches": 3,
     "aliases": [
       "ධර්මප්‍රිය දිසානායක"
-    ]
+    ],
+    "manthriName": "Dharmapriya Dissanayake",
+    "slug": "dharmapriya-dissanayake",
+    "imageUrl": "https://www.parliament.lk/uploads/images/members/profile_images/thumbs/3558.jpg",
+    "localPath": "/images/speakers/dharmapriya-dissanayake.jpg"
   },
   {
     "name": "ගරු ලක්ෂ්මන් සෙනෙවිරත්න මහතා",
@@ -2680,7 +3168,11 @@
     "total_speeches": 3,
     "aliases": [
       "පද්මසිරි බණ්ඩාර"
-    ]
+    ],
+    "manthriName": "Padmasiri Bandara",
+    "slug": "padmasiri-bandara",
+    "imageUrl": "https://www.parliament.lk/uploads/images/members/profile_images/thumbs/3577.jpg",
+    "localPath": "/images/speakers/padmasiri-bandara.jpg"
   },
   {
     "name": "ගරු (වෛද්‍ය) ගයාෂාන් නවනන්ද මහතා",
@@ -2694,14 +3186,22 @@
     "total_speeches": 3,
     "aliases": [
       "අමිල ප්‍රසාද්"
-    ]
+    ],
+    "manthriName": "Amila Prasad",
+    "slug": "amila-prasad",
+    "imageUrl": "https://www.parliament.lk/uploads/images/members/profile_images/thumbs/3487.jpg",
+    "localPath": "/images/speakers/amila-prasad.jpg"
   },
   {
     "name": "ගරු නීතිඥ හිරුනි විජේසිංහ මහත්මිය",
     "total_speeches": 3,
     "aliases": [
       "හිරුනි විජේසිංහ"
-    ]
+    ],
+    "manthriName": "Hiruni Wijesinghe",
+    "slug": "hiruni-wijesinghe",
+    "imageUrl": "https://www.parliament.lk/uploads/images/members/profile_images/thumbs/3563.jpg",
+    "localPath": "/images/speakers/hiruni-wijesinghe.jpg"
   },
   {
     "name": "ගරු සෙයිඩ් අලි සාහිර් මවුලානා මහතා",
@@ -2737,14 +3237,22 @@
     "total_speeches": 3,
     "aliases": [
       "ගරු නීතිඥ හසාරා ලියනගේ මහත්මිය"
-    ]
+    ],
+    "manthriName": "Hasara Liyanage",
+    "slug": "hasara-liyanage",
+    "imageUrl": "https://www.parliament.lk/uploads/images/members/profile_images/thumbs/3516.jpg",
+    "localPath": "/images/speakers/hasara-liyanage.jpg"
   },
   {
     "name": "ගම ගෙදර දිසානායක",
     "total_speeches": 3,
     "aliases": [
       "ගරු ගම ගෙදර දිසානායක මහතා"
-    ]
+    ],
+    "manthriName": "Gamagedara Dissanayake",
+    "slug": "gamagedara-dissanayake",
+    "imageUrl": "https://www.parliament.lk/uploads/images/members/profile_images/thumbs/3505.jpg",
+    "localPath": "/images/speakers/gamagedara-dissanayake.jpg"
   },
   {
     "name": "கௌரவ செல்வம் அடைக்கலநாதன்",
@@ -2762,7 +3270,11 @@
   {
     "name": "ගරු චමින්ද ලලිත් කුමාර මහතා",
     "total_speeches": 2,
-    "aliases": []
+    "aliases": [],
+    "manthriName": "Chaminda Lalith Kumara",
+    "slug": "chaminda-lalith-kumara",
+    "imageUrl": "https://www.parliament.lk/uploads/images/members/profile_images/thumbs/3486.jpg",
+    "localPath": "/images/speakers/chaminda-lalith-kumara.jpg"
   },
   {
     "name": "ගරු බන්දුල ලාල් බණ්ඩාරිගොඩ මහතා",
@@ -2814,7 +3326,11 @@
   {
     "name": "ගරු (වෛද්‍ය ) ඉලෙයිය තම්බි සිරිනාත් මහතා",
     "total_speeches": 2,
-    "aliases": []
+    "aliases": [],
+    "manthriName": "Elayathamby Srinath",
+    "slug": "elayathamby-srinath",
+    "imageUrl": "https://www.parliament.lk/uploads/images/members/profile_images/thumbs/3539.jpg",
+    "localPath": "/images/speakers/elayathamby-srinath.jpg"
   },
   {
     "name": "ගරු කන්දසාමි ප්‍රභූ මහතා",
@@ -2824,7 +3340,11 @@
   {
     "name": "ගරු ධර්ම ප්‍රිය විජේසිංහ මහතා",
     "total_speeches": 2,
-    "aliases": []
+    "aliases": [],
+    "manthriName": "Darmapriya Wijesinghe",
+    "slug": "darmapriya-wijesinghe",
+    "imageUrl": "https://www.parliament.lk/uploads/images/members/profile_images/thumbs/3477.jpg",
+    "localPath": "/images/speakers/darmapriya-wijesinghe.jpg"
   },
   {
     "name": "ගරු සීනිතම්බි ෙයෝෙහේස්වරන් මහතා",
@@ -2839,12 +3359,20 @@
   {
     "name": "ගරු එම්. ඒ. එම්. තාහිර් මහතා",
     "total_speeches": 2,
-    "aliases": []
+    "aliases": [],
+    "manthriName": "M.A.M. Thahir",
+    "slug": "m-a-m-thahir",
+    "imageUrl": "https://www.parliament.lk/uploads/images/members/profile_images/thumbs/3546.jpg",
+    "localPath": "/images/speakers/m-a-m-thahir.jpg"
   },
   {
     "name": "ගරු ජනිත රුවන් කොඩිතුවක්කු මහතා",
     "total_speeches": 2,
-    "aliases": []
+    "aliases": [],
+    "manthriName": "Janitha Ruwan Kodithuwakku",
+    "slug": "janitha-ruwan-kodithuwakku",
+    "imageUrl": "https://www.parliament.lk/uploads/images/members/profile_images/thumbs/3610.jpg",
+    "localPath": "/images/speakers/janitha-ruwan-kodithuwakku.jpg"
   },
   {
     "name": "ඩී. වීරසිංහ",
@@ -2869,12 +3397,20 @@
   {
     "name": "ගරු (ආචාර්ය) උපාලි පන්නිලගේ මහතා",
     "total_speeches": 2,
-    "aliases": []
+    "aliases": [],
+    "manthriName": "Upali Pannilage",
+    "slug": "upali-pannilage",
+    "imageUrl": "https://www.parliament.lk/uploads/images/members/profile_images/thumbs/3606.jpg",
+    "localPath": "/images/speakers/upali-pannilage.jpg"
   },
   {
     "name": "ගරු අජන්ත ගම්මැද්දෙගේ මහතා",
     "total_speeches": 2,
-    "aliases": []
+    "aliases": [],
+    "manthriName": "Ajantha Gammeddage",
+    "slug": "ajantha-gammeddage",
+    "imageUrl": "https://www.parliament.lk/uploads/images/members/profile_images/thumbs/3525.jpg",
+    "localPath": "/images/speakers/ajantha-gammeddage.jpg"
   },
   {
     "name": "ගරු ඒ. එම්. එම්. එම්. රත්වත්තේ මහත්මිය",
@@ -2889,17 +3425,29 @@
   {
     "name": "ගරු දිනිඳු සමන් හෙන්නායක මහතා",
     "total_speeches": 2,
-    "aliases": []
+    "aliases": [],
+    "manthriName": "Dinindu Saman Hennayake",
+    "slug": "dinindu-saman-hennayake",
+    "imageUrl": "https://www.parliament.lk/uploads/images/members/profile_images/thumbs/3582.jpg",
+    "localPath": "/images/speakers/dinindu-saman-hennayake.jpg"
   },
   {
     "name": "ගරු මේජර් ජෙනරාල් (විශ්‍රාමික) ජී.ඩී. සූරිය බණ්ඩාර මහතා",
     "total_speeches": 2,
-    "aliases": []
+    "aliases": [],
+    "manthriName": "Major General G.D. Sooriyabandara",
+    "slug": "major-general-g-d-sooriyabandara",
+    "imageUrl": "https://www.parliament.lk/uploads/images/members/profile_images/thumbs/3556.jpg",
+    "localPath": "/images/speakers/major-general-g-d-sooriyabandara.jpg"
   },
   {
     "name": "ගරු ස්ටෙෆනි ප්‍රනාන්දු මහතා",
     "total_speeches": 2,
-    "aliases": []
+    "aliases": [],
+    "manthriName": "Stepni Fernando",
+    "slug": "stepni-fernando",
+    "imageUrl": "https://www.parliament.lk/uploads/images/members/profile_images/thumbs/3485.jpg",
+    "localPath": "/images/speakers/stepni-fernando.jpg"
   },
   {
     "name": "ගරු කරු ජයසූරිය මහතා",
@@ -2911,7 +3459,11 @@
   {
     "name": "ගරු චන්දන සූරිය ආරච්චි මහතා",
     "total_speeches": 2,
-    "aliases": []
+    "aliases": [],
+    "manthriName": "Chandana Sooriyaarachchi",
+    "slug": "chandana-sooriyaarachchi",
+    "imageUrl": "https://www.parliament.lk/uploads/images/members/profile_images/thumbs/3469.jpg",
+    "localPath": "/images/speakers/chandana-sooriyaarachchi.jpg"
   },
   {
     "name": "ගරු හිරුනිකා ප්‍රේමචන්ද්‍ර",
@@ -2926,7 +3478,11 @@
   {
     "name": "ගරු (වෛද්‍ය) නිහාල් අබේසිංහ මහතා",
     "total_speeches": 2,
-    "aliases": []
+    "aliases": [],
+    "manthriName": "Nihal Abeysinghe",
+    "slug": "nihal-abeysinghe",
+    "imageUrl": "https://www.parliament.lk/uploads/images/members/profile_images/thumbs/3489.jpg",
+    "localPath": "/images/speakers/nihal-abeysinghe.jpg"
   },
   {
     "name": "ගරු ලක්ෂ්මන් අනුරූප මහතා",
@@ -2949,7 +3505,11 @@
   {
     "name": "ගරු සුදත් බලගල්ල මහතා",
     "total_speeches": 2,
-    "aliases": []
+    "aliases": [],
+    "manthriName": "Sudath Balagalla",
+    "slug": "sudath-balagalla",
+    "imageUrl": "https://www.parliament.lk/uploads/images/members/profile_images/thumbs/3581.jpg",
+    "localPath": "/images/speakers/sudath-balagalla.jpg"
   },
   {
     "name": "ගරු මලිත් ජයතිලක",
@@ -2964,7 +3524,11 @@
   {
     "name": "ගරු රුවන්තිලක ජයකොඩි මහතා",
     "total_speeches": 2,
-    "aliases": []
+    "aliases": [],
+    "manthriName": "Ruwanthilaka Jayakody",
+    "slug": "ruwanthilaka-jayakody",
+    "imageUrl": "https://www.parliament.lk/uploads/images/members/profile_images/thumbs/3482.jpg",
+    "localPath": "/images/speakers/ruwanthilaka-jayakody.jpg"
   },
   {
     "name": "අලි සබ්රි",
@@ -2983,7 +3547,11 @@
     "total_speeches": 2,
     "aliases": [
       "චන්දිම හෙට්ටිආරච්චි"
-    ]
+    ],
+    "manthriName": "Chandima Hettiaratchi",
+    "slug": "chandima-hettiaratchi",
+    "imageUrl": "https://www.parliament.lk/uploads/images/members/profile_images/thumbs/3493.jpg",
+    "localPath": "/images/speakers/chandima-hettiaratchi.jpg"
   },
   {
     "name": "கவீந்திரன் சகாடீஸ்வரன்",
@@ -3020,7 +3588,11 @@
     "total_speeches": 2,
     "aliases": [
       "ගරු අබූබකර් අතම්බාවා මහතා"
-    ]
+    ],
+    "manthriName": "Aboobucker Athambawa",
+    "slug": "aboobucker-athambawa",
+    "imageUrl": "https://www.parliament.lk/uploads/images/members/profile_images/thumbs/3618.jpg",
+    "localPath": "/images/speakers/aboobucker-athambawa.jpg"
   },
   {
     "name": "ගරු ජේ. එම්. ආනන්ද කුමාරසිරි මහතා",
@@ -3062,7 +3634,11 @@
     "total_speeches": 2,
     "aliases": [
       "සඳරුවන් මදරසිංහ"
-    ]
+    ],
+    "manthriName": "Sandaruwan Madarasinghe",
+    "slug": "sandaruwan-madarasinghe",
+    "imageUrl": "https://www.parliament.lk/uploads/images/members/profile_images/thumbs/3529.jpg",
+    "localPath": "/images/speakers/sandaruwan-madarasinghe.jpg"
   },
   {
     "name": "Nanda Bandara",
@@ -3102,17 +3678,29 @@
   {
     "name": "ගරු නිමල් පලිහේන මහතා",
     "total_speeches": 1,
-    "aliases": []
+    "aliases": [],
+    "manthriName": "Nimal Palihena",
+    "slug": "nimal-palihena",
+    "imageUrl": "https://www.parliament.lk/uploads/images/members/profile_images/thumbs/3571.jpg",
+    "localPath": "/images/speakers/nimal-palihena.jpg"
   },
   {
     "name": "ගරු නීතිඥ අනුෂ්කා තිලකරත්න මහත්මිය",
     "total_speeches": 1,
-    "aliases": []
+    "aliases": [],
+    "manthriName": "Anushka Thilakarathne",
+    "slug": "anushka-thilakarathne",
+    "imageUrl": "https://www.parliament.lk/uploads/images/members/profile_images/thumbs/3512.jpg",
+    "localPath": "/images/speakers/anushka-thilakarathne.jpg"
   },
   {
     "name": "ගරු නීතිඥ සරත් කුමාර මහතා",
     "total_speeches": 1,
-    "aliases": []
+    "aliases": [],
+    "manthriName": "Sarath Kumara",
+    "slug": "sarath-kumara",
+    "imageUrl": "https://www.parliament.lk/uploads/images/members/profile_images/thumbs/3587.jpg",
+    "localPath": "/images/speakers/sarath-kumara.jpg"
   },
   {
     "name": "ගරු සාලින්ද දිසානායක මහතා",
@@ -3268,7 +3856,11 @@
   {
     "name": "ගරු මුහම්මද් ෆයිසාල් මහතා",
     "total_speeches": 1,
-    "aliases": []
+    "aliases": [],
+    "manthriName": "Muhammad Faizal",
+    "slug": "muhammad-faizal",
+    "imageUrl": "https://www.parliament.lk/uploads/images/members/profile_images/thumbs/3565.jpg",
+    "localPath": "/images/speakers/muhammad-faizal.jpg"
   },
   {
     "name": "ගරු මුහම්මදු ඉබ්‍රාහිම් මුහම්මදු මන්සූර්",
@@ -3288,7 +3880,11 @@
   {
     "name": "ගරු සුන්දරලිංගම් ප්‍රදීප් මහතා",
     "total_speeches": 1,
-    "aliases": []
+    "aliases": [],
+    "manthriName": "Sundaralingam Pradeep",
+    "slug": "sundaralingam-pradeep",
+    "imageUrl": "https://www.parliament.lk/uploads/images/members/profile_images/thumbs/3589.jpg",
+    "localPath": "/images/speakers/sundaralingam-pradeep.jpg"
   },
   {
     "name": "ඩී. සිද්ධාර්ථන් මහතා",
@@ -3328,7 +3924,11 @@
   {
     "name": "අසෝක සපුමල් රන්වල",
     "total_speeches": 1,
-    "aliases": []
+    "aliases": [],
+    "manthriName": "Asoka Sapumal Ranwala",
+    "slug": "asoka-sapumal-ranwala",
+    "imageUrl": "https://www.parliament.lk/uploads/images/members/profile_images/thumbs/3476.jpg",
+    "localPath": "/images/speakers/asoka-sapumal-ranwala.jpg"
   },
   {
     "name": "ගරු අරුණ ජයසේකර මහතා",
@@ -3388,12 +3988,20 @@
   {
     "name": "ගරු නීතිඥ නිලූෂා ලක්මාලි ගමගේ මහත්මිය",
     "total_speeches": 1,
-    "aliases": []
+    "aliases": [],
+    "manthriName": "Nilusha Lakmali Gamage",
+    "slug": "nilusha-lakmali-gamage",
+    "imageUrl": "https://www.parliament.lk/uploads/images/members/profile_images/thumbs/3595.jpg",
+    "localPath": "/images/speakers/nilusha-lakmali-gamage.jpg"
   },
   {
     "name": "ගරු සුගත් තිලකරත්න මහතා",
     "total_speeches": 1,
-    "aliases": []
+    "aliases": [],
+    "manthriName": "Sugath Thilakaratne",
+    "slug": "sugath-thilakaratne",
+    "imageUrl": "https://www.parliament.lk/uploads/images/members/profile_images/thumbs/3613.jpg",
+    "localPath": "/images/speakers/sugath-thilakaratne.jpg"
   },
   {
     "name": "අතිගරු ශ්‍රීමත්‍රිපාල සිරිශ්‍රස්ථන මහතා",
@@ -3408,17 +4016,29 @@
   {
     "name": "ගරු නන්දන පත්මකුමාර මහතා",
     "total_speeches": 1,
-    "aliases": []
+    "aliases": [],
+    "manthriName": "Nandana Pathmakumara",
+    "slug": "nandana-pathmakumara",
+    "imageUrl": "https://www.parliament.lk/uploads/images/members/profile_images/thumbs/3494.jpg",
+    "localPath": "/images/speakers/nandana-pathmakumara.jpg"
   },
   {
     "name": "ගරු ශාන්ත පද්ම කුමාර සුබසිංහ මහතා",
     "total_speeches": 1,
-    "aliases": []
+    "aliases": [],
+    "manthriName": "Shantha Pathma Kumara Subasingha",
+    "slug": "shantha-pathma-kumara-subasingha",
+    "imageUrl": "https://www.parliament.lk/uploads/images/members/profile_images/thumbs/3588.jpg",
+    "localPath": "/images/speakers/shantha-pathma-kumara-subasingha.jpg"
   },
   {
     "name": "නිලන්ති කොට්ටහච්චි මහත්මිය",
     "total_speeches": 1,
-    "aliases": []
+    "aliases": [],
+    "manthriName": "Nilanthi Kottahachchi",
+    "slug": "nilanthi-kottahachchi",
+    "imageUrl": "https://www.parliament.lk/uploads/images/members/profile_images/thumbs/3488.jpg",
+    "localPath": "/images/speakers/nilanthi-kottahachchi.jpg"
   },
   {
     "name": "ගරු මංගල සමරසේකර මහතා",
@@ -3433,7 +4053,11 @@
   {
     "name": "ගරු (වෛද්‍ය) ජගත් ගුණවර්ධන මහතා",
     "total_speeches": 1,
-    "aliases": []
+    "aliases": [],
+    "manthriName": "Jagath Gunawardana",
+    "slug": "jagath-gunawardana",
+    "imageUrl": "https://www.parliament.lk/uploads/images/members/profile_images/thumbs/3554.jpg",
+    "localPath": "/images/speakers/jagath-gunawardana.jpg"
   },
   {
     "name": "ගරු (වෛද්‍ය) සිවලෝකනාදන් තිල්ලේනාදන් මහතා",
@@ -3448,7 +4072,11 @@
   {
     "name": "ගරු (ආචාර්ය) කෞෂල්‍යා ආරියරත්න මෙනෙවිය",
     "total_speeches": 1,
-    "aliases": []
+    "aliases": [],
+    "manthriName": "Kaushalya Ariyarathne",
+    "slug": "kaushalya-ariyarathne",
+    "imageUrl": "https://www.parliament.lk/uploads/images/members/profile_images/thumbs/3465.jpg",
+    "localPath": "/images/speakers/kaushalya-ariyarathne.jpg"
   },
   {
     "name": "ගරු (ආචාර්ය) කෞෂල්‍යා ආරියරත්න මෙනෙවිය (ජනමාධ්‍ය නියෝජ්‍ය අමාත්‍යතුමිය)",
@@ -3463,7 +4091,11 @@
   {
     "name": "ගරු දීප්ති වාසලගේ මහත්මිය",
     "total_speeches": 1,
-    "aliases": []
+    "aliases": [],
+    "manthriName": "Deepthi Wasalage",
+    "slug": "deepthi-wasalage",
+    "imageUrl": "https://www.parliament.lk/uploads/images/members/profile_images/thumbs/3507.jpg",
+    "localPath": "/images/speakers/deepthi-wasalage.jpg"
   },
   {
     "name": "ගරු සම්පන්දන් මහතා",
@@ -3478,7 +4110,11 @@
   {
     "name": "ගරු අතුල වෙළඳගොඩ මහතා",
     "total_speeches": 1,
-    "aliases": []
+    "aliases": [],
+    "manthriName": "Athula Welandagoda",
+    "slug": "athula-welandagoda",
+    "imageUrl": "https://www.parliament.lk/uploads/images/members/profile_images/thumbs/3528.jpg",
+    "localPath": "/images/speakers/athula-welandagoda.jpg"
   },
   {
     "name": "ගරු ඊ. එම්. බස්නායක මහතා",
@@ -3493,7 +4129,11 @@
   {
     "name": "ගරු නීතිඥ සාගරිකා අතාවුද මහත්මිය",
     "total_speeches": 1,
-    "aliases": []
+    "aliases": [],
+    "manthriName": "Sagarika Athauda",
+    "slug": "sagarika-athauda",
+    "imageUrl": "https://www.parliament.lk/uploads/images/members/profile_images/thumbs/3599.jpg",
+    "localPath": "/images/speakers/sagarika-athauda.jpg"
   },
   {
     "name": "ගරු විජයලා විජයන්ත මහතා",
@@ -3548,7 +4188,11 @@
   {
     "name": "ගරු නීතිඥ සුනිල් වටගල මහතා",
     "total_speeches": 1,
-    "aliases": []
+    "aliases": [],
+    "manthriName": "Sunil Watagala",
+    "slug": "sunil-watagala",
+    "imageUrl": "https://www.parliament.lk/uploads/images/members/profile_images/thumbs/3461.jpg",
+    "localPath": "/images/speakers/sunil-watagala.jpg"
   },
   {
     "name": "ගරු සෆියුල් මුතුනා බින් මොහමඩ් මුෂාරෆ් මහතා",
@@ -3568,12 +4212,20 @@
   {
     "name": "අර්කම් ඉල්යාස්",
     "total_speeches": 1,
-    "aliases": []
+    "aliases": [],
+    "manthriName": "Arkam Ilyas",
+    "slug": "arkam-ilyas",
+    "imageUrl": "https://www.parliament.lk/uploads/images/members/profile_images/thumbs/3524.jpg",
+    "localPath": "/images/speakers/arkam-ilyas.jpg"
   },
   {
     "name": "එම්.කේ.එම්. අස්ලම්",
     "total_speeches": 1,
-    "aliases": []
+    "aliases": [],
+    "manthriName": "M.K.M. Aslam",
+    "slug": "m-k-m-aslam",
+    "imageUrl": "https://www.parliament.lk/uploads/images/members/profile_images/thumbs/3559.jpg",
+    "localPath": "/images/speakers/m-k-m-aslam.jpg"
   },
   {
     "name": "ගරු ආනන්ද විජේපාල මහතා (මහජන ආරක්ෂක සහ පාර්ලිමේන්තු කටයුතු අමාත්‍යතුමා)",
@@ -3588,7 +4240,11 @@
   {
     "name": "ගරු නීතිඥ ප්‍රියන්ත විජේරත්න මහතා",
     "total_speeches": 1,
-    "aliases": []
+    "aliases": [],
+    "manthriName": "Priyantha Wijerathna",
+    "slug": "priyantha-wijerathna",
+    "imageUrl": "https://www.parliament.lk/uploads/images/members/profile_images/thumbs/3543.jpg",
+    "localPath": "/images/speakers/priyantha-wijerathna.jpg"
   },
   {
     "name": "හිස්බුල්ලාහ්",
@@ -3598,7 +4254,11 @@
   {
     "name": "ගරු රොෂාන් අක්මීමන මහතා",
     "total_speeches": 1,
-    "aliases": []
+    "aliases": [],
+    "manthriName": "Roshan Akmeemana",
+    "slug": "roshan-akmeemana",
+    "imageUrl": "https://www.parliament.lk/uploads/images/members/profile_images/thumbs/3548.jpg",
+    "localPath": "/images/speakers/roshan-akmeemana.jpg"
   },
   {
     "name": "ගරු ලකී ජයවර්ධන මහතා (මූලාසනයේ සිටියදී)",
@@ -3623,7 +4283,11 @@
   {
     "name": "වසන්ත පියතිස්ස",
     "total_speeches": 1,
-    "aliases": []
+    "aliases": [],
+    "manthriName": "Wasantha Piyathissa",
+    "slug": "wasantha-piyathissa",
+    "imageUrl": "https://www.parliament.lk/uploads/images/members/profile_images/thumbs/3541.jpg",
+    "localPath": "/images/speakers/wasantha-piyathissa.jpg"
   },
   {
     "name": "ගරු චන්ද්‍රානි බණ්ඩාර",

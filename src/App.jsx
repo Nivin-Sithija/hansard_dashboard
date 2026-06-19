@@ -56,25 +56,7 @@ function AppLoader({ completed = 0, total = 1, currentUrl = '' }) {
   );
 }
 
-function TopicsBanner({ totalClusteredSpeeches, macroTopicCount, speakerCounts, speakerNorm }) {
-  const [speakerImages, setSpeakerImages] = React.useState({});
-
-  React.useEffect(() => {
-    readJson('/data/speaker_images.json').then(d => setSpeakerImages(d || {})).catch(() => {});
-  }, []);
-
-  const topSpeakers = React.useMemo(() => {
-    if (!speakerCounts?.all_speakers_by_topic) return [];
-    const scores = {};
-    Object.values(speakerCounts.all_speakers_by_topic).forEach(speakers => {
-      speakers.forEach(({ speaker, count }) => {
-        const norm = speakerNorm[speaker] || speaker;
-        if (norm !== 'Unknown Speaker') scores[norm] = (scores[norm] || 0) + count;
-      });
-    });
-    return Object.entries(scores).sort((a, b) => b[1] - a[1]).slice(0, 10).map(([name]) => name);
-  }, [speakerCounts, speakerNorm]);
-
+function TopicsBanner({ totalClusteredSpeeches, macroTopicCount }) {
   const statCards = [
     { value: totalClusteredSpeeches.toLocaleString(), label: 'Total Speeches', sub: '2017 – 2026' },
     { value: macroTopicCount, label: 'Topics', sub: 'by Clustering' },
@@ -470,8 +452,6 @@ function AppShell({
             <TopicsBanner
               totalClusteredSpeeches={totalClusteredSpeeches}
               macroTopicCount={macroTopicCount}
-              speakerCounts={speakerCounts}
-              speakerNorm={speakerNorm}
             />
 
             <div style={{ marginTop: '1.25rem', marginBottom: '1.25rem' }}>
@@ -548,10 +528,18 @@ function AppShell({
 
 // Sub-component to keep AppShell readable
 function TopicDetailPanel({ selectedTopics, activeDetailTopic, setActiveDetailTopic, evolutionData, keywordsData, getTopicMeta, totalClusteredSpeeches }) {
-  const [speakerImages, setSpeakerImages] = React.useState({});
+  const [finalUniqueSpeakers, setFinalUniqueSpeakers] = React.useState(null);
   React.useEffect(() => {
-    readJson('/data/speaker_images.json').then(d => setSpeakerImages(d || {})).catch(() => {});
+    readJson('/data/final_unique_speakers.json').then(d => setFinalUniqueSpeakers(d || [])).catch(() => {});
   }, []);
+
+  const speakerImages = React.useMemo(() => {
+    const map = {};
+    (finalUniqueSpeakers || []).forEach(sp => {
+      if (sp.localPath) map[sp.name] = sp;
+    });
+    return map;
+  }, [finalUniqueSpeakers]);
 
   const isAllTopics = selectedTopics.length === 0;
   const effectiveTopic = isAllTopics ? 'all_cumulative' : activeDetailTopic;
