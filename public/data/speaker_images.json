@@ -347,12 +347,6 @@
     "imageUrl": "https://www.parliament.lk/uploads/images/members/profile_images/thumbs/3462.jpg",
     "localPath": "/images/speakers/aruna-panagoda.jpg"
   },
-  "ගරු අශෝක ගුණසේන මහතා": {
-    "manthriName": "Ashoka Gunasena",
-    "slug": "ashoka-gunasena",
-    "imageUrl": "https://www.parliament.lk/uploads/images/members/profile_images/thumbs/3555.jpg",
-    "localPath": "/images/speakers/ashoka-gunasena.jpg"
-  },
   "ගරු අසිත නිරෝෂණ එගොඩ විතාන මහතා": {
     "manthriName": "Asitha Niroshana Egoda Vithana",
     "slug": "asitha-niroshana-egoda-vithana",
@@ -406,12 +400,6 @@
     "slug": "chathuranga-abeysinghe",
     "imageUrl": "https://www.parliament.lk/uploads/images/members/profile_images/thumbs/3460.jpg",
     "localPath": "/images/speakers/chathuranga-abeysinghe.jpg"
-  },
-  "ගරු නීතිඥ චිත්‍රාල් ප්‍රනාන්දු මහතා": {
-    "manthriName": "Chithral Fernando",
-    "slug": "chithral-fernando",
-    "imageUrl": "https://www.parliament.lk/uploads/images/members/profile_images/thumbs/3566.jpg",
-    "localPath": "/images/speakers/chithral-fernando.jpg"
   },
   "ගරු ඩී. වී. චානක මහතා": {
     "manthriName": "D. V. Chanaka",
@@ -791,12 +779,6 @@
     "imageUrl": "https://www.parliament.lk/uploads/images/members/profile_images/thumbs/148.jpg",
     "localPath": "/images/speakers/r-m-ranjith-madduma-bandara.jpg"
   },
-  "ගරු රජිවන් ජෙය චන්ද්‍ර මූර්ති මහතා": {
-    "manthriName": "Rajeevan Jeyachandramoorthy",
-    "slug": "rajeevan-jeyachandramoorthy",
-    "imageUrl": "https://www.parliament.lk/uploads/images/members/profile_images/thumbs/3534.jpg",
-    "localPath": "/images/speakers/rajeevan-jeyachandramoorthy.jpg"
-  },
   "ගරු රාමලිංගම් චන්ද්‍ර සේකර් මහතා": {
     "manthriName": "Ramalingam Chandrasekar",
     "slug": "ramalingam-chandrasekar",
@@ -959,12 +941,6 @@
     "imageUrl": "https://www.parliament.lk/uploads/images/members/profile_images/thumbs/3606.jpg",
     "localPath": "/images/speakers/upali-pannilage.jpg"
   },
-  "ගරු උපාලි සමරසිංහ මහතා": {
-    "manthriName": "Upali Samarasingha",
-    "slug": "upali-samarasingha",
-    "imageUrl": "https://www.parliament.lk/uploads/images/members/profile_images/thumbs/3619.jpg",
-    "localPath": "/images/speakers/upali-samarasingha.jpg"
-  },
   "ගරු උපුල් කිත්සිරි මහතා": {
     "manthriName": "Upul Kithsiri",
     "slug": "upul-kithsiri",
@@ -995,41 +971,11 @@
     "imageUrl": "https://www.parliament.lk/uploads/images/members/profile_images/thumbs/1495.jpg",
     "localPath": "/images/speakers/wasantha-samarasinghe.jpg"
   },
-  "ගරු නිශාන්ත ජයවීර මහතා": {
-    "manthriName": "Nishantha Jayaweera",
-    "slug": "nishantha-jayaweera",
-    "imageUrl": "https://www.parliament.lk/uploads/images/members/profile_images/thumbs/3627.jpg",
-    "localPath": "/images/speakers/nishantha-jayaweera.jpg"
-  },
-  "ගරු නලින් ප්‍රනාන්දු": {
-    "manthriName": "Nalin Pranandu",
-    "slug": "nalin-pranandu",
-    "imageUrl": null,
-    "localPath": "/images/speakers/nalin-pranandu.png"
-  },
   "ගරු ජේ. සී. අලවතුවල මහතා": {
     "manthriName": "J. C. Alawathuwala",
     "slug": "j-c-alawathuwala",
     "imageUrl": null,
     "localPath": "/images/speakers/j-c-alawathuwala.png"
-  },
-  "ගරු (වෛද්‍ය) රමේෂ් පතිරණ මහතා": {
-    "manthriName": "Ramesh Pathirana",
-    "slug": "ramesh-pathirana",
-    "imageUrl": null,
-    "localPath": "/images/speakers/ramesh-pathirana.png"
-  },
-  "මහින්ද රාජපක්ෂ": {
-    "manthriName": "Mahinda Rajapaksha",
-    "slug": "mahinda-rajapaksha",
-    "imageUrl": null,
-    "localPath": "/images/speakers/mahinda-rajapaksha.png"
-  },
-  "ගරු උදය ප්‍රභාත් ගම්මන්පිල මහතා": {
-    "manthriName": "Udaya Gammanpila",
-    "slug": "udaya-gammanpila",
-    "imageUrl": null,
-    "localPath": "/images/speakers/udaya-gammanpila.png"
   },
   "ගරු වීරසුමන වීරසිංහ මහතා": {
     "manthriName": "Weerasumana Weerasinghe",
@@ -1042,5 +988,11 @@
     "slug": "wijayadasa-rajapaksha",
     "imageUrl": null,
     "localPath": "/images/speakers/wijayadasa-rajapaksha.png"
+  },
+  "මහින්ද රාජපක්ෂ": {
+    "manthriName": "Mahinda Rajapaksha",
+    "slug": "mahinda-rajapaksha",
+    "imageUrl": null,
+    "localPath": "/images/speakers/mahinda-rajapaksha.png"
   }
 }
