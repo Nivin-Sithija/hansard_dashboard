@@ -4,7 +4,12 @@ const inflight = new Map();
 const detectType = (url) => (url.toLowerCase().endsWith('.csv') ? 'text' : 'json');
 
 async function fetchAndParse(url, type) {
-  const response = await fetch(url, { cache: 'force-cache' });
+  // 'no-cache' always revalidates with the server (cheap 304 if unchanged)
+  // instead of blindly reusing a stale disk-cache entry like 'force-cache'
+  // would — otherwise updated data files keep showing old numbers until a
+  // hard refresh. The in-memory parsedCache/inflight maps above still
+  // dedupe repeat reads within a single page session.
+  const response = await fetch(url, { cache: 'no-cache' });
   if (!response.ok) {
     throw new Error(`Failed to load ${url}`);
   }

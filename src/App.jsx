@@ -1,10 +1,15 @@
-import React, { useState, useEffect, useMemo, Suspense, lazy } from 'react';
+import React, { useState, useEffect, useMemo, useRef, Suspense, lazy } from 'react';
 import { Card } from './components/Card';
 import { TemporalEvolutionChart } from './components/TemporalEvolutionChart';
 import { WordDistributionSection } from './components/WordDistributionSection';
 import { Activity, BookOpen, Filter, Users, User, LayoutDashboard, Cloud, Loader2, Calendar, GitCompare, Menu, X, ChevronLeft, ChevronRight } from 'lucide-react';
 import { DASHBOARD_DATA_URLS, preloadData, readJson } from './utils/dataPreloader';
 import { HeroBanner } from './components/HeroBanner';
+
+// Minimum time the intro screen stays fully visible before it starts
+// exiting, and how long the outro animation runs before the real app shows.
+const MIN_PRELOAD_VISIBLE_MS = 900;
+const PRELOAD_OUTRO_MS = 520;
 
 // Lazy-load heavy tabs — only downloaded when the user first clicks them
 const SpeakerAnalyticsSection = lazy(() => import('./components/SpeakerAnalyticsSection'));
@@ -22,35 +27,18 @@ function TabLoader() {
   );
 }
 
-// Full-page skeleton while core data loads
-function AppLoader({ completed = 0, total = 1, currentUrl = '' }) {
-  const percent = total ? Math.round((completed / total) * 100) : 0;
-
+// Light intro/outro preload screen shown only until the Topics tab's
+// own data is ready. Heavier datasets for the other tabs are fetched
+// afterwards, in the background, once the Topics page is on screen.
+function PreloadScreen({ exiting }) {
   return (
-    <div style={{ display: 'flex', minHeight: '100vh', alignItems: 'center', justifyContent: 'center', background: 'linear-gradient(180deg, #f8fbff 0%, var(--background-color) 100%)', padding: '2rem' }}>
-      <div style={{ width: 'min(560px, 92vw)', background: 'var(--surface-color)', border: '1px solid var(--border-color)', borderRadius: 'var(--radius-xl)', boxShadow: 'var(--shadow-lg)', padding: '2rem 1.75rem', textAlign: 'center' }}>
-        <div style={{ position: 'relative', width: '84px', height: '84px', margin: '0 auto 1rem' }}>
-          <img src="/logo.svg" alt="SL Hansard Dashboard Logo" className="logo-preload-mark" style={{ width: '84px', height: '84px' }} />
-          <span className="logo-preload-ring" />
+    <div className={`preload-screen${exiting ? ' preload-exiting' : ''}`}>
+      <div className="preload-logo-wrap">
+        <img src="/logo.svg" alt="SL Hansard Dashboard Logo" className="preload-logo-img" />
+        <p className="preload-title">SL Hansard Dashboard</p>
+        <div className="preload-dots">
+          <span /><span /><span />
         </div>
-        <h2 style={{ margin: '0 0 0.4rem', color: 'var(--text-primary)', fontSize: '1.2rem' }}>Preparing SL Hansard Dashboard</h2>
-        <p style={{ margin: '0 0 1.2rem', color: 'var(--text-secondary)', fontSize: '0.9rem' }}>
-          Preloading CSV and JSON data into the browser cache.
-        </p>
-
-        <div style={{ width: '100%', height: '10px', borderRadius: '999px', background: '#dbe7fb', overflow: 'hidden' }}>
-          <div style={{ width: `${percent}%`, height: '100%', background: 'linear-gradient(90deg, #2563eb 0%, #0ea5e9 100%)', transition: 'width 0.25s ease' }} />
-        </div>
-
-        <div style={{ marginTop: '0.7rem', display: 'flex', justifyContent: 'space-between', color: 'var(--text-secondary)', fontSize: '0.82rem' }}>
-          <span>{completed}/{total} assets</span>
-          <span>{percent}%</span>
-        </div>
-        {currentUrl && (
-          <p style={{ margin: '0.6rem 0 0', color: 'var(--text-secondary)', fontSize: '0.78rem', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }} title={currentUrl}>
-            {currentUrl}
-          </p>
-        )}
       </div>
     </div>
   );
@@ -83,28 +71,26 @@ function TopicsBanner({ totalClusteredSpeeches, macroTopicCount }) {
 }
 
 function App() {
-  // ── Core data (needed immediately for Topic Analytics tab) ──
+  // ── Core data (only what the Topics tab needs to render first) ──
   const [evolutionData, setEvolutionData] = useState(null);
   const [keywordsData, setKeywordsData] = useState(null);
   const [speakerCounts, setSpeakerCounts] = useState(null);
   const [speakerNorm, setSpeakerNorm] = useState(null);
   const [loadError, setLoadError] = useState(null);
-  const [preloadStatus, setPreloadStatus] = useState({ completed: 0, total: DASHBOARD_DATA_URLS.length, currentUrl: '' });
+  const [isExiting, setIsExiting] = useState(false);
+  const [showApp, setShowApp] = useState(false);
 
   // ── UI state ──
   const [selectedTopics, setSelectedTopics] = useState([]);
   const [activeDetailTopic, setActiveDetailTopic] = useState(null);
   const [activeTab, setActiveTab] = useState('topics');
 
-  // Fetch all core files in parallel on mount
+  // Fetch only the 4 files the Topics tab needs — everything else for the
+  // other tabs is preloaded later, in the background, once this is shown.
   useEffect(() => {
     let cancelled = false;
 
     const boot = async () => {
-      await preloadData(DASHBOARD_DATA_URLS, ({ completed, total, currentUrl }) => {
-        if (!cancelled) setPreloadStatus({ completed, total, currentUrl: currentUrl || '' });
-      });
-
       const [evolution, keywords, speakerTopicCounts, normalization] = await Promise.all([
         readJson('/data/macro_topic_temporal_evolution_chart_data.json'),
         readJson('/data/macro_topic_keywords_100.json'),
@@ -129,6 +115,33 @@ function App() {
   }, []);
 
   const isLoading = !evolutionData || !keywordsData || !speakerCounts || !speakerNorm;
+  const bootStartedAt = useRef(Date.now());
+
+  // Play the outro once core data is ready, then swap in the real app.
+  // Data is usually served from the browser cache almost instantly, so a
+  // floor is enforced here to make sure the intro animation is actually seen.
+  useEffect(() => {
+    if (isLoading || isExiting || showApp) return;
+    const elapsed = Date.now() - bootStartedAt.current;
+    const delayBeforeExit = Math.max(0, MIN_PRELOAD_VISIBLE_MS - elapsed);
+
+    const exitTimer = setTimeout(() => setIsExiting(true), delayBeforeExit);
+    return () => clearTimeout(exitTimer);
+  }, [isLoading, isExiting, showApp]);
+
+  useEffect(() => {
+    if (!isExiting) return;
+    const showTimer = setTimeout(() => setShowApp(true), PRELOAD_OUTRO_MS);
+    return () => clearTimeout(showTimer);
+  }, [isExiting]);
+
+  // Once the Topics page is visible, warm the cache for the remaining
+  // (heavier) datasets used by the other tabs — silently, in the background.
+  useEffect(() => {
+    if (showApp) {
+      preloadData(DASHBOARD_DATA_URLS).catch(() => {});
+    }
+  }, [showApp]);
 
   if (loadError) {
     return (
@@ -138,8 +151,8 @@ function App() {
     );
   }
 
-  if (isLoading) {
-    return <AppLoader completed={preloadStatus.completed} total={preloadStatus.total} currentUrl={preloadStatus.currentUrl} />;
+  if (!showApp) {
+    return <PreloadScreen exiting={isExiting} />;
   }
 
   return <AppShell
@@ -305,7 +318,7 @@ function AppShell({
   const macroTopicCount = useMemo(() => Object.keys(evolutionData.topic_labels || {}).length, [evolutionData]);
 
   return (
-    <div className="app-shell" style={{
+    <div className="app-shell animate-fade-in" style={{
       display: 'flex', minHeight: '100vh',
       background:
         'radial-gradient(circle at 20% 18%, rgba(14, 165, 233, 0.13), transparent 32%),' +

@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useMemo } from 'react';
 import { Card } from './Card';
-import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, Cell, LineChart, Line, CartesianGrid } from 'recharts';
+import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, Cell, LabelList, LineChart, Line, CartesianGrid } from 'recharts';
 import { User, Activity, PieChart, Info, Search, Loader2 } from 'lucide-react';
 import { readJson } from '../utils/dataPreloader';
 import { SectionBanner } from './SectionBanner';
@@ -244,18 +244,12 @@ function SpeakerAnalyticsInner({ speakerSpeechesRaw, finalUniqueSpeakers, speake
                 <Card title="Top 10 Topics" icon={PieChart}>
                   <div style={{ height: `${Math.max(280, topicChartData.length * 46)}px` }}>
                     <ResponsiveContainer width="100%" height="100%">
-                      <BarChart data={topicChartData} layout="vertical" margin={{ top: 10, right: 30, left: 20, bottom: 5 }}>
+                      <BarChart data={topicChartData} layout="vertical" margin={{ top: 10, right: 50, left: 20, bottom: 5 }}>
                         <XAxis type="number" hide />
                         <YAxis dataKey="topic" type="category" axisLine={false} tickLine={false} tick={{ fill: 'var(--text-secondary)', fontSize: 11 }} width={170} />
-                        <Tooltip cursor={{ fill: 'var(--surface-color)' }} content={({ active, payload }) => {
-                          if (active && payload?.length) {
-                            const d = payload[0].payload;
-                            return <div style={{ backgroundColor: 'var(--surface-color)', padding: '1rem', border: '1px solid var(--border-color)', borderRadius: 'var(--radius-md)', boxShadow: 'var(--shadow-md)', maxWidth: '250px', color: 'var(--text-primary)', opacity: 0.98 }}><p style={{ margin: '0 0 0.5rem', fontWeight: 600 }}>{d.topic}</p><p style={{ margin: '0 0 0.5rem', fontSize: '0.85rem', color: 'var(--text-secondary)' }}>{d.fullLabel}</p><p style={{ margin: 0, color: 'var(--primary-color)', fontWeight: 500 }}>{d.count} speeches</p></div>;
-                          }
-                          return null;
-                        }} />
                         <Bar dataKey="count" radius={[0, 4, 4, 0]}>
                           {topicChartData.map((entry, i) => <Cell key={i} fill={entry.color} />)}
+                          <LabelList dataKey="count" position="right" formatter={(value) => value.toLocaleString()} style={{ fill: 'var(--text-primary)', fontSize: 12, fontWeight: 600 }} />
                         </Bar>
                       </BarChart>
                     </ResponsiveContainer>

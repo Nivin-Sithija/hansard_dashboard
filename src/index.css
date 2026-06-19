@@ -279,27 +279,85 @@ h1, h2, h3, h4, h5, h6 {
   50% { transform: scale(1.06); }
 }
 
-@keyframes ringSpin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
-
 .animate-fade-in {
   animation: fadeIn 0.4s ease-out forwards;
 }
 
-.logo-preload-mark {
-  animation: logoPulse 1.8s ease-in-out infinite;
+/* ── Preload intro/outro screen ── */
+@keyframes preloadIntroIn {
+  from { opacity: 0; transform: scale(0.85) translateY(14px); }
+  to { opacity: 1; transform: scale(1) translateY(0); }
 }
 
-.logo-preload-ring {
-  position: absolute;
-  inset: -6px;
-  border-radius: 999px;
-  border: 2px solid rgba(37, 99, 235, 0.2);
-  border-top-color: rgba(14, 165, 233, 0.95);
-  animation: ringSpin 1.2s linear infinite;
+@keyframes preloadOutroOut {
+  from { opacity: 1; transform: scale(1) translateY(0); }
+  to { opacity: 0; transform: scale(1.08) translateY(-12px); }
 }
+
+@keyframes preloadDotBounce {
+  0%, 80%, 100% { opacity: 0.25; transform: translateY(0); }
+  40% { opacity: 1; transform: translateY(-4px); }
+}
+
+.preload-screen {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(160deg, #fffdf8 0%, #fbf6ea 55%, #fff9ef 100%);
+  opacity: 1;
+  transition: opacity 0.55s ease;
+}
+
+.preload-screen.preload-exiting {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.preload-logo-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  animation: preloadIntroIn 0.7s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.preload-screen.preload-exiting .preload-logo-wrap {
+  animation: preloadOutroOut 0.5s ease forwards;
+}
+
+.preload-logo-img {
+  width: 96px;
+  height: 96px;
+  animation: logoPulse 1.8s ease-in-out infinite;
+  filter: drop-shadow(0 10px 28px rgba(120, 100, 60, 0.16));
+}
+
+.preload-title {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: #4a4435;
+}
+
+.preload-dots {
+  display: flex;
+  gap: 0.35rem;
+}
+
+.preload-dots span {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #c9a86a;
+  animation: preloadDotBounce 1.1s ease-in-out infinite;
+}
+
+.preload-dots span:nth-child(2) { animation-delay: 0.15s; }
+.preload-dots span:nth-child(3) { animation-delay: 0.3s; }
 
 /* Custom Scrollbar for dropdowns or lists */
 ::-webkit-scrollbar {
