@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 import React, { useState, useEffect, useMemo, useRef, Suspense, lazy } from 'react';
 import { Card } from './components/Card';
 import { TemporalEvolutionChart } from './components/TemporalEvolutionChart';
@@ -10,23 +11,28 @@ import { HeroBanner } from './components/HeroBanner';
 // exiting, and how long the outro animation runs before the real app shows.
 const MIN_PRELOAD_VISIBLE_MS = 900;
 const PRELOAD_OUTRO_MS = 520;
+=======
+﻿import React, { Suspense, lazy } from 'react';
+import { Navigate, Route, Routes } from 'react-router-dom';
+import { SiteLayout } from './components/layout/SiteLayout';
+>>>>>>> Stashed changes
 
-// Lazy-load heavy tabs — only downloaded when the user first clicks them
-const SpeakerAnalyticsSection = lazy(() => import('./components/SpeakerAnalyticsSection'));
-const WordcloudAnalyticsSection = lazy(() => import('./components/WordcloudAnalyticsSection'));
-const ParliamentSessionsSection = lazy(() => import('./components/ParliamentSessionsSection'));
-const ComparativeAnalysisSection = lazy(() => import('./components/ComparativeAnalysisSection'));
+const OverviewPage = lazy(() => import('./routes/OverviewPage'));
+const TopicAtlasPage = lazy(() => import('./routes/TopicAtlasPage'));
+const TimelinePage = lazy(() => import('./routes/TimelinePage'));
+const SpeechExplorerPage = lazy(() => import('./routes/SpeechExplorerPage'));
+const PlaceholderPage = lazy(() => import('./routes/PlaceholderPage'));
 
-// Small reusable loading spinner
-function TabLoader() {
+function RouteLoader() {
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '6rem 2rem', gap: '1rem' }}>
-      <Loader2 size={36} style={{ color: 'var(--primary-color)', animation: 'spin 1s linear infinite' }} />
-      <p style={{ color: 'var(--text-secondary)', fontSize: '0.95rem', margin: 0 }}>Loading analytics data…</p>
+    <div className="route-loader">
+      <div className="route-loader__orb" />
+      <p>Loading parliamentary insights…</p>
     </div>
   );
 }
 
+<<<<<<< Updated upstream
 // Light intro/outro preload screen shown only until the Topics tab's
 // own data is ready. Heavier datasets for the other tabs are fetched
 // afterwards, in the background, once the Topics page is on screen.
@@ -652,3 +658,24 @@ function TopicDetailPanel({ selectedTopics, activeDetailTopic, setActiveDetailTo
 }
 
 export default App;
+=======
+export default function App() {
+  return (
+    <Suspense fallback={<RouteLoader />}>
+      <Routes>
+        <Route element={<SiteLayout />}>
+          <Route path="/" element={<OverviewPage />} />
+          <Route path="/topics" element={<TopicAtlasPage />} />
+          <Route path="/timeline" element={<TimelinePage />} />
+          <Route path="/speeches" element={<SpeechExplorerPage />} />
+          <Route path="/speakers" element={<PlaceholderPage title="Speaker Profiles" description="Track how individual MPs and ministers shift their agenda across macro-topics, years, and languages. This route is scaffolded for the next release." />} />
+          <Route path="/compare" element={<PlaceholderPage title="Compare" description="Side-by-side comparisons for speakers, topics, and periods will live here in the next iteration of the explorer." />} />
+          <Route path="/methodology" element={<PlaceholderPage title="Methodology" description="A deeper explainer for the full extraction, embedding, clustering, and macro-topic pipeline is reserved here." />} />
+          <Route path="/data" element={<PlaceholderPage title="Data & Downloads" description="Dataset downloads, exports, and citation-ready assets will be published from this route once the public package is finalized." />} />
+          <Route path="*" element={<Navigate to="/" replace />} />
+        </Route>
+      </Routes>
+    </Suspense>
+  );
+}
+>>>>>>> Stashed changes

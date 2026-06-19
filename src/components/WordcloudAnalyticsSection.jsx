@@ -1,74 +1,8 @@
-import React, { useState, useEffect, useMemo, useRef, useCallback } from 'react';
-import { Card } from './Card';
-import { Cloud, Tag, TrendingUp, Info, Loader2 } from 'lucide-react';
-import { readJson } from '../utils/dataPreloader';
-import cloud from 'd3-cloud';
+﻿import React from 'react';
 
-// NOTE: Fetches its own data from /public/data/ at runtime.
-// This component is React.lazy() loaded — downloaded only when Word Cloud tab is first clicked.
-
-// Vibrant multi-color palette matching the reference image aesthetic
-const WORD_PALETTE = [
-  '#e63946', '#2a9d8f', '#e76f51', '#457b9d', '#f4a261',
-  '#6a4c93', '#2196f3', '#43aa8b', '#f72585', '#4361ee',
-  '#06d6a0', '#fb8500', '#8338ec', '#3a86ff', '#d62828',
-  '#52b788', '#c77dff', '#0077b6', '#ff6b6b', '#48cae4',
-  '#b5838d', '#6d6875', '#e07a5f', '#3d405b', '#81b29a',
-];
-
-function seededRandom(seed) {
-  let s = seed;
-  return () => {
-    s = (s * 16807 + 0) % 2147483647;
-    return (s - 1) / 2147483646;
-  };
-}
-
-function WordCloud({ words, compact = false, width = 700, height = 480 }) {
-  const [placed, setPlaced] = useState([]);
-  const [layoutKey, setLayoutKey] = useState(0);
-
-  useEffect(() => {
-    if (!words || words.length === 0) { setPlaced([]); return; }
-
-    const maxCount = words[0]?.count || 1;
-    const minCount = words[words.length - 1]?.count || 1;
-    const range = maxCount - minCount || 1;
-
-    const minFs = compact ? 10 : 13;
-    const maxFs = compact ? 26 : 68;
-    const getFontSize = (count) => Math.round(minFs + ((count - minCount) / range) * (maxFs - minFs));
-
-    const rand = seededRandom(words.map(w => w.word.charCodeAt(0)).reduce((a, b) => a + b, 42));
-    const ROTATIONS = [0, 0, 0, 90, -90, 0, 0, 45, -45];
-
-    const layout = cloud()
-      .size([width, height])
-      .words(words.map((w, i) => ({
-        text: w.word,
-        size: getFontSize(w.count),
-        count: w.count,
-        color: WORD_PALETTE[i % WORD_PALETTE.length],
-        rotate: compact ? 0 : ROTATIONS[Math.floor(rand() * ROTATIONS.length)],
-      })))
-      .padding(compact ? 2 : 4)
-      .rotate(d => d.rotate)
-      .font('Inter, system-ui, sans-serif')
-      .fontSize(d => d.size)
-      .on('end', (out) => {
-        setPlaced(out);
-        setLayoutKey(k => k + 1);
-      });
-
-    layout.start();
-    return () => layout.stop();
-  }, [words, compact, width, height]);
-
-  if (!words || words.length === 0) {
-    return <div style={{ textAlign: 'center', padding: '4rem', color: 'var(--text-secondary)' }}>No keyword data available.</div>;
-  }
-
+export default function WordcloudAnalyticsSection() {
   return (
+<<<<<<< Updated upstream
     <svg
       width={width}
       height={height}
@@ -306,5 +240,14 @@ function WordcloudInner({ keywordsData, evolutionData, selectedTopic, setSelecte
         </div>
       </div>
     </div>
+=======
+    <section className="editorial-panel placeholder-page">
+      <div className="section-heading">
+        <div className="section-heading__eyebrow">Legacy module</div>
+        <h1>Word cloud analytics retired</h1>
+        <p>The new routed experience replaces the old standalone word-cloud tab. Topic-level vocabulary now lives inside the Topic Atlas detail panel.</p>
+      </div>
+    </section>
+>>>>>>> Stashed changes
   );
 }

@@ -11,8 +11,8 @@ export default defineConfig({
         // Rolldown expects manualChunks to be a function.
         manualChunks(id) {
           if (!id.includes('node_modules')) return;
-          if (id.includes('/react/') || id.includes('/react-dom/')) return 'react';
-          if (id.includes('/recharts/')) return 'recharts';
+          if (id.includes('/react/') || id.includes('/react-dom/') || id.includes('react-router')) return 'react';
+          if (id.includes('/d3')) return 'd3';
           if (id.includes('/lucide-react/')) return 'lucide';
         },
       }
