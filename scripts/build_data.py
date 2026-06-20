@@ -9,11 +9,13 @@ import numpy as np
 REPO_ROOT = Path(__file__).resolve().parents[1]
 SOURCE_ROOT = REPO_ROOT.parent / 'lk-hansard-topic-modeling' / 'artifacts' / 'final_v14'
 TARGET_DATA = REPO_ROOT / 'public' / 'data'
+CONTENT_ROOT = REPO_ROOT / 'scripts' / 'content'
 
 TEMPORAL_PATH = TARGET_DATA / 'macro_topic_temporal_evolution_chart_data.json'
 KEYWORDS_PATH = TARGET_DATA / 'macro_topic_keywords_100.json'
 SPEAKER_COUNTS_PATH = TARGET_DATA / 'speaker_topic_counts_by_macro_topic.json'
 SPEAKER_NORMALIZATION_PATH = TARGET_DATA / 'speaker_normalization.json'
+TOPIC_RESOURCES_PATH = CONTENT_ROOT / 'topic_resources.json'
 
 ASSIGNMENTS_PATH = SOURCE_ROOT / 'macro_topic_assignments.csv'
 SPEECHES_PATH = SOURCE_ROOT / 'all_speakers.csv'
@@ -60,6 +62,73 @@ def topic_key(topic_id: int | None) -> str:
     return 'noise' if topic_id is None else str(topic_id)
 
 
+def load_topic_resources(path: Path):
+    if not path.exists():
+        return {}
+    payload = load_json(path)
+    return payload if isinstance(payload, dict) else {}
+
+
+def normalize_resource(item: dict) -> dict:
+    return {
+        'id': item['id'],
+        'type': item['type'],
+        'title': item['title'],
+        'url': item['url'],
+        'publisher': item['publisher'],
+        'publishedAt': item.get('publishedAt'),
+        'year': item.get('year'),
+        'summary': item.get('summary', ''),
+        'whyRelevant': item.get('whyRelevant', ''),
+        'sourceQuality': item.get('sourceQuality', 'news'),
+        'verified': bool(item.get('verified', False)),
+    }
+
+
+def normalize_event(item: dict) -> dict:
+    return {
+        'id': item['id'],
+        'title': item['title'],
+        'date': item.get('date'),
+        'dateRange': item.get('dateRange'),
+        'summary': item.get('summary', ''),
+        'whyLinked': item.get('whyLinked', ''),
+        'topicKeys': item.get('topicKeys', []),
+        'sourceIds': item.get('sourceIds', []),
+    }
+
+
+def build_topic_companion(topic_resources: dict, topic_metadata: dict) -> tuple[dict, dict]:
+    event_sources = {}
+    companion = {}
+
+    for key, metadata in topic_metadata.items():
+        authored = topic_resources.get(key, {})
+        resources = [normalize_resource(item) for item in authored.get('resources', [])]
+        related_events = [normalize_event(item) for item in authored.get('relatedEvents', [])]
+        keywords_to_events = authored.get('keywordsToEvents', [])
+
+        for resource in resources:
+            event_sources[resource['id']] = resource
+
+        companion[key] = {
+            'topicId': metadata['topicId'],
+            'topicKey': metadata['topicKey'],
+            'topicLabel': metadata['topicLabel'],
+            'resources': resources,
+            'relatedEvents': related_events,
+        }
+        if keywords_to_events:
+            companion[key]['keywordsToEvents'] = keywords_to_events
+
+        verified_resources = [resource for resource in resources if resource['verified']]
+        metadata['resourceCount'] = len(resources)
+        metadata['eventCount'] = len(related_events)
+        metadata['hasExternalEvidence'] = bool(verified_resources or related_events)
+
+    return companion, event_sources
+
+
 def main() -> None:
     TARGET_DATA.mkdir(parents=True, exist_ok=True)
 
@@ -67,6 +136,7 @@ def main() -> None:
     keywords = load_json(KEYWORDS_PATH)
     speaker_counts = load_json(SPEAKER_COUNTS_PATH)
     speaker_norm = load_json(SPEAKER_NORMALIZATION_PATH)
+    topic_resources = load_topic_resources(TOPIC_RESOURCES_PATH)
 
     topic_labels = temporal['topic_labels']
     topic_colors = {
@@ -193,6 +263,8 @@ def main() -> None:
         'sampleSpeeches': [{k: value for k, value in sample.items() if k != 'length'} for sample in noise_samples],
     }
 
+    topic_companion, event_sources = build_topic_companion(topic_resources, topic_metadata)
+
     ranked_topics = sorted(
         [item for item in topic_metadata.values() if item['topicId'] is not None],
         key=lambda item: item['totalSpeeches'],
@@ -223,8 +295,10 @@ def main() -> None:
     (TARGET_DATA / 'speech_records.json').write_text(json.dumps(speech_records, ensure_ascii=False), encoding='utf-8')
     (TARGET_DATA / 'atlas_points.json').write_text(json.dumps(atlas_points, ensure_ascii=False), encoding='utf-8')
     (TARGET_DATA / 'topic_metadata.json').write_text(json.dumps(topic_metadata, ensure_ascii=False), encoding='utf-8')
+    (TARGET_DATA / 'topic_event_links.json').write_text(json.dumps(topic_companion, ensure_ascii=False), encoding='utf-8')
+    (TARGET_DATA / 'event_sources.json').write_text(json.dumps(event_sources, ensure_ascii=False), encoding='utf-8')
     (TARGET_DATA / 'overview_summary.json').write_text(json.dumps(overview_summary, ensure_ascii=False), encoding='utf-8')
-    print('Wrote speech_records.json, atlas_points.json, topic_metadata.json, overview_summary.json')
+    print('Wrote speech_records.json, atlas_points.json, topic_metadata.json, topic_event_links.json, event_sources.json, overview_summary.json')
 
 
 if __name__ == '__main__':

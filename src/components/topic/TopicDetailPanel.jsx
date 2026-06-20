@@ -1,19 +1,28 @@
-﻿import React from 'react';
+import React from 'react';
 import { D3KeywordBars } from '../charts/D3KeywordBars';
 import { D3LanguageMixChart } from '../charts/D3LanguageMixChart';
-import { formatNumber, rgb } from '../../lib/format';
+import { formatDateLabel, formatNumber, rgb } from '../../lib/format';
 
-export function TopicDetailPanel({ topic, speech }) {
+function sourceTone(type) {
+  if (type === 'official') return 'official';
+  if (type === 'youtube_search') return 'youtube';
+  return 'default';
+}
+
+export function TopicDetailPanel({ topic, speech, topicEvidence, eventSources = {} }) {
   if (!topic) {
     return (
       <section className="detail-panel">
         <div className="detail-panel__empty">
           <h3>Select a topic or speech</h3>
-          <p>Use the atlas to choose a speech cluster, then inspect keywords, language composition, and representative examples.</p>
+          <p>Use the atlas to choose a speech cluster, then inspect keywords, language composition, representative examples.</p>
         </div>
       </section>
     );
   }
+
+  const verifiedResources = (topicEvidence?.resources || []).filter((resource) => resource.verified);
+  const relatedEvents = topicEvidence?.relatedEvents || [];
 
   return (
     <section className="detail-panel">
@@ -60,6 +69,62 @@ export function TopicDetailPanel({ topic, speech }) {
           ))}
         </div>
       </div>
+      {topic.topicKey !== 'noise' && (
+        <div className="detail-panel__section">
+          <div className="detail-panel__section-title">Related resources</div>
+          {verifiedResources.length ? (
+            <div className="detail-panel__resource-list">
+              {verifiedResources.slice(0, 6).map((resource) => (
+                <a
+                  key={resource.id}
+                  className={`detail-panel__resource-card is-${sourceTone(resource.type)}`}
+                  href={resource.url}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <div className="detail-panel__resource-meta">
+                    <span>{resource.type === 'youtube_search' ? 'YouTube search' : resource.publisher}</span>
+                    <strong>{formatDateLabel(resource)}</strong>
+                  </div>
+                  <h4>{resource.title}</h4>
+                  <p>{resource.whyRelevant || resource.summary}</p>
+                </a>
+              ))}
+            </div>
+          ) : (
+            <p className="detail-panel__muted">Evidence links coming soon for this topic.</p>
+          )}
+        </div>
+      )}
+      {topic.topicKey !== 'noise' && !!relatedEvents.length && (
+        <div className="detail-panel__section">
+          <div className="detail-panel__section-title">Related events</div>
+          <div className="detail-panel__event-list">
+            {relatedEvents.map((event) => (
+              <article key={event.id} className="detail-panel__event-card">
+                <div className="detail-panel__resource-meta">
+                  <span>Event</span>
+                  <strong>{formatDateLabel(event)}</strong>
+                </div>
+                <h4>{event.title}</h4>
+                <p>{event.summary}</p>
+                <p>{event.whyLinked}</p>
+                <div className="detail-panel__event-links">
+                  {event.sourceIds.map((sourceId) => {
+                    const source = eventSources[sourceId];
+                    if (!source) return null;
+                    return (
+                      <a key={sourceId} href={source.url} target="_blank" rel="noreferrer">
+                        {source.publisher}
+                      </a>
+                    );
+                  })}
+                </div>
+              </article>
+            ))}
+          </div>
+        </div>
+      )}
     </section>
   );
 }

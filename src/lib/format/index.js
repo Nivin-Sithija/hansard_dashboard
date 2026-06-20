@@ -12,3 +12,11 @@ export function compactList(items, limit = 3) {
   if (!items?.length) return '—';
   return items.slice(0, limit).join(' · ');
 }
+
+export function formatDateLabel({ publishedAt, year, date, dateRange } = {}) {
+  if (publishedAt) return publishedAt;
+  if (date) return date;
+  if (dateRange) return dateRange;
+  if (year) return String(year);
+  return '—';
+}

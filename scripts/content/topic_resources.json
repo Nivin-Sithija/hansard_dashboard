@@ -1,0 +1,1406 @@
+{
+  "0": {
+    "topicId": 0,
+    "topicKey": "0",
+    "topicLabel": "Legislative Mechanics & Standing Orders",
+    "resources": [
+      {
+        "id": "mt0-parliament-news",
+        "type": "official",
+        "title": "Parliament of Sri Lanka - Parliament News",
+        "url": "https://www.parliament.lk/en/home/parliament-news",
+        "publisher": "Parliament of Sri Lanka",
+        "year": 2026,
+        "summary": "Official parliamentary news archive covering sittings, delegations, committee work, and legislative updates.",
+        "whyRelevant": "Grounds this topic in the institution's own reporting on parliamentary procedure and business.",
+        "sourceQuality": "official",
+        "verified": true
+      },
+      {
+        "id": "mt0-standing-orders",
+        "type": "official",
+        "title": "Standing Orders - Parliament of Sri Lanka",
+        "url": "https://www.parliament.lk/en/learn/how-parliament-works/standing-orders",
+        "publisher": "Parliament of Sri Lanka",
+        "year": 2022,
+        "summary": "Overview page explaining the role of Standing Orders and linking to the governing procedural framework.",
+        "whyRelevant": "Directly explains the procedural vocabulary that dominates this macro-topic.",
+        "sourceQuality": "official",
+        "verified": true
+      },
+      {
+        "id": "mt0-youtube-search",
+        "type": "youtube_search",
+        "title": "YouTube search: Sri Lanka Parliament Standing Orders",
+        "url": "https://www.youtube.com/results?search_query=Sri+Lanka+Parliament+Standing+Orders",
+        "publisher": "YouTube",
+        "year": 2026,
+        "summary": "Curated search entry point for recent procedural explainers and parliamentary footage.",
+        "whyRelevant": "Lets users find current clips that illustrate how formal procedure appears in practice.",
+        "sourceQuality": "news",
+        "verified": true
+      }
+    ],
+    "relatedEvents": []
+  },
+  "1": {
+    "topicId": 1,
+    "topicKey": "1",
+    "topicLabel": "Energy Security & Macroeconomic Crisis",
+    "resources": [
+      {
+        "id": "mt1-eurasiareview-energy-crisis",
+        "type": "article",
+        "title": "Sri Lanka's Impending Energy Crisis: Implications For Political Stability - Analysis",
+        "url": "https://www.eurasiareview.com/03042026-sri-lankas-impending-energy-crisis-implications-for-political-stability-analysis/",
+        "publisher": "Eurasia Review",
+        "publishedAt": "2026-04-03",
+        "summary": "Analysis of energy prices, fuel pressure, and the political consequences of renewed energy insecurity.",
+        "whyRelevant": "Matches the macro-topic's blend of fuel stress, macroeconomic anxiety, and political fallout.",
+        "sourceQuality": "research",
+        "verified": true
+      },
+      {
+        "id": "mt1-atlantic-council-energy",
+        "type": "article",
+        "title": "Demand destruction has begun: Sri Lanka and the global energy crisis",
+        "url": "https://www.atlanticcouncil.org/wp-content/uploads/2026/06/the-global-energy-crisis-and-its-impacts-on-asian-emerging-economies.pdf",
+        "publisher": "Atlantic Council",
+        "publishedAt": "2026-06-01",
+        "summary": "Regional energy crisis report that includes Sri Lanka's vulnerability to fuel and electricity shocks.",
+        "whyRelevant": "Adds regional context for why energy stress stays politically salient in debate.",
+        "sourceQuality": "research",
+        "verified": true
+      },
+      {
+        "id": "mt1-youtube-search",
+        "type": "youtube_search",
+        "title": "YouTube search: Sri Lanka fuel crisis 2026",
+        "url": "https://www.youtube.com/results?search_query=Sri+Lanka+fuel+crisis+2026",
+        "publisher": "YouTube",
+        "year": 2026,
+        "summary": "Curated search entry point for visual reporting and explainers on fuel shortages and price rises.",
+        "whyRelevant": "Supports public interpretation of the energy and inflation language inside the topic.",
+        "sourceQuality": "news",
+        "verified": true
+      }
+    ],
+    "relatedEvents": [
+      {
+        "id": "aragalaya-economic-crisis-2022",
+        "title": "Economic crisis and Aragalaya",
+        "dateRange": "2022-03/2022-07",
+        "summary": "Fuel shortages, inflation, blackouts, and anti-government protests turned the economic crisis into a parliamentary focal point.",
+        "whyLinked": "This topic peaks around the period when energy insecurity and macroeconomic collapse dominated public life and debate.",
+        "topicKeys": ["1", "19"],
+        "sourceIds": ["mt1-eurasiareview-energy-crisis", "mt19-aragalaya-stanford"]
+      }
+    ],
+    "keywordsToEvents": [
+      {
+        "keyword": "fuel",
+        "eventId": "aragalaya-economic-crisis-2022",
+        "whyLinked": "Fuel queues and shortages were one of the most visible triggers of the crisis period."
+      }
+    ]
+  },
+  "2": {
+    "topicId": 2,
+    "topicKey": "2",
+    "topicLabel": "National Security, Ethno-Religious Tensions & Law Enforcement",
+    "resources": [
+      {
+        "id": "mt2-csw-briefing",
+        "type": "article",
+        "title": "General Briefing: Sri Lanka",
+        "url": "https://www.csw.org.uk/2024/11/25/report/6372/article.htm",
+        "publisher": "CSW",
+        "publishedAt": "2024-11-25",
+        "summary": "Rights briefing focused on religious freedom, social cohesion, and policing risks in Sri Lanka.",
+        "whyRelevant": "Captures the security and communal tension layer that appears in this topic's vocabulary.",
+        "sourceQuality": "advocacy",
+        "verified": true
+      },
+      {
+        "id": "mt2-govuk-minority-religious-groups",
+        "type": "official",
+        "title": "Country policy and information note: minority religious groups, Sri Lanka",
+        "url": "https://www.gov.uk/government/publications/sri-lanka-country-policy-and-information-notes/country-policy-and-information-note-minority-religious-groups-sri-lanka-february-2025-accessible",
+        "publisher": "GOV.UK",
+        "publishedAt": "2025-02-01",
+        "summary": "Government note summarizing minority religious group risks and state response in Sri Lanka.",
+        "whyRelevant": "Offers a policy-facing source on policing, minority protection, and religious tension.",
+        "sourceQuality": "official",
+        "verified": true
+      },
+      {
+        "id": "mt2-youtube-search",
+        "type": "youtube_search",
+        "title": "YouTube search: Sri Lanka ethnic religious tensions",
+        "url": "https://www.youtube.com/results?search_query=Sri+Lanka+ethnic+religious+tensions",
+        "publisher": "YouTube",
+        "year": 2026,
+        "summary": "Curated search for documentaries and reporting on ethnic tension, policing, and communal violence.",
+        "whyRelevant": "Helps users connect topic language to concrete public narratives and reporting.",
+        "sourceQuality": "news",
+        "verified": true
+      }
+    ],
+    "relatedEvents": [
+      {
+        "id": "easter-sunday-attacks-2019",
+        "title": "Easter Sunday attacks and accountability fallout",
+        "dateRange": "2019-04/2026-12",
+        "summary": "The attacks triggered a long-running security, intelligence, and accountability debate that continued for years.",
+        "whyLinked": "This topic captures the broader national security and communal tension frame that intensified after the attacks.",
+        "topicKeys": ["2", "17"],
+        "sourceIds": ["mt2-csw-briefing", "mt17-amnesty-sri-lanka"]
+      }
+    ]
+  },
+  "3": {
+    "topicId": 3,
+    "topicKey": "3",
+    "topicLabel": "Mega-Infrastructure, Ports & Aviation Development",
+    "resources": [
+      {
+        "id": "mt3-port-city-colombo",
+        "type": "official",
+        "title": "Port City Colombo",
+        "url": "https://portcitycolombo.lk/",
+        "publisher": "Port City Colombo",
+        "year": 2026,
+        "summary": "Official project site for the Colombo Port City development initiative.",
+        "whyRelevant": "Anchors infrastructure and port-development language in a major flagship project.",
+        "sourceQuality": "official",
+        "verified": true
+      },
+      {
+        "id": "mt3-slpa-home",
+        "type": "official",
+        "title": "Sri Lanka Ports Authority",
+        "url": "https://slpa.lk/",
+        "publisher": "Sri Lanka Ports Authority",
+        "year": 2026,
+        "summary": "Official source for port operations, investments, and maritime infrastructure updates.",
+        "whyRelevant": "Supports interpretation of port-expansion and logistics-related parliamentary discourse.",
+        "sourceQuality": "official",
+        "verified": true
+      },
+      {
+        "id": "mt3-youtube-search",
+        "type": "youtube_search",
+        "title": "YouTube search: Colombo Port City Sri Lanka",
+        "url": "https://www.youtube.com/results?search_query=Colombo+Port+City+Sri+Lanka",
+        "publisher": "YouTube",
+        "year": 2026,
+        "summary": "Curated search for current visual coverage of port and aviation infrastructure projects.",
+        "whyRelevant": "Gives public-facing context for the physical projects referenced by the topic.",
+        "sourceQuality": "news",
+        "verified": true
+      }
+    ],
+    "relatedEvents": []
+  },
+  "4": {
+    "topicId": 4,
+    "topicKey": "4",
+    "topicLabel": "Agricultural Subsidies, Food Security & Price Controls",
+    "resources": [
+      {
+        "id": "mt4-global-agriculture-fertilizer-ban",
+        "type": "article",
+        "title": "Sri Lanka's Organic Farming Experiment: How a Nationwide Fertilizer Ban Triggered an Agricultural and Economic Crisis",
+        "url": "https://www.global-agriculture.com/global-agriculture/sri-lankas-organic-farming-experiment-how-a-nationwide-fertilizer-ban-triggered-an-agricultural-and-economic-crisis/",
+        "publisher": "Global Agriculture",
+        "publishedAt": "2026-03-04",
+        "summary": "Retrospective on the fertilizer ban and the agricultural and economic disruption it caused.",
+        "whyRelevant": "Directly maps onto this topic's subsidy, food security, and price-control language.",
+        "sourceQuality": "news",
+        "verified": true
+      },
+      {
+        "id": "mt4-foreign-policy-organic-farming",
+        "type": "article",
+        "title": "In Sri Lanka, Organic Farming Went Catastrophically Wrong",
+        "url": "https://foreignpolicy.com/2022/03/05/sri-lanka-organic-farming-crisis/",
+        "publisher": "Foreign Policy",
+        "publishedAt": "2022-03-05",
+        "summary": "Widely cited account of the policy reversal and its agricultural fallout.",
+        "whyRelevant": "Connects the topic's food security vocabulary to a defining policy failure.",
+        "sourceQuality": "news",
+        "verified": true
+      },
+      {
+        "id": "mt4-youtube-search",
+        "type": "youtube_search",
+        "title": "YouTube search: Sri Lanka fertilizer ban crisis",
+        "url": "https://www.youtube.com/results?search_query=Sri+Lanka+fertilizer+ban+crisis",
+        "publisher": "YouTube",
+        "year": 2026,
+        "summary": "Curated search for explainers and reporting on the fertilizer ban and food-security effects.",
+        "whyRelevant": "Adds a visual entry point to one of the most interpretable policy shocks in the corpus.",
+        "sourceQuality": "news",
+        "verified": true
+      }
+    ],
+    "relatedEvents": [
+      {
+        "id": "fertilizer-ban-crisis-2021",
+        "title": "Fertilizer ban and rising agricultural strain",
+        "dateRange": "2021-04/2022-03",
+        "summary": "The shift away from chemical fertilizer intensified food-security anxiety, yield concerns, and price-pressure debate.",
+        "whyLinked": "This topic peaks around the exact period when fertilizer policy and food prices became politically charged.",
+        "topicKeys": ["4"],
+        "sourceIds": ["mt4-global-agriculture-fertilizer-ban", "mt4-foreign-policy-organic-farming"]
+      }
+    ],
+    "keywordsToEvents": [
+      {
+        "keyword": "fertilizer",
+        "eventId": "fertilizer-ban-crisis-2021",
+        "whyLinked": "Fertilizer policy became a central source of parliamentary concern during 2021 and 2022."
+      }
+    ]
+  },
+  "5": {
+    "topicId": 5,
+    "topicKey": "5",
+    "topicLabel": "Public Welfare, Housing & Water Sanitation",
+    "resources": [
+      {
+        "id": "mt5-un-water-recovery",
+        "type": "official",
+        "title": "UN Sri Lanka",
+        "url": "https://srilanka.un.org/",
+        "publisher": "United Nations Sri Lanka",
+        "year": 2026,
+        "summary": "UN Sri Lanka portal covering social protection, water, and development recovery priorities.",
+        "whyRelevant": "Provides institutional context for welfare, water, and recovery themes in this topic.",
+        "sourceQuality": "institutional",
+        "verified": true
+      },
+      {
+        "id": "mt5-water-board",
+        "type": "official",
+        "title": "National Water Supply and Drainage Board",
+        "url": "https://www.waterboard.lk/",
+        "publisher": "National Water Supply and Drainage Board",
+        "year": 2026,
+        "summary": "Official source for water and sanitation service priorities in Sri Lanka.",
+        "whyRelevant": "Directly relates to water-sanitation governance and service delivery language.",
+        "sourceQuality": "official",
+        "verified": true
+      },
+      {
+        "id": "mt5-youtube-search",
+        "type": "youtube_search",
+        "title": "YouTube search: Sri Lanka water sanitation crisis",
+        "url": "https://www.youtube.com/results?search_query=Sri+Lanka+water+sanitation+crisis",
+        "publisher": "YouTube",
+        "year": 2026,
+        "summary": "Curated search for public-interest reporting on drinking water, sanitation, and welfare delivery.",
+        "whyRelevant": "Supports interpretation of service-access and welfare concerns inside the topic.",
+        "sourceQuality": "news",
+        "verified": true
+      }
+    ],
+    "relatedEvents": []
+  },
+  "6": {
+    "topicId": 6,
+    "topicKey": "6",
+    "topicLabel": "State Enterprise Accountability & COPE Oversight",
+    "resources": [
+      {
+        "id": "mt6-cope-third-report",
+        "type": "official",
+        "title": "Third Report of the Committee on Public Enterprises (COPE) presented",
+        "url": "https://www.parliament.lk/en/home/parliament-news/view/1786",
+        "publisher": "Parliament of Sri Lanka",
+        "publishedAt": "2019-10-23",
+        "summary": "Official parliamentary report announcement on COPE findings and state enterprise losses.",
+        "whyRelevant": "Anchors the accountability and oversight language that defines this macro-topic.",
+        "sourceQuality": "official",
+        "verified": true
+      },
+      {
+        "id": "mt6-cope-committee-page",
+        "type": "official",
+        "title": "Committee on Public Enterprises",
+        "url": "https://www.parliament.lk/en/business-of-parliament/committees/162",
+        "publisher": "Parliament of Sri Lanka",
+        "year": 2026,
+        "summary": "Official COPE page with reports and committee outputs.",
+        "whyRelevant": "Provides the institutional home for public-enterprise scrutiny in Parliament.",
+        "sourceQuality": "official",
+        "verified": true
+      },
+      {
+        "id": "mt6-youtube-search",
+        "type": "youtube_search",
+        "title": "YouTube search: COPE report Sri Lanka parliament",
+        "url": "https://www.youtube.com/results?search_query=COPE+report+Sri+Lanka+parliament",
+        "publisher": "YouTube",
+        "year": 2026,
+        "summary": "Curated search for parliamentary clips and news explainers on COPE oversight.",
+        "whyRelevant": "Helps users connect technical committee language to visible accountability debates.",
+        "sourceQuality": "news",
+        "verified": true
+      }
+    ],
+    "relatedEvents": []
+  },
+  "7": {
+    "topicId": 7,
+    "topicKey": "7",
+    "topicLabel": "Educational Administration & Human Capital Development",
+    "resources": [
+      {
+        "id": "mt7-wenr-education",
+        "type": "research",
+        "title": "Education in Sri Lanka",
+        "url": "https://wenr.wes.org/2018/08/education-in-sri-lanka",
+        "publisher": "World Education News + Reviews",
+        "publishedAt": "2018-08-07",
+        "summary": "System overview of Sri Lankan education structure and reform pressures.",
+        "whyRelevant": "Supplies institutional background for education administration and human-capital debate.",
+        "sourceQuality": "research",
+        "verified": true
+      },
+      {
+        "id": "mt7-world-bank-human-capital",
+        "type": "institutional",
+        "title": "World Bank - Sri Lanka",
+        "url": "https://www.worldbank.org/en/country/srilanka",
+        "publisher": "World Bank",
+        "year": 2026,
+        "summary": "Country portal for education, skills, and human-capital development reporting.",
+        "whyRelevant": "Provides ongoing institutional context for education-sector capacity and reform.",
+        "sourceQuality": "institutional",
+        "verified": true
+      },
+      {
+        "id": "mt7-youtube-search",
+        "type": "youtube_search",
+        "title": "YouTube search: Sri Lanka education reform 2026",
+        "url": "https://www.youtube.com/results?search_query=Sri+Lanka+education+reform+2026",
+        "publisher": "YouTube",
+        "year": 2026,
+        "summary": "Curated search for reporting on schools, universities, and sector reform debates.",
+        "whyRelevant": "Helps ground this administrative topic in public-facing education stories.",
+        "sourceQuality": "news",
+        "verified": true
+      }
+    ],
+    "relatedEvents": []
+  },
+  "8": {
+    "topicId": 8,
+    "topicKey": "8",
+    "topicLabel": "Constitutional Reform & Executive Powers",
+    "resources": [
+      {
+        "id": "mt8-constitutionnet-21a",
+        "type": "article",
+        "title": "In Sri Lanka, party leaders reach consensus on some provisions of draft constitutional amendment",
+        "url": "https://constitutionnet.org/news/sri-lanka-party-leaders-reach-consensus-some-provisions-draft-constitutional-amendment-would",
+        "publisher": "ConstitutionNet",
+        "publishedAt": "2022-08-06",
+        "summary": "Report on party consensus around provisions of the 21st Amendment.",
+        "whyRelevant": "Directly ties this topic to parliamentary contestation over executive power and reform.",
+        "sourceQuality": "research",
+        "verified": true
+      },
+      {
+        "id": "mt8-constitutionnet-council",
+        "type": "article",
+        "title": "At inaugural meeting, Sri Lankan constitutional council discusses plans for independent commissions",
+        "url": "https://constitutionnet.org/news/inaugural-meeting-sri-lankan-constitutional-council-discusses-plans-independent-commission",
+        "publisher": "ConstitutionNet",
+        "publishedAt": "2022-11-11",
+        "summary": "Follow-up on the implementation of reforms tied to the 21st Amendment.",
+        "whyRelevant": "Shows the institutional consequences of the executive-power debate.",
+        "sourceQuality": "research",
+        "verified": true
+      },
+      {
+        "id": "mt8-youtube-search",
+        "type": "youtube_search",
+        "title": "YouTube search: 21st Amendment Sri Lanka explained",
+        "url": "https://www.youtube.com/results?search_query=21st+Amendment+Sri+Lanka+explained",
+        "publisher": "YouTube",
+        "year": 2026,
+        "summary": "Curated search for public explainers on constitutional reform and executive restraint.",
+        "whyRelevant": "Helps users connect technical constitutional language to a recognizable reform dispute.",
+        "sourceQuality": "news",
+        "verified": true
+      }
+    ],
+    "relatedEvents": [
+      {
+        "id": "covid-constitutional-shift-2020",
+        "title": "COVID-era governance and constitutional change",
+        "dateRange": "2020-01/2022-11",
+        "summary": "Pandemic governance pressures overlapped with renewed struggle over executive power, parliamentary control, and constitutional safeguards.",
+        "whyLinked": "This topic reflects institutional power struggles sharpened by crisis governance and later constitutional reform.",
+        "topicKeys": ["8", "11"],
+        "sourceIds": ["mt8-constitutionnet-21a", "mt8-constitutionnet-council"]
+      }
+    ]
+  },
+  "9": {
+    "topicId": 9,
+    "topicKey": "9",
+    "topicLabel": "Parliamentary Privilege & Member Conduct",
+    "resources": [
+      {
+        "id": "mt9-standing-orders-page",
+        "type": "official",
+        "title": "Standing Orders - Parliament of Sri Lanka",
+        "url": "https://www.parliament.lk/en/learn/how-parliament-works/standing-orders",
+        "publisher": "Parliament of Sri Lanka",
+        "year": 2022,
+        "summary": "Parliamentary rules and procedures, including conduct and privilege mechanisms.",
+        "whyRelevant": "Member conduct disputes and privilege questions are rooted in this procedural framework.",
+        "sourceQuality": "official",
+        "verified": true
+      },
+      {
+        "id": "mt9-committee-standing-orders",
+        "type": "official",
+        "title": "Committee on Standing Orders",
+        "url": "https://www.parliament.lk/en/business-of-parliament/committees/209",
+        "publisher": "Parliament of Sri Lanka",
+        "year": 2026,
+        "summary": "Official committee page for procedural and conduct-related rule review.",
+        "whyRelevant": "Connects the topic to the parliamentary body that reviews procedural conduct rules.",
+        "sourceQuality": "official",
+        "verified": true
+      },
+      {
+        "id": "mt9-youtube-search",
+        "type": "youtube_search",
+        "title": "YouTube search: Sri Lanka MP conduct controversy",
+        "url": "https://www.youtube.com/results?search_query=Sri+Lanka+MP+conduct+controversy",
+        "publisher": "YouTube",
+        "year": 2026,
+        "summary": "Curated search for recent clips and reporting on parliamentary conduct disputes.",
+        "whyRelevant": "Makes abstract privilege and discipline language legible to public users.",
+        "sourceQuality": "news",
+        "verified": true
+      }
+    ],
+    "relatedEvents": []
+  },
+  "10": {
+    "topicId": 10,
+    "topicKey": "10",
+    "topicLabel": "Rural Debt Crisis, Microfinance & Cooperatives",
+    "resources": [
+      {
+        "id": "mt10-microfinance-bill-srilankabrief",
+        "type": "article",
+        "title": "The Microfinance Bill 2025: Lawmaking without the people",
+        "url": "https://srilankabrief.org/the-microfinance-bill-2025-lawmaking-without-the-people/",
+        "publisher": "Sri Lanka Brief",
+        "publishedAt": "2025-06-18",
+        "summary": "Critical look at the Microfinance Bill and its implications for affected communities.",
+        "whyRelevant": "Connects rural debt language to actual lawmaking around microfinance relief and regulation.",
+        "sourceQuality": "advocacy",
+        "verified": true
+      },
+      {
+        "id": "mt10-via-campesina-microfinance",
+        "type": "article",
+        "title": "Sri Lanka: The Microfinance Trap, Exploitation of Women and Its Consequences",
+        "url": "https://viacampesina.org/en/sri-lanka-the-microfinance-trap-exploitation-of-women-and-its-consequences/",
+        "publisher": "La Via Campesina",
+        "year": 2026,
+        "summary": "Advocacy article on rural debt, gendered harm, and microfinance pressure.",
+        "whyRelevant": "Reflects the social and livelihood costs embedded in this topic's discourse.",
+        "sourceQuality": "advocacy",
+        "verified": true
+      },
+      {
+        "id": "mt10-youtube-search",
+        "type": "youtube_search",
+        "title": "YouTube search: Sri Lanka microfinance debt crisis women",
+        "url": "https://www.youtube.com/results?search_query=Sri+Lanka+microfinance+debt+crisis+women",
+        "publisher": "YouTube",
+        "year": 2026,
+        "summary": "Curated search for stories on rural indebtedness and women borrowers.",
+        "whyRelevant": "Provides public-facing context for debt distress and cooperative or microfinance talk.",
+        "sourceQuality": "news",
+        "verified": true
+      }
+    ],
+    "relatedEvents": []
+  },
+  "11": {
+    "topicId": 11,
+    "topicKey": "11",
+    "topicLabel": "Public Healthcare System & Pharmaceutical Regulation",
+    "resources": [
+      {
+        "id": "mt11-who-patient-safety",
+        "type": "official",
+        "title": "Sri Lanka Sets Out New Policy Direction to Advance Healthcare Quality and Patient Safety",
+        "url": "https://www.who.int/srilanka/news/detail/25-03-2026-sri-lanka-sets-out-new-policy-direction-to-advance-healthcare-quality-and-patient-safety",
+        "publisher": "World Health Organization Sri Lanka",
+        "publishedAt": "2026-03-25",
+        "summary": "WHO update on new policy direction for healthcare quality and patient safety.",
+        "whyRelevant": "Captures regulatory and system-reform language inside the healthcare topic.",
+        "sourceQuality": "institutional",
+        "verified": true
+      },
+      {
+        "id": "mt11-nmra-home",
+        "type": "official",
+        "title": "National Medicines Regulatory Authority",
+        "url": "https://www.nmra.gov.lk/",
+        "publisher": "NMRA",
+        "year": 2026,
+        "summary": "Official portal for medicine regulation, enforcement, and announcements.",
+        "whyRelevant": "Directly grounds pharmaceutical regulation and compliance issues in the topic.",
+        "sourceQuality": "official",
+        "verified": true
+      },
+      {
+        "id": "mt11-youtube-search",
+        "type": "youtube_search",
+        "title": "YouTube search: Sri Lanka healthcare system crisis",
+        "url": "https://www.youtube.com/results?search_query=Sri+Lanka+healthcare+system+crisis",
+        "publisher": "YouTube",
+        "year": 2026,
+        "summary": "Curated search for reporting and explainers on healthcare pressure and medicine supply issues.",
+        "whyRelevant": "Adds public-facing evidence for health-system strain and regulatory concern.",
+        "sourceQuality": "news",
+        "verified": true
+      }
+    ],
+    "relatedEvents": [
+      {
+        "id": "covid-constitutional-shift-2020",
+        "title": "COVID-era governance and constitutional change",
+        "dateRange": "2020-01/2022-11",
+        "summary": "Pandemic response pressures overlapped with wider debate about state capacity and emergency governance.",
+        "whyLinked": "Healthcare-system debate intensified during the COVID period and remained tied to state capacity questions.",
+        "topicKeys": ["8", "11"],
+        "sourceIds": ["mt11-who-patient-safety"]
+      }
+    ]
+  },
+  "12": {
+    "topicId": 12,
+    "topicKey": "12",
+    "topicLabel": "Public Utilities & Media Broadcasting Regulation",
+    "resources": [
+      {
+        "id": "mt12-pucsl-home",
+        "type": "official",
+        "title": "Public Utilities Commission of Sri Lanka",
+        "url": "https://www.pucsl.gov.lk/",
+        "publisher": "PUCSL",
+        "year": 2026,
+        "summary": "Official portal covering tariff revisions and public utility regulation.",
+        "whyRelevant": "Anchors electricity and utility regulation language in the responsible authority.",
+        "sourceQuality": "official",
+        "verified": true
+      },
+      {
+        "id": "mt12-electricity-act",
+        "type": "official",
+        "title": "Sri Lanka Electricity Act, No. 36 of 2024",
+        "url": "https://www.lawnet.gov.lk/sri-lanka-electricity-act-no-36-of-2024/",
+        "publisher": "LawNet",
+        "publishedAt": "2024-12-01",
+        "summary": "Accessible legal reference for recent electricity-sector legislation.",
+        "whyRelevant": "Links parliamentary discussion to the governing utility law framework.",
+        "sourceQuality": "official",
+        "verified": true
+      },
+      {
+        "id": "mt12-youtube-search",
+        "type": "youtube_search",
+        "title": "YouTube search: Sri Lanka electricity tariff 2026",
+        "url": "https://www.youtube.com/results?search_query=Sri+Lanka+electricity+tariff+2026",
+        "publisher": "YouTube",
+        "year": 2026,
+        "summary": "Curated search for reporting on tariffs, broadcasting bills, and regulation debates.",
+        "whyRelevant": "Adds public-facing evidence for utility-cost and media-regulation concerns.",
+        "sourceQuality": "news",
+        "verified": true
+      }
+    ],
+    "relatedEvents": []
+  },
+  "13": {
+    "topicId": 13,
+    "topicKey": "13",
+    "topicLabel": "Foreign Policy, Peacebuilding & Transitional Justice",
+    "resources": [
+      {
+        "id": "mt13-govuk-unhrc61",
+        "type": "official",
+        "title": "UN Human Rights Council 61: Sri Lanka Core Group Statement",
+        "url": "https://www.gov.uk/government/speeches/un-human-rights-council-61-sri-lanka-core-group-statement",
+        "publisher": "GOV.UK",
+        "publishedAt": "2026-09-01",
+        "summary": "Core Group statement on accountability, reconciliation, and reform expectations.",
+        "whyRelevant": "Matches the topic's peacebuilding and transitional-justice language.",
+        "sourceQuality": "official",
+        "verified": true
+      },
+      {
+        "id": "mt13-ohchr-sri-lanka",
+        "type": "official",
+        "title": "OHCHR - Sri Lanka",
+        "url": "https://www.ohchr.org/en/countries/sri-lanka",
+        "publisher": "OHCHR",
+        "year": 2026,
+        "summary": "OHCHR country page for accountability and human-rights reporting on Sri Lanka.",
+        "whyRelevant": "Provides institutional context for the international accountability dimension of the topic.",
+        "sourceQuality": "institutional",
+        "verified": true
+      },
+      {
+        "id": "mt13-youtube-search",
+        "type": "youtube_search",
+        "title": "YouTube search: Sri Lanka UNHRC reconciliation accountability",
+        "url": "https://www.youtube.com/results?search_query=Sri+Lanka+UNHRC+reconciliation+accountability",
+        "publisher": "YouTube",
+        "year": 2026,
+        "summary": "Curated search for explainers and reporting on accountability and reconciliation debates.",
+        "whyRelevant": "Helps users interpret external-policy and justice language through current coverage.",
+        "sourceQuality": "news",
+        "verified": true
+      }
+    ],
+    "relatedEvents": []
+  },
+  "14": {
+    "topicId": 14,
+    "topicKey": "14",
+    "topicLabel": "Environmental Conservation & Land Rights Disputes",
+    "resources": [
+      {
+        "id": "mt14-cpa-land-governance",
+        "type": "institutional",
+        "title": "Centre for Policy Alternatives",
+        "url": "https://www.cpalanka.org/",
+        "publisher": "Centre for Policy Alternatives",
+        "year": 2026,
+        "summary": "Policy research platform covering land rights, governance, and environmental issues.",
+        "whyRelevant": "Supports interpretation of land governance and conservation-related debate.",
+        "sourceQuality": "institutional",
+        "verified": true
+      },
+      {
+        "id": "mt14-environment-ministry",
+        "type": "official",
+        "title": "Ministry of Environment",
+        "url": "https://environmentmin.gov.lk/",
+        "publisher": "Ministry of Environment Sri Lanka",
+        "year": 2026,
+        "summary": "Official ministry portal for environment and conservation policy.",
+        "whyRelevant": "Anchors this topic in the formal environmental-governance apparatus.",
+        "sourceQuality": "official",
+        "verified": true
+      },
+      {
+        "id": "mt14-youtube-search",
+        "type": "youtube_search",
+        "title": "YouTube search: Sri Lanka land rights disputes",
+        "url": "https://www.youtube.com/results?search_query=Sri+Lanka+land+rights+disputes",
+        "publisher": "YouTube",
+        "year": 2026,
+        "summary": "Curated search for reporting on environmental conflict, displacement, and land use.",
+        "whyRelevant": "Adds a public-facing interpretation layer to a complex policy topic.",
+        "sourceQuality": "news",
+        "verified": true
+      }
+    ],
+    "relatedEvents": []
+  },
+  "15": {
+    "topicId": 15,
+    "topicKey": "15",
+    "topicLabel": "State Tributes & Parliamentary Condolences",
+    "resources": [
+      {
+        "id": "mt15-parliament-news",
+        "type": "official",
+        "title": "Parliament of Sri Lanka - Parliament News",
+        "url": "https://www.parliament.lk/en/home/parliament-news",
+        "publisher": "Parliament of Sri Lanka",
+        "year": 2026,
+        "summary": "Official archive where condolence motions and state tribute news are frequently recorded.",
+        "whyRelevant": "This topic is strongly procedural and best grounded in official parliamentary reporting.",
+        "sourceQuality": "official",
+        "verified": true
+      },
+      {
+        "id": "mt15-parliament-home",
+        "type": "official",
+        "title": "Parliament of Sri Lanka",
+        "url": "https://www.parliament.lk/en",
+        "publisher": "Parliament of Sri Lanka",
+        "year": 2026,
+        "summary": "Official parliamentary portal and entry point for Hansards and institutional records.",
+        "whyRelevant": "Provides the canonical institutional context for state tributes and condolence motions.",
+        "sourceQuality": "official",
+        "verified": true
+      },
+      {
+        "id": "mt15-youtube-search",
+        "type": "youtube_search",
+        "title": "YouTube search: Sri Lanka parliament condolence motion",
+        "url": "https://www.youtube.com/results?search_query=Sri+Lanka+parliament+condolence+motion",
+        "publisher": "YouTube",
+        "year": 2026,
+        "summary": "Curated search for footage of tribute sessions and ceremonial parliamentary proceedings.",
+        "whyRelevant": "Shows how tribute language appears in live or recorded proceedings.",
+        "sourceQuality": "news",
+        "verified": true
+      }
+    ],
+    "relatedEvents": []
+  },
+  "16": {
+    "topicId": 16,
+    "topicKey": "16",
+    "topicLabel": "Partisan Politics & Adjournment Resolutions",
+    "resources": [
+      {
+        "id": "mt16-order-paper",
+        "type": "official",
+        "title": "Order Paper - Parliament of Sri Lanka",
+        "url": "https://www.parliament.lk/en/business-of-parliament/order-paper",
+        "publisher": "Parliament of Sri Lanka",
+        "year": 2026,
+        "summary": "Official parliamentary order paper archive for business scheduling and adjournment debate context.",
+        "whyRelevant": "Adjournment motions and partisan positioning show up clearly in this procedural record.",
+        "sourceQuality": "official",
+        "verified": true
+      },
+      {
+        "id": "mt16-seventeenth-parliament",
+        "type": "research",
+        "title": "17th Parliament of Sri Lanka",
+        "url": "https://en.wikipedia.org/wiki/17th_Parliament_of_Sri_Lanka",
+        "publisher": "Wikipedia",
+        "year": 2026,
+        "summary": "Overview of party composition, sessions, and parliamentary alignment.",
+        "whyRelevant": "Provides quick public context for partisan alignments referenced in debate.",
+        "sourceQuality": "research",
+        "verified": true
+      },
+      {
+        "id": "mt16-youtube-search",
+        "type": "youtube_search",
+        "title": "YouTube search: Sri Lanka parliament adjournment debate",
+        "url": "https://www.youtube.com/results?search_query=Sri+Lanka+parliament+adjournment+debate",
+        "publisher": "YouTube",
+        "year": 2026,
+        "summary": "Curated search for parliamentary debate clips with obvious opposition-government framing.",
+        "whyRelevant": "Helps users see how partisan conflict appears in public-facing proceedings.",
+        "sourceQuality": "news",
+        "verified": true
+      }
+    ],
+    "relatedEvents": []
+  },
+  "17": {
+    "topicId": 17,
+    "topicKey": "17",
+    "topicLabel": "Easter Sunday Attacks & State Intelligence",
+    "resources": [
+      {
+        "id": "mt17-amnesty-sri-lanka",
+        "type": "article",
+        "title": "Human rights in Sri Lanka",
+        "url": "https://www.amnesty.org/en/location/asia-and-the-pacific/south-asia/sri-lanka/report-sri-lanka/",
+        "publisher": "Amnesty International",
+        "year": 2026,
+        "summary": "Country report noting accountability and investigative developments around the Easter Sunday attacks.",
+        "whyRelevant": "Directly ties the topic to accountability, intelligence failure, and state response.",
+        "sourceQuality": "advocacy",
+        "verified": true
+      },
+      {
+        "id": "mt17-uscirf-sri-lanka",
+        "type": "institutional",
+        "title": "USCIRF - Sri Lanka",
+        "url": "https://www.uscirf.gov/countries/sri-lanka",
+        "publisher": "USCIRF",
+        "year": 2026,
+        "summary": "Country page covering religious freedom risks and communal tensions in Sri Lanka.",
+        "whyRelevant": "Adds an institutional lens on the religious and security fallout of the attacks.",
+        "sourceQuality": "institutional",
+        "verified": true
+      },
+      {
+        "id": "mt17-youtube-search",
+        "type": "youtube_search",
+        "title": "YouTube search: Easter Sunday attacks Sri Lanka investigation",
+        "url": "https://www.youtube.com/results?search_query=Easter+Sunday+attacks+Sri+Lanka+investigation",
+        "publisher": "YouTube",
+        "year": 2026,
+        "summary": "Curated search for documentaries, inquiries, and reporting on the attacks and their aftermath.",
+        "whyRelevant": "Provides a public-facing evidence trail for a defining security event in the corpus.",
+        "sourceQuality": "news",
+        "verified": true
+      }
+    ],
+    "relatedEvents": [
+      {
+        "id": "easter-sunday-attacks-2019",
+        "title": "Easter Sunday attacks and accountability fallout",
+        "dateRange": "2019-04/2026-12",
+        "summary": "The attacks triggered a long-running security, intelligence, and accountability debate that continued across later parliaments.",
+        "whyLinked": "This topic directly names the event and captures the state-intelligence and accountability discourse around it.",
+        "topicKeys": ["2", "17"],
+        "sourceIds": ["mt17-amnesty-sri-lanka", "mt17-uscirf-sri-lanka"]
+      }
+    ]
+  },
+  "18": {
+    "topicId": 18,
+    "topicKey": "18",
+    "topicLabel": "Road Infrastructure & Public Transport Networks",
+    "resources": [
+      {
+        "id": "mt18-rda-home",
+        "type": "official",
+        "title": "Road Development Authority",
+        "url": "https://www.rda.gov.lk/",
+        "publisher": "Road Development Authority",
+        "year": 2026,
+        "summary": "Official source for expressway and road-network development in Sri Lanka.",
+        "whyRelevant": "Anchors infrastructure and transport network references in the responsible authority.",
+        "sourceQuality": "official",
+        "verified": true
+      },
+      {
+        "id": "mt18-transport-ministry",
+        "type": "official",
+        "title": "Ministry of Transport, Highways, Ports and Civil Aviation",
+        "url": "https://transport.gov.lk/",
+        "publisher": "Government of Sri Lanka",
+        "year": 2026,
+        "summary": "Official ministry portal for transport and highway policy.",
+        "whyRelevant": "Provides government context for road and public transport administration.",
+        "sourceQuality": "official",
+        "verified": true
+      },
+      {
+        "id": "mt18-youtube-search",
+        "type": "youtube_search",
+        "title": "YouTube search: Sri Lanka road infrastructure expressway 2026",
+        "url": "https://www.youtube.com/results?search_query=Sri+Lanka+road+infrastructure+expressway+2026",
+        "publisher": "YouTube",
+        "year": 2026,
+        "summary": "Curated search for visual coverage of expressway, road, and transport-network debate.",
+        "whyRelevant": "Adds a public-facing context layer to technical infrastructure discussion.",
+        "sourceQuality": "news",
+        "verified": true
+      }
+    ],
+    "relatedEvents": []
+  },
+  "19": {
+    "topicId": 19,
+    "topicKey": "19",
+    "topicLabel": "Migrant Labour, Tourism & Foreign Exchange",
+    "resources": [
+      {
+        "id": "mt19-sltda-home",
+        "type": "official",
+        "title": "Sri Lanka Tourism Development Authority",
+        "url": "https://www.sltda.gov.lk/en",
+        "publisher": "SLTDA",
+        "year": 2026,
+        "summary": "Official tourism portal with arrivals, policy, and sector updates.",
+        "whyRelevant": "Grounds tourism and foreign-exchange language in the country's official tourism authority.",
+        "sourceQuality": "official",
+        "verified": true
+      },
+      {
+        "id": "mt19-aragalaya-stanford",
+        "type": "research",
+        "title": "Sri Lanka's aragalaya: The role of a citizen movement during crisis",
+        "url": "https://fsi.stanford.edu/sipr/content/sri-lankas-aragalaya-role-citizen-movement-during-crisis",
+        "publisher": "Stanford SIPR",
+        "publishedAt": "2025-12-01",
+        "summary": "Overview of the protest movement and its relationship to the economic crisis.",
+        "whyRelevant": "Connects economic disruption to migration, remittance, and tourism stress in the wider crisis story.",
+        "sourceQuality": "research",
+        "verified": true
+      },
+      {
+        "id": "mt19-youtube-search",
+        "type": "youtube_search",
+        "title": "YouTube search: Sri Lanka tourism recovery 2026",
+        "url": "https://www.youtube.com/results?search_query=Sri+Lanka+tourism+recovery+2026",
+        "publisher": "YouTube",
+        "year": 2026,
+        "summary": "Curated search for reporting on remittances, tourism recovery, and foreign-exchange pressures.",
+        "whyRelevant": "Helps users map a mixed economic topic to visible public-sector stories.",
+        "sourceQuality": "news",
+        "verified": true
+      }
+    ],
+    "relatedEvents": [
+      {
+        "id": "aragalaya-economic-crisis-2022",
+        "title": "Economic crisis and Aragalaya",
+        "dateRange": "2022-03/2022-07",
+        "summary": "The economic collapse disrupted tourism, remittances, and public livelihoods while fueling mass protest.",
+        "whyLinked": "This topic's tourism and foreign-exchange concerns intensify under the same crisis that drove Aragalaya.",
+        "topicKeys": ["1", "19"],
+        "sourceIds": ["mt19-aragalaya-stanford"]
+      }
+    ]
+  },
+  "20": {
+    "topicId": 20,
+    "topicKey": "20",
+    "topicLabel": "International Relations & Human Rights Frameworks",
+    "resources": [
+      {
+        "id": "mt20-orf-sri-lanka-unhrc",
+        "type": "article",
+        "title": "Sri Lanka's rejection of the UNHRC resolution: A shift towards China?",
+        "url": "https://www.orfonline.org/expert-speak/sri-lankas-rejection-of-the-unhrc-resolution-a-shift-towards-china/",
+        "publisher": "Observer Research Foundation",
+        "year": 2022,
+        "summary": "Foreign-policy analysis of Sri Lanka's posture toward UN human-rights scrutiny.",
+        "whyRelevant": "Matches the topic's overlap between international relations and rights frameworks.",
+        "sourceQuality": "research",
+        "verified": true
+      },
+      {
+        "id": "mt20-ohchr-country-page",
+        "type": "institutional",
+        "title": "OHCHR - Sri Lanka",
+        "url": "https://www.ohchr.org/en/countries/sri-lanka",
+        "publisher": "OHCHR",
+        "year": 2026,
+        "summary": "Country page for Sri Lanka-related UN human-rights reporting and documents.",
+        "whyRelevant": "Provides the institutional human-rights framework that Parliament debates against.",
+        "sourceQuality": "institutional",
+        "verified": true
+      },
+      {
+        "id": "mt20-youtube-search",
+        "type": "youtube_search",
+        "title": "YouTube search: Sri Lanka human rights council Geneva",
+        "url": "https://www.youtube.com/results?search_query=Sri+Lanka+human+rights+council+Geneva",
+        "publisher": "YouTube",
+        "year": 2026,
+        "summary": "Curated search for explainers and reporting on UNHRC and foreign-policy positioning.",
+        "whyRelevant": "Turns abstract diplomatic language into an interpretable public-facing evidence trail.",
+        "sourceQuality": "news",
+        "verified": true
+      }
+    ],
+    "relatedEvents": []
+  },
+  "21": {
+    "topicId": 21,
+    "topicKey": "21",
+    "topicLabel": "Livestock Development & Dairy Production",
+    "resources": [
+      {
+        "id": "mt21-daph-home",
+        "type": "official",
+        "title": "Department of Animal Production and Health",
+        "url": "https://www.daph.gov.lk/",
+        "publisher": "Department of Animal Production and Health",
+        "year": 2026,
+        "summary": "Official source for livestock, dairy, and veterinary policy information.",
+        "whyRelevant": "Provides the clearest official context for livestock and dairy development language.",
+        "sourceQuality": "official",
+        "verified": true
+      },
+      {
+        "id": "mt21-agriculture-ministry",
+        "type": "official",
+        "title": "Ministry of Agriculture, Livestock, Lands and Irrigation",
+        "url": "https://www.agrimin.gov.lk/",
+        "publisher": "Government of Sri Lanka",
+        "year": 2026,
+        "summary": "Official ministry portal for agricultural and livestock-sector policy.",
+        "whyRelevant": "Connects the macro-topic to actual livestock and production governance.",
+        "sourceQuality": "official",
+        "verified": true
+      },
+      {
+        "id": "mt21-youtube-search",
+        "type": "youtube_search",
+        "title": "YouTube search: Sri Lanka dairy industry development",
+        "url": "https://www.youtube.com/results?search_query=Sri+Lanka+dairy+industry+development",
+        "publisher": "YouTube",
+        "year": 2026,
+        "summary": "Curated search for reporting and explainers on the dairy and livestock sector.",
+        "whyRelevant": "Adds a visual layer to a topic that can otherwise feel purely technical.",
+        "sourceQuality": "news",
+        "verified": true
+      }
+    ],
+    "relatedEvents": []
+  },
+  "22": {
+    "topicId": 22,
+    "topicKey": "22",
+    "topicLabel": "Private Higher Education (SAITM) & University Protests",
+    "resources": [
+      {
+        "id": "mt22-wenr-education",
+        "type": "research",
+        "title": "Education in Sri Lanka",
+        "url": "https://wenr.wes.org/2018/08/education-in-sri-lanka",
+        "publisher": "World Education News + Reviews",
+        "publishedAt": "2018-08-07",
+        "summary": "Background on higher-education structures and reform debates, including private-sector tensions.",
+        "whyRelevant": "Helps explain the institutional background to the SAITM and student-protest discourse.",
+        "sourceQuality": "research",
+        "verified": true
+      },
+      {
+        "id": "mt22-saitm-wikipedia",
+        "type": "research",
+        "title": "South Asian Institute of Technology and Medicine (SAITM)",
+        "url": "https://en.wikipedia.org/wiki/South_Asian_Institute_of_Technology_and_Medicine",
+        "publisher": "Wikipedia",
+        "year": 2026,
+        "summary": "Public background on the SAITM controversy and institutional conflict.",
+        "whyRelevant": "Gives a quick public explanation of a recurring protest-era issue in Sri Lankan debate.",
+        "sourceQuality": "research",
+        "verified": true
+      },
+      {
+        "id": "mt22-youtube-search",
+        "type": "youtube_search",
+        "title": "YouTube search: SAITM protest Sri Lanka students",
+        "url": "https://www.youtube.com/results?search_query=SAITM+protest+Sri+Lanka+students",
+        "publisher": "YouTube",
+        "year": 2026,
+        "summary": "Curated search for reporting and footage from student mobilization around SAITM.",
+        "whyRelevant": "Adds the protest-evidence layer that this macro-topic needs for interpretation.",
+        "sourceQuality": "news",
+        "verified": true
+      }
+    ],
+    "relatedEvents": []
+  },
+  "23": {
+    "topicId": 23,
+    "topicKey": "23",
+    "topicLabel": "Local Government Governance & Electoral Reforms",
+    "resources": [
+      {
+        "id": "mt23-elections-home",
+        "type": "official",
+        "title": "Election Commission of Sri Lanka",
+        "url": "https://elections.gov.lk/",
+        "publisher": "Election Commission of Sri Lanka",
+        "year": 2026,
+        "summary": "Official portal for election administration and reform-related announcements.",
+        "whyRelevant": "Directly grounds electoral reform and local-government election discussion.",
+        "sourceQuality": "official",
+        "verified": true
+      },
+      {
+        "id": "mt23-parliament-news",
+        "type": "official",
+        "title": "Parliament of Sri Lanka - Parliament News",
+        "url": "https://www.parliament.lk/en/home/parliament-news",
+        "publisher": "Parliament of Sri Lanka",
+        "year": 2026,
+        "summary": "Official parliamentary news source where local-government and electoral reform updates are published.",
+        "whyRelevant": "Links the topic back to Parliament's own legislative reporting.",
+        "sourceQuality": "official",
+        "verified": true
+      },
+      {
+        "id": "mt23-youtube-search",
+        "type": "youtube_search",
+        "title": "YouTube search: Sri Lanka local government elections 2026",
+        "url": "https://www.youtube.com/results?search_query=Sri+Lanka+local+government+elections+2026",
+        "publisher": "YouTube",
+        "year": 2026,
+        "summary": "Curated search for coverage of local-government elections and electoral reform disputes.",
+        "whyRelevant": "Adds an accessible evidence path for governance and electoral-process stories.",
+        "sourceQuality": "news",
+        "verified": true
+      }
+    ],
+    "relatedEvents": []
+  },
+  "24": {
+    "topicId": 24,
+    "topicKey": "24",
+    "topicLabel": "State Revenue, Excise Policy & Gem Industry",
+    "resources": [
+      {
+        "id": "mt24-ngja-home",
+        "type": "official",
+        "title": "National Gem and Jewellery Authority",
+        "url": "https://www.ngja.gov.lk/",
+        "publisher": "National Gem and Jewellery Authority",
+        "year": 2026,
+        "summary": "Official source for gem-industry regulation and export information.",
+        "whyRelevant": "Anchors one half of the topic in the sector's actual regulatory institution.",
+        "sourceQuality": "official",
+        "verified": true
+      },
+      {
+        "id": "mt24-ird-home",
+        "type": "official",
+        "title": "Inland Revenue Department",
+        "url": "https://www.ird.gov.lk/",
+        "publisher": "Inland Revenue Department",
+        "year": 2026,
+        "summary": "Official tax authority portal relevant to revenue and excise policy discussion.",
+        "whyRelevant": "Provides a formal public source for state-revenue language in the corpus.",
+        "sourceQuality": "official",
+        "verified": true
+      },
+      {
+        "id": "mt24-youtube-search",
+        "type": "youtube_search",
+        "title": "YouTube search: Sri Lanka excise tax revenue policy",
+        "url": "https://www.youtube.com/results?search_query=Sri+Lanka+excise+tax+revenue+policy",
+        "publisher": "YouTube",
+        "year": 2026,
+        "summary": "Curated search for reporting on tax, excise, and export-linked revenue policy.",
+        "whyRelevant": "Adds a public-facing interpretation layer to a fiscally technical topic.",
+        "sourceQuality": "news",
+        "verified": true
+      }
+    ],
+    "relatedEvents": []
+  },
+  "25": {
+    "topicId": 25,
+    "topicKey": "25",
+    "topicLabel": "National Sports Administration & Cricket Board Crises",
+    "resources": [
+      {
+        "id": "mt25-slc-home",
+        "type": "official",
+        "title": "Sri Lanka Cricket",
+        "url": "https://srilankacricket.lk/",
+        "publisher": "Sri Lanka Cricket",
+        "year": 2026,
+        "summary": "Official source for cricket administration, governance, and board announcements.",
+        "whyRelevant": "This topic revolves around sports administration, especially cricket governance.",
+        "sourceQuality": "official",
+        "verified": true
+      },
+      {
+        "id": "mt25-cricinfo-sri-lanka",
+        "type": "article",
+        "title": "Sri Lanka Cricket news",
+        "url": "https://www.espncricinfo.com/team/sri-lanka-8",
+        "publisher": "ESPN Cricinfo",
+        "year": 2026,
+        "summary": "High-visibility sports reporting on Sri Lanka cricket governance and board controversy.",
+        "whyRelevant": "Provides an accessible media lens on sports-administration crises in Parliament.",
+        "sourceQuality": "news",
+        "verified": true
+      },
+      {
+        "id": "mt25-youtube-search",
+        "type": "youtube_search",
+        "title": "YouTube search: Sri Lanka Cricket Board crisis",
+        "url": "https://www.youtube.com/results?search_query=Sri+Lanka+Cricket+Board+crisis",
+        "publisher": "YouTube",
+        "year": 2026,
+        "summary": "Curated search for reporting and commentary on cricket administration disputes.",
+        "whyRelevant": "Turns sports-governance references into recognizable public controversies.",
+        "sourceQuality": "news",
+        "verified": true
+      }
+    ],
+    "relatedEvents": []
+  },
+  "26": {
+    "topicId": 26,
+    "topicKey": "26",
+    "topicLabel": "Judicial System, Anti-Corruption & Criminal Law",
+    "resources": [
+      {
+        "id": "mt26-clean-sri-lanka",
+        "type": "institutional",
+        "title": "Sri Lanka Sets Out New Policy Direction to Advance Healthcare Quality and Patient Safety",
+        "url": "https://www.who.int/srilanka/news/detail/25-03-2026-sri-lanka-sets-out-new-policy-direction-to-advance-healthcare-quality-and-patient-safety",
+        "publisher": "WHO Sri Lanka",
+        "publishedAt": "2026-03-25",
+        "summary": "Includes the anti-corruption and integrity strengthening context referenced in regulatory reform discussions.",
+        "whyRelevant": "Provides an institutional reform example connected to integrity and governance language.",
+        "sourceQuality": "institutional",
+        "verified": true
+      },
+      {
+        "id": "mt26-hrw-country",
+        "type": "article",
+        "title": "Human Rights Watch Submission to the UN Human Rights Committee to Advance Its Review of Sri Lanka",
+        "url": "https://www.hrw.org/news/2023/01/30/human-rights-watch-submission-un-human-rights-committee-advance-its-review-sri",
+        "publisher": "Human Rights Watch",
+        "publishedAt": "2023-01-30",
+        "summary": "Human-rights submission touching on justice, accountability, and criminal-law concerns.",
+        "whyRelevant": "Connects judicial and anti-corruption concerns to broader accountability discourse.",
+        "sourceQuality": "advocacy",
+        "verified": true
+      },
+      {
+        "id": "mt26-youtube-search",
+        "type": "youtube_search",
+        "title": "YouTube search: Sri Lanka judicial reform criminal law",
+        "url": "https://www.youtube.com/results?search_query=Sri+Lanka+judicial+reform+criminal+law",
+        "publisher": "YouTube",
+        "year": 2026,
+        "summary": "Curated search for reporting on courts, corruption, and legal reform.",
+        "whyRelevant": "Adds a clearer public-facing layer to justice-system and criminal-law language.",
+        "sourceQuality": "news",
+        "verified": true
+      }
+    ],
+    "relatedEvents": []
+  },
+  "27": {
+    "topicId": 27,
+    "topicKey": "27",
+    "topicLabel": "Maritime Boundaries & Fisheries Livelihoods",
+    "resources": [
+      {
+        "id": "mt27-fisheries-ministry",
+        "type": "official",
+        "title": "Ministry of Fisheries",
+        "url": "https://www.fisheries.gov.lk/",
+        "publisher": "Government of Sri Lanka",
+        "year": 2026,
+        "summary": "Official fisheries portal covering livelihoods, policy, and maritime-sector administration.",
+        "whyRelevant": "Grounds fisheries and maritime-boundary discussion in the sector ministry.",
+        "sourceQuality": "official",
+        "verified": true
+      },
+      {
+        "id": "mt27-tamil-guardian-search",
+        "type": "article",
+        "title": "Tamil Guardian coverage of Sri Lanka-India fishermen disputes",
+        "url": "https://www.tamilguardian.com/tags/fishermen",
+        "publisher": "Tamil Guardian",
+        "year": 2026,
+        "summary": "Issue coverage connecting fishing livelihoods with maritime-boundary tensions.",
+        "whyRelevant": "Supplies a public-facing narrative for a cross-border livelihood issue.",
+        "sourceQuality": "news",
+        "verified": true
+      },
+      {
+        "id": "mt27-youtube-search",
+        "type": "youtube_search",
+        "title": "YouTube search: Sri Lanka India fishermen maritime boundary",
+        "url": "https://www.youtube.com/results?search_query=Sri+Lanka+India+fishermen+maritime+boundary",
+        "publisher": "YouTube",
+        "year": 2026,
+        "summary": "Curated search for reporting on fishermen conflicts and boundary issues.",
+        "whyRelevant": "Adds visual context for a topic that spans livelihoods, diplomacy, and enforcement.",
+        "sourceQuality": "news",
+        "verified": true
+      }
+    ],
+    "relatedEvents": []
+  },
+  "28": {
+    "topicId": 28,
+    "topicKey": "28",
+    "topicLabel": "Plantation Economy & Estate Worker Grievances",
+    "resources": [
+      {
+        "id": "mt28-cepa-rural-women",
+        "type": "research",
+        "title": "Rural Women Entrapped by Microfinance Debt",
+        "url": "https://www.cepa.lk/publications/rural-women-entrapped-by-microfinance-debt/",
+        "publisher": "Centre for Poverty Analysis",
+        "year": 2026,
+        "summary": "Research on rural debt pressures that also affect plantation communities and estate livelihoods.",
+        "whyRelevant": "Links plantation-economy grievances to debt and household distress.",
+        "sourceQuality": "research",
+        "verified": true
+      },
+      {
+        "id": "mt28-plantation-ministry",
+        "type": "official",
+        "title": "Ministry of Plantation and Community Infrastructure",
+        "url": "https://plantationministry.gov.lk/",
+        "publisher": "Government of Sri Lanka",
+        "year": 2026,
+        "summary": "Official ministry portal for plantation-sector policy and community infrastructure.",
+        "whyRelevant": "Provides direct government context for estate-worker and plantation-sector debate.",
+        "sourceQuality": "official",
+        "verified": true
+      },
+      {
+        "id": "mt28-youtube-search",
+        "type": "youtube_search",
+        "title": "YouTube search: Sri Lanka tea plantation estate workers wages",
+        "url": "https://www.youtube.com/results?search_query=Sri+Lanka+tea+plantation+estate+workers+wages",
+        "publisher": "YouTube",
+        "year": 2026,
+        "summary": "Curated search for reporting on wages, livelihoods, and plantation-sector grievances.",
+        "whyRelevant": "Adds a grounded social layer to a labor and plantation governance topic.",
+        "sourceQuality": "news",
+        "verified": true
+      }
+    ],
+    "relatedEvents": []
+  },
+  "29": {
+    "topicId": 29,
+    "topicKey": "29",
+    "topicLabel": "Women & Child Affairs, Heritage & Local Governance",
+    "resources": [
+      {
+        "id": "mt29-women-child-ministry",
+        "type": "official",
+        "title": "Ministry of Women and Child Affairs",
+        "url": "https://www.womenandchild.gov.lk/",
+        "publisher": "Government of Sri Lanka",
+        "year": 2026,
+        "summary": "Official ministry portal for women and child affairs policy and programmes.",
+        "whyRelevant": "Anchors the topic in formal women-and-child policy administration.",
+        "sourceQuality": "official",
+        "verified": true
+      },
+      {
+        "id": "mt29-via-campesina-women",
+        "type": "article",
+        "title": "Sri Lanka: The Microfinance Trap, Exploitation of Women and Its Consequences",
+        "url": "https://viacampesina.org/en/sri-lanka-the-microfinance-trap-exploitation-of-women-and-its-consequences/",
+        "publisher": "La Via Campesina",
+        "year": 2026,
+        "summary": "Advocacy article on the gendered social consequences of debt and vulnerability.",
+        "whyRelevant": "Connects the topic's women-focused governance language to lived social pressures.",
+        "sourceQuality": "advocacy",
+        "verified": true
+      },
+      {
+        "id": "mt29-youtube-search",
+        "type": "youtube_search",
+        "title": "YouTube search: Sri Lanka women child affairs ministry",
+        "url": "https://www.youtube.com/results?search_query=Sri+Lanka+women+child+affairs+ministry",
+        "publisher": "YouTube",
+        "year": 2026,
+        "summary": "Curated search for public-facing reporting on women, child affairs, and community governance.",
+        "whyRelevant": "Adds a public interpretation layer to a broad and socially grounded topic.",
+        "sourceQuality": "news",
+        "verified": true
+      }
+    ],
+    "relatedEvents": []
+  }
+}

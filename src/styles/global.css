@@ -98,6 +98,31 @@ button, input, select { font: inherit; }
 .detail-panel__speaker-row { display: flex; justify-content: space-between; gap: 1rem; padding: 0.75rem 0.9rem; border-radius: 14px; background: rgba(255,255,255,0.55); }
 .detail-panel__sample-card, .detail-panel__speech-preview, .speech-card { padding: 1rem; border-radius: 16px; background: rgba(255,255,255,0.55); border: 1px solid rgba(26, 24, 19, 0.08); }
 .detail-panel__muted { color: var(--text-soft); }
+.detail-panel__resource-list, .detail-panel__event-list, .timeline-evidence-list { display: grid; gap: 0.75rem; }
+.detail-panel__resource-card, .detail-panel__event-card, .timeline-evidence-card {
+  display: grid;
+  gap: 0.55rem;
+  padding: 1rem;
+  border-radius: 16px;
+  background: rgba(255,255,255,0.55);
+  border: 1px solid rgba(26, 24, 19, 0.08);
+}
+.detail-panel__resource-card.is-official { border-left: 4px solid var(--accent-alt); }
+.detail-panel__resource-card.is-youtube { border-left: 4px solid #b91c1c; }
+.detail-panel__resource-meta, .event-card__sources { display: flex; gap: 0.65rem; flex-wrap: wrap; align-items: center; }
+.detail-panel__resource-meta span, .detail-panel__resource-meta strong, .event-card__sources a, .detail-panel__event-links a {
+  font-size: 0.75rem;
+  color: var(--text-soft);
+}
+.detail-panel__resource-card h4, .detail-panel__event-card h4, .timeline-evidence-card h3 { margin: 0; font-size: 1rem; color: var(--text); }
+.detail-panel__event-links { display: flex; gap: 0.65rem; flex-wrap: wrap; }
+.detail-panel__event-links a, .event-card__sources a {
+  padding: 0.35rem 0.6rem;
+  border-radius: 999px;
+  background: rgba(26, 24, 19, 0.06);
+  border: 1px solid rgba(26, 24, 19, 0.08);
+}
+.timeline-evidence-card { align-content: start; }
 .speech-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 .speech-card h3 { margin: 0.5rem 0 0.7rem; }
 .speech-card__meta-row, .speech-card__footer { display: flex; flex-wrap: wrap; gap: 0.65rem; }

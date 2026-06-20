@@ -4,7 +4,7 @@ import { useManyJsonResources } from '../lib/data/hooks';
 import { D3TopicAtlas } from '../components/charts/D3TopicAtlas';
 import { TopicDetailPanel } from '../components/topic/TopicDetailPanel';
 
-const URLS = ['/data/atlas_points.json', '/data/topic_metadata.json'];
+const URLS = ['/data/atlas_points.json', '/data/topic_metadata.json', '/data/topic_event_links.json', '/data/event_sources.json'];
 
 function useQueryTopic() {
   const { search } = useLocation();
@@ -23,6 +23,8 @@ export default function TopicAtlasPage() {
 
   const topicMetadata = useMemo(() => data['/data/topic_metadata.json'] ?? {}, [data]);
   const atlasPoints = useMemo(() => data['/data/atlas_points.json'] ?? [], [data]);
+  const topicEvidence = useMemo(() => data['/data/topic_event_links.json'] ?? {}, [data]);
+  const eventSources = useMemo(() => data['/data/event_sources.json'] ?? {}, [data]);
 
   const filteredPoints = useMemo(() => atlasPoints.filter((point) => {
     const matchesTopic = topicFilter === 'all' || point.topicKey === topicFilter;
@@ -69,7 +71,12 @@ export default function TopicAtlasPage() {
           </div>
           <D3TopicAtlas points={filteredPoints} topicMetadata={topicMetadata} selectedSpeechId={selectedSpeech?.speechId} onSelectSpeech={setSelectedSpeech} onHoverSpeech={setHoveredSpeech} />
         </div>
-        <TopicDetailPanel topic={activeTopic} speech={selectedSpeech || hoveredSpeech} />
+        <TopicDetailPanel
+          topic={activeTopic}
+          speech={selectedSpeech || hoveredSpeech}
+          topicEvidence={activeTopic ? topicEvidence[activeTopic.topicKey] : null}
+          eventSources={eventSources}
+        />
       </section>
     </div>
   );
