@@ -16,6 +16,10 @@ KEYWORDS_PATH = TARGET_DATA / 'macro_topic_keywords_100.json'
 SPEAKER_COUNTS_PATH = TARGET_DATA / 'speaker_topic_counts_by_macro_topic.json'
 SPEAKER_NORMALIZATION_PATH = TARGET_DATA / 'speaker_normalization.json'
 TOPIC_RESOURCES_PATH = CONTENT_ROOT / 'topic_resources.json'
+FINAL_SPEAKERS_PATH = TARGET_DATA / 'final_unique_speakers.json'
+SPEAKER_ACTIVITY_PATH = TARGET_DATA / 'speaker_speeches_per_year_by_topic.json'
+SPEAKER_PROFILES_PATH = CONTENT_ROOT / 'speaker_profiles.json'
+SPEAKER_PROFILE_DRAFTS_PATH = CONTENT_ROOT / 'speaker_profiles_draft.json'
 
 ASSIGNMENTS_PATH = SOURCE_ROOT / 'macro_topic_assignments.csv'
 SPEECHES_PATH = SOURCE_ROOT / 'all_speakers.csv'
@@ -69,6 +73,13 @@ def load_topic_resources(path: Path):
     return payload if isinstance(payload, dict) else {}
 
 
+def load_optional_json(path: Path, default):
+    if not path.exists():
+        return default
+    payload = load_json(path)
+    return payload if isinstance(payload, type(default)) else default
+
+
 def normalize_resource(item: dict) -> dict:
     return {
         'id': item['id'],
@@ -96,6 +107,309 @@ def normalize_event(item: dict) -> dict:
         'topicKeys': item.get('topicKeys', []),
         'sourceIds': item.get('sourceIds', []),
     }
+
+
+def profile_match_key(entry: dict) -> str:
+    value = entry.get('speakerName') or entry.get('name') or entry.get('slug') or ''
+    return str(value).strip().lower()
+
+
+def normalize_profile_entry(entry: dict) -> dict:
+    return {
+        'speakerName': entry.get('speakerName') or entry.get('name') or '',
+        'slug': entry.get('slug'),
+        'displayName': entry.get('displayName'),
+        'shortBio': entry.get('shortBio'),
+        'wikipediaUrl': entry.get('wikipediaUrl'),
+        'wikidataId': entry.get('wikidataId'),
+        'officialProfileUrl': entry.get('officialProfileUrl'),
+        'party': entry.get('party'),
+        'constituency': entry.get('constituency'),
+        'verified': bool(entry.get('verified', False)),
+        'editorialSummary': entry.get('editorialSummary'),
+        'speakerType': entry.get('speakerType'),
+        'needsHumanReview': bool(entry.get('needsHumanReview', False)),
+        'confidenceNotes': entry.get('confidenceNotes'),
+        'generatedAt': entry.get('generatedAt'),
+        'model': entry.get('model'),
+    }
+
+
+def profile_lookup(payload: dict | list) -> dict:
+    entries = payload.values() if isinstance(payload, dict) else payload
+    lookup = {}
+    for entry in entries:
+        if not isinstance(entry, dict):
+            continue
+        normalized = normalize_profile_entry(entry)
+        keys = {
+            profile_match_key(entry),
+            str(normalized.get('slug') or '').strip().lower(),
+            str(normalized.get('speakerName') or '').strip().lower(),
+        }
+        for key in keys:
+            if key:
+                lookup[key] = normalized
+    return lookup
+
+
+def format_topic_color(color: list[int]) -> str:
+    return f"rgb({color[0]}, {color[1]}, {color[2]})"
+
+
+def compact_language_mix(counter: Counter) -> list[dict]:
+    total = sum(counter.values()) or 1
+    return [
+        {
+            'language': language,
+            'count': count,
+            'share': round(count / total, 4),
+        }
+        for language, count in counter.most_common()
+    ]
+
+
+def build_representative_speeches(records: list[dict], dominant_topic_keys: list[str]) -> list[dict]:
+    candidates = [record for record in records if not record['isNoise']]
+    if not candidates:
+        candidates = records[:]
+
+    selected = []
+    seen = set()
+    for topic in dominant_topic_keys:
+        topic_matches = [record for record in candidates if record['topicKey'] == topic]
+        topic_matches.sort(key=lambda item: (len(item['excerpt']), item['year']), reverse=True)
+        if topic_matches:
+            choice = topic_matches[0]
+            if choice['speechId'] not in seen:
+                selected.append(choice)
+                seen.add(choice['speechId'])
+        if len(selected) >= 4:
+            break
+
+    fallback = sorted(candidates, key=lambda item: (item['year'], len(item['excerpt'])), reverse=True)
+    for record in fallback:
+        if record['speechId'] in seen:
+            continue
+        selected.append(record)
+        seen.add(record['speechId'])
+        if len(selected) >= 4:
+            break
+
+    return [
+        {
+            'speechId': item['speechId'],
+            'date': item['date'],
+            'year': item['year'],
+            'topicId': item['topicId'],
+            'topicKey': item['topicKey'],
+            'topicLabel': item['topicLabel'],
+            'language': item['language'],
+            'excerpt': item['excerpt'],
+        }
+        for item in selected
+    ]
+
+
+def build_speaker_insight(
+    active_years: list[int],
+    dominant_topics: list[dict],
+    peak_year: int | None,
+    peak_count: int,
+    procedural_share: float,
+) -> str:
+    clauses = []
+    if active_years:
+        if len(active_years) == 1:
+            clauses.append(f"Visible in the clustered record in {active_years[0]}.")
+        elif active_years[0] >= 2022:
+            clauses.append(f"Appears mainly in the later corpus window ({active_years[0]}-{active_years[-1]}).")
+        else:
+            clauses.append(f"Active across {active_years[0]}-{active_years[-1]} in the clustered Hansard corpus.")
+
+    if dominant_topics:
+        lead = dominant_topics[0]
+        if lead['share'] >= 0.55:
+            clauses.append(f"Concentrates strongly on {lead['topicLabel']}.")
+        elif lead['share'] >= 0.35:
+            clauses.append(f"Leans most toward {lead['topicLabel']}, while still appearing in other debates.")
+        else:
+            clauses.append(f"Participates across several macro-topics, with {lead['topicLabel']} as the largest share.")
+
+    if peak_year:
+        period_labels = {
+            2019: 'the post-Easter security debate',
+            2020: 'the pandemic and constitutional-change period',
+            2021: 'the fertilizer-ban and economic-strain period',
+            2022: 'the economic-crisis and Aragalaya period',
+        }
+        period = period_labels.get(peak_year)
+        if period:
+            clauses.append(f"Peaks in {peak_year} during {period}, with {peak_count} attributed speeches.")
+        else:
+            clauses.append(f"Peaks in {peak_year} with {peak_count} attributed speeches.")
+
+    if procedural_share >= 0.45:
+        clauses.append('A large share of the attributed record is procedural rather than substantive.')
+
+    return ' '.join(clauses[:3]).strip()
+
+
+def build_speaker_profiles(
+    final_speakers: list[dict],
+    speaker_activity: dict,
+    speech_records: list[dict],
+    topic_metadata: dict,
+    curated_profiles: dict,
+    draft_profiles: dict,
+) -> list[dict]:
+    profiles = {}
+    canonical_by_variant = {}
+
+    for speaker in final_speakers:
+        canonical_name = speaker['name']
+        for variant in [canonical_name, speaker.get('manthriName'), speaker.get('slug'), *(speaker.get('aliases') or [])]:
+            if variant:
+                canonical_by_variant[str(variant).strip().lower()] = canonical_name
+        profiles[canonical_name] = {
+            'name': speaker['name'],
+            'displayName': speaker.get('manthriName') or ((speaker.get('aliases') or [speaker['name']])[0]),
+            'englishName': speaker.get('manthriName') or None,
+            'aliases': speaker.get('aliases') or [],
+            'slug': speaker.get('slug'),
+            'imagePath': speaker.get('localPath'),
+            'imageUrl': speaker.get('imageUrl'),
+            'totalSpeeches': int(speaker.get('total_speeches') or 0),
+            'byTopic': defaultdict(int),
+            'byYear': defaultdict(int),
+        }
+
+    for topic_name, topic_bucket in (speaker_activity.get('by_topic') or {}).items():
+        for speaker_name, stats in (topic_bucket.get('speakers') or {}).items():
+            canonical_name = canonical_by_variant.get(str(speaker_name).strip().lower(), speaker_name)
+            profile = profiles.setdefault(
+                canonical_name,
+                {
+                    'name': canonical_name,
+                    'displayName': canonical_name,
+                    'englishName': None,
+                    'aliases': [],
+                    'slug': None,
+                    'imagePath': None,
+                    'imageUrl': None,
+                    'totalSpeeches': 0,
+                    'byTopic': defaultdict(int),
+                    'byYear': defaultdict(int),
+                },
+            )
+            total = int(stats.get('total') or 0)
+            profile['totalSpeeches'] = max(profile['totalSpeeches'], total)
+            profile['byTopic'][topic_name] += total
+            for year, count in (stats.get('by_year') or {}).items():
+                profile['byYear'][int(year)] += int(count)
+
+    speeches_by_speaker = defaultdict(list)
+    language_by_speaker = defaultdict(Counter)
+    for record in speech_records:
+        canonical_name = canonical_by_variant.get(str(record['speaker']).strip().lower(), record['speaker'])
+        normalized_record = dict(record)
+        normalized_record['speaker'] = canonical_name
+        speeches_by_speaker[canonical_name].append(normalized_record)
+        language_by_speaker[canonical_name][record['language']] += 1
+
+    enriched = []
+    for profile in profiles.values():
+        records = sorted(speeches_by_speaker.get(profile['name'], []), key=lambda item: item['date'], reverse=True)
+        if not profile['byYear'] and records:
+            for record in records:
+                profile['byYear'][int(record['year'])] += 1
+        if not profile['byTopic'] and records:
+            for record in records:
+                if record['isNoise']:
+                    continue
+                profile['byTopic'][f"Macro-Topic {record['topicKey']}"] += 1
+
+        active_years = sorted(year for year, count in profile['byYear'].items() if count > 0)
+        peak_year = None
+        peak_count = 0
+        if profile['byYear']:
+            peak_year, peak_count = max(profile['byYear'].items(), key=lambda item: item[1])
+
+        dominant_topics = []
+        substantive_total = 0
+        for topic_name, count in profile['byTopic'].items():
+            topic_id = topic_name.replace('Macro-Topic ', '')
+            metadata = topic_metadata.get(topic_id)
+            if metadata is None:
+                continue
+            substantive_total += count
+            dominant_topics.append(
+                {
+                    'topicId': metadata['topicId'],
+                    'topicKey': metadata['topicKey'],
+                    'topicLabel': metadata['topicLabel'],
+                    'count': count,
+                    'share': 0,
+                    'color': format_topic_color(metadata['color']),
+                }
+            )
+
+        dominant_topics.sort(key=lambda item: item['count'], reverse=True)
+        for item in dominant_topics:
+            item['share'] = round(item['count'] / substantive_total, 4) if substantive_total else 0
+
+        non_noise_total = sum(1 for item in records if not item['isNoise'])
+        procedural_share = round((len(records) - non_noise_total) / len(records), 4) if records else 0
+        representative = build_representative_speeches(records, [item['topicKey'] for item in dominant_topics[:3]])
+        language_mix = compact_language_mix(language_by_speaker.get(profile['name'], Counter()))
+        insight = build_speaker_insight(active_years, dominant_topics, peak_year, peak_count, procedural_share)
+
+        curated = curated_profiles.get(profile['name'].lower()) or curated_profiles.get(str(profile.get('slug') or '').lower())
+        draft = draft_profiles.get(profile['name'].lower()) or draft_profiles.get(str(profile.get('slug') or '').lower())
+        short_bio = (curated or {}).get('shortBio') or (draft or {}).get('shortBio')
+        short_bio_source = 'curated' if curated and curated.get('shortBio') else 'draft' if draft and draft.get('shortBio') else None
+
+        enriched.append(
+            {
+                'name': profile['name'],
+                'displayName': (curated or {}).get('displayName') or profile['displayName'],
+                'englishName': profile['englishName'],
+                'aliases': profile['aliases'],
+                'slug': (curated or {}).get('slug') or profile.get('slug'),
+                'imagePath': profile['imagePath'],
+                'imageUrl': profile['imageUrl'],
+                'totalSpeeches': profile['totalSpeeches'],
+                'firstActiveYear': active_years[0] if active_years else None,
+                'lastActiveYear': active_years[-1] if active_years else None,
+                'activeYears': active_years,
+                'activeYearCount': len(active_years),
+                'peakYear': peak_year,
+                'peakYearSpeechCount': peak_count,
+                'topicCount': len(dominant_topics),
+                'proceduralShare': procedural_share,
+                'dominantTopics': dominant_topics[:6],
+                'yearlyCounts': [{'year': year, 'count': profile['byYear'][year]} for year in active_years],
+                'languageMix': language_mix,
+                'representativeSpeeches': representative,
+                'insightSummary': insight,
+                'shortBio': short_bio,
+                'shortBioSource': short_bio_source,
+                'editorialSummary': (curated or {}).get('editorialSummary') or (draft or {}).get('editorialSummary'),
+                'speakerType': (curated or {}).get('speakerType') or (draft or {}).get('speakerType'),
+                'profileVerified': bool((curated or {}).get('verified', False)),
+                'needsHumanReview': bool((draft or {}).get('needsHumanReview', False)),
+                'confidenceNotes': (draft or {}).get('confidenceNotes'),
+                'generatedAt': (draft or {}).get('generatedAt'),
+                'model': (draft or {}).get('model'),
+                'wikipediaUrl': (curated or {}).get('wikipediaUrl'),
+                'wikidataId': (curated or {}).get('wikidataId'),
+                'officialProfileUrl': (curated or {}).get('officialProfileUrl'),
+                'party': (curated or {}).get('party'),
+                'constituency': (curated or {}).get('constituency'),
+            }
+        )
+
+    return sorted(enriched, key=lambda item: item['totalSpeeches'], reverse=True)
 
 
 def build_topic_companion(topic_resources: dict, topic_metadata: dict) -> tuple[dict, dict]:
@@ -137,6 +451,10 @@ def main() -> None:
     speaker_counts = load_json(SPEAKER_COUNTS_PATH)
     speaker_norm = load_json(SPEAKER_NORMALIZATION_PATH)
     topic_resources = load_topic_resources(TOPIC_RESOURCES_PATH)
+    final_speakers = load_optional_json(FINAL_SPEAKERS_PATH, [])
+    speaker_activity = load_optional_json(SPEAKER_ACTIVITY_PATH, {})
+    curated_profiles = profile_lookup(load_optional_json(SPEAKER_PROFILES_PATH, {}))
+    draft_profiles = profile_lookup(load_optional_json(SPEAKER_PROFILE_DRAFTS_PATH, {}))
 
     topic_labels = temporal['topic_labels']
     topic_colors = {
@@ -292,13 +610,23 @@ def main() -> None:
         ],
     }
 
+    speaker_profiles = build_speaker_profiles(
+        final_speakers=final_speakers,
+        speaker_activity=speaker_activity,
+        speech_records=speech_records,
+        topic_metadata=topic_metadata,
+        curated_profiles=curated_profiles,
+        draft_profiles=draft_profiles,
+    )
+
     (TARGET_DATA / 'speech_records.json').write_text(json.dumps(speech_records, ensure_ascii=False), encoding='utf-8')
     (TARGET_DATA / 'atlas_points.json').write_text(json.dumps(atlas_points, ensure_ascii=False), encoding='utf-8')
     (TARGET_DATA / 'topic_metadata.json').write_text(json.dumps(topic_metadata, ensure_ascii=False), encoding='utf-8')
     (TARGET_DATA / 'topic_event_links.json').write_text(json.dumps(topic_companion, ensure_ascii=False), encoding='utf-8')
     (TARGET_DATA / 'event_sources.json').write_text(json.dumps(event_sources, ensure_ascii=False), encoding='utf-8')
     (TARGET_DATA / 'overview_summary.json').write_text(json.dumps(overview_summary, ensure_ascii=False), encoding='utf-8')
-    print('Wrote speech_records.json, atlas_points.json, topic_metadata.json, topic_event_links.json, event_sources.json, overview_summary.json')
+    (TARGET_DATA / 'speaker_profiles_enriched.json').write_text(json.dumps(speaker_profiles, ensure_ascii=False), encoding='utf-8')
+    print('Wrote speech_records.json, atlas_points.json, topic_metadata.json, topic_event_links.json, event_sources.json, overview_summary.json, speaker_profiles_enriched.json')
 
 
 if __name__ == '__main__':

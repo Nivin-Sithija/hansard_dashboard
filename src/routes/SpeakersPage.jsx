@@ -1,81 +1,48 @@
-﻿import React, { useMemo, useState } from 'react';
-import { useManyJsonResources } from '../lib/data/hooks';
+import React, { useMemo, useState } from 'react';
+import { useJsonResource } from '../lib/data/hooks';
 import { formatNumber } from '../lib/format';
 
-const URLS = [
-  '/data/final_unique_speakers.json',
-  '/data/speaker_speeches_per_year_by_topic.json',
-  '/data/topic_metadata.json',
-];
+const URL = '/data/speaker_profiles_enriched.json';
 
-function buildSpeakerProfiles(speakers, speechByTopic) {
-  const profiles = new Map();
+function profileSearchText(profile) {
+  return [
+    profile.displayName,
+    profile.name,
+    profile.englishName,
+    ...(profile.aliases || []),
+    profile.party,
+    profile.constituency,
+  ]
+    .filter(Boolean)
+    .join(' ')
+    .toLowerCase();
+}
 
-  speakers.forEach((speaker) => {
-    profiles.set(speaker.name, {
-      name: speaker.name,
-      englishName: speaker.manthriName || speaker.aliases?.[0] || null,
-      aliases: speaker.aliases || [],
-      totalSpeeches: speaker.total_speeches || 0,
-      imagePath: speaker.localPath || null,
-      byTopic: {},
-      byYear: {},
-    });
-  });
+function formatYearWindow(profile) {
+  if (!profile.firstActiveYear || !profile.lastActiveYear) return 'No dated activity';
+  if (profile.firstActiveYear === profile.lastActiveYear) return String(profile.firstActiveYear);
+  return `${profile.firstActiveYear}-${profile.lastActiveYear}`;
+}
 
-  Object.entries(speechByTopic.by_topic || {}).forEach(([topicKey, topicBucket]) => {
-    Object.entries(topicBucket.speakers || {}).forEach(([speakerName, stats]) => {
-      if (!profiles.has(speakerName)) {
-        profiles.set(speakerName, {
-          name: speakerName,
-          englishName: null,
-          aliases: [],
-          totalSpeeches: 0,
-          imagePath: null,
-          byTopic: {},
-          byYear: {},
-        });
-      }
-
-      const profile = profiles.get(speakerName);
-      profile.totalSpeeches = Math.max(profile.totalSpeeches, stats.total || 0);
-      profile.byTopic[topicKey] = (profile.byTopic[topicKey] || 0) + (stats.total || 0);
-
-      Object.entries(stats.by_year || {}).forEach(([year, count]) => {
-        profile.byYear[year] = (profile.byYear[year] || 0) + count;
-      });
-    });
-  });
-
-  return Array.from(profiles.values()).sort((left, right) => right.totalSpeeches - left.totalSpeeches);
+function topicLabel(topic) {
+  return topic.topicId !== null && topic.topicId !== undefined ? `MT-${topic.topicId} · ${topic.topicLabel}` : topic.topicLabel;
 }
 
 export default function SpeakersPage() {
-  const { data, loading, error } = useManyJsonResources(URLS);
+  const { data, loading, error } = useJsonResource(URL);
   const [query, setQuery] = useState('');
   const [selectedSpeaker, setSelectedSpeaker] = useState('');
-
-  const speakers = useMemo(() => data['/data/final_unique_speakers.json'] ?? [], [data]);
-  const speechByTopic = useMemo(() => data['/data/speaker_speeches_per_year_by_topic.json'] ?? { by_topic: {} }, [data]);
-  const topicMetadata = useMemo(() => data['/data/topic_metadata.json'] ?? {}, [data]);
-
-  const speakerProfiles = useMemo(() => buildSpeakerProfiles(speakers, speechByTopic), [speakers, speechByTopic]);
+  const speakerProfiles = useMemo(() => (Array.isArray(data) ? data : []), [data]);
 
   const filteredSpeakers = useMemo(() => {
     const normalized = query.trim().toLowerCase();
     if (!normalized) return speakerProfiles;
-
-    return speakerProfiles.filter((speaker) => {
-      const haystack = [speaker.name, speaker.englishName, ...(speaker.aliases || [])].filter(Boolean).join(' ').toLowerCase();
-      return haystack.includes(normalized);
-    });
+    return speakerProfiles.filter((profile) => profileSearchText(profile).includes(normalized));
   }, [query, speakerProfiles]);
 
   const effectiveSelectedSpeaker = useMemo(() => {
     if (selectedSpeaker && filteredSpeakers.some((speaker) => speaker.name === selectedSpeaker)) return selectedSpeaker;
-    if (!selectedSpeaker && filteredSpeakers.length) return filteredSpeakers[0].name;
-    if (selectedSpeaker && speakerProfiles.some((speaker) => speaker.name === selectedSpeaker)) return selectedSpeaker;
-    return speakerProfiles[0]?.name || '';
+    return filteredSpeakers[0]?.name || speakerProfiles[0]?.name || '';
   }, [filteredSpeakers, selectedSpeaker, speakerProfiles]);
 
   const activeSpeaker = useMemo(
@@ -83,34 +50,8 @@ export default function SpeakersPage() {
     [effectiveSelectedSpeaker, speakerProfiles],
   );
 
-  const topTopics = useMemo(() => {
-    if (!activeSpeaker) return [];
-
-    return Object.entries(activeSpeaker.byTopic)
-      .map(([topicKey, count]) => {
-        const topicId = topicKey.replace('Macro-Topic ', '');
-        const topic = topicMetadata[topicId];
-        return {
-          topicId,
-          topicLabel: topic?.topicLabel || topicKey,
-          count,
-          color: topic?.color ? `rgb(${topic.color.join(',')})` : 'rgb(124, 45, 18)',
-        };
-      })
-      .sort((left, right) => right.count - left.count)
-      .slice(0, 8);
-  }, [activeSpeaker, topicMetadata]);
-
-  const yearlyActivity = useMemo(() => {
-    if (!activeSpeaker) return [];
-
-    return Object.entries(activeSpeaker.byYear)
-      .sort((left, right) => Number(left[0]) - Number(right[0]))
-      .map(([year, count]) => ({ year, count }));
-  }, [activeSpeaker]);
-
-  const maxTopicCount = Math.max(...topTopics.map((topic) => topic.count), 1);
-  const maxYearCount = Math.max(...yearlyActivity.map((entry) => entry.count), 1);
+  const maxTopicCount = Math.max(...(activeSpeaker?.dominantTopics || []).map((topic) => topic.count), 1);
+  const maxYearCount = Math.max(...(activeSpeaker?.yearlyCounts || []).map((entry) => entry.count), 1);
 
   if (loading) return <div className="page-state">Loading speakers...</div>;
   if (error) return <div className="page-state page-state--error">{error}</div>;
@@ -120,16 +61,16 @@ export default function SpeakersPage() {
       <section className="page-header editorial-panel">
         <div className="section-heading">
           <div className="section-heading__eyebrow">Speakers</div>
-          <h1>Follow how individual parliamentarians move across macro-topics instead of reading the corpus as a faceless aggregate.</h1>
-          <p>The directory combines cleaned speaker identities, multilingual aliases, and topic-level participation counts from the clustered debate record.</p>
+          <h1>Read parliamentary debates through the people who shape them, not just through aggregate topic trends.</h1>
+          <p>The profile cards combine cleaned speaker identities, topic participation, yearly visibility, representative speeches, and optional authored context.</p>
         </div>
       </section>
 
       <section className="stats-strip">
         <div className="stat-block"><span>{formatNumber(speakerProfiles.length)}</span><label>Named speakers</label></div>
-        <div className="stat-block"><span>{formatNumber(speakerProfiles.reduce((sum, speaker) => sum + speaker.totalSpeeches, 0))}</span><label>Attributed clustered speeches</label></div>
+        <div className="stat-block"><span>{formatNumber(speakerProfiles.reduce((sum, speaker) => sum + speaker.totalSpeeches, 0))}</span><label>Attributed speeches</label></div>
         <div className="stat-block"><span>{formatNumber(filteredSpeakers.length)}</span><label>Directory matches</label></div>
-        <div className="stat-block"><span>{activeSpeaker ? formatNumber(Object.keys(activeSpeaker.byTopic).length) : '0'}</span><label>Topics for selected speaker</label></div>
+        <div className="stat-block"><span>{activeSpeaker ? formatNumber(activeSpeaker.topicCount) : '0'}</span><label>Topics for selected speaker</label></div>
       </section>
 
       <section className="speaker-layout">
@@ -150,11 +91,11 @@ export default function SpeakersPage() {
                 className={`speaker-directory-row${speaker.name === effectiveSelectedSpeaker ? ' is-active' : ''}`}
                 onClick={() => setSelectedSpeaker(speaker.name)}
               >
-                <div>
-                  <strong>{speaker.englishName || speaker.name}</strong>
-                  <span>{speaker.name}</span>
+                <div className="speaker-directory-row__copy">
+                  <strong className="speaker-directory-row__title">{speaker.displayName || speaker.englishName || speaker.name}</strong>
+                  <span className="speaker-directory-row__subtitle">{speaker.name}</span>
                 </div>
-                <span>{formatNumber(speaker.totalSpeeches)}</span>
+                <span className="speaker-directory-row__count">{formatNumber(speaker.totalSpeeches)}</span>
               </button>
             ))}
             {!filteredSpeakers.length && <div className="page-state">No speakers match that search.</div>}
@@ -166,49 +107,56 @@ export default function SpeakersPage() {
             <>
               <section className="editorial-panel speaker-hero-card">
                 <div className="speaker-hero-card__media">
-                  {activeSpeaker.imagePath ? <img src={activeSpeaker.imagePath} alt={activeSpeaker.englishName || activeSpeaker.name} /> : <div className="speaker-avatar-fallback">MP</div>}
+                  {activeSpeaker.imagePath ? <img src={activeSpeaker.imagePath} alt={activeSpeaker.displayName || activeSpeaker.name} /> : <div className="speaker-avatar-fallback">MP</div>}
                 </div>
                 <div className="speaker-hero-card__copy">
                   <div className="section-heading__eyebrow">Selected speaker</div>
-                  <h2>{activeSpeaker.englishName || activeSpeaker.name}</h2>
-                  <p>{activeSpeaker.englishName && activeSpeaker.englishName !== activeSpeaker.name ? activeSpeaker.name : 'Tracked through cleaned multilingual speaker references in the clustered Hansard corpus.'}</p>
+                  <h2>{activeSpeaker.displayName || activeSpeaker.englishName || activeSpeaker.name}</h2>
+                  <p>{activeSpeaker.shortBio || activeSpeaker.name}</p>
                   <div className="speaker-chip-row">
-                    <span className="chip is-active">{formatNumber(activeSpeaker.totalSpeeches)} clustered speeches</span>
-                    <span className="chip">{Object.keys(activeSpeaker.byTopic).length} active topics</span>
-                    <span className="chip">{yearlyActivity.length} active years</span>
+                    <span className="chip is-active">{formatNumber(activeSpeaker.totalSpeeches)} speeches</span>
+                    <span className="chip">{activeSpeaker.activeYearCount} active years</span>
+                    <span className="chip">Peak {activeSpeaker.peakYear || 'n/a'}</span>
+                    {activeSpeaker.speakerType && <span className="chip">{activeSpeaker.speakerType}</span>}
+                    {activeSpeaker.shortBioSource === 'draft' && <span className="chip">Draft profile note</span>}
                   </div>
+                  {(activeSpeaker.wikipediaUrl || activeSpeaker.officialProfileUrl || activeSpeaker.party || activeSpeaker.constituency) && (
+                    <div className="speaker-link-row">
+                      {activeSpeaker.party && <span className="speaker-inline-meta">{activeSpeaker.party}</span>}
+                      {activeSpeaker.constituency && <span className="speaker-inline-meta">{activeSpeaker.constituency}</span>}
+                      {activeSpeaker.wikipediaUrl && <a href={activeSpeaker.wikipediaUrl} target="_blank" rel="noreferrer">Wikipedia</a>}
+                      {activeSpeaker.officialProfileUrl && <a href={activeSpeaker.officialProfileUrl} target="_blank" rel="noreferrer">Official profile</a>}
+                    </div>
+                  )}
                 </div>
               </section>
 
-              <section className="story-grid">
+              <section className="speaker-profile-grid">
                 <div className="editorial-panel">
                   <div className="section-heading">
-                    <div className="section-heading__eyebrow">Topic footprint</div>
-                    <h2>Where this speaker concentrates debate attention</h2>
+                    <div className="section-heading__eyebrow">Insight card</div>
+                    <h2>How this speaker appears in the clustered record</h2>
                   </div>
-                  <div className="ranked-bar-list">
-                    {topTopics.map((topic) => (
-                      <div key={topic.topicId} className="ranked-bar-row">
-                        <div className="ranked-bar-row__label">
-                          <strong>MT-{topic.topicId}</strong>
-                          <span>{topic.topicLabel}</span>
-                        </div>
-                        <div className="ranked-bar-row__track">
-                          <div className="ranked-bar-row__fill" style={{ width: `${(topic.count / maxTopicCount) * 100}%`, background: topic.color }} />
-                        </div>
-                        <div className="ranked-bar-row__value">{formatNumber(topic.count)}</div>
-                      </div>
-                    ))}
+                  <div className="speaker-insight-card">
+                    <p>{activeSpeaker.insightSummary || 'Corpus-grounded insight is coming soon.'}</p>
+                    {activeSpeaker.editorialSummary && <p className="speaker-insight-card__draft">{activeSpeaker.editorialSummary}</p>}
+                    {activeSpeaker.confidenceNotes && <div className="detail-panel__muted">{activeSpeaker.confidenceNotes}</div>}
+                  </div>
+                  <div className="speaker-stat-grid">
+                    <div className="speaker-stat-grid__item"><strong>{formatYearWindow(activeSpeaker)}</strong><span>Activity window</span></div>
+                    <div className="speaker-stat-grid__item"><strong>{formatNumber(activeSpeaker.peakYearSpeechCount || 0)}</strong><span>Peak-year speeches</span></div>
+                    <div className="speaker-stat-grid__item"><strong>{formatNumber(activeSpeaker.topicCount)}</strong><span>Topic breadth</span></div>
+                    <div className="speaker-stat-grid__item"><strong>{Math.round((activeSpeaker.proceduralShare || 0) * 100)}%</strong><span>Procedural share</span></div>
                   </div>
                 </div>
 
                 <div className="editorial-panel">
                   <div className="section-heading">
                     <div className="section-heading__eyebrow">Yearly activity</div>
-                    <h2>When this speaker is most visible in the clustered corpus</h2>
+                    <h2>When this speaker is most visible</h2>
                   </div>
                   <div className="mini-column-chart">
-                    {yearlyActivity.map((entry) => (
+                    {(activeSpeaker.yearlyCounts || []).map((entry) => (
                       <div key={entry.year} className="mini-column-chart__item">
                         <div className="mini-column-chart__bar-wrap">
                           <div className="mini-column-chart__bar" style={{ height: `${Math.max(10, (entry.count / maxYearCount) * 180)}px` }} />
@@ -221,14 +169,71 @@ export default function SpeakersPage() {
                 </div>
               </section>
 
+              <section className="story-grid">
+                <div className="editorial-panel">
+                  <div className="section-heading">
+                    <div className="section-heading__eyebrow">Topic footprint</div>
+                    <h2>Where this speaker concentrates debate attention</h2>
+                  </div>
+                  <div className="ranked-bar-list">
+                    {(activeSpeaker.dominantTopics || []).map((topic) => (
+                      <div key={topic.topicKey} className="ranked-bar-row">
+                        <div className="ranked-bar-row__label">
+                          <strong>{topicLabel(topic)}</strong>
+                          <span>{Math.round(topic.share * 100)}% of substantive speeches</span>
+                        </div>
+                        <div className="ranked-bar-row__track">
+                          <div className="ranked-bar-row__fill" style={{ width: `${(topic.count / maxTopicCount) * 100}%`, background: topic.color }} />
+                        </div>
+                        <div className="ranked-bar-row__value">{formatNumber(topic.count)}</div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+
+                <div className="editorial-panel">
+                  <div className="section-heading">
+                    <div className="section-heading__eyebrow">Language mix</div>
+                    <h2>How this speaker appears across language labels</h2>
+                  </div>
+                  <div className="speaker-chip-row">
+                    {(activeSpeaker.languageMix || []).map((item) => (
+                      <span key={item.language} className="chip">{item.language}: {formatNumber(item.count)}</span>
+                    ))}
+                    {!activeSpeaker.languageMix?.length && <span className="chip">Language mix unavailable</span>}
+                  </div>
+                  <div className="detail-panel__muted">Language labels are inferred from the clustered speech text, so mixed-script speeches may appear under `Mixed`.</div>
+                </div>
+              </section>
+
+              <section className="editorial-panel">
+                <div className="section-heading">
+                  <div className="section-heading__eyebrow">Representative speeches</div>
+                  <h2>Examples that make the profile interpretable</h2>
+                </div>
+                <div className="speech-grid">
+                  {(activeSpeaker.representativeSpeeches || []).map((speech) => (
+                    <article key={speech.speechId} className="speech-card">
+                      <div className="speech-card__meta-row">
+                        <span>{speech.date}</span>
+                        <span>{speech.language}</span>
+                        <span>{topicLabel(speech)}</span>
+                      </div>
+                      <h3>{activeSpeaker.displayName || activeSpeaker.name}</h3>
+                      <p>{speech.excerpt}</p>
+                    </article>
+                  ))}
+                </div>
+              </section>
+
               <section className="editorial-panel">
                 <div className="section-heading">
                   <div className="section-heading__eyebrow">Aliases</div>
                   <h2>Name variants seen in the source pipeline</h2>
-                  <p>These aliases are useful when cross-checking speeches, manually inspecting records, or comparing normalized identities against source PDFs.</p>
+                  <p>These aliases make it easier to audit speaker normalization and cross-check source PDFs.</p>
                 </div>
                 <div className="speaker-chip-row">
-                  {(activeSpeaker.aliases.length ? activeSpeaker.aliases : [activeSpeaker.name]).map((alias) => <span key={alias} className="chip">{alias}</span>)}
+                  {(activeSpeaker.aliases?.length ? activeSpeaker.aliases : [activeSpeaker.name]).map((alias) => <span key={alias} className="chip">{alias}</span>)}
                 </div>
               </section>
             </>

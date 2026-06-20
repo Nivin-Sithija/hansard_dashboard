@@ -1,0 +1,41 @@
+{
+  "ගරු සජිත් ප්‍රේමදාස": {
+    "speakerName": "ගරු සජිත් ප්‍රේමදාස",
+    "slug": "sajith-premadasa",
+    "displayName": "Sajith Premadasa",
+    "shortBio": "Sajith Premadasa appears in the Hansard corpus across a ten-year span from 2017 to 2026, with 442 attributed speeches peaking at 136 in 2023. His recorded contributions span 28 topics, with the largest shares falling on Energy Security & Macroeconomic Crisis, Educational Administration & Human Capital Development, and Public Healthcare System & Pharmaceutical Regulation.",
+    "editorialSummary": "The dataset presents Sajith Premadasa as a high-volume, broad-ranging parliamentary speaker who engages consistently across major policy domains rather than concentrating on a single area. His activity peak in 2023 and sustained presence through 2026 suggest an active, cross-cutting legislative role throughout a period of significant national policy debate.",
+    "speakerType": "generalist",
+    "needsHumanReview": true,
+    "confidenceNotes": "Profile is grounded solely in corpus-derived statistics and representative speech excerpts; no external biographical or party-affiliation data has been used, and the classification as a generalist reflects topical spread within this dataset only, which may not fully represent the speaker's complete parliamentary record.",
+    "verified": false,
+    "generatedAt": "2026-06-20T20:08:50.590Z",
+    "model": "claude-sonnet-4-6"
+  },
+  "ගරු ලක්ෂ්මන් කිරිඇල්ල": {
+    "speakerName": "ගරු ලක්ෂ්මන් කිරිඇල්ල",
+    "slug": "lakshman-kiriella",
+    "displayName": "Lakshman Kiriella",
+    "shortBio": "Lakshman Kiriella is a parliamentary figure recorded in the Sri Lankan Hansard corpus as active across 2017–2024, with a noted role as a Leader of the House (සභානායක) reflected in at least one alias. His corpus activity spans topics including state enterprise accountability, legislative procedure, and economic crisis debates.",
+    "editorialSummary": "Kiriella appears in the dataset as a consistently engaged parliamentary voice over eight years, with his highest activity in 2023 and a strong focus on COPE oversight, standing orders, and macroeconomic accountability — suggesting a legislator who combines institutional procedural engagement with substantive policy scrutiny.",
+    "speakerType": "steady presence",
+    "needsHumanReview": true,
+    "confidenceNotes": "The alias referencing 'සභානායක' (Leader of the House) suggests a significant parliamentary office, but the dataset does not confirm the precise term or continuity of that role; human verification of officeholding periods is recommended before publication.",
+    "verified": false,
+    "generatedAt": "2026-06-20T20:08:57.014Z",
+    "model": "claude-sonnet-4-6"
+  },
+  "ගරු දිනේශ් ගුණවර්ධන මහතා": {
+    "speakerName": "ගරු දිනේශ් ගුණවර්ධන මහතා",
+    "slug": "dinesh-gunawardena",
+    "displayName": "Dinesh Gunawardena",
+    "shortBio": "Dinesh Gunawardena appears in the Hansard corpus across eight active years (2017–2024), contributing 257 attributed speeches spanning 25 topic clusters, with his highest recorded activity in 2017. His participation is predominantly in Sinhala and mixed-language sessions, with notable engagement in legislative procedure, local government and electoral reform, and parliamentary condolences.",
+    "editorialSummary": "Gunawardena presents in the dataset as a broad-ranging parliamentary participant who engages consistently across procedural, governance, and ceremonial debates rather than concentrating narrowly on a single policy domain. His sustained presence over eight years and wide topic spread mark him as a generalist voice within the corpus.",
+    "speakerType": "generalist",
+    "needsHumanReview": true,
+    "confidenceNotes": "Speaker identity is supported by alias clustering and consistent corpus attribution, but the relatively high procedural share (36%) and the peak year discrepancy (2017 peak vs. rich 2023 representative excerpts) warrant editorial verification before publication; no external biographical facts have been used.",
+    "verified": false,
+    "generatedAt": "2026-06-20T20:09:06.304Z",
+    "model": "claude-sonnet-4-6"
+  }
+}
