@@ -2,6 +2,7 @@ import React from 'react';
 import { D3KeywordBars } from '../charts/D3KeywordBars';
 import { D3LanguageMixChart } from '../charts/D3LanguageMixChart';
 import { formatDateLabel, formatNumber, rgb } from '../../lib/format';
+import { getTextLangProps } from '../../lib/language';
 
 function sourceTone(type) {
   if (type === 'official') return 'official';
@@ -9,7 +10,7 @@ function sourceTone(type) {
   return 'default';
 }
 
-export function TopicDetailPanel({ topic, speech, topicEvidence, eventSources = {} }) {
+export function TopicDetailPanel({ topic, speech, topicEvidence, eventSources = {}, isStarter = false }) {
   if (!topic) {
     return (
       <section className="detail-panel">
@@ -21,7 +22,7 @@ export function TopicDetailPanel({ topic, speech, topicEvidence, eventSources = 
     );
   }
 
-  const verifiedResources = (topicEvidence?.resources || []).filter((resource) => resource.verified);
+  const verifiedResources = (topicEvidence?.resources || []).filter((resource) => resource.verified && resource.type !== 'youtube_search');
   const relatedEvents = topicEvidence?.relatedEvents || [];
 
   return (
@@ -31,12 +32,19 @@ export function TopicDetailPanel({ topic, speech, topicEvidence, eventSources = 
           {topic.topicId == null ? 'Noise / procedural' : `Macro-topic ${topic.topicId}`}
         </div>
         <h3>{topic.topicLabel}</h3>
-        <p>{formatNumber(topic.totalSpeeches)} speeches · peak in {topic.peakYear ?? '—'}</p>
+        <p>{formatNumber(topic.totalSpeeches)} speeches | peak in {topic.peakYear ?? 'n/a'}</p>
+        {isStarter && <p className="detail-panel__starter-note">Starter topic loaded by default so the atlas opens with evidence instead of an empty panel.</p>}
       </div>
       {speech && (
         <article className="detail-panel__speech-preview">
-          <div className="detail-panel__speech-meta">{speech.speaker} · {speech.year} · {speech.language}</div>
-          <p>{speech.excerpt}</p>
+          <div className="detail-panel__speech-meta">
+            <span {...getTextLangProps(speech.speaker)}>{speech.speaker}</span>
+            {' | '}
+            <span>{speech.year}</span>
+            {' | '}
+            <span>{speech.language}</span>
+          </div>
+          <p {...getTextLangProps(speech.excerpt)}>{speech.excerpt}</p>
         </article>
       )}
       <div className="detail-panel__section">
@@ -52,7 +60,7 @@ export function TopicDetailPanel({ topic, speech, topicEvidence, eventSources = 
         <div className="detail-panel__speaker-list">
           {topic.topSpeakers.length ? topic.topSpeakers.map((item) => (
             <div key={`${item.speaker}-${item.count}`} className="detail-panel__speaker-row">
-              <span>{item.speaker}</span>
+              <span {...getTextLangProps(item.speaker)}>{item.speaker}</span>
               <strong>{formatNumber(item.count)}</strong>
             </div>
           )) : <p className="detail-panel__muted">Speaker totals were not preserved for this topic bucket.</p>}
@@ -63,8 +71,14 @@ export function TopicDetailPanel({ topic, speech, topicEvidence, eventSources = 
         <div className="detail-panel__sample-list">
           {topic.sampleSpeeches.map((sample) => (
             <article key={sample.speechId} className="detail-panel__sample-card">
-              <div className="detail-panel__speech-meta">{sample.speaker} · {sample.date} · {sample.language}</div>
-              <p>{sample.excerpt}</p>
+              <div className="detail-panel__speech-meta">
+                <span {...getTextLangProps(sample.speaker)}>{sample.speaker}</span>
+                {' | '}
+                <span>{sample.date}</span>
+                {' | '}
+                <span>{sample.language}</span>
+              </div>
+              <p {...getTextLangProps(sample.excerpt)}>{sample.excerpt}</p>
             </article>
           ))}
         </div>

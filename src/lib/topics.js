@@ -1,15 +1,14 @@
-﻿export const PRIMARY_NAV = [
-  { to: '/', label: 'Overview' },
-  { to: '/topics', label: 'Topic Atlas' },
-  { to: '/timeline', label: 'Timeline' },
-  { to: '/speeches', label: 'Speech Explorer' },
+export const PRIMARY_NAV = [
+  { to: '/', label: 'Overview', labelKey: 'navOverview' },
+  { to: '/topics', label: 'Topic Atlas', labelKey: 'navTopics' },
+  { to: '/timeline', label: 'Timeline', labelKey: 'navTimeline' },
+  { to: '/speeches', label: 'Speech Explorer', labelKey: 'navSpeeches' },
 ];
 
 export const SECONDARY_NAV = [
-  { to: '/speakers', label: 'Speakers' },
-  { to: '/compare', label: 'Compare' },
-  { to: '/methodology', label: 'Methodology' },
-  { to: '/data', label: 'Data' },
+  { to: '/speakers', label: 'Speakers', labelKey: 'navSpeakers' },
+  { to: '/compare', label: 'Compare', labelKey: 'navCompare' },
+  { to: '/methodology', label: 'Methodology', labelKey: 'navMethodology' },
 ];
 
 export const STORY_EVENTS = [

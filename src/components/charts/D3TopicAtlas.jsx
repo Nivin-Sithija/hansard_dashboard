@@ -48,7 +48,9 @@ export function D3TopicAtlas({ points, topicMetadata, selectedSpeechId, onSelect
                 onMouseEnter={() => onHoverSpeech(point)}
                 onMouseLeave={() => onHoverSpeech(null)}
                 onClick={() => onSelectSpeech(point)}
-              />
+              >
+                <title>{`${meta?.topicLabel ?? 'Procedural noise'} · ${point.language} · ${point.year}`}</title>
+              </circle>
             );
           })}
         </g>

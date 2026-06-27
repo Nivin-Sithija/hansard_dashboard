@@ -103,6 +103,7 @@ export default function ComparePage() {
           <div className="section-heading">
             <div className="section-heading__eyebrow">Speaker vs speaker</div>
             <h2>Compare two parliamentary topic footprints</h2>
+            <p>Bars compare how many speeches each selected speaker contributes inside the same macro-topic, making concentration differences visible without leaving the corpus view.</p>
           </div>
           <div className="compare-picker-row">
             <label><span>Speaker A</span><select value={effectiveSpeakerA} onChange={(event) => setSpeakerA(event.target.value)}>{rankedSpeakers.map((speaker) => <option key={speaker.name} value={speaker.name}>{speaker.manthriName || speaker.name}</option>)}</select></label>
@@ -168,6 +169,7 @@ export default function ComparePage() {
           <h2>Where attention clusters most densely among the most active speakers</h2>
           <p>Darker cells indicate more speeches within a topic for that speaker, making strong affinities and broad portfolios immediately visible.</p>
         </div>
+        <p className="scroll-hint">Swipe sideways on smaller screens to see every macro-topic column in the matrix.</p>
         <div className="heatmap-table-wrap">
           <div className="heatmap-table" style={{ gridTemplateColumns: `minmax(180px, 220px) repeat(${heatmapTopics.length}, minmax(42px, 1fr))` }}>
             <div className="heatmap-table__corner">Speaker</div>

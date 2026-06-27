@@ -4,6 +4,7 @@ import { useManyJsonResources } from '../lib/data/hooks';
 import { D3TimelineChart } from '../components/charts/D3TimelineChart';
 import { formatDateLabel } from '../lib/format';
 import { STORY_EVENTS } from '../lib/topics';
+import { useUiLanguage } from '../lib/uiLanguage';
 
 const URLS = [
   '/data/macro_topic_temporal_evolution_chart_data.json',
@@ -40,7 +41,9 @@ function collectTopicEvidence(selectedTopics, topicEvidence) {
     });
 
     bucket.resources?.forEach((resource) => {
-      if (resource.verified && !resourceMap.has(resource.id)) resourceMap.set(resource.id, resource);
+      if (resource.verified && resource.type !== 'youtube_search' && !resourceMap.has(resource.id)) {
+        resourceMap.set(resource.id, resource);
+      }
     });
   });
 
@@ -52,32 +55,41 @@ function collectTopicEvidence(selectedTopics, topicEvidence) {
 export default function TimelinePage() {
   const seededTopics = useSeededTopic();
   const { data, loading, error } = useManyJsonResources(URLS);
+  const { t } = useUiLanguage();
   const [selectedTopics, setSelectedTopics] = useState(seededTopics);
 
   const temporal = data['/data/macro_topic_temporal_evolution_chart_data.json'];
   const topicMetadata = useMemo(() => data['/data/topic_metadata.json'] ?? {}, [data]);
   const topicEvidence = useMemo(() => data['/data/topic_event_links.json'] ?? {}, [data]);
   const eventSources = useMemo(() => data['/data/event_sources.json'] ?? {}, [data]);
-  const topicOptions = useMemo(() => Object.values(topicMetadata).filter((topic) => topic.topicId != null).sort((left, right) => right.totalSpeeches - left.totalSpeeches), [topicMetadata]);
+  const topicOptions = useMemo(
+    () => Object.values(topicMetadata).filter((topic) => topic.topicId != null).sort((left, right) => right.totalSpeeches - left.totalSpeeches),
+    [topicMetadata],
+  );
+  const defaultTopicKeys = useMemo(() => topicOptions.slice(0, 4).map((topic) => String(topic.topicKey)), [topicOptions]);
+  const visibleSelectedTopics = selectedTopics.length ? selectedTopics : (seededTopics.length ? seededTopics : defaultTopicKeys);
 
   const toggleTopic = (topicKey) => {
-    setSelectedTopics((current) => (current.includes(topicKey) ? current.filter((value) => value !== topicKey) : [...current, topicKey].slice(-4)));
+    setSelectedTopics((current) => {
+      const base = current.length ? current : (seededTopics.length ? seededTopics : defaultTopicKeys);
+      return base.includes(topicKey) ? base.filter((value) => value !== topicKey) : [...base, topicKey].slice(-4);
+    });
   };
 
-  const evidence = useMemo(() => collectTopicEvidence(selectedTopics, topicEvidence), [selectedTopics, topicEvidence]);
+  const evidence = useMemo(() => collectTopicEvidence(visibleSelectedTopics, topicEvidence), [topicEvidence, visibleSelectedTopics]);
   const visibleEvents = useMemo(() => {
-    if (selectedTopics.length) return evidence.events;
+    if (visibleSelectedTopics.length) return evidence.events;
     const matched = STORY_EVENTS.map((event) => evidence.events.find((candidate) => candidate.id === STORY_EVENT_MATCH[event.year])).filter(Boolean);
     return matched.length ? matched : evidence.events.slice(0, 4);
-  }, [evidence.events, selectedTopics.length]);
+  }, [evidence.events, visibleSelectedTopics.length]);
   const visibleResources = useMemo(() => {
-    if (selectedTopics.length) return evidence.resources;
+    if (visibleSelectedTopics.length) return evidence.resources;
 
     const ids = new Set(visibleEvents.flatMap((event) => event.sourceIds || []));
     return Array.from(ids).map((sourceId) => eventSources[sourceId]).filter(Boolean);
-  }, [evidence.resources, eventSources, selectedTopics.length, visibleEvents]);
+  }, [evidence.resources, eventSources, visibleEvents, visibleSelectedTopics.length]);
 
-  if (loading) return <div className="page-state">Loading timeline…</div>;
+  if (loading) return <div className="page-state">{t('loadingTimeline')}</div>;
   if (error) return <div className="page-state page-state--error">{error}</div>;
 
   return (
@@ -92,13 +104,23 @@ export default function TimelinePage() {
 
       <section className="editorial-panel">
         <div className="chip-grid">
-          {topicOptions.slice(0, 18).map((topic) => (
-            <button key={topic.topicKey} type="button" className={`chip${selectedTopics.includes(topic.topicKey) ? ' is-active' : ''}`} onClick={() => toggleTopic(topic.topicKey)}>
-              MT-{topic.topicId}
-            </button>
-          ))}
+          {topicOptions.slice(0, 18).map((topic) => {
+            const isActive = visibleSelectedTopics.includes(topic.topicKey);
+            return (
+              <button
+                key={topic.topicKey}
+                type="button"
+                className={`chip${isActive ? ' is-active' : ''}`}
+                onClick={() => toggleTopic(topic.topicKey)}
+                style={isActive ? { background: `rgb(${topic.color.join(', ')})`, borderColor: `rgb(${topic.color.join(', ')})`, color: '#fff' } : undefined}
+              >
+                MT-{topic.topicId} - {topic.topicLabel}
+              </button>
+            );
+          })}
         </div>
-        <D3TimelineChart temporalData={temporal} selectedTopicKeys={selectedTopics} onToggleTopic={toggleTopic} height={500} />
+        <p className="timeline-chart-note">{t('timelineNote')}</p>
+        <D3TimelineChart temporalData={temporal} selectedTopicKeys={visibleSelectedTopics} onToggleTopic={toggleTopic} height={560} />
       </section>
 
       <section className="story-grid">
@@ -134,7 +156,7 @@ export default function TimelinePage() {
         <div className="editorial-panel">
           <div className="section-heading">
             <div className="section-heading__eyebrow">Related events</div>
-            <h2>{selectedTopics.length ? 'Evidence linked to the selected topics' : 'Start with the strongest source-backed event links'}</h2>
+            <h2>{visibleSelectedTopics.length ? 'Evidence linked to the selected topics' : 'Start with the strongest source-backed event links'}</h2>
           </div>
           <div className="timeline-evidence-list">
             {visibleEvents.length ? visibleEvents.map((event) => (
@@ -165,13 +187,13 @@ export default function TimelinePage() {
         <div className="editorial-panel">
           <div className="section-heading">
             <div className="section-heading__eyebrow">Supporting resources</div>
-            <h2>{selectedTopics.length ? 'Verified links that help interpret the selected time pattern' : 'Verified links behind the starter event story'}</h2>
+            <h2>{visibleSelectedTopics.length ? 'Verified links that help interpret the selected time pattern' : 'Verified links behind the starter event story'}</h2>
           </div>
           <div className="detail-panel__resource-list">
             {visibleResources.length ? visibleResources.slice(0, 8).map((resource) => (
-              <a key={resource.id} className={`detail-panel__resource-card is-${resource.type === 'official' ? 'official' : resource.type === 'youtube_search' ? 'youtube' : 'default'}`} href={resource.url} target="_blank" rel="noreferrer">
+              <a key={resource.id} className={`detail-panel__resource-card is-${resource.type === 'official' ? 'official' : 'default'}`} href={resource.url} target="_blank" rel="noreferrer">
                 <div className="detail-panel__resource-meta">
-                  <span>{resource.type === 'youtube_search' ? 'YouTube search' : resource.publisher}</span>
+                  <span>{resource.publisher}</span>
                   <strong>{formatDateLabel(resource)}</strong>
                 </div>
                 <h4>{resource.title}</h4>

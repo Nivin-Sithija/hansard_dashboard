@@ -1,6 +1,8 @@
 import React, { useMemo, useState } from 'react';
 import { useJsonResource } from '../lib/data/hooks';
 import { formatNumber } from '../lib/format';
+import { getTextLangProps } from '../lib/language';
+import { useUiLanguage } from '../lib/uiLanguage';
 
 const URL = '/data/speaker_profiles_enriched.json';
 
@@ -25,11 +27,12 @@ function formatYearWindow(profile) {
 }
 
 function topicLabel(topic) {
-  return topic.topicId !== null && topic.topicId !== undefined ? `MT-${topic.topicId} · ${topic.topicLabel}` : topic.topicLabel;
+  return topic.topicId !== null && topic.topicId !== undefined ? `MT-${topic.topicId} | ${topic.topicLabel}` : topic.topicLabel;
 }
 
 export default function SpeakersPage() {
   const { data, loading, error } = useJsonResource(URL);
+  const { t, localizeLanguageLabel } = useUiLanguage();
   const [query, setQuery] = useState('');
   const [selectedSpeaker, setSelectedSpeaker] = useState('');
   const speakerProfiles = useMemo(() => (Array.isArray(data) ? data : []), [data]);
@@ -77,7 +80,7 @@ export default function SpeakersPage() {
         <aside className="editorial-panel speaker-directory-panel">
           <div className="section-heading">
             <div className="section-heading__eyebrow">Directory</div>
-            <h2>Search by Sinhala, Tamil, or English names.</h2>
+            <h2>{t('searchByNames')}</h2>
           </div>
           <label className="inline-search">
             <span>Find a speaker</span>
@@ -92,8 +95,8 @@ export default function SpeakersPage() {
                 onClick={() => setSelectedSpeaker(speaker.name)}
               >
                 <div className="speaker-directory-row__copy">
-                  <strong className="speaker-directory-row__title">{speaker.displayName || speaker.englishName || speaker.name}</strong>
-                  <span className="speaker-directory-row__subtitle">{speaker.name}</span>
+                  <strong className="speaker-directory-row__title" {...getTextLangProps(speaker.displayName || speaker.englishName || speaker.name)}>{speaker.displayName || speaker.englishName || speaker.name}</strong>
+                  <span className="speaker-directory-row__subtitle" {...getTextLangProps(speaker.name)}>{speaker.name}</span>
                 </div>
                 <span className="speaker-directory-row__count">{formatNumber(speaker.totalSpeeches)}</span>
               </button>
@@ -111,8 +114,8 @@ export default function SpeakersPage() {
                 </div>
                 <div className="speaker-hero-card__copy">
                   <div className="section-heading__eyebrow">Selected speaker</div>
-                  <h2>{activeSpeaker.displayName || activeSpeaker.englishName || activeSpeaker.name}</h2>
-                  <p>{activeSpeaker.shortBio || activeSpeaker.name}</p>
+                  <h2 {...getTextLangProps(activeSpeaker.displayName || activeSpeaker.englishName || activeSpeaker.name)}>{activeSpeaker.displayName || activeSpeaker.englishName || activeSpeaker.name}</h2>
+                  <p {...getTextLangProps(activeSpeaker.shortBio || activeSpeaker.name)}>{activeSpeaker.shortBio || activeSpeaker.name}</p>
                   <div className="speaker-chip-row">
                     <span className="chip is-active">{formatNumber(activeSpeaker.totalSpeeches)} speeches</span>
                     <span className="chip">{activeSpeaker.activeYearCount} active years</span>
@@ -122,8 +125,8 @@ export default function SpeakersPage() {
                   </div>
                   {(activeSpeaker.wikipediaUrl || activeSpeaker.officialProfileUrl || activeSpeaker.party || activeSpeaker.constituency) && (
                     <div className="speaker-link-row">
-                      {activeSpeaker.party && <span className="speaker-inline-meta">{activeSpeaker.party}</span>}
-                      {activeSpeaker.constituency && <span className="speaker-inline-meta">{activeSpeaker.constituency}</span>}
+                      {activeSpeaker.party && <span className="speaker-inline-meta" {...getTextLangProps(activeSpeaker.party)}>{activeSpeaker.party}</span>}
+                      {activeSpeaker.constituency && <span className="speaker-inline-meta" {...getTextLangProps(activeSpeaker.constituency)}>{activeSpeaker.constituency}</span>}
                       {activeSpeaker.wikipediaUrl && <a href={activeSpeaker.wikipediaUrl} target="_blank" rel="noreferrer">Wikipedia</a>}
                       {activeSpeaker.officialProfileUrl && <a href={activeSpeaker.officialProfileUrl} target="_blank" rel="noreferrer">Official profile</a>}
                     </div>
@@ -138,8 +141,8 @@ export default function SpeakersPage() {
                     <h2>How this speaker appears in the clustered record</h2>
                   </div>
                   <div className="speaker-insight-card">
-                    <p>{activeSpeaker.insightSummary || 'Corpus-grounded insight is coming soon.'}</p>
-                    {activeSpeaker.editorialSummary && <p className="speaker-insight-card__draft">{activeSpeaker.editorialSummary}</p>}
+                    <p {...getTextLangProps(activeSpeaker.insightSummary || '')}>{activeSpeaker.insightSummary || 'Corpus-grounded insight is coming soon.'}</p>
+                    {activeSpeaker.editorialSummary && <p className="speaker-insight-card__draft" {...getTextLangProps(activeSpeaker.editorialSummary)}>{activeSpeaker.editorialSummary}</p>}
                     {activeSpeaker.confidenceNotes && <div className="detail-panel__muted">{activeSpeaker.confidenceNotes}</div>}
                   </div>
                   <div className="speaker-stat-grid">
@@ -198,7 +201,7 @@ export default function SpeakersPage() {
                   </div>
                   <div className="speaker-chip-row">
                     {(activeSpeaker.languageMix || []).map((item) => (
-                      <span key={item.language} className="chip">{item.language}: {formatNumber(item.count)}</span>
+                      <span key={item.language} className="chip">{localizeLanguageLabel(item.language)}: {formatNumber(item.count)}</span>
                     ))}
                     {!activeSpeaker.languageMix?.length && <span className="chip">Language mix unavailable</span>}
                   </div>
@@ -219,8 +222,8 @@ export default function SpeakersPage() {
                         <span>{speech.language}</span>
                         <span>{topicLabel(speech)}</span>
                       </div>
-                      <h3>{activeSpeaker.displayName || activeSpeaker.name}</h3>
-                      <p>{speech.excerpt}</p>
+                      <h3 {...getTextLangProps(activeSpeaker.displayName || activeSpeaker.name)}>{activeSpeaker.displayName || activeSpeaker.name}</h3>
+                      <p {...getTextLangProps(speech.excerpt)}>{speech.excerpt}</p>
                     </article>
                   ))}
                 </div>
@@ -233,7 +236,7 @@ export default function SpeakersPage() {
                   <p>These aliases make it easier to audit speaker normalization and cross-check source PDFs.</p>
                 </div>
                 <div className="speaker-chip-row">
-                  {(activeSpeaker.aliases?.length ? activeSpeaker.aliases : [activeSpeaker.name]).map((alias) => <span key={alias} className="chip">{alias}</span>)}
+                  {(activeSpeaker.aliases?.length ? activeSpeaker.aliases : [activeSpeaker.name]).map((alias) => <span key={alias} className="chip" {...getTextLangProps(alias)}>{alias}</span>)}
                 </div>
               </section>
             </>

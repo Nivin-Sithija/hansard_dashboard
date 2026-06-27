@@ -1,20 +1,20 @@
-﻿import React, { useMemo } from 'react';
+import React, { useMemo } from 'react';
 import * as d3 from 'd3';
 
-export function D3TimelineChart({ temporalData, selectedTopicKeys, onToggleTopic, height = 420 }) {
+export function D3TimelineChart({ temporalData, selectedTopicKeys, onToggleTopic, height = 420, showEventLabels = true }) {
   const years = temporalData.years;
   const selectedSet = new Set(selectedTopicKeys);
   const activeSeries = temporalData.series.filter((item) => selectedSet.size === 0 || selectedSet.has(String(item.mt_id)));
 
   const chart = useMemo(() => {
-    const width = 980;
-    const margin = { top: 56, right: 28, bottom: 44, left: 56 };
+    const width = 900;
+    const margin = { top: showEventLabels ? 74 : 48, right: 24, bottom: 44, left: 56 };
     const x = d3.scaleLinear().domain(d3.extent(years)).range([margin.left, width - margin.right]);
     const maxY = d3.max(activeSeries, (series) => d3.max(series.points, (point) => point.count)) || 0;
     const y = d3.scaleLinear().domain([0, maxY * 1.12 || 10]).nice().range([height - margin.bottom, margin.top]);
     const line = d3.line().x((point) => x(point.year)).y((point) => y(point.count)).curve(d3.curveMonotoneX);
     return { width, margin, x, y, line };
-  }, [activeSeries, height, years]);
+  }, [activeSeries, height, showEventLabels, years]);
 
   return (
     <div className="chart-shell">
@@ -32,10 +32,10 @@ export function D3TimelineChart({ temporalData, selectedTopicKeys, onToggleTopic
               <text className="chart-axis-label" x={chart.x(year)} y={height - chart.margin.bottom + 22} textAnchor="middle">{year}</text>
             </g>
           ))}
-          {temporalData.events.map((event) => (
+          {temporalData.events.map((event, index) => (
             <g key={event.year}>
               <line className="chart-event-line" x1={chart.x(event.year)} x2={chart.x(event.year)} y1={chart.margin.top - 20} y2={height - chart.margin.bottom} />
-              <text className="chart-event-label" x={chart.x(event.year)} y={chart.margin.top - 28} textAnchor="middle">{event.label}</text>
+              {showEventLabels ? <text className="chart-event-label" x={chart.x(event.year)} y={chart.margin.top - 30 - ((index % 2) * 18)} textAnchor="middle">{event.label}</text> : null}
             </g>
           ))}
           {activeSeries.map((series) => {
