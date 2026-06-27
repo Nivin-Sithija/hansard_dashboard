@@ -58,10 +58,10 @@ button, input, select { font: inherit; }
 .site-main__eyebrow { margin-bottom: 0.6rem; }
 .page-stack { display: grid; gap: 1.35rem; }
 .editorial-panel, .hero-panel, .stats-strip, .filter-bar, .detail-panel, .speech-card, .event-card, .topic-card, .explorer-summary { background: var(--surface-soft); border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow); min-width: 0; }
-.hero-panel { display: grid; grid-template-columns: 1.3fr 0.8fr; gap: 1.25rem; padding: 1.6rem; }
+.hero-panel { display: grid; grid-template-columns: 1fr; gap: 1.25rem; padding: 1.6rem; }
 .hero-panel h1, .page-header h1, .section-heading h2, .placeholder-page h1 { margin: 0; font-size: clamp(2rem, 4vw, 4rem); line-height: 1.02; letter-spacing: -0.04em; }
 .hero-panel p, .section-heading p, .event-card p, .placeholder-page p, .detail-panel p, .speech-card p { color: var(--text-soft); line-height: 1.65; }
-.hero-panel__copy { display: grid; gap: 1rem; }
+.hero-panel__copy { display: grid; gap: 1rem; max-width: 1040px; }
 .hero-panel__actions { display: flex; gap: 0.8rem; flex-wrap: wrap; }
 .hero-panel__method-card { background: linear-gradient(160deg, rgba(255,255,255,0.7), rgba(240, 231, 213, 0.92)); border-radius: calc(var(--radius) - 6px); padding: 1.2rem; height: 100%; border: 1px solid var(--line); }
 .hero-panel__method-card ol { margin: 0.8rem 0 0; padding-left: 1.25rem; line-height: 1.7; }

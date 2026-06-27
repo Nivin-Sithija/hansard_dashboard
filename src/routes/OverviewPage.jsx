@@ -38,17 +38,6 @@ export default function OverviewPage() {
             <Link className="button button--secondary" to="/speeches">{t('browseSpeeches')}</Link>
           </div>
         </div>
-        <div className="hero-panel__aside">
-          <div className="hero-panel__method-card">
-            <div className="hero-panel__method-label">Pipeline</div>
-            <ol>
-              <li>Hansard PDFs and Gemini extraction</li>
-              <li>BGE-M3 multilingual embeddings</li>
-              <li>UMAP + HDBSCAN topic discovery</li>
-              <li>30 macro-topics for public exploration</li>
-            </ol>
-          </div>
-        </div>
       </section>
 
       <section className="stats-strip">
